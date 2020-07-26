@@ -1,0 +1,80 @@
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../notes/html/theme/style.min.css"/>
+#+TITLE:    Getting started with SSH
+#+SUBTITLE:  Department of Computer & Information Science, Brooklyn College
+#+AUTHOR:    Katherine Chuang
+#+EMAIL:     chuang@sci.brooklyn.cuny.edu
+#+CREATOR:   katychuang
+#+OPTIONS:   H:3 num:n toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+ALT_TITLE: Lecture Notes
+
+#+HTML_HEAD: <style type="text/css">
+#+HTML_HEAD:  dl dd {text-align: left; margin-left: 10px}
+#+HTML_HEAD: </style>
+
+
+
+** Getting started with SSH
+:PROPERTIES:
+:UNNUMBERED: toc
+:END:
+
+
+*** What is SSH?
+
+
+SSH is an encrypted connection protocol that allows passing information between two machines. Generally you have a /client/ that requests access and a /server/ that responds to the requests.
+
+Each SSH server has an identifying code (a host key).  If you connect to a server for the first time or if the server presets a different key then previously, you will have to go through the verification process again.
+
+*** What is an SSH Client?
+An SSH client is a software which uses the SSH protocol to connect to a remote computer.
+
+In general SSH protocol can be used for two purposes, file transfers and terminal access.
+
+*** When would you use SSH?
+
+You would use SSH when you want to connect to another machine, and with more a more secure protocol than telnet or rlogin protocols.
+
+** SSH by terminal
+*** How do I ssh in terminal?
+
+There is a command line program called [[https://dashdash.io/1/ssh][ssh]]
+
+** SSH Program for Mac
+
+This guide aims to provide possible options objectively, that is, without bias.
+
+*** What GUI programs are available to use on Mac
+
+
+
+** SSH Programs for Windows
+
+This guide aims to provide possible options objectively, that is, without bias.
+
+*** What GUI programs are available to use on Windows?
+
+**** Putty
+
+PuTTY is an SSH and telnet client, developed originally by Simon Tatham for the Windows platform. PuTTY is open source software that is available with source code and is developed and supported by a group of volunteers.
+https://www.putty.org/
+
+**** Solar Putty
+Solar Putty is a new SSH client that has a multi tab interface to support multiple sessions from one console. It has additional features beyond putty such as saved credentials, support for multiple sessions, quick access to the most recent sessions and integration of Windows search.
+
+https://www.solarwinds.com/free-tools/solar-putty
+
+**** SSH Client
+
+*** I heard you can use Linux on Windows, how do I do that?
+
+**** Windows Subsystem for Linux
+https://docs.microsoft.com/en-us/windows/wsl/install-win10
+
+**** Windows Terminal
+https://www.microsoft.com/en-gb/p/windows-terminal/9n0dx20hk701?rtc=1&activetab=pivot:overviewtab
+
+** What can I do with SSH?
+
+You can log into other machines, such as the WEB Building's Linux server.
