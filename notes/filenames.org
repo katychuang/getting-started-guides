@@ -1,0 +1,42 @@
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../notes/html/theme/style.min.css"/>
+#+TITLE:    File naming conventions
+#+SUBTITLE:  Department of Computer & Information Science, Brooklyn College
+#+AUTHOR:    Katherine Chuang
+#+EMAIL:     chuang@sci.brooklyn.cuny.edu
+#+CREATOR:   katychuang
+#+OPTIONS:   H:3 num:n toc🚕 \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+ALT_TITLE: Lecture Notes
+
+#+HTML_HEAD: <style type="text/css">
+#+HTML_HEAD:  dl dd {text-align: left; margin-left: 10px}
+#+HTML_HEAD: </style>
+
+
+# Appendix A. File naming conventions
+
+| Language     | File Extension | Example      | Rules & Conventions                                           |
+|--------------+----------------+--------------+---------------------------------------------------------------|
+| <l>          | <l12>          | <l12>        | <l>                                                           |
+| Java         | .java          | ~Main.java~  | - File name _must_ match the public class defined in the file |
+|              |                |              | - Usually CamelCase                                           |
+| C++          | .cpp           | ~main.cpp~   | - C++ Programming File Organization[fn:1]                   |
+| Python       | .py            | ~main.py~    | - Often lowercased                                            |
+|              |                |              | - Pep8 Style Guidelines[fn:2]                                 |
+| Scheme       | .scm           | ~main.scm~   | - Guile Scheme Manual    |
+|              |                |              | - §6.18.5 Compiling Scheme Code[fn:3]                                            |
+| Markdown     | .md, .markdown | ~foo.md~     | - Markdown Syntax[fn:4]                                       |
+| HTML         | .htm, .html    | ~index.html~ | - Hypertext Markup Language                                   |
+|              |                |              | - Include doctype                                             |
+| CSS          | .css           | ~style.css~  | - Cascading Style Sheets                                      |
+| XML          | .xml           | ~pom.xml~    | - Extensible Markup Language                                  |
+| JavaScript   | .js            | ~script.js~  |                                                               |
+| Haskell      | .hs            | ~Main.hs~    |                                                               |
+| Shell Script | .sh            | ~build.sh~   | - add a shebang at the the top, ~#!/bin/sh~                   |
+
+
+[fn:1] C++ Programming/Programming Languages/C++/Code/File Organization. (2020, April 16). Wikibooks, The Free Textbook Project. from https://en.wikibooks.org/w/index.php?title=C%2B%2B_Programming/Programming_Languages/C%2B%2B/Code/File_Organization&oldid=3676078.
+
+[fn:2] PEP 8 -- Style Guide for Python Code https://www.python.org/dev/peps/pep-0008/
+[fn:3] Guile Reference Manual https://www.gnu.org/software/guile/manual/guile.pdf#page=406&zoom=100,0,96
+[fn:4] Markdown: Syntax https://daringfireball.net/projects/markdown/syntax
