@@ -2,7 +2,7 @@
 #+SUBTITLE:
 #+AUTHOR: Katherine Chuang
 #+EMAIL:  chuang@sci.brooklyn.cuny.edu
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../../assets/style.min.css"/>
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../assets/style.min.css"/>
 #+EXPORT_FILE_NAME: ../docs/build/index.html
 
 * What is a build tool?

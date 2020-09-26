@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-09-26 Sat 07:47 -->
+<!-- 2020-09-26 Sat 07:56 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Introduction to build tools</title>
@@ -193,7 +193,7 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link rel="stylesheet" type="text/css" href="../../assets/style.min.css"/>
+<link rel="stylesheet" type="text/css" href="../assets/style.min.css"/>
 <script type="text/javascript">
 // @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
 <!--/*--><![CDATA[/*><!--*/
@@ -226,31 +226,31 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org6439288">1. What is a build tool?</a></li>
-<li><a href="#orgd67ce70">2. GNU Make</a>
+<li><a href="#orga3239e0">1. What is a build tool?</a></li>
+<li><a href="#org07994f0">2. GNU Make</a>
 <ul>
-<li><a href="#org46a30ae">2.1. Makefile</a></li>
+<li><a href="#org5e2afdf">2.1. Makefile</a></li>
 </ul>
 </li>
-<li><a href="#org4c70393">3. Apache Maven</a>
+<li><a href="#org80c554d">3. Apache Maven</a>
 <ul>
-<li><a href="#org06b7d8c">3.1. Maven Project</a>
+<li><a href="#orgc07ca1f">3.1. Maven Project</a>
 <ul>
-<li><a href="#orga911c33">3.1.1. Creating a Maven project from Scratch</a></li>
-<li><a href="#org49ce755">3.1.2. Explaining the pom.xml configiguration file</a></li>
-<li><a href="#orged9d32b">3.1.3. Project File structure</a></li>
-<li><a href="#orge2b89e8">3.1.4. Compile and Run</a></li>
+<li><a href="#orgb4b3058">3.1.1. Creating a Maven project from Scratch</a></li>
+<li><a href="#orgf7c8ff9">3.1.2. Explaining the pom.xml configiguration file</a></li>
+<li><a href="#org9512a61">3.1.3. Project File structure</a></li>
+<li><a href="#org884f14a">3.1.4. Compile and Run</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org8b0c0a3">4. Choosing a Build tool</a></li>
+<li><a href="#orge0cbd7a">4. Choosing a Build tool</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org6439288" class="outline-2">
-<h2 id="org6439288"><span class="section-number-2">1</span> What is a build tool?</h2>
+<div id="outline-container-orga3239e0" class="outline-2">
+<h2 id="orga3239e0"><span class="section-number-2">1</span> What is a build tool?</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 A build tool is a programming utility that automates a software build task, such as compiling source code, cleaning temporary files, and so on. A popular open source build tool is <a href="https://www.gnu.org/software/make/">Make</a>, another popular build tool is <a href="https://maven.apache.org/">Maven</a>
@@ -258,16 +258,16 @@ A build tool is a programming utility that automates a software build task, such
 </div>
 </div>
 
-<div id="outline-container-orgd67ce70" class="outline-2">
-<h2 id="orgd67ce70"><span class="section-number-2">2</span> GNU Make</h2>
+<div id="outline-container-org07994f0" class="outline-2">
+<h2 id="org07994f0"><span class="section-number-2">2</span> GNU Make</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 Make is a build tool released by GNU. Make was original designed to work with C source code. Make configurations are specified by a text file named <code>Makefile</code>.
 </p>
 </div>
 
-<div id="outline-container-org46a30ae" class="outline-3">
-<h3 id="org46a30ae"><span class="section-number-3">2.1</span> Makefile</h3>
+<div id="outline-container-org5e2afdf" class="outline-3">
+<h3 id="org5e2afdf"><span class="section-number-3">2.1</span> Makefile</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 A programmer specifies how to build program from a file called a <i>makefile</i>, which lists a bunch of <i>rules</i>, each of which specifies the target, dependencies and commands.
@@ -301,24 +301,24 @@ Alternatively you can name your <i>makefile</i> with any name an run it with the
 
 
 
-<div id="outline-container-org4c70393" class="outline-2">
-<h2 id="org4c70393"><span class="section-number-2">3</span> Apache Maven</h2>
+<div id="outline-container-org80c554d" class="outline-2">
+<h2 id="org80c554d"><span class="section-number-2">3</span> Apache Maven</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 Maven is a build tool released by The Apache Software Foundation, which is a non-profit organization that maintains many open source software. Maven is a build tool and also a project management tool.
 </p>
 </div>
 
-<div id="outline-container-org06b7d8c" class="outline-3">
-<h3 id="org06b7d8c"><span class="section-number-3">3.1</span> Maven Project</h3>
+<div id="outline-container-orgc07ca1f" class="outline-3">
+<h3 id="orgc07ca1f"><span class="section-number-3">3.1</span> Maven Project</h3>
 <div class="outline-text-3" id="text-3-1">
 <p>
 The <i>workspace</i> concept with Maven is at the unit of a <i>project</i>. A Maven project must have a <code>pom.xml</code> file at the root directory as a way to configure the project specific information.
 </p>
 </div>
 
-<div id="outline-container-orga911c33" class="outline-4">
-<h4 id="orga911c33"><span class="section-number-4">3.1.1</span> Creating a Maven project from Scratch</h4>
+<div id="outline-container-orgb4b3058" class="outline-4">
+<h4 id="orgb4b3058"><span class="section-number-4">3.1.1</span> Creating a Maven project from Scratch</h4>
 <div class="outline-text-4" id="text-3-1-1">
 <p>
 The instructions for getting started are on Maven&rsquo;s website <a href="https://maven.apache.org/">https://maven.apache.org/</a>, under the page Maven in 5 minutes. This would be a good starting point to see the whole process however take your time to read through the docs to figure out specific configuration settings.
@@ -339,8 +339,8 @@ This would create a <code>pom.xml</code> file in the folder <code>maven-example<
 </div>
 </div>
 
-<div id="outline-container-org49ce755" class="outline-4">
-<h4 id="org49ce755"><span class="section-number-4">3.1.2</span> Explaining the pom.xml configiguration file</h4>
+<div id="outline-container-orgf7c8ff9" class="outline-4">
+<h4 id="orgf7c8ff9"><span class="section-number-4">3.1.2</span> Explaining the pom.xml configiguration file</h4>
 <div class="outline-text-4" id="text-3-1-2">
 <p>
 There are a few things to configure for a maven build project. Keep in mind that this is an XML file so it means you should know generally how an XML file is structured. XML files use tags, arranged in nested order like tree nodes. It can be thought of as a text-based database. It uses the file extension <code>.XML</code>
@@ -348,7 +348,7 @@ There are a few things to configure for a maven build project. Keep in mind that
 </div>
 
 <ol class="org-ol">
-<li><a id="org2f2046c"></a>Java Version<br />
+<li><a id="org0c55f0a"></a>Java Version<br />
 <div class="outline-text-5" id="text-3-1-2-1">
 <p>
 To use Java 8, you can specify it for your project like so:
@@ -364,7 +364,7 @@ To use Java 8, you can specify it for your project like so:
 </div>
 </li>
 
-<li><a id="org6e46899"></a>Project Libraries to include (dependencies)<br />
+<li><a id="org0978eb0"></a>Project Libraries to include (dependencies)<br />
 <div class="outline-text-5" id="text-3-1-2-2">
 <p>
 In order to include dependencies you would include each dependency under the dependencies block.
@@ -387,7 +387,7 @@ More dependencies can be found within the <a href="https://mvnrepository.com/">M
 </div>
 </li>
 
-<li><a id="org5a8ec60"></a>Build Plugins<br />
+<li><a id="orga1401fd"></a>Build Plugins<br />
 <div class="outline-text-5" id="text-3-1-2-3">
 <p>
 Plugins can be helpful. If there is any that you would like to add, it would be under a block like so.
@@ -408,8 +408,8 @@ Plugins can be helpful. If there is any that you would like to add, it would be 
 </ol>
 </div>
 
-<div id="outline-container-orged9d32b" class="outline-4">
-<h4 id="orged9d32b"><span class="section-number-4">3.1.3</span> Project File structure</h4>
+<div id="outline-container-org9512a61" class="outline-4">
+<h4 id="org9512a61"><span class="section-number-4">3.1.3</span> Project File structure</h4>
 <div class="outline-text-4" id="text-3-1-3">
 <p>
 The code you&rsquo;re working with can be found under the root directory under the path <code>src/main/java/package/</code>
@@ -426,8 +426,8 @@ Maven figures out for you how to install and connect everything so you don&rsquo
 </div>
 
 
-<div id="outline-container-orge2b89e8" class="outline-4">
-<h4 id="orge2b89e8"><span class="section-number-4">3.1.4</span> Compile and Run</h4>
+<div id="outline-container-org884f14a" class="outline-4">
+<h4 id="org884f14a"><span class="section-number-4">3.1.4</span> Compile and Run</h4>
 <div class="outline-text-4" id="text-3-1-4">
 <p>
 Once the configuration file is set up, all you have to worry about during and after development is to compile your project with ease.
@@ -443,8 +443,8 @@ When successfully built, Maven will produce an executable file under a <code>tar
 
 
 
-<div id="outline-container-org8b0c0a3" class="outline-2">
-<h2 id="org8b0c0a3"><span class="section-number-2">4</span> Choosing a Build tool</h2>
+<div id="outline-container-orge0cbd7a" class="outline-2">
+<h2 id="orge0cbd7a"><span class="section-number-2">4</span> Choosing a Build tool</h2>
 <div class="outline-text-2" id="text-4">
 <p>
 It comes down to what you like, which supports your needs.
@@ -454,7 +454,7 @@ It comes down to what you like, which supports your needs.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Katherine Chuang</p>
-<p class="date">Created: 2020-09-26 Sat 07:47</p>
+<p class="date">Created: 2020-09-26 Sat 07:56</p>
 </div>
 </body>
 </html>
