@@ -11,10 +11,11 @@
 #+HTML_HEAD: <style type="text/css">
 #+HTML_HEAD:  dl dd {text-align: left; margin-left: 10px}
 #+HTML_HEAD: </style>
+#+EXPORT_FILE_NAME: ../docs/ssh.html
 
 
 
-** Getting started with SSH
+* Getting started with SSH
 :PROPERTIES:
 :UNNUMBERED: toc
 :END:
@@ -36,7 +37,7 @@ In general SSH protocol can be used for two purposes, file transfers and termina
 
 You would use SSH when you want to connect to another machine, and with more a more secure protocol than telnet or rlogin protocols.
 
-** SSH by terminal
+* SSH by terminal
 *** How do I ssh in terminal?
 
 There is a command line program called [[https://dashdash.io/1/ssh][ssh]]
@@ -75,6 +76,6 @@ https://docs.microsoft.com/en-us/windows/wsl/install-win10
 **** Windows Terminal
 https://www.microsoft.com/en-gb/p/windows-terminal/9n0dx20hk701?rtc=1&activetab=pivot:overviewtab
 
-** What can I do with SSH?
+* What can I do with SSH?
 
 You can log into other machines, such as the WEB Building's Linux server.

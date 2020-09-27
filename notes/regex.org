@@ -1,0 +1,21 @@
+#+TITLE: Regular Expressions (RegEx)
+#+SUBTITLE:
+#+AUTHOR: Katherine Chuang
+#+EMAIL:  chuang@sci.brooklyn.cuny.edu
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../assets/style.min.css"/>
+#+EXPORT_FILE_NAME: ../docs/parsing/regex.html
+
+
+Regular expression "regex" is a particular notation used for pattern matching on strings. For example, when entering in email addresses and passwords into form input fields, you can use regex to specify the conditions that the text must match.
+
+Regex is also frequently used in text parsing, compiler design, and web scraping amongst other applications.
+
+References:
+
+- https://regexone.com/
+- https://regex101.com/
+- https://regexr.com/
+
+* Theories behind Regular Expressions
+
+For every regular expression, there is a finite automata. FSA is a simple diagram of circles and lines that represent various possible states.

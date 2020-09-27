@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2020-09-30 Wed 00:17 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Java</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Katherine Chuang" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="../assets/style.min.css"/>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:1f739d935676111cfff4b4693e3816e664797050&amp;dn=gpl-3.0.txt GPL-v3-or-Later
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.cacheClassElem = elem.className;
+         elem.cacheClassTarget = target.className;
+         target.className = "code-highlighted";
+         elem.className   = "code-highlighted";
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(elem.cacheClassElem)
+         elem.className = elem.cacheClassElem;
+       if(elem.cacheClassTarget)
+         target.className = elem.cacheClassTarget;
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Java</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org9e0bffd">1. Intro</a>
+<ul>
+<li><a href="#orgee46731">Helpful links</a>
+<ul>
+<li><a href="#org5354bbc">The Java Tutorials for JDK 8</a></li>
+<li><a href="#orgb9ac173">Java SE 8 Documenatation</a></li>
+<li><a href="#org73f0cb9">Java SE 8 API</a></li>
+<li><a href="#org4b6625f">Java Code Visualizer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org722f2cc">Concepts</a>
+<ul>
+<li><a href="#org691fb6b">Variables</a></li>
+<li><a href="#org626b22c">Primitive Data Types</a></li>
+<li><a href="#org19cbe71">Operators</a></li>
+<li><a href="#org6a5265c">Expressions, Statements, and Blocks</a></li>
+<li><a href="#org1dbe4e7">Control Flow Statements</a></li>
+<li><a href="#orge6172e0">Objects &amp; Classes</a></li>
+<li><a href="#orgeec0464">Arrays</a></li>
+</ul>
+</li>
+<li><a href="#orgab61f86">2. Compiling Java on Command Line</a>
+<ul>
+<li><a href="#orge39122b">2.1. BC Students can use the WEB Lab Server to compile and run Java code</a>
+<ul>
+<li><a href="#org5679c45">2.1.1. You can get your linux server account information from the W.E.B. Computing lab</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgd77eb39">Java Books and other resources</a>
+<ul>
+<li><a href="#orgd03b661">Teach Yourself Java in 21 Minutes</a></li>
+</ul>
+</li>
+<li><a href="#org2d74454">3. Lecture Slides</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9e0bffd" class="outline-2">
+<h2 id="org9e0bffd"><span class="section-number-2">1</span> Intro</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+The CIS department at Brooklyn College <i>officially supports</i> Java 8. This means that <i>Java courses</i> are taught adhering to this version. Using later versions such as <i>Java 11</i> is perfectly find for most instances, there may be some minor differences with certain classes and methods or certain version specific-quirks.
+</p>
+
+<p>
+The best thing to do is to keep documentation links handy.
+</p>
+</div>
+<div id="outline-container-orgee46731" class="outline-3">
+<h3 id="orgee46731">Helpful links</h3>
+<div class="outline-text-3" id="text-orgee46731">
+<p>
+These are useful links to reference.
+</p>
+</div>
+
+<div id="outline-container-org5354bbc" class="outline-4">
+<h4 id="org5354bbc">The Java Tutorials for JDK 8</h4>
+<div class="outline-text-4" id="text-org5354bbc">
+<p>
+<a href="https://docs.oracle.com/javase/tutorial/index.html">https://docs.oracle.com/javase/tutorial/index.html</a>
+</p>
+</div>
+</div>
+<div id="outline-container-orgb9ac173" class="outline-4">
+<h4 id="orgb9ac173">Java SE 8 Documenatation</h4>
+<div class="outline-text-4" id="text-orgb9ac173">
+<p>
+<a href="https://docs.oracle.com/javase/8/">https://docs.oracle.com/javase/8/</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org73f0cb9" class="outline-4">
+<h4 id="org73f0cb9">Java SE 8 API</h4>
+<div class="outline-text-4" id="text-org73f0cb9">
+<p>
+<a href="https://docs.oracle.com/javase/8/docs/api/index.html">https://docs.oracle.com/javase/8/docs/api/index.html</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org4b6625f" class="outline-4">
+<h4 id="org4b6625f">Java Code Visualizer</h4>
+<div class="outline-text-4" id="text-org4b6625f">
+<p>
+<a href="http://www.pythontutor.com/java.html#mode=edit">http://www.pythontutor.com/java.html#mode=edit</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org722f2cc" class="outline-2">
+<h2 id="org722f2cc">Concepts</h2>
+<div class="outline-text-2" id="text-org722f2cc">
+</div>
+<div id="outline-container-org691fb6b" class="outline-3">
+<h3 id="org691fb6b">Variables</h3>
+</div>
+<div id="outline-container-org626b22c" class="outline-3">
+<h3 id="org626b22c">Primitive Data Types</h3>
+</div>
+<div id="outline-container-org19cbe71" class="outline-3">
+<h3 id="org19cbe71">Operators</h3>
+</div>
+<div id="outline-container-org6a5265c" class="outline-3">
+<h3 id="org6a5265c">Expressions, Statements, and Blocks</h3>
+</div>
+<div id="outline-container-org1dbe4e7" class="outline-3">
+<h3 id="org1dbe4e7">Control Flow Statements</h3>
+</div>
+<div id="outline-container-orge6172e0" class="outline-3">
+<h3 id="orge6172e0">Objects &amp; Classes</h3>
+</div>
+<div id="outline-container-orgeec0464" class="outline-3">
+<h3 id="orgeec0464">Arrays</h3>
+</div>
+</div>
+<div id="outline-container-orgab61f86" class="outline-2">
+<h2 id="orgab61f86"><span class="section-number-2">2</span> Compiling Java on Command Line</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+To compile Java source code on the command line, it is with this command where <code>Main.java</code> is your filename.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-shell">javac Main.java
+</pre>
+</div>
+
+<p>
+followed by running the executable generated with
+</p>
+
+<div class="org-src-container">
+<pre class="src src-shell">java Main
+</pre>
+</div>
+</div>
+
+<div id="outline-container-orge39122b" class="outline-3">
+<h3 id="orge39122b"><span class="section-number-3">2.1</span> BC Students can use the WEB Lab Server to compile and run Java code</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Use a terminal friendly app to connect to the server via ssh. A sample command is as follows:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-shell">ssh username@hostname
+</pre>
+</div>
+
+<p>
+After entering your password, create a directory for your assignment, such as <code>mkdir folder1</code> and then you can use a command line such as vim, emacs, or nano to edit the file.
+</p>
+</div>
+
+<div id="outline-container-org5679c45" class="outline-4">
+<h4 id="org5679c45"><span class="section-number-4">2.1.1</span> You can get your linux server account information from the W.E.B. Computing lab</h4>
+<div class="outline-text-4" id="text-2-1-1">
+<p>
+You can email the Linux Administrator, Raymond Patitucci or visit their locatio nat
+</p>
+
+<p>
+First floor, West End Building
+P: 718.951.5787
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd77eb39" class="outline-2">
+<h2 id="orgd77eb39">Java Books and other resources</h2>
+<div class="outline-text-2" id="text-orgd77eb39">
+</div>
+<div id="outline-container-orgd03b661" class="outline-3">
+<h3 id="orgd03b661">Teach Yourself Java in 21 Minutes</h3>
+<div class="outline-text-3" id="text-orgd03b661">
+<p>
+<a href="https://fileadmin.cs.lth.se/cs/Education/EDA040/common/java21.pdf">https://fileadmin.cs.lth.se/cs/Education/EDA040/common/java21.pdf</a>
+**
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org2d74454" class="outline-2">
+<h2 id="org2d74454"><span class="section-number-2">3</span> Lecture Slides</h2>
+<div class="outline-text-2" id="text-3">
+<ul class="org-ul">
+<li><p>
+Java Review
+</p>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRtXxeatgBGq7xebtDWbsPFZfe6hmx_EllwyN7SH58xpeZhLp0pP3nhGza2tG2KeBXTwNJOrniM-99Q/embed?start=false&loop=false&delayms=3000" frameborder="0" height="300" width="400" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></li>
+<li><p>
+Two Dimensional Arrays
+</p>
+<p><iframe allowfullscreen="true" frameborder="0" height="300" mozallowfullscreen="true" src="https://docs.google.com/presentation/d/e/2PACX-1vQ1ToT9Ovyob0CbcORIXdaraIewpmfPhgwBxKTPbcB4y4wo_NEODQ3Jsw-wprFh9_V-wM1NjzuN_pkO/embed?start=false&amp;loop=false&amp;delayms=3000" webkitallowfullscreen="true" width="400"></iframe></p></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Katherine Chuang</p>
+<p class="date">Created: 2020-09-30 Wed 00:17</p>
+</div>
+</body>
+</html>

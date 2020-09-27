@@ -39,7 +39,19 @@ Maven is a build tool released by The Apache Software Foundation, which is a non
 
 ** Maven Project
 
-The /workspace/ concept with Maven is at the unit of a /project/. A Maven project must have a ~pom.xml~ file at the root directory as a way to configure the project specific information.
+The /workspace/ concept with Maven is at the unit of a /project/. A Maven project must have a ~pom.xml~ file at the root directory as a way to configure the project specific information. It works like a recipe in specifying the dependencies required for the project (i.e. any open source libraries used) and also specifying the way the project should be built.
+
+*** Maven Commands
+
+The syntax for running Maven in a terminal is a pattern as follows:
+
+#+BEGIN_SRC shell
+mvn [options] [<goal(s)>] [<phase(s)>]
+#+END_SRC
+
+~mvn~ is the program and the following are parameters provided to the program.
+
+Available options for each of the parameters can be found by checking the manual page using ~man mvn~
 
 *** Creating a Maven project from Scratch
 
