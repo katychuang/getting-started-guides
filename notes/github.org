@@ -11,7 +11,7 @@
 #+HTML_HEAD: <style type="text/css">
 #+HTML_HEAD:  dl dd {text-align: left; margin-left: 10px}
 #+HTML_HEAD: </style>
-
+#+EXPORT_FILE_NAME: ../docs/vcs/github.html
 
 
 

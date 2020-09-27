@@ -1,0 +1,85 @@
+#+TITLE: Java
+#+SUBTITLE:
+#+AUTHOR: Katherine Chuang
+#+EMAIL:  chuang@sci.brooklyn.cuny.edu
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../assets/style.min.css"/>
+#+EXPORT_FILE_NAME: ../docs/java/index.html
+
+* Intro
+
+The CIS department at Brooklyn College /officially supports/ Java 8. This means that /Java courses/ are taught adhering to this version. Using later versions such as /Java 11/ is perfectly find for most instances, there may be some minor differences with certain classes and methods or certain version specific-quirks.
+
+The best thing to do is to keep documentation links handy.
+** Helpful links
+:PROPERTIES:
+:UNNUMBERED: toc
+:END:
+
+These are useful links to reference.
+
+*** The Java Tutorials for JDK 8
+https://docs.oracle.com/javase/tutorial/index.html
+*** Java SE 8 Documenatation
+https://docs.oracle.com/javase/8/
+*** Java SE 8 API
+https://docs.oracle.com/javase/8/docs/api/index.html
+*** Java Code Visualizer
+http://www.pythontutor.com/java.html#mode=edit
+* Concepts
+:PROPERTIES:
+:UNNUMBERED: toc
+:END:
+** Variables
+** Primitive Data Types
+** Operators
+** Expressions, Statements, and Blocks
+** Control Flow Statements
+** Objects & Classes
+** Arrays
+* Compiling Java on Command Line
+
+To compile Java source code on the command line, it is with this command where ~Main.java~ is your filename.
+
+#+BEGIN_SRC shell
+javac Main.java
+#+END_SRC
+
+followed by running the executable generated with
+
+#+BEGIN_SRC shell
+java Main
+#+END_SRC
+
+** BC Students can use the WEB Lab Server to compile and run Java code
+
+Use a terminal friendly app to connect to the server via ssh. A sample command is as follows:
+
+#+BEGIN_SRC shell
+ssh username@hostname
+#+END_SRC
+
+After entering your password, create a directory for your assignment, such as ~mkdir folder1~ and then you can use a command line such as vim, emacs, or nano to edit the file.
+
+*** You can get your linux server account information from the W.E.B. Computing lab
+
+You can email the Linux Administrator, Raymond Patitucci or visit their locatio nat
+
+First floor, West End Building
+P: 718.951.5787
+
+* Java Books and other resources
+:PROPERTIES:
+:UNNUMBERED: toc
+:END:
+** Teach Yourself Java in 21 Minutes
+https://fileadmin.cs.lth.se/cs/Education/EDA040/common/java21.pdf
+**
+* Lecture Slides
+- Java Review
+  #+BEGIN_EXPORT html
+  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRtXxeatgBGq7xebtDWbsPFZfe6hmx_EllwyN7SH58xpeZhLp0pP3nhGza2tG2KeBXTwNJOrniM-99Q/embed?start=false&loop=false&delayms=3000" frameborder="0" height="300" width="400" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+  #+END_EXPORT
+- Two Dimensional Arrays
+  #+BEGIN_EXPORT html
+  <p><iframe allowfullscreen="true" frameborder="0" height="300" mozallowfullscreen="true" src="https://docs.google.com/presentation/d/e/2PACX-1vQ1ToT9Ovyob0CbcORIXdaraIewpmfPhgwBxKTPbcB4y4wo_NEODQ3Jsw-wprFh9_V-wM1NjzuN_pkO/embed?start=false&amp;loop=false&amp;delayms=3000" webkitallowfullscreen="true" width="400"></iframe></p>
+  #+END_EXPORT

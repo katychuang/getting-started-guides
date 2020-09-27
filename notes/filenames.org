@@ -11,9 +11,11 @@
 #+HTML_HEAD: <style type="text/css">
 #+HTML_HEAD:  dl dd {text-align: left; margin-left: 10px}
 #+HTML_HEAD: </style>
+#+EXPORT_FILE_NAME: ../docs/filenames.html
 
 
-# Appendix A. File naming conventions
+This is a table of some common file naming conventions.
+
 
 | Language     | File Extension | Example      | Rules & Conventions                                           |
 |--------------+----------------+--------------+---------------------------------------------------------------|
