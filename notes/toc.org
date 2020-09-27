@@ -1,0 +1,31 @@
+#+TITLE: Getting Started Guides
+#+OPTIONS: toc:2
+#+SUBTITLE:  Getting started with web development
+#+AUTHOR:    Katherine Chuang
+#+EMAIL:     chuang@sci.brooklyn.cuny.edu
+#+CREATOR:   katychuang
+#+OPTIONS:   H:1 num:n toc:y \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+ALT_TITLE: Lecture Notes
+
+#+HTML_HEAD: <style type="text/css">
+#+HTML_HEAD:  dl dd {text-align: left; margin-left: 10px}
+#+HTML_HEAD: </style>
+
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="assets/style.min.css"/>
+#+EXPORT_FILE_NAME: ../docs/index.html
+#+HUGO_BASE_DIR: ../docs/
+#+HUGO_SECTION: ./
+
+By way of introduction to some of the useful things, this section is provided with some short pages to give a brief introduction.
+
+Pages in this section include:
+
+- Java SDK 8
+- Java Collections Framework
+- Regular Expressions
+- Build Tools (Apache Maven)
+- Version Control (Git)
+- GitHub Pages
+- Travis CI
+- Markdown Files (Mastering Markdown, GitHub Flavored Markdown Spec)

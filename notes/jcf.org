@@ -1,0 +1,32 @@
+#+TITLE: Java Collections Framework
+#+SUBTITLE:
+#+AUTHOR: Katherine Chuang
+#+EMAIL:  chuang@sci.brooklyn.cuny.edu
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../assets/style.min.css"/>
+#+EXPORT_FILE_NAME: ../docs/java/jcf.html
+
+
+The Java platform includes a collections framework. A collection is an object that represents a group of objects (such as the classic Vector class). A collections framework is a unified architecture for representing and manipulating collections, enabling collections to be manipulated independently of implementation details.
+
+The available implementations are described in the [[https://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html][Java Documentation]]
+
+#+CAPTION: This shows Java Collection Framework Implementations of common data structure patterns
+#+ATTR_HTML: :border 2 :rules all :frame border
+
+| Interface | HashTable | Resizable Array | Balanced Tree | Linked List | Hash+LL       |
+|-----------+-----------+-----------------+---------------+-------------+---------------|
+| ~Set~     | HashSet   |                 | TreeSet       |             | LinkedHashSet |
+| ~List~    |           | ArrayList       |               | Linked List |               |
+| ~Deque~   |           | ArrayDeque      |               | Linked List |               |
+| ~Map~     | HashMap   |                 | TreeMap       |             | LinkedHashMap |
+
+* Slides
+
+#+BEGIN_EXPORT HTML
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQsIhSI1GokuxUKAuOIFCngTOXWEdr4b-ByWJxI-z0xR7iV2kiGOmAMJNLFdSOUcFV0sHTkBuqhyOFN/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+#+END_EXPORT
+
+* References
+- The Java Collections Framework https://docs.oracle.com/javase/8/docs/technotes/guides/collections/
+- The Java Tutorials: Collections
+  https://docs.oracle.com/javase/tutorial/collections/index.html
