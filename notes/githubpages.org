@@ -1,0 +1,71 @@
+#+TITLE: Github Pages
+#+SUBTITLE:  Getting started with web development
+#+AUTHOR:    Katherine Chuang
+#+EMAIL:     chuang@sci.brooklyn.cuny.edu
+#+CREATOR:   katychuang
+#+OPTIONS:   H:3 num:n  \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+ALT_TITLE: Lecture Notes
+
+#+HTML_HEAD: <style type="text/css">
+#+HTML_HEAD:  dl dd {text-align: left; margin-left: 10px}
+#+HTML_HEAD: </style>
+
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="assets/style.min.css"/>
+#+EXPORT_FILE_NAME: ../docs/vcs/githubpages.html
+
+
+* What is Github Pages?
+
+* How to make your home page
+
+When you use GitHub pages, you can access your website at the url http://username.github.io and the underlying files would be found in your repository, which can be found at url pattern ttp://github.com/username/username.github.io
+
+This section walks you through step by step.
+
+*Short version:*
+1. Create a repo of name: *yourusername*.github.io
+2. Go to that repo's settings and check the box for your pages (note the drop down option selected)
+3. Add .html files to your repo
+
+You should be able to access your website from ~http://yourusername.github.io~
+
+*Longer version:*
+1. From your account, create a new repo following the structure username.github.io -- this is the basis for producing a website hosted by github pages (https://pages.github.com/).
+2. Confirm that the pages feature is turned on for that repository, under the settings menu.
+3. This allows you to host files under your GitHub account.
+    a. You could use the github.com web interface to upload each file individually, however I recommended you take time at some point in your career to gain familiarity with the workflow of using git commands from your machine terminal.
+    b. Upload the images and html files to that repo.
+4. If set up properly you should be able to access your website from http://username.github.io
+
+* Using Jekyll Static Site Generator
+
+Github Pages recognizes files that are formatted to the Jekyll Static Site Generated fraemwork. Jekyll (https://jekyllrb.com/) is written in the Ruby programming language, it convers text files in markdown format into HTML pages.
+
+Static HTML pages means that it's an HTML page that doesn't change when you view it across different timestaps. As in, static is /not/ a script generated page. The contents do not change because you pull data from a database. A page like that would be considered /dynamic/ because the contents can change.
+
+** Guides to using Jekyll
+The guides and tutorials for using Jekyll are easily found through your nearest search engine. These are some liks:
+- https://jekyllrb.com/docs/github-pages/
+- Building a static website with Jekyll and GitHub Pages https://programminghistorian.org/en/lessons/building-static-sites-with-jekyll-github-pages
+
+
+* References
+** Intro to HTML/CSS
+- HTML Specifications https://html.spec.whatwg.org/
+- CSS Specifications https://www.w3.org/Style/CSS/specs.en.html
+- Intro to HTML/CSS: Making webpages Khan Academy. https://www.khanacademy.org/computing/computer-programming/html-css
+- Starting with HTML + CSS tutorial by W3C
+- Web Design & Development I https://www.washington.edu/accessit/webdesign/student/lessons.htm
+- Codecademy: Introduction to HTML https://www.codecademy.com/learn/learn-html
+- Interactive HTML tutorial https://www.learn-html.org/
+
+** Tutorials and Guides on deploying to GitHub Pages
+
+- GitHub’s 10 minute read guide https://guides.github.com/features/pages/
+- GitHub Pages Basics https://help.github.com/categories/github-pages-basics/
+- Khan Academy’s tutorial https://www.khanacademy.org/computing/computer-programming/html-css/web-development-tools/a/hosting-your-website-on-github
+- Thinkful’s tutorial https://www.thinkful.com/learn/a-guide-to-using-github-pages/
+- Build a Web Portfolio from Scratch https://dannguyen.github.io/github-for-portfolios/
+- Set Up Your Portfolio Website in Less Than 10 Minutes with Github Pages https://blog.usejournal.com/set-up-your-portfolio-website-in-less-than-10-minutes-with-github-pages-d0efa8ff56fd
+- The Beginners Guide to Github Pages https://www.ostraining.com/blog/coding/github-pages/

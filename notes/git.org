@@ -1,0 +1,75 @@
+#+TITLE: Getting started with Git
+#+SUBTITLE:  A version control system
+#+AUTHOR:    Katherine Chuang
+#+EMAIL:     chuang@sci.brooklyn.cuny.edu
+#+CREATOR:   katychuang
+#+OPTIONS:   H:3 num:n  \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+ALT_TITLE: Lecture Notes
+
+#+HTML_HEAD: <style type="text/css">
+#+HTML_HEAD:  dl dd {text-align: left; margin-left: 10px}
+#+HTML_HEAD: </style>
+
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../assets/style.min.css"/>
+#+EXPORT_FILE_NAME: ../docs/vcs/git.html
+
+
+* Git
+Version control systems are used in managing revision control of project artifacts, and maintaining a history of changes to each artifact. Artifacts can include documents, source code, and much more.
+
+Motivations for Source Version Control
+- Keeping track of code
+- Storing versions of code changes
+- Restoring previous versions
+- Reviewing work history
+- Collaborating in a group
+- Backup
+- There are two main approaches to version control management systems. That is, they can either be centralized, or decentralized repositories. This page covers Git is a decentralized system.
+* Terminology
+** Git vs GitHub
+*Git* — The version control tool that GitHub is built on top of. You do not need GitHub to use Git. You can install git to your machine to use locally.
+
+*GitHub* is a hosting service using git the open source revision control system. Github’s service allows you to share your code with the world, and also has several other collaboration features.
+** Common Git Commands
+
+Some common workflow steps
+
+| Command                  | Description                               |
+|--------------------------+-------------------------------------------|
+| ~git add~                | puts changes to the stage                 |
+| ~git commit~             | logs the staged                           |
+| ~git push origin master~ | uploads the local master branch to server |
+
+Other common commands
+
+| Command               | Description                                |
+|-----------------------+--------------------------------------------|
+| ~git pull~            | downloads latest version from server       |
+| ~git fetch~           | checks for changes but doesn't download it |
+| ~git clone <address>~ | copies a server verion to local machine    |
+| ~git remote -v~       | shows the server address                   |
+
+** Workspace and Commits
+- *Workspace* - this is where you have files you’re editing in a folder
+- *Stage* - this is where you put files or selected lines into an area to be given a commit message
+- *Commit Log* - a history of committed changes.
+* Slides
+
+#+BEGIN_EXPORT html
+<p><iframe allowfullscreen="true" frameborder="0" height="453" mozallowfullscreen="true" src="https://docs.google.com/presentation/d/e/2PACX-1vT2kM37LbJ-fWzQ8abHChTC-uPAqkwr0XXy1hOiZYF26KpQIyaDiQnJcBHyMFfd8rc4wjyXaYiU1Y0t/embed?start=false&amp;loop=false&amp;delayms=3000" webkitallowfullscreen="true" width="560"></iframe></p>
+#+END_EXPORT
+
+* Workflow for "syncing" your local and remote repos
+
+The first time you copy from the server, you are /cloning/ the repository. Once you have a local copy, getting more updates is considered a /pull/.
+
+When you make edits on your local machine, you save snapshots or /revisions/ to your /commit log/. When you're done for the day, you can /push/ or upload changes back to ther remote.
+
+[[https://i.imgur.com/CJB4iMS.png]]
+
+
+* Suggested reading
+- Read Chapters 1-2 of the git book: https://git-scm.com/book/en/v2
+
+- Creating a new repository on GitHub https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-new-repository
