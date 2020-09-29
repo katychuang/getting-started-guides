@@ -1,0 +1,120 @@
+#+TITLE: Introduction to build tools
+#+SUBTITLE:
+#+AUTHOR: Katherine Chuang
+#+EMAIL:  chuang@sci.brooklyn.cuny.edu
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../../assets/style.min.css"/>
+#+EXPORT_FILE_NAME: ../docs/build/index.html
+
+* What is a build tool?
+
+A build tool is a programming utility that automates a software build task, such as compiling source code, cleaning temporary files, and so on. A popular open source build tool is [[https://www.gnu.org/software/make/][Make]], another popular build tool is [[https://maven.apache.org/][Maven]]
+
+* GNU Make
+
+Make is a build tool released by GNU. Make was original designed to work with C source code. Make configurations are specified by a text file named ~Makefile~.
+
+** Makefile
+
+A programmer specifies how to build program from a file called a /makefile/, which lists a bunch of /rules/, each of which specifies the target, dependencies and commands.
+
+Once you create a /makefile/, you don't have to meticulously track details of how to build the file again, because the details are recorded in the makefiles you prepared. You can use make with any language.
+
+
+An example of a make file:
+
+#+BEGIN_SRC makefile
+hello:
+    javac hello.java
+#+END_SRC
+
+To run the make file, you can run ~make~ in a terminal.
+
+Alternatively you can name your /makefile/ with any name an run it with the -f flag option like so ~make -f myFile.mak~
+
+
+
+* Apache Maven
+
+Maven is a build tool released by The Apache Software Foundation, which is a non-profit organization that maintains many open source software. Maven is a build tool and also a project management tool.
+
+** Maven Project
+
+The /workspace/ concept with Maven is at the unit of a /project/. A Maven project must have a ~pom.xml~ file at the root directory as a way to configure the project specific information.
+
+*** Creating a Maven project from Scratch
+
+The instructions for getting started are on Maven's website https://maven.apache.org/, under the page Maven in 5 minutes. This would be a good starting point to see the whole process however take your time to read through the docs to figure out specific configuration settings.
+
+Basically, from the root directory of your project, run this in a terminal:
+
+#+BEGIN_SRC shell
+mvn -B archetype:generate -DgroupId=myApp -DartifactId=maven-example
+#+END_SRC
+
+This would create a ~pom.xml~ file in the folder ~maven-example~ with maven's project structure within it. The flag ~-DgroupId~ is how you name your project and here the name ~myApp~ is given.
+
+*** Explaining the pom.xml configiguration file
+
+There are a few things to configure for a maven build project. Keep in mind that this is an XML file so it means you should know generally how an XML file is structured. XML files use tags, arranged in nested order like tree nodes. It can be thought of as a text-based database. It uses the file extension ~.XML~
+
+**** Java Version
+
+To use Java 8, you can specify it for your project like so:
+
+#+BEGIN_SRC xml
+<properties>
+  <maven.compiler.target>1.8</maven.compiler.target>
+  <maven.compiler.source>1.8</maven.compiler.source>
+</properties>
+#+END_SRC
+
+**** Project Libraries to include (dependencies)
+
+In order to include dependencies you would include each dependency under the dependencies block.
+
+#+BEGIN_SRC xml
+<dependencies>
+	<dependency>
+		<groupId>junit</groupId>
+		<artifactId>junit</artifactId>
+		<version>x.x.x</version>
+	</dependency>
+</dependencies>
+#+END_SRC
+
+More dependencies can be found within the [[https://mvnrepository.com/][Maven repository]].
+
+**** Build Plugins
+
+Plugins can be helpful. If there is any that you would like to add, it would be under a block like so.
+
+#+BEGIN_SRC xml
+<build>
+	<plugins>
+		<plugin>
+			....
+		</plugin>
+	</plugins>
+</build>
+#+END_SRC
+
+*** Project File structure
+
+The code you're working with can be found under the root directory under the path ~src/main/java/package/~
+
+In your file under this path, such as ~Main.java~, that's where you can import libraries at the top of the file.
+
+Maven figures out for you how to install and connect everything so you don't have to worry about manually maintaining where files should go.
+
+
+*** Compile and Run
+
+Once the configuration file is set up, all you have to worry about during and after development is to compile your project with ease.
+
+When successfully built, Maven will produce an executable file under a ~target~ directory under root.
+
+
+
+* Choosing a Build tool
+
+It comes down to what you like, which supports your needs.
