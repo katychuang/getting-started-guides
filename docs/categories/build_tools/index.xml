@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>build_tools on Getting Started Guides</title>
+    <link>/categories/build_tools/</link>
+    <description>Recent content in build_tools on Getting Started Guides</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 28 Sep 2020 00:00:00 -0400</lastBuildDate><atom:link href="/categories/build_tools/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction to build tools</title>
+      <link>/guides/buildtools/</link>
+      <pubDate>Mon, 28 Sep 2020 00:00:00 -0400</pubDate>
+      
+      <guid>/guides/buildtools/</guid>
+      <description>1What is a build tool? 2GNU Make  2.1Makefile   3Apache Maven  3.1Maven Project  3.1.1Maven Commands 3.1.2Creating a Maven project from Scratch 3.1.3Explaining the pom.xml configiguration file 3.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,8 +1,9 @@
-#+TITLE: Github Pages
+#+TITLE:     Getting Started with Github Pages
 #+SUBTITLE:  Getting started with web development
 #+AUTHOR:    Katherine Chuang
 #+EMAIL:     chuang@sci.brooklyn.cuny.edu
 #+CREATOR:   katychuang
+#+DATE:      2020-04-20
 #+OPTIONS:   H:3 num:n  \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
 #+ALT_TITLE: Lecture Notes
@@ -11,8 +12,13 @@
 #+HTML_HEAD:  dl dd {text-align: left; margin-left: 10px}
 #+HTML_HEAD: </style>
 
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="assets/style.min.css"/>
-#+EXPORT_FILE_NAME: ../docs/vcs/githubpages.html
+# #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="assets/style.min.css"/>
+# #+EXPORT_FILE_NAME: ../docs/vcs/githubpages.html
+
+#+HUGO_BASE_DIR: ../hugo/
+#+HUGO_SECTION: articles
+#+HUGO_CATEGORIES: git web_dev
+#+EXPORT_HUGO_SECTION: gp
 
 
 * What is Github Pages?

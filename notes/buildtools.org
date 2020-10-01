@@ -1,9 +1,21 @@
-#+TITLE: Introduction to build tools
-#+SUBTITLE:
-#+AUTHOR: Katherine Chuang
-#+EMAIL:  chuang@sci.brooklyn.cuny.edu
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="assets/style.min.css"/>
-#+EXPORT_FILE_NAME: ../docs/build/index.html
+#+TITLE:     Introduction to build tools
+#+SUBTITLE:  Automating your workflow
+#+AUTHOR:    Katherine Chuang
+#+EMAIL:     chuang@sci.brooklyn.cuny.edu
+#+CREATOR:   katychuang
+#+date:      2020-09-28
+#+OPTIONS:   H:3 num:n toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+ALT_TITLE: Lecture Notes
+# #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="assets/style.min.css"/>
+# #+HTML_HEAD: <style type="text/css">
+# #+HTML_HEAD:  dl dd {text-align: left; margin-left: 10px}
+# #+HTML_HEAD: </style>
+# #+EXPORT_FILE_NAME: ../docs/build/index.html
+#+HUGO_BASE_DIR: ../hugo/
+#+HUGO_SECTION: guides
+#+HUGO_CATEGORIES: build_tools
+#+EXPORT_HUGO_SECTION: buildtools
 
 * What is a build tool?
 
@@ -129,4 +141,4 @@ When successfully built, Maven will produce an executable file under a ~target~ 
 
 * Choosing a Build tool
 
-It comes down to what you like, which supports your needs.
+Picking a build tool boils down to what you like, which supports your needs.
