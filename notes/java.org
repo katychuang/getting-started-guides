@@ -87,10 +87,9 @@ https://fileadmin.cs.lth.se/cs/Education/EDA040/common/java21.pdf
 **
 * Lecture Slides
 - Java Review
-  #+BEGIN_EXPORT html
-  <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRtXxeatgBGq7xebtDWbsPFZfe6hmx_EllwyN7SH58xpeZhLp0pP3nhGza2tG2KeBXTwNJOrniM-99Q/embed?start=false&loop=false&delayms=3000" frameborder="0" height="300" width="400" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-  #+END_EXPORT
+  {{< gslides src="docs.google.com/presentation/d/e/2PACX-1vRtXxeatgBGq7xebtDWbsPFZfe6hmx_EllwyN7SH58xpeZhLp0pP3nhGza2tG2KeBXTwNJOrniM-99Q/pub?start=false&loop=false&delayms=3000" >}}
+
 - Two Dimensional Arrays
-  #+BEGIN_EXPORT html
-  <p><iframe allowfullscreen="true" frameborder="0" height="300" mozallowfullscreen="true" src="https://docs.google.com/presentation/d/e/2PACX-1vQ1ToT9Ovyob0CbcORIXdaraIewpmfPhgwBxKTPbcB4y4wo_NEODQ3Jsw-wprFh9_V-wM1NjzuN_pkO/embed?start=false&amp;loop=false&amp;delayms=3000" webkitallowfullscreen="true" width="400"></iframe></p>
-  #+END_EXPORT
+  {{< gslides src="docs.google.com/presentation/d/e/2PACX-1vQ1ToT9Ovyob0CbcORIXdaraIewpmfPhgwBxKTPbcB4y4wo_NEODQ3Jsw-wprFh9_V-wM1NjzuN_pkO/embed?start=false&amp;loop=false&amp;delayms=3000" >}}
+
+

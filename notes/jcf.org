@@ -2,25 +2,41 @@
 #+SUBTITLE: Java Collections Framework
 #+AUTHOR:   Katherine Chuang
 #+EMAIL:    chuang@sci.brooklyn.cuny.edu
-#+DATE:     2020-09-28
+#+DATE:     2020-02-28
 # #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="assets/style.min.css"/>
 # #+EXPORT_FILE_NAME: ../docs/java/jcf.html
 
 #+HUGO_BASE_DIR: ../hugo/
 #+HUGO_SECTION: guides
 #+HUGO_CATEGORIES: java
+#+EXPORT_HUGO_SECTOIN: jcf
 #+FILEtags: java
 
 * Introduction      
-:PROPERTIES:
-:EXPORT_HUGO_SECTION: jcf
-:END:
 
-The Java platform includes a collections framework. A collection is an object that represents a group of objects (such as the classic Vector class). A collections framework is a unified architecture for representing and manipulating collections, enabling collections to be manipulated independently of implementation details.
+This description is taken straight from Oracle's Java Documentation page.
 
-* Implementations
+> The Java platform includes a /collections framework/. A /collection/ is an object that represents a group of objects (such as the classic Vector class). A collections framework is a unified architecture for representing and manipulating collections, enabling collections to be manipulated independently of implementation details.
+
+** Object-Oriented Fundamentals
+
+It would be helpful to remember that because is using the Java programming language, which is an object oriented programming language, these collections use the data abstraction concepts such as inheritance to make it possible to be used.
+
+These collections are /interfaces/. In the Java language, /interfaces/ come with certain rules of how it can be used. In order to inherit (or use an interface), you would use the keyword /implement/ and you can do this as many times as your program needs. You can inherit if you'd like to define a certain object to have the properties of any interface.
+
+You can also use one of the collections directly by invoking it, such as
+~ArrayList a = new ArryList();~
+
+
+
+* Collections Available
 
 The available implementations are described in the [[https://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html][Java Documentation]]
+
+The way to read the table below... note that this table comes directly from the Java documentation page.
+
+The first column describes the type of Java interface. The first row describes the possible data structures available. The cells with both row and column indicate the collection that has traits of both the column and row.
+
 
 #+CAPTION: This shows Java Collection Framework Implementations of common data structure patterns
 #+ATTR_HTML: :border 2 :rules all :frame border
@@ -32,11 +48,27 @@ The available implementations are described in the [[https://docs.oracle.com/jav
 | ~Deque~   |           | ArrayDeque      |               | Linked List |               |
 | ~Map~     | HashMap   |                 | TreeMap       |             | LinkedHashMap |
 
+** Set, List, Map, etc
+
+There are some extra keywords that Java uses that are important to know when using the Java Collections Framework.
+
+[[../../colls-coreInterfaces.gif]]
+
+| Interface | Duplicates Allowed? | Null Values Allowed?             | Insertion Order preserved? | Iterator                            | Data Structure                 |
+|-----------+---------------------+----------------------------------+----------------------------+-------------------------------------+--------------------------------|
+| List      | Yes                 | Yes, Multiple null values allwed | Yes                        | Iterator, ListIterator              | Array                          |
+| Set       | No                  | Yes but only once                | No                         | Iterator                            | Underlying Map Implementations |
+| Map       | Not for keys        | Yes, but only once for keys      | No                         | Through keyset, value and entry set | Hashing Techniques             |
+
+
+* Using Collections framework
+
+Section to be filled with examples
+
+
 * Slides
 
-#+BEGIN_EXPORT HTML
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQsIhSI1GokuxUKAuOIFCngTOXWEdr4b-ByWJxI-z0xR7iV2kiGOmAMJNLFdSOUcFV0sHTkBuqhyOFN/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-#+END_EXPORT
+{{< gslides src="docs.google.com/presentation/d/e/2PACX-1vQsIhSI1GokuxUKAuOIFCngTOXWEdr4b-ByWJxI-z0xR7iV2kiGOmAMJNLFdSOUcFV0sHTkBuqhyOFN/embed?start=false&loop=false&delayms=3000" >}}
 
 * References
 - The Java Collections Framework https://docs.oracle.com/javase/8/docs/technotes/guides/collections/

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>web_dev on Getting Started Guides</title>
-    <link>https://katychuang.com/getting-started-guides/categories/web_dev/</link>
+    <link>getting-started-guides/categories/web_dev/</link>
     <description>Recent content in web_dev on Getting Started Guides</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Apr 2020 00:00:00 -0400</lastBuildDate><atom:link href="https://katychuang.com/getting-started-guides/categories/web_dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Apr 2020 00:00:00 -0400</lastBuildDate><atom:link href="getting-started-guides/categories/web_dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Getting Started with Github Pages</title>
-      <link>https://katychuang.com/getting-started-guides/articles/githubpages/</link>
+      <link>getting-started-guides/guides/githubpages/</link>
       <pubDate>Mon, 20 Apr 2020 00:00:00 -0400</pubDate>
       
-      <guid>https://katychuang.com/getting-started-guides/articles/githubpages/</guid>
+      <guid>getting-started-guides/guides/githubpages/</guid>
       <description>1What is Github Pages? 2How to make your home page When you use GitHub pages, you can access your website at the url http://username.github.io and the underlying files would be found in your repository, which can be found at url pattern ttp://github.</description>
     </item>
     

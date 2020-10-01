@@ -2,62 +2,72 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Guides on Getting Started Guides</title>
-    <link>https://katychuang.com/getting-started-guides/guides/</link>
+    <link>getting-started-guides/guides/</link>
     <description>Recent content in Guides on Getting Started Guides</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Sep 2020 00:00:00 -0400</lastBuildDate><atom:link href="https://katychuang.com/getting-started-guides/guides/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Sep 2020 00:00:00 -0400</lastBuildDate><atom:link href="getting-started-guides/guides/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to build tools</title>
-      <link>https://katychuang.com/getting-started-guides/guides/buildtools/</link>
+      <link>getting-started-guides/guides/buildtools/</link>
       <pubDate>Mon, 28 Sep 2020 00:00:00 -0400</pubDate>
       
-      <guid>https://katychuang.com/getting-started-guides/guides/buildtools/</guid>
+      <guid>getting-started-guides/guides/buildtools/</guid>
       <description>1What is a build tool? 2GNU Make  2.1Makefile   3Apache Maven  3.1Maven Project  3.1.1Maven Commands 3.1.2Creating a Maven project from Scratch 3.1.3Explaining the pom.xml configiguration file 3.</description>
     </item>
     
     <item>
-      <title>Java Collections Framework</title>
-      <link>https://katychuang.com/getting-started-guides/guides/jcf/</link>
-      <pubDate>Mon, 28 Sep 2020 00:00:00 -0400</pubDate>
-      
-      <guid>https://katychuang.com/getting-started-guides/guides/jcf/</guid>
-      <description>Introduction The Java platform includes a collections framework. A collection is an object that represents a group of objects (such as the classic Vector class). A collections framework is a unified architecture for representing and manipulating collections, enabling collections to be manipulated independently of implementation details.</description>
-    </item>
-    
-    <item>
       <title>Getting started with SSH</title>
-      <link>https://katychuang.com/getting-started-guides/guides/ssh/</link>
+      <link>getting-started-guides/guides/ssh/</link>
       <pubDate>Sat, 01 Aug 2020 00:00:00 -0400</pubDate>
       
-      <guid>https://katychuang.com/getting-started-guides/guides/ssh/</guid>
+      <guid>getting-started-guides/guides/ssh/</guid>
       <description>Getting started with SSH  What is SSH?  What is an SSH Client? When would you use SSH?     SSH by terminal  How do I ssh in terminal?</description>
     </item>
     
     <item>
+      <title>Getting Started with Github Pages</title>
+      <link>getting-started-guides/guides/githubpages/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 -0400</pubDate>
+      
+      <guid>getting-started-guides/guides/githubpages/</guid>
+      <description>1What is Github Pages? 2How to make your home page When you use GitHub pages, you can access your website at the url http://username.github.io and the underlying files would be found in your repository, which can be found at url pattern ttp://github.</description>
+    </item>
+    
+    <item>
       <title>Getting started with Git</title>
-      <link>https://katychuang.com/getting-started-guides/guides/git/</link>
+      <link>getting-started-guides/guides/git/</link>
       <pubDate>Sun, 01 Mar 2020 00:00:00 -0500</pubDate>
       
-      <guid>https://katychuang.com/getting-started-guides/guides/git/</guid>
+      <guid>getting-started-guides/guides/git/</guid>
       <description>1Git Version control systems are used in managing revision control of project artifacts, and maintaining a history of changes to each artifact. Artifacts can include documents, source code, and much more.</description>
     </item>
     
     <item>
+      <title>Java Collections Framework</title>
+      <link>getting-started-guides/guides/jcf/</link>
+      <pubDate>Fri, 28 Feb 2020 00:00:00 -0500</pubDate>
+      
+      <guid>getting-started-guides/guides/jcf/</guid>
+      <description>Introduction This description is taken straight from Oracle&amp;rsquo;s Java Documentation page.
+ The Java platform includes a collections framework. A collection is an object that represents a group of objects (such as the classic Vector class).</description>
+    </item>
+    
+    <item>
       <title>Java 8</title>
-      <link>https://katychuang.com/getting-started-guides/guides/java/</link>
+      <link>getting-started-guides/guides/java/</link>
       <pubDate>Sat, 01 Feb 2020 00:00:00 -0500</pubDate>
       
-      <guid>https://katychuang.com/getting-started-guides/guides/java/</guid>
+      <guid>getting-started-guides/guides/java/</guid>
       <description>1Intro The CIS department at Brooklyn College officially supports Java 8. This means that Java courses are taught adhering to this version. Using later versions such as Java 11 is perfectly find for most instances, there may be some minor differences with certain classes and methods or certain version specific-quirks.</description>
     </item>
     
     <item>
       <title>File naming conventions</title>
-      <link>https://katychuang.com/getting-started-guides/guides/filenames/</link>
+      <link>getting-started-guides/guides/filenames/</link>
       <pubDate>Tue, 28 Jan 2020 00:00:00 -0500</pubDate>
       
-      <guid>https://katychuang.com/getting-started-guides/guides/filenames/</guid>
+      <guid>getting-started-guides/guides/filenames/</guid>
       <description>1Introduction In the day to day work of programming, one often finds that a large fraction of time is spent looking for certain files.
 It is more efficient to name your files correct such that it&amp;rsquo;s easier to find.</description>
     </item>
