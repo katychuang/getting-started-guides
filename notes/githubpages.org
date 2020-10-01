@@ -16,7 +16,7 @@
 # #+EXPORT_FILE_NAME: ../docs/vcs/githubpages.html
 
 #+HUGO_BASE_DIR: ../hugo/
-#+HUGO_SECTION: articles
+#+HUGO_SECTION: guides
 #+HUGO_CATEGORIES: git web_dev
 #+EXPORT_HUGO_SECTION: gp
 

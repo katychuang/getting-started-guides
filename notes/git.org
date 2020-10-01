@@ -4,7 +4,7 @@
 #+EMAIL:     chuang@sci.brooklyn.cuny.edu
 #+CREATOR:   katychuang
 #+DATE:      2020-03-01
-#+OPTIONS:   H:3 num:n  \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   H:3 num:ail  \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
 #+ALT_TITLE: Lecture Notes
 
@@ -21,6 +21,9 @@
 
 
 * Git
+:PROPERTIES:
+:UNNUMBERED: TOC
+:END:
 Version control systems are used in managing revision control of project artifacts, and maintaining a history of changes to each artifact. Artifacts can include documents, source code, and much more.
 
 Motivations for Source Version Control
@@ -61,9 +64,8 @@ Other common commands
 - *Commit Log* - a history of committed changes.
 * Slides
 
-#+BEGIN_EXPORT html
-<p><iframe allowfullscreen="true" frameborder="0" height="453" mozallowfullscreen="true" src="https://docs.google.com/presentation/d/e/2PACX-1vT2kM37LbJ-fWzQ8abHChTC-uPAqkwr0XXy1hOiZYF26KpQIyaDiQnJcBHyMFfd8rc4wjyXaYiU1Y0t/embed?start=false&amp;loop=false&amp;delayms=3000" webkitallowfullscreen="true" width="560"></iframe></p>
-#+END_EXPORT
+{{< gslides  src="docs.google.com/presentation/d/e/2PACX-1vT2kM37LbJ-fWzQ8abHChTC-uPAqkwr0XXy1hOiZYF26KpQIyaDiQnJcBHyMFfd8rc4wjyXaYiU1Y0t/embed?start=false&amp;loop=false&amp;delayms=3000" >}}
+
 
 * Workflow for "syncing" your local and remote repos
 
@@ -78,3 +80,4 @@ When you make edits on your local machine, you save snapshots or /revisions/ to 
 - Read Chapters 1-2 of the git book: https://git-scm.com/book/en/v2
 
 - Creating a new repository on GitHub https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-new-repository
+- https://learngitbranching.js.org/

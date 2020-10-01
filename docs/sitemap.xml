@@ -3,104 +3,99 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://katychuang.com/getting-started-guides/categories/build_tools/</loc>
+    <loc>getting-started-guides/categories/build_tools/</loc>
     <lastmod>2020-09-28T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://katychuang.com/getting-started-guides/categories/</loc>
+    <loc>getting-started-guides/categories/</loc>
     <lastmod>2020-09-28T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://katychuang.com/getting-started-guides/</loc>
+    <loc>getting-started-guides/</loc>
     <lastmod>2020-09-28T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://katychuang.com/getting-started-guides/guides/</loc>
+    <loc>getting-started-guides/guides/</loc>
     <lastmod>2020-09-28T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://katychuang.com/getting-started-guides/guides/buildtools/</loc>
+    <loc>getting-started-guides/guides/buildtools/</loc>
     <lastmod>2020-09-28T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://katychuang.com/getting-started-guides/categories/java/</loc>
-    <lastmod>2020-09-28T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://katychuang.com/getting-started-guides/guides/jcf/</loc>
-    <lastmod>2020-09-28T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://katychuang.com/getting-started-guides/guides/ssh/</loc>
+    <loc>getting-started-guides/guides/ssh/</loc>
     <lastmod>2020-08-01T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://katychuang.com/getting-started-guides/categories/ssh/</loc>
+    <loc>getting-started-guides/categories/ssh/</loc>
     <lastmod>2020-08-01T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://katychuang.com/getting-started-guides/articles/</loc>
+    <loc>getting-started-guides/guides/githubpages/</loc>
     <lastmod>2020-04-20T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://katychuang.com/getting-started-guides/articles/githubpages/</loc>
+    <loc>getting-started-guides/categories/git/</loc>
     <lastmod>2020-04-20T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://katychuang.com/getting-started-guides/categories/git/</loc>
+    <loc>getting-started-guides/categories/web_dev/</loc>
     <lastmod>2020-04-20T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://katychuang.com/getting-started-guides/categories/web_dev/</loc>
-    <lastmod>2020-04-20T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://katychuang.com/getting-started-guides/guides/git/</loc>
+    <loc>getting-started-guides/guides/git/</loc>
     <lastmod>2020-03-01T00:00:00-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://katychuang.com/getting-started-guides/guides/java/</loc>
+    <loc>getting-started-guides/categories/java/</loc>
+    <lastmod>2020-02-28T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>getting-started-guides/guides/jcf/</loc>
+    <lastmod>2020-02-28T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>getting-started-guides/guides/java/</loc>
     <lastmod>2020-02-01T00:00:00-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://katychuang.com/getting-started-guides/guides/filenames/</loc>
+    <loc>getting-started-guides/guides/filenames/</loc>
     <lastmod>2020-01-28T00:00:00-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://katychuang.com/getting-started-guides/categories/reference/</loc>
+    <loc>getting-started-guides/categories/reference/</loc>
     <lastmod>2020-01-28T00:00:00-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://katychuang.com/getting-started-guides/authors/</loc>
+    <loc>getting-started-guides/authors/</loc>
   </url>
   
   <url>
-    <loc>https://katychuang.com/getting-started-guides/page/</loc>
+    <loc>getting-started-guides/page/</loc>
   </url>
   
   <url>
-    <loc>https://katychuang.com/getting-started-guides/series/</loc>
+    <loc>getting-started-guides/series/</loc>
   </url>
   
   <url>
-    <loc>https://katychuang.com/getting-started-guides/tags/</loc>
+    <loc>getting-started-guides/tags/</loc>
   </url>
   
 </urlset>

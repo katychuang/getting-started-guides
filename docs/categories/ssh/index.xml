@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ssh on Getting Started Guides</title>
-    <link>https://katychuang.com/getting-started-guides/categories/ssh/</link>
+    <link>getting-started-guides/categories/ssh/</link>
     <description>Recent content in ssh on Getting Started Guides</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 01 Aug 2020 00:00:00 -0400</lastBuildDate><atom:link href="https://katychuang.com/getting-started-guides/categories/ssh/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Aug 2020 00:00:00 -0400</lastBuildDate><atom:link href="getting-started-guides/categories/ssh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Getting started with SSH</title>
-      <link>https://katychuang.com/getting-started-guides/guides/ssh/</link>
+      <link>getting-started-guides/guides/ssh/</link>
       <pubDate>Sat, 01 Aug 2020 00:00:00 -0400</pubDate>
       
-      <guid>https://katychuang.com/getting-started-guides/guides/ssh/</guid>
+      <guid>getting-started-guides/guides/ssh/</guid>
       <description>Getting started with SSH  What is SSH?  What is an SSH Client? When would you use SSH?     SSH by terminal  How do I ssh in terminal?</description>
     </item>
     

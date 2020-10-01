@@ -2,19 +2,21 @@
 <html lang='en' dir='auto'><head>
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<meta name='description' content='Introduction The Java platform includes a collections framework. A collection is an object that represents a group of objects (such as the classic Vector class). A collections framework is a unified architecture for representing and manipulating collections, enabling collections to be manipulated independently of implementation details.'>
+<meta name='description' content='Introduction This description is taken straight from Oracle&rsquo;s Java Documentation page.
+ The Java platform includes a collections framework. A collection is an object that represents a group of objects (such as the classic Vector class).'>
 <meta name='theme-color' content='#800000'>
 
 <meta property='og:title' content='Java Collections Framework • Getting Started Guides'>
-<meta property='og:description' content='Introduction The Java platform includes a collections framework. A collection is an object that represents a group of objects (such as the classic Vector class). A collections framework is a unified architecture for representing and manipulating collections, enabling collections to be manipulated independently of implementation details.'>
-<meta property='og:url' content='https://katychuang.com/getting-started-guides/guides/jcf/'>
+<meta property='og:description' content='Introduction This description is taken straight from Oracle&rsquo;s Java Documentation page.
+ The Java platform includes a collections framework. A collection is an object that represents a group of objects (such as the classic Vector class).'>
+<meta property='og:url' content='getting-started-guides/guides/jcf/'>
 <meta property='og:site_name' content='Getting Started Guides'>
-<meta property='og:type' content='article'><meta property='article:section' content='guides'><meta property='article:published_time' content='2020-09-28T00:00:00-04:00'/><meta property='article:modified_time' content='2020-09-28T00:00:00-04:00'/><meta name='twitter:card' content='summary'>
+<meta property='og:type' content='article'><meta property='article:section' content='guides'><meta property='article:published_time' content='2020-02-28T00:00:00-05:00'/><meta property='article:modified_time' content='2020-02-28T00:00:00-05:00'/><meta name='twitter:card' content='summary'>
 
 <meta name="generator" content="Hugo 0.75.1" />
 
   <title>Java Collections Framework • Getting Started Guides</title>
-  <link rel='canonical' href='https://katychuang.com/getting-started-guides/guides/jcf/'>
+  <link rel='canonical' href='getting-started-guides/guides/jcf/'>
   
   
   <link rel='icon' href='/getting-started-guides/favicon.ico'>
@@ -34,7 +36,7 @@
   <header>
     
     <h2 class='title site-title '>
-      <a href='/getting-started-guides/'>
+      <a href='getting-started-guides/'>
       Getting Started Guides
       </a>
     </h2>
@@ -47,8 +49,8 @@
 <section class='widget widget-sidebar_menu sep-after'><nav id='sidebar-menu' class='menu sidebar-menu' aria-label='Sidebar Menu'>
     <div class='container'>
       <ul><li class='item'>
-  <a href='/getting-started-guides/'>Guides</a></li><li class='item'>
-  <a href='/getting-started-guides/categories/'>Categories</a></li><li class='item'>
+  <a href='getting-started-guides/'>Guides</a></li><li class='item'>
+  <a href='getting-started-guides/categories/'>Categories</a></li><li class='item'>
   <a href='https://github.com/katychuang/getting-started-guides'>Source</a></li></ul>
     </div>
   </nav>
@@ -83,7 +85,7 @@
     <style>.widget-breadcrumbs li:after{content:'\2f '}</style>
   <section class='widget widget-breadcrumbs sep-after'>
     <nav id='breadcrumbs'>
-      <ol><li><a href='/getting-started-guides/'>Getting Started Guides</a></li><li><a href='/getting-started-guides/guides/'>Guides</a></li><li><span>Java Collections Framework</span></li></ol>
+      <ol><li><a href='getting-started-guides/'>Getting Started Guides</a></li><li><a href='getting-started-guides/guides/'>Guides</a></li><li><span>Java Collections Framework</span></li></ol>
     </nav>
   </section></div>
       </div>
@@ -117,7 +119,7 @@
 
 </svg>
 <span class='screen-reader-text'>Posted on </span>
-  <time class='entry-date' datetime='2020-09-28T00:00:00-04:00'>2020, Sep 28</time>
+  <time class='entry-date' datetime='2020-02-28T00:00:00-05:00'>2020, Feb 28</time>
 </span>
 
   
@@ -129,7 +131,7 @@
   <polyline points="12 6 12 12 15 15"/>
 
 </svg>
-One min read
+2 mins read
 </span>
 
 
@@ -144,9 +146,19 @@ One min read
 
   <div class='container entry-content'>
   <h2 id="introduction">Introduction</h2>
-<p>The Java platform includes a collections framework. A collection is an object that represents a group of objects (such as the classic Vector class). A collections framework is a unified architecture for representing and manipulating collections, enabling collections to be manipulated independently of implementation details.</p>
-<h2 id="implementations">Implementations</h2>
+<p>This description is taken straight from Oracle&rsquo;s Java Documentation page.</p>
+<blockquote>
+<p>The Java platform includes a <em>collections framework</em>. A <em>collection</em> is an object that represents a group of objects (such as the classic Vector class). A collections framework is a unified architecture for representing and manipulating collections, enabling collections to be manipulated independently of implementation details.</p>
+</blockquote>
+<h3 id="object-oriented-fundamentals">Object-Oriented Fundamentals</h3>
+<p>It would be helpful to remember that because is using the Java programming language, which is an object oriented programming language, these collections use the data abstraction concepts such as inheritance to make it possible to be used.</p>
+<p>These collections are <em>interfaces</em>. In the Java language, <em>interfaces</em> come with certain rules of how it can be used. In order to inherit (or use an interface), you would use the keyword <em>implement</em> and you can do this as many times as your program needs. You can inherit if you&rsquo;d like to define a certain object to have the properties of any interface.</p>
+<p>You can also use one of the collections directly by invoking it, such as
+<code>ArrayList a = new ArryList();</code></p>
+<h2 id="collections-available">Collections Available</h2>
 <p>The available implementations are described in the <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html">Java Documentation</a></p>
+<p>The way to read the table below&hellip; note that this table comes directly from the Java documentation page.</p>
+<p>The first column describes the type of Java interface. The first row describes the possible data structures available. The cells with both row and column indicate the collection that has traits of both the column and row.</p>
 <table>
 <thead>
 <tr>
@@ -193,6 +205,52 @@ One min read
 </tr>
 </tbody>
 </table>
+<h3 id="set-list-map-etc">Set, List, Map, etc</h3>
+<p>There are some extra keywords that Java uses that are important to know when using the Java Collections Framework.</p>
+<figure>
+    <img src="../../colls-coreInterfaces.gif"/> 
+</figure>
+
+<table>
+<thead>
+<tr>
+<th>Interface</th>
+<th>Duplicates Allowed?</th>
+<th>Null Values Allowed?</th>
+<th>Insertion Order preserved?</th>
+<th>Iterator</th>
+<th>Data Structure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>List</td>
+<td>Yes</td>
+<td>Yes, Multiple null values allwed</td>
+<td>Yes</td>
+<td>Iterator, ListIterator</td>
+<td>Array</td>
+</tr>
+<tr>
+<td>Set</td>
+<td>No</td>
+<td>Yes but only once</td>
+<td>No</td>
+<td>Iterator</td>
+<td>Underlying Map Implementations</td>
+</tr>
+<tr>
+<td>Map</td>
+<td>Not for keys</td>
+<td>Yes, but only once for keys</td>
+<td>No</td>
+<td>Through keyset, value and entry set</td>
+<td>Hashing Techniques</td>
+</tr>
+</tbody>
+</table>
+<h2 id="using-collections-framework">Using Collections framework</h2>
+<p>Section to be filled with examples</p>
 <h2 id="slides">Slides</h2>
 <!-- raw HTML omitted -->
 <h2 id="references">References</h2>
@@ -212,7 +270,7 @@ One min read
     <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
 
 </svg>
-<span class='screen-reader-text'>Categories: </span><a class='category' href='/getting-started-guides/categories/java/'>java</a></div>
+<span class='screen-reader-text'>Categories: </span><a class='category' href='getting-started-guides/categories/java/'>java</a></div>
 
   </div>
 </footer>
@@ -222,7 +280,7 @@ One min read
 
 <nav class='entry-nav'>
   <div class='container'><div class='prev-entry sep-before'>
-      <a href='/getting-started-guides/guides/ssh/'>
+      <a href='/getting-started-guides/guides/java/'>
         <span aria-hidden='true'><svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
     
     
@@ -231,10 +289,10 @@ One min read
 
 </svg>
  Previous</span>
-        <span class='screen-reader-text'>Previous post: </span>Getting started with SSH</a>
+        <span class='screen-reader-text'>Previous post: </span>Java 8</a>
     </div><div class='next-entry sep-before'>
-      <a href='/getting-started-guides/guides/buildtools/'>
-        <span class='screen-reader-text'>Next post: </span>Introduction to build tools<span aria-hidden='true'>Next <svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+      <a href='/getting-started-guides/guides/git/'>
+        <span class='screen-reader-text'>Next post: </span>Getting started with Git<span aria-hidden='true'>Next <svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
     
     
   <line x1="4" y1="12" x2="20" y2="12"/>
