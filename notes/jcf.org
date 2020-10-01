@@ -1,12 +1,24 @@
-#+TITLE: Java Collections Framework
-#+SUBTITLE:
-#+AUTHOR: Katherine Chuang
-#+EMAIL:  chuang@sci.brooklyn.cuny.edu
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="assets/style.min.css"/>
-#+EXPORT_FILE_NAME: ../docs/java/jcf.html
+#+TITLE:    Java Collections Framework
+#+SUBTITLE: Java Collections Framework
+#+AUTHOR:   Katherine Chuang
+#+EMAIL:    chuang@sci.brooklyn.cuny.edu
+#+DATE:     2020-09-28
+# #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="assets/style.min.css"/>
+# #+EXPORT_FILE_NAME: ../docs/java/jcf.html
 
+#+HUGO_BASE_DIR: ../hugo/
+#+HUGO_SECTION: guides
+#+HUGO_CATEGORIES: java
+#+FILEtags: java
+
+* Introduction      
+:PROPERTIES:
+:EXPORT_HUGO_SECTION: jcf
+:END:
 
 The Java platform includes a collections framework. A collection is an object that represents a group of objects (such as the classic Vector class). A collections framework is a unified architecture for representing and manipulating collections, enabling collections to be manipulated independently of implementation details.
+
+* Implementations
 
 The available implementations are described in the [[https://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html][Java Documentation]]
 

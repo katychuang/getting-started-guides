@@ -1,18 +1,32 @@
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../notes/html/theme/style.min.css"/>
 #+TITLE:    File naming conventions
 #+SUBTITLE:  Department of Computer & Information Science, Brooklyn College
 #+AUTHOR:    Katherine Chuang
 #+EMAIL:     chuang@sci.brooklyn.cuny.edu
 #+CREATOR:   katychuang
+#+date: 2020-01-28
 #+OPTIONS:   H:3 num:n toc🚕 \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
 #+ALT_TITLE: Lecture Notes
 
-#+HTML_HEAD: <style type="text/css">
-#+HTML_HEAD:  dl dd {text-align: left; margin-left: 10px}
-#+HTML_HEAD: </style>
-#+EXPORT_FILE_NAME: ../docs/filenames.html
+# #+HTML_HEAD: <style type="text/css">
+# #+HTML_HEAD:  dl dd {text-align: left; margin-left: 10px}
+# #+HTML_HEAD: </style>
+# #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="assets/style.min.css"/>
+# #+EXPORT_FILE_NAME: ../docs/filenames.html
+#+HUGO_BASE_DIR: ../hugo/
+#+HUGO_SECTION: guides
+#+HUGO_CATEGORIES: reference
+#+EXPORT_HUGO_SECTION: filenames
 
+* Introduction
+
+In the day to day work of programming, one often finds that a large fraction of time is spent looking for certain files.
+
+It is more efficient to name your files correct such that it's easier to find. The file extension provided can give you a sense of the contents of that file and its formatting.
+
+With the correct file extentions it is easier to collaborate with another programmer as well.
+
+* Common File extensions
 
 This is a table of some common file naming conventions.
 

@@ -1,9 +1,20 @@
-#+TITLE: Java
-#+SUBTITLE:
+#+TITLE: Java 8
+#+SUBTITLE: Review of Java
 #+AUTHOR: Katherine Chuang
 #+EMAIL:  chuang@sci.brooklyn.cuny.edu
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="assets/style.min.css"/>
-#+EXPORT_FILE_NAME: ../docs/java/index.html
+#+DATE:   2020-02-01
+#+OPTIONS:   H:3 num:n  \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+ALT_TITLE: Lecture Notes
+
+# #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="assets/style.min.css"/>
+# #+EXPORT_FILE_NAME: ../docs/java/index.html
+
+#+HUGO_BASE_DIR: ../hugo/
+#+HUGO_SECTION: guides
+#+EXPORT_OPTIONS: toc:3
+#+HUGO_CATEGORIES: java
+#+EXPORT_HUGO_SECTION: java
 
 * Intro
 

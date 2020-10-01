@@ -15,7 +15,7 @@
 #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="assets/style.min.css"/>
 #+EXPORT_FILE_NAME: ../docs/index.html
 #+HUGO_BASE_DIR: ../docs/
-#+HUGO_SECTION: ./
+#+HUGO_SECTION: articles
 
 By way of introduction to some of the useful things, this section is provided with some short pages to give a brief introduction.
 

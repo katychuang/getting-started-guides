@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/categories/build_tools/</loc>
+    <lastmod>2020-09-28T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2020-09-28T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-09-28T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/guides/</loc>
+    <lastmod>2020-09-28T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/guides/buildtools/</loc>
+    <lastmod>2020-09-28T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/java/</loc>
+    <lastmod>2020-09-28T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/guides/jcf/</loc>
+    <lastmod>2020-09-28T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/guides/ssh/</loc>
+    <lastmod>2020-08-01T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/ssh/</loc>
+    <lastmod>2020-08-01T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/articles/</loc>
+    <lastmod>2020-04-20T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/articles/githubpages/</loc>
+    <lastmod>2020-04-20T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/git/</loc>
+    <lastmod>2020-04-20T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/web_dev/</loc>
+    <lastmod>2020-04-20T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/guides/git/</loc>
+    <lastmod>2020-03-01T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/guides/java/</loc>
+    <lastmod>2020-02-01T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/guides/filenames/</loc>
+    <lastmod>2020-01-28T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/reference/</loc>
+    <lastmod>2020-01-28T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/</loc>
+  </url>
+  
+  <url>
+    <loc>/page/</loc>
+  </url>
+  
+  <url>
+    <loc>/series/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+  </url>
+  
+</urlset>

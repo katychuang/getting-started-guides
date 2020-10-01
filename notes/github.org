@@ -1,21 +1,24 @@
-#+TITLE:    Getting started with GitHub
+#+TITLE:     Getting started with GitHub
 #+SUBTITLE:  Department of Computer & Information Science, Brooklyn College
 #+AUTHOR:    Katherine Chuang
 #+EMAIL:     chuang@sci.brooklyn.cuny.edu
 #+CREATOR:   katychuang
-#+OPTIONS:   H:3 num:n toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+DATE:      2020-05-01
+#+OPTIONS:   H:3 num:n toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
-#+ALT_TITLE: Lecture Notes
 
-#+HTML_HEAD: <style type="text/css">
-#+HTML_HEAD:  dl dd {text-align: left; margin-left: 10px}
-#+HTML_HEAD: </style>
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../assets/style.min.css"/>
-#+EXPORT_FILE_NAME: ../docs/vcs/github.html
+# #+HTML_HEAD: <style type="text/css">
+# #+HTML_HEAD:  dl dd {text-align: left; margin-left: 10px}
+# #+HTML_HEAD: </style>
+# #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="../assets/style.min.css"/>
+#  #+EXPORT_FILE_NAME: ../docs/vcs/github.html
 
+#+HUGO_BASE_DIR: ../hugo/
+#+HUGO_SECTION: guides
+#+HUGO_CATEGORIES: git vcs
+#+EXPORT_HUGO_SECTION: github
 
-
-* Getting started with GitHub
+* Getting started with GitHub       :@git:@vcs:
 :PROPERTIES:
 :UNNUMBERED: toc
 :END:
@@ -23,9 +26,6 @@
 #+TOC: headlines 2 local
 
 *** What is GitHub?
-:PROPERTIES:
-:NUMBERED: toc
-:END:
 
 GitHub (https://github.com/) is a hosting platform for version control with collaborative features. It uses the Git version control technology.
 
@@ -83,7 +83,7 @@ GitHub publishes some guides on using GitHub effectively at https://guides.githu
 
 GitHub also maintains a GitHub.com Help Documentation at https://docs.github.com/en/github
 
-** Glossary
+* Glossary
 :PROPERTIES:
 :UNNUMBERED: toc
 :CUSTOM_ID: glossary
@@ -93,7 +93,7 @@ GitHub also maintains a GitHub.com Help Documentation at https://docs.github.com
 - Stage :: this is where you put files or selected lines into an area to be given a commit message
 - Commit Log :: a history of committed changes.
 
-** Common Git Commands
+* Common Git Commands
 :PROPERTIES:
 :UNNUMBERED: toc
 :CUSTOM_ID: commands
@@ -106,8 +106,7 @@ Common basic workflow steps:
 + ~git push origin master~ uploads the local master branch to server
 
 Other common commands
-git pull downloads latest version from server
-
++ ~git pull~ downloads latest version from server
    (~git fetch~ checks for changes but doesn’t download it)
 + ~git clone <git address>~ copies a server version to locally
 + ~git remote -v~ shows the server address
