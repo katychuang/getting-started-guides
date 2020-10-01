@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>java on Getting Started Guides</title>
-    <link>/categories/java/</link>
+    <link>https://katychuang.com/getting-started-guides/categories/java/</link>
     <description>Recent content in java on Getting Started Guides</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Sep 2020 00:00:00 -0400</lastBuildDate><atom:link href="/categories/java/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Sep 2020 00:00:00 -0400</lastBuildDate><atom:link href="https://katychuang.com/getting-started-guides/categories/java/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Java Collections Framework</title>
-      <link>/guides/jcf/</link>
+      <link>https://katychuang.com/getting-started-guides/guides/jcf/</link>
       <pubDate>Mon, 28 Sep 2020 00:00:00 -0400</pubDate>
       
-      <guid>/guides/jcf/</guid>
+      <guid>https://katychuang.com/getting-started-guides/guides/jcf/</guid>
       <description>Introduction The Java platform includes a collections framework. A collection is an object that represents a group of objects (such as the classic Vector class). A collections framework is a unified architecture for representing and manipulating collections, enabling collections to be manipulated independently of implementation details.</description>
     </item>
     
     <item>
       <title>Java 8</title>
-      <link>/guides/java/</link>
+      <link>https://katychuang.com/getting-started-guides/guides/java/</link>
       <pubDate>Sat, 01 Feb 2020 00:00:00 -0500</pubDate>
       
-      <guid>/guides/java/</guid>
+      <guid>https://katychuang.com/getting-started-guides/guides/java/</guid>
       <description>1Intro The CIS department at Brooklyn College officially supports Java 8. This means that Java courses are taught adhering to this version. Using later versions such as Java 11 is perfectly find for most instances, there may be some minor differences with certain classes and methods or certain version specific-quirks.</description>
     </item>
     
