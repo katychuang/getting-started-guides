@@ -2,17 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>reference on Getting Started Guides</title>
-    <link>getting-started-guides/categories/reference/</link>
+    <link>/getting-started-guides/categories/reference/</link>
     <description>Recent content in reference on Getting Started Guides</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Jan 2020 00:00:00 -0500</lastBuildDate><atom:link href="getting-started-guides/categories/reference/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Oct 2020 00:00:00 -0400</lastBuildDate><atom:link href="/getting-started-guides/categories/reference/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Including a README with your project</title>
+      <link>/getting-started-guides/guides/writingreadme/</link>
+      <pubDate>Thu, 01 Oct 2020 00:00:00 -0400</pubDate>
+      
+      <guid>/getting-started-guides/guides/writingreadme/</guid>
+      <description>What is a README? This is a file that is named README, that usually resides in the root of your project directory. This name comes from the command Read me. as in the situation of handing a project off to another developer and writing a memo to them that should be read first before the source code.</description>
+    </item>
+    
     <item>
       <title>File naming conventions</title>
-      <link>getting-started-guides/guides/filenames/</link>
+      <link>/getting-started-guides/guides/filenames/</link>
       <pubDate>Tue, 28 Jan 2020 00:00:00 -0500</pubDate>
       
-      <guid>getting-started-guides/guides/filenames/</guid>
+      <guid>/getting-started-guides/guides/filenames/</guid>
       <description>1Introduction In the day to day work of programming, one often finds that a large fraction of time is spent looking for certain files.
 It is more efficient to name your files correct such that it&amp;rsquo;s easier to find.</description>
     </item>

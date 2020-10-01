@@ -2,27 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>git on Getting Started Guides</title>
-    <link>getting-started-guides/categories/git/</link>
+    <link>/getting-started-guides/categories/git/</link>
     <description>Recent content in git on Getting Started Guides</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Apr 2020 00:00:00 -0400</lastBuildDate><atom:link href="getting-started-guides/categories/git/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Oct 2020 00:00:00 -0400</lastBuildDate><atom:link href="/getting-started-guides/categories/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Including a README with your project</title>
+      <link>/getting-started-guides/guides/writingreadme/</link>
+      <pubDate>Thu, 01 Oct 2020 00:00:00 -0400</pubDate>
+      
+      <guid>/getting-started-guides/guides/writingreadme/</guid>
+      <description>What is a README? This is a file that is named README, that usually resides in the root of your project directory. This name comes from the command Read me. as in the situation of handing a project off to another developer and writing a memo to them that should be read first before the source code.</description>
+    </item>
+    
     <item>
       <title>Getting Started with Github Pages</title>
-      <link>getting-started-guides/guides/githubpages/</link>
+      <link>/getting-started-guides/guides/githubpages/</link>
       <pubDate>Mon, 20 Apr 2020 00:00:00 -0400</pubDate>
       
-      <guid>getting-started-guides/guides/githubpages/</guid>
+      <guid>/getting-started-guides/guides/githubpages/</guid>
       <description>1What is Github Pages? 2How to make your home page When you use GitHub pages, you can access your website at the url http://username.github.io and the underlying files would be found in your repository, which can be found at url pattern ttp://github.</description>
     </item>
     
     <item>
       <title>Getting started with Git</title>
-      <link>getting-started-guides/guides/git/</link>
+      <link>/getting-started-guides/guides/git/</link>
       <pubDate>Sun, 01 Mar 2020 00:00:00 -0500</pubDate>
       
-      <guid>getting-started-guides/guides/git/</guid>
-      <description>1Git Version control systems are used in managing revision control of project artifacts, and maintaining a history of changes to each artifact. Artifacts can include documents, source code, and much more.</description>
+      <guid>/getting-started-guides/guides/git/</guid>
+      <description>Git Version control systems are used in managing revision control of project artifacts, and maintaining a history of changes to each artifact. Artifacts can include documents, source code, and much more.</description>
     </item>
     
   </channel>
