@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang='en' dir='auto'><head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='1What is a build tool? 2GNU Make  2.1Makefile   3Apache Maven  3.1Maven Project  3.1.1Maven Commands 3.1.2Creating a Maven project from Scratch 3.1.3Explaining the pom.xml configiguration file 3.'>
+<meta name='theme-color' content='#800000'>
+
+<meta property='og:title' content='Introduction to build tools • Getting Started Guides'>
+<meta property='og:description' content='1What is a build tool? 2GNU Make  2.1Makefile   3Apache Maven  3.1Maven Project  3.1.1Maven Commands 3.1.2Creating a Maven project from Scratch 3.1.3Explaining the pom.xml configiguration file 3.'>
+<meta property='og:url' content='/articles/buildtools/'>
+<meta property='og:site_name' content='Getting Started Guides'>
+<meta property='og:type' content='article'><meta property='article:section' content='articles'><meta property='article:published_time' content='2020-09-28T00:00:00-04:00'/><meta property='article:modified_time' content='2020-09-28T00:00:00-04:00'/><meta name='twitter:card' content='summary'>
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <title>Introduction to build tools • Getting Started Guides</title>
+  <link rel='canonical' href='/articles/buildtools/'>
+  
+  
+  <link rel='icon' href='/favicon.ico'>
+<link rel='stylesheet' href='/assets/css/main.ab98e12b.css'><link rel='stylesheet' href='/css/custom.css'><style>
+:root{--color-accent:#800000;}
+</style>
+
+  
+
+</head>
+<body class='page type-articles has-sidebar'>
+
+  <div class='site'><div id='sidebar' class='sidebar'>
+  <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
+
+  <div class='container'><section class='widget widget-about sep-after'>
+  <header>
+    
+    <h2 class='title site-title '>
+      <a href='/'>
+      Getting Started Guides
+      </a>
+    </h2>
+    <div class='desc'>
+    Short Guides for BC CIS Students
+    </div>
+  </header>
+
+</section>
+</div>
+
+  <div class='sidebar-overlay'></div>
+</div><div class='main'><nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
+  <div class='container'>
+    <a class='screen-reader-text' href='#content'>Skip to Content</a>
+
+<button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
+  <span class='screen-reader-text'>Toggle Sidebar</span>
+  <span class='open'><svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+
+</svg>
+</span>
+  <span class='close'><svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+
+</svg>
+</span>
+</button>
+    <ul><li class='item'>
+        <a href='https://github.com/katychuang/getting-started-guides'>Repo</a>
+      </li><li class='item'>
+        <a href='/'>Home</a>
+      </li><li class='item'>
+        <a href='/articles/'>Articles</a>
+      </li></ul>
+  </div>
+</nav><div class='header-widgets'>
+        <div class='container'>
+    
+    <style>.widget-breadcrumbs li:after{content:'\2f '}</style>
+  <section class='widget widget-breadcrumbs sep-after'>
+    <nav id='breadcrumbs'>
+      <ol><li><a href='/'>Getting Started Guides</a></li><li><a href='/articles/'>Docs</a></li><li><span>Introduction to build tools</span></li></ol>
+    </nav>
+  </section></div>
+      </div>
+
+      <header id='header' class='header site-header'>
+        <div class='container sep-after'>
+          <div class='header-info'><p class='site-title title'>Getting Started Guides</p><p class='desc site-desc'>Short Guides for BC CIS Students</p>
+          </div>
+        </div>
+      </header>
+
+      <main id='content'>
+
+
+<article lang='en' class='entry'>
+  <header class='header entry-header'>
+  <div class='container sep-after'>
+    <div class='header-info'>
+      <h1 class='title'>Introduction to build tools</h1>
+      
+
+    </div>
+    <div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+
+</svg>
+<span class='screen-reader-text'>Posted on </span>
+  <time class='entry-date' datetime='2020-09-28T00:00:00-04:00'>2020, Sep 28</time>
+</span>
+
+  
+  
+<span class='reading-time'><svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+
+</svg>
+4 mins read
+</span>
+
+
+</div>
+
+
+  </div>
+</header>
+
+  
+  
+
+  <div class='container entry-content'>
+  <!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<ul>
+<li><!-- raw HTML omitted -->1<!-- raw HTML omitted --> <a href="#what-is-a-build-tool">What is a build tool?</a></li>
+<li><!-- raw HTML omitted -->2<!-- raw HTML omitted --> <a href="#gnu-make">GNU Make</a>
+<ul>
+<li><!-- raw HTML omitted -->2.1<!-- raw HTML omitted --> <a href="#makefile">Makefile</a></li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->3<!-- raw HTML omitted --> <a href="#apache-maven">Apache Maven</a>
+<ul>
+<li><!-- raw HTML omitted -->3.1<!-- raw HTML omitted --> <a href="#maven-project">Maven Project</a>
+<ul>
+<li><!-- raw HTML omitted -->3.1.1<!-- raw HTML omitted --> <a href="#maven-commands">Maven Commands</a></li>
+<li><!-- raw HTML omitted -->3.1.2<!-- raw HTML omitted --> <a href="#creating-a-maven-project-from-scratch">Creating a Maven project from Scratch</a></li>
+<li><!-- raw HTML omitted -->3.1.3<!-- raw HTML omitted --> <a href="#explaining-the-pom-dot-xml-configiguration-file">Explaining the pom.xml configiguration file</a></li>
+<li><!-- raw HTML omitted -->3.1.4<!-- raw HTML omitted --> <a href="#project-file-structure">Project File structure</a></li>
+<li><!-- raw HTML omitted -->3.1.5<!-- raw HTML omitted --> <a href="#compile-and-run">Compile and Run</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><!-- raw HTML omitted -->4<!-- raw HTML omitted --> <a href="#choosing-a-build-tool">Choosing a Build tool</a></li>
+</ul>
+<!-- raw HTML omitted -->
+<h2 id="what-is-a-build-tool"><!-- raw HTML omitted -->1<!-- raw HTML omitted --> What is a build tool?</h2>
+<p>A build tool is a programming utility that automates a software build task, such as compiling source code, cleaning temporary files, and so on. A popular open source build tool is <a href="https://www.gnu.org/software/make/">Make</a>, another popular build tool is <a href="https://maven.apache.org/">Maven</a></p>
+<h2 id="gnu-make"><!-- raw HTML omitted -->2<!-- raw HTML omitted --> GNU Make</h2>
+<p>Make is a build tool released by GNU. Make was original designed to work with C source code. Make configurations are specified by a text file named <code>Makefile</code>.</p>
+<h3 id="makefile"><!-- raw HTML omitted -->2.1<!-- raw HTML omitted --> Makefile</h3>
+<p>A programmer specifies how to build program from a file called a <em>makefile</em>, which lists a bunch of <em>rules</em>, each of which specifies the target, dependencies and commands.</p>
+<p>Once you create a <em>makefile</em>, you don&rsquo;t have to meticulously track details of how to build the file again, because the details are recorded in the makefiles you prepared. You can use make with any language.</p>
+<p>An example of a make file:</p>
+<div class="highlight"><pre class="chroma"><code class="language-makefile" data-lang="makefile"><span class="nf">hello</span><span class="o">:</span>
+    javac hello.java
+</code></pre></div><p>To run the make file, you can run <code>make</code> in a terminal.</p>
+<p>Alternatively you can name your <em>makefile</em> with any name an run it with the -f flag option like so <code>make -f myFile.mak</code></p>
+<h2 id="apache-maven"><!-- raw HTML omitted -->3<!-- raw HTML omitted --> Apache Maven</h2>
+<p>Maven is a build tool released by The Apache Software Foundation, which is a non-profit organization that maintains many open source software. Maven is a build tool and also a project management tool.</p>
+<h3 id="maven-project"><!-- raw HTML omitted -->3.1<!-- raw HTML omitted --> Maven Project</h3>
+<p>The <em>workspace</em> concept with Maven is at the unit of a <em>project</em>. A Maven project must have a <code>pom.xml</code> file at the root directory as a way to configure the project specific information. It works like a recipe in specifying the dependencies required for the project (i.e. any open source libraries used) and also specifying the way the project should be built.</p>
+<h4 id="maven-commands"><!-- raw HTML omitted -->3.1.1<!-- raw HTML omitted --> Maven Commands</h4>
+<p>The syntax for running Maven in a terminal is a pattern as follows:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">mvn <span class="o">[</span>options<span class="o">]</span> <span class="o">[</span>&lt;goal<span class="o">(</span>s<span class="o">)</span>&gt;<span class="o">]</span> <span class="o">[</span>&lt;phase<span class="o">(</span>s<span class="o">)</span>&gt;<span class="o">]</span>
+</code></pre></div><p><code>mvn</code> is the program and the following are parameters provided to the program.</p>
+<p>Available options for each of the parameters can be found by checking the manual page using <code>man mvn</code></p>
+<h4 id="creating-a-maven-project-from-scratch"><!-- raw HTML omitted -->3.1.2<!-- raw HTML omitted --> Creating a Maven project from Scratch</h4>
+<p>The instructions for getting started are on Maven&rsquo;s website <a href="https://maven.apache.org/">https://maven.apache.org/</a>, under the page Maven in 5 minutes. This would be a good starting point to see the whole process however take your time to read through the docs to figure out specific configuration settings.</p>
+<p>Basically, from the root directory of your project, run this in a terminal:</p>
+<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">mvn -B archetype:generate -DgroupId<span class="o">=</span>myApp -DartifactId<span class="o">=</span>maven-example
+</code></pre></div><p>This would create a <code>pom.xml</code> file in the folder <code>maven-example</code> with maven&rsquo;s project structure within it. The flag <code>-DgroupId</code> is how you name your project and here the name <code>myApp</code> is given.</p>
+<h4 id="explaining-the-pom-dot-xml-configiguration-file"><!-- raw HTML omitted -->3.1.3<!-- raw HTML omitted --> Explaining the pom.xml configiguration file</h4>
+<p>There are a few things to configure for a maven build project. Keep in mind that this is an XML file so it means you should know generally how an XML file is structured. XML files use tags, arranged in nested order like tree nodes. It can be thought of as a text-based database. It uses the file extension <code>.XML</code></p>
+<!-- raw HTML omitted -->
+<ol>
+<li>
+<p>Java Version</p>
+<p>To use Java 8, you can specify it for your project like so:</p>
+<div class="highlight"><pre class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;properties&gt;</span>
+  <span class="nt">&lt;maven.compiler.target&gt;</span>1.8<span class="nt">&lt;/maven.compiler.target&gt;</span>
+  <span class="nt">&lt;maven.compiler.source&gt;</span>1.8<span class="nt">&lt;/maven.compiler.source&gt;</span>
+<span class="nt">&lt;/properties&gt;</span>
+</code></pre></div></li>
+</ol>
+<!-- raw HTML omitted -->
+<ol start="2">
+<li>
+<p>Project Libraries to include (dependencies)</p>
+<p>In order to include dependencies you would include each dependency under the dependencies block.</p>
+<div class="highlight"><pre class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;dependencies&gt;</span>
+    <span class="nt">&lt;dependency&gt;</span>
+        <span class="nt">&lt;groupId&gt;</span>junit<span class="nt">&lt;/groupId&gt;</span>
+        <span class="nt">&lt;artifactId&gt;</span>junit<span class="nt">&lt;/artifactId&gt;</span>
+        <span class="nt">&lt;version&gt;</span>x.x.x<span class="nt">&lt;/version&gt;</span>
+    <span class="nt">&lt;/dependency&gt;</span>
+<span class="nt">&lt;/dependencies&gt;</span>
+</code></pre></div><p>More dependencies can be found within the <a href="https://mvnrepository.com/">Maven repository</a>.</p>
+</li>
+</ol>
+<!-- raw HTML omitted -->
+<ol start="3">
+<li>
+<p>Build Plugins</p>
+<p>Plugins can be helpful. If there is any that you would like to add, it would be under a block like so.</p>
+<div class="highlight"><pre class="chroma"><code class="language-xml" data-lang="xml"><span class="nt">&lt;build&gt;</span>
+    <span class="nt">&lt;plugins&gt;</span>
+        <span class="nt">&lt;plugin&gt;</span>
+            ....
+        <span class="nt">&lt;/plugin&gt;</span>
+    <span class="nt">&lt;/plugins&gt;</span>
+<span class="nt">&lt;/build&gt;</span>
+</code></pre></div></li>
+</ol>
+<h4 id="project-file-structure"><!-- raw HTML omitted -->3.1.4<!-- raw HTML omitted --> Project File structure</h4>
+<p>The code you&rsquo;re working with can be found under the root directory under the path <code>src/main/java/package/</code></p>
+<p>In your file under this path, such as <code>Main.java</code>, that&rsquo;s where you can import libraries at the top of the file.</p>
+<p>Maven figures out for you how to install and connect everything so you don&rsquo;t have to worry about manually maintaining where files should go.</p>
+<h4 id="compile-and-run"><!-- raw HTML omitted -->3.1.5<!-- raw HTML omitted --> Compile and Run</h4>
+<p>Once the configuration file is set up, all you have to worry about during and after development is to compile your project with ease.</p>
+<p>When successfully built, Maven will produce an executable file under a <code>target</code> directory under root.</p>
+<h2 id="choosing-a-build-tool"><!-- raw HTML omitted -->4<!-- raw HTML omitted --> Choosing a Build tool</h2>
+<p>Picking a build tool boils down to what you like, which supports your needs.</p>
+
+</div>
+
+  
+<footer class='entry-footer'>
+  <div class='container sep-before'>
+  </div>
+</footer>
+
+
+</article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='prev-entry sep-before'>
+      <a href='/articles/jcf/'>
+        <span aria-hidden='true'><svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+
+</svg>
+ Previous</span>
+        <span class='screen-reader-text'>Previous post: </span>Java Collections Framework</a>
+    </div></div>
+</nav>
+
+
+
+
+      </main>
+
+      <footer id='footer' class='footer'>
+        <div class='container sep-before'><div class='copyright'>
+  <p> &copy; 2019-2020 Katherine Chuang, Department of Computer &amp; Information Science, Brooklyn College </p>
+</div>
+
+        </div>
+      </footer>
+
+    </div>
+  </div><script>window.__assets_js_src="/assets/js/"</script>
+
+<script src='/assets/js/main.c3bcf2df.js'></script><script src='/js/custom.js'></script>
+
+</body>
+
+</html>
+

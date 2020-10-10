@@ -4,7 +4,7 @@
 #+EMAIL:     chuang@sci.brooklyn.cuny.edu
 #+CREATOR:   katychuang
 #+date:      2020-09-28
-#+OPTIONS:   H:3 num:n toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   H:3 num:nil toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
 #+ALT_TITLE: Lecture Notes
 # #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="assets/style.min.css"/>
@@ -139,6 +139,26 @@ When successfully built, Maven will produce an executable file under a ~target~ 
 
 
 
+** Collaborating on a Maven project
+
+A software team can collaborate on a Maven project. In order to answer how a software team can collaborate we assume for specific description here that the version control system (VCS) used by the team is Git (there are many other VCS).
+
+Let's first describe the VCS workflow and assume team hosted the project on a github as the central remote repository.. Every member of the team can [[https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository][clone the repository]]. This means each member now has a copy of the project on their local machine. Git is designed where any clone can access the full history and has full read/write permissions on all the files. Any changes that any single person makes... this person adds changes, commits it (to produce a revision or snapshot on the commit log), then pushes to the central area (github).
+
+Next, let's say the team is working on a Java project and uses Maven to configure the Java dependencies and build/packaging concerns. Since every Maven project has a ~pom.xml~ configuration file in the root directory of the project, every single team member with the same ~pom.xml~ and same source code should theoretically have the same project. The ~pom.xml~ configuration file is like a recipe. If Member A changes the project to Java 11, then the pom.xml is updated, he/she/they tests that it won't break. Once test passes commits changes and pushes up. Other team members can then pull changes (i.e. download updates from that github link) and then see an updated pom.xml. Hmm maybe that was not a good example to demonstrate the advantages of Maven, because now everyone else has to have Java 11 on their machine for the project to build.
+
+Another example.. if a team member adds a new dependency and says so in the pom.xml - Maven checks against its own repository (it's like an app store for maven https://mvnrepository.com/) and if a new team member doesn't have dependencies maven will know to download and link it. This is an example of why developers often write a short list of dependencies in their README files... because if they work on a team, and they onboard someone new it's easier to say, /here's all the stuff you need before you begin/. Developers also often include brief instructions on how to build and run the program they produced also.
+
 * Choosing a Build tool
 
 Picking a build tool boils down to what you like, which supports your needs.
+
+If you're on linux, GNU Make is a great choice.
+
+If you're solely working on Java programming projects (for desktop GUI, other programs, android apps, etc) Apache Maven is a good choice. There are other similar build tools available for Java development such as gradle, ant, etc.
+
+* Links
+- GNU Make [https://www.gnu.org/software/make/](https://www.gnu.org/software/make/)
+- Apache Maven [https://maven.apache.org/](https://maven.apache.org/)
+- Gradle https://gradle.org/
+- Ant https://ant.apache.org/
