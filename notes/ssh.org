@@ -48,33 +48,66 @@ You would use SSH when you want to connect to another machine, and with more a m
 
 There is a command line program called [[https://dashdash.io/1/ssh][ssh]]
 
-** SSH Program for Mac
+** SSH Programs for Mac
 
 This guide aims to provide possible options objectively, that is, without bias.
 
-*** What GUI programs are available to use on Mac
+*** 1. Terminal App
+You can use the terminal app that comes with Mac OS. To use it, open the *terminal* app
 
+Within the terminal app, you can type `ssh yourusername@ipaddress`
+
+Video Demonstration Link: [https://www.youtube.com/playlist?list=PL8HPPNCXDcvxOnrFpfkRvv2Oi3_0OqUZi](https://www.youtube.com/playlist?list=PL8HPPNCXDcvxOnrFpfkRvv2Oi3_0OqUZi)
+
+*** 2. iTerm app
+The iTerm2 app ([https://iterm2.com/](https://iterm2.com/)) is another option, you would have to go to the website and download it to install it.
+
+The advantage of using this app is that it offers more customizations.
 
 
 ** SSH Programs for Windows
 
 This guide aims to provide possible options objectively, that is, without bias.
 
-*** What GUI programs are available to use on Windows?
-
-**** Putty
+*** 1. Putty (a simple GUI app)
 
 PuTTY is an SSH and telnet client, developed originally by Simon Tatham for the Windows platform. PuTTY is open source software that is available with source code and is developed and supported by a group of volunteers.
 https://www.putty.org/
 
-**** Solar Putty
+*** 2. Solar Putty
 Solar Putty is a new SSH client that has a multi tab interface to support multiple sessions from one console. It has additional features beyond putty such as saved credentials, support for multiple sessions, quick access to the most recent sessions and integration of Windows search.
 
 https://www.solarwinds.com/free-tools/solar-putty
 
-**** SSH Client
+*** 3. SSH Client
+** Linux Emulators
+:PROPERTIES:
+:NUMBERED: TOC
+:END:
 
-*** I heard you can use Linux on Windows, how do I do that?
+*** 1. Git Bash
+:PROPERTIES:
+:NUMBERED: toc
+:END:
+https://git-scm.com/downloads
+A bash emulation used to run git from the commandline. It contains Bash, SSH< SCP and a few other Unix utilities compiled for windows.
+
+*** 2. Cmder
+https://cmder.net/
+An emulator that extends beyond the basic capabilities of ConEmu.
+
+*** 3. ConEmu
+https://conemu.github.io/
+
+*** 4. Alacritty
+https://github.com/alacritty/alacritty
+
+*** 4. Cygwin
+https://www.cygwin.com/
+
+
+** Windows Subsystem for Linux (WSL)
+The best option for those who want as full of an experience as possible.
 
 **** Windows Subsystem for Linux
 https://docs.microsoft.com/en-us/windows/wsl/install-win10
@@ -84,4 +117,4 @@ https://www.microsoft.com/en-gb/p/windows-terminal/9n0dx20hk701?rtc=1&activetab=
 
 * What can I do with SSH?
 
-You can log into other machines, such as the WEB Building's Linux server.
+You can log into other machines, such as the WEB Building's Linux server. You can manage web servers and websites. You can configure machines remotely. You can kill running threads of frozen applications.

@@ -7,18 +7,18 @@
 
 <meta property='og:title' content='Getting started with SSH • Getting Started Guides'>
 <meta property='og:description' content='Getting started with SSH  What is SSH?  What is an SSH Client? When would you use SSH?     SSH by terminal  How do I ssh in terminal?'>
-<meta property='og:url' content='/getting-started-guides/guides/ssh/'>
+<meta property='og:url' content='/guides/ssh/'>
 <meta property='og:site_name' content='Getting Started Guides'>
 <meta property='og:type' content='article'><meta property='article:section' content='guides'><meta property='article:published_time' content='2020-08-01T00:00:00-04:00'/><meta property='article:modified_time' content='2020-08-01T00:00:00-04:00'/><meta name='twitter:card' content='summary'>
 
 <meta name="generator" content="Hugo 0.75.1" />
 
   <title>Getting started with SSH • Getting Started Guides</title>
-  <link rel='canonical' href='/getting-started-guides/guides/ssh/'>
+  <link rel='canonical' href='/guides/ssh/'>
   
   
-  <link rel='icon' href='/getting-started-guides/favicon.ico'>
-<link rel='stylesheet' href='/getting-started-guides/assets/css/main.ab98e12b.css'><link rel='stylesheet' href='/getting-started-guides/css/custom.css'><style>
+  <link rel='icon' href='/favicon.ico'>
+<link rel='stylesheet' href='/assets/css/main.ab98e12b.css'><link rel='stylesheet' href='/css/custom.css'><style>
 :root{--color-accent:#800000;}
 </style>
 
@@ -34,7 +34,7 @@
   <header>
     
     <h2 class='title site-title '>
-      <a href='/getting-started-guides/'>
+      <a href='/'>
       Getting Started Guides
       </a>
     </h2>
@@ -47,8 +47,8 @@
 <section class='widget widget-sidebar_menu sep-after'><nav id='sidebar-menu' class='menu sidebar-menu' aria-label='Sidebar Menu'>
     <div class='container'>
       <ul><li class='item'>
-  <a href='/getting-started-guides/'>Guides</a></li><li class='item'>
-  <a href='/getting-started-guides/categories/'>Categories</a></li><li class='item'>
+  <a href='/'>Guides</a></li><li class='item'>
+  <a href='/categories/'>Categories</a></li><li class='item'>
   <a href='https://github.com/katychuang/getting-started-guides'>Source</a></li></ul>
     </div>
   </nav>
@@ -83,7 +83,7 @@
     <style>.widget-breadcrumbs li:after{content:'\2f '}</style>
   <section class='widget widget-breadcrumbs sep-after'>
     <nav id='breadcrumbs'>
-      <ol><li><a href='/getting-started-guides/'>Getting Started Guides</a></li><li><a href='/getting-started-guides/guides/'>Guides</a></li><li><span>Getting started with SSH</span></li></ol>
+      <ol><li><a href='/'>Getting Started Guides</a></li><li><a href='/guides/'>Guides</a></li><li><span>Getting started with SSH</span></li></ol>
     </nav>
   </section></div>
       </div>
@@ -129,7 +129,7 @@
   <polyline points="12 6 12 12 15 15"/>
 
 </svg>
-2 mins read
+3 mins read
 </span>
 
 
@@ -159,17 +159,29 @@
 <li><a href="#ssh-by-terminal">SSH by terminal</a>
 <ul>
 <li><a href="#how-do-i-ssh-in-terminal">How do I ssh in terminal?</a></li>
-<li><a href="#ssh-program-for-mac">SSH Program for Mac</a>
+<li><a href="#ssh-programs-for-mac">SSH Programs for Mac</a>
 <ul>
-<li><a href="#what-gui-programs-are-available-to-use-on-mac">What GUI programs are available to use on Mac</a></li>
+<li><a href="#1-dot-terminal-app">1. Terminal App</a></li>
+<li><a href="#2-dot-iterm-app">2. iTerm app</a></li>
 </ul>
 </li>
 <li><a href="#ssh-programs-for-windows">SSH Programs for Windows</a>
 <ul>
-<li><a href="#what-gui-programs-are-available-to-use-on-windows">What GUI programs are available to use on Windows?</a></li>
-<li><a href="#i-heard-you-can-use-linux-on-windows-how-do-i-do-that">I heard you can use Linux on Windows, how do I do that?</a></li>
+<li><a href="#1-dot-putty--a-simple-gui-app">1. Putty (a simple GUI app)</a></li>
+<li><a href="#2-dot-solar-putty">2. Solar Putty</a></li>
+<li><a href="#3-dot-ssh-client">3. SSH Client</a></li>
 </ul>
 </li>
+<li><a href="#linux-emulators">Linux Emulators</a>
+<ul>
+<li><a href="#1-dot-git-bash">1. Git Bash</a></li>
+<li><a href="#2-dot-cmder">2. Cmder</a></li>
+<li><a href="#3-dot-conemu">3. ConEmu</a></li>
+<li><a href="#4-dot-alacritty">4. Alacritty</a></li>
+<li><a href="#4-dot-cygwin">4. Cygwin</a></li>
+</ul>
+</li>
+<li><a href="#windows-subsystem-for-linux--wsl">Windows Subsystem for Linux (WSL)</a></li>
 </ul>
 </li>
 <li><a href="#what-can-i-do-with-ssh">What can I do with SSH?</a></li>
@@ -187,33 +199,39 @@
 <h2 id="ssh-by-terminal">SSH by terminal</h2>
 <h3 id="how-do-i-ssh-in-terminal">How do I ssh in terminal?</h3>
 <p>There is a command line program called <a href="https://dashdash.io/1/ssh">ssh</a></p>
-<h3 id="ssh-program-for-mac">SSH Program for Mac</h3>
+<h3 id="ssh-programs-for-mac">SSH Programs for Mac</h3>
 <p>This guide aims to provide possible options objectively, that is, without bias.</p>
-<h4 id="what-gui-programs-are-available-to-use-on-mac">What GUI programs are available to use on Mac</h4>
+<h4 id="1-dot-terminal-app">1. Terminal App</h4>
+<p>You can use the terminal app that comes with Mac OS. To use it, open the <strong>terminal</strong> app</p>
+<p>Within the terminal app, you can type `ssh yourusername@ipaddress`</p>
+<p>Video Demonstration Link: <a href="https://www.youtube.com/playlist?list=PL8HPPNCXDcvxOnrFpfkRvv2Oi3%5F0OqUZi"><a href="https://www.youtube.com/playlist?list=PL8HPPNCXDcvxOnrFpfkRvv2Oi3%5F0OqUZi">https://www.youtube.com/playlist?list=PL8HPPNCXDcvxOnrFpfkRvv2Oi3%5F0OqUZi</a></a></p>
+<h4 id="2-dot-iterm-app">2. iTerm app</h4>
+<p>The iTerm2 app (<a href="https://iterm2.com/"><a href="https://iterm2.com/">https://iterm2.com/</a></a>) is another option, you would have to go to the website and download it to install it.</p>
+<p>The advantage of using this app is that it offers more customizations.</p>
 <h3 id="ssh-programs-for-windows">SSH Programs for Windows</h3>
 <p>This guide aims to provide possible options objectively, that is, without bias.</p>
-<h4 id="what-gui-programs-are-available-to-use-on-windows">What GUI programs are available to use on Windows?</h4>
-<!-- raw HTML omitted -->
-<ul>
-<li>
-<p>Putty</p>
+<h4 id="1-dot-putty--a-simple-gui-app">1. Putty (a simple GUI app)</h4>
 <p>PuTTY is an SSH and telnet client, developed originally by Simon Tatham for the Windows platform. PuTTY is open source software that is available with source code and is developed and supported by a group of volunteers.
 <a href="https://www.putty.org/">https://www.putty.org/</a></p>
-</li>
-</ul>
-<!-- raw HTML omitted -->
-<ul>
-<li>
-<p>Solar Putty</p>
+<h4 id="2-dot-solar-putty">2. Solar Putty</h4>
 <p>Solar Putty is a new SSH client that has a multi tab interface to support multiple sessions from one console. It has additional features beyond putty such as saved credentials, support for multiple sessions, quick access to the most recent sessions and integration of Windows search.</p>
 <p><a href="https://www.solarwinds.com/free-tools/solar-putty">https://www.solarwinds.com/free-tools/solar-putty</a></p>
-</li>
-</ul>
-<!-- raw HTML omitted -->
-<ul>
-<li>SSH Client</li>
-</ul>
-<h4 id="i-heard-you-can-use-linux-on-windows-how-do-i-do-that">I heard you can use Linux on Windows, how do I do that?</h4>
+<h4 id="3-dot-ssh-client">3. SSH Client</h4>
+<h3 id="linux-emulators">Linux Emulators</h3>
+<h4 id="1-dot-git-bash">1. Git Bash</h4>
+<p><a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>
+A bash emulation used to run git from the commandline. It contains Bash, SSH&lt; SCP and a few other Unix utilities compiled for windows.</p>
+<h4 id="2-dot-cmder">2. Cmder</h4>
+<p><a href="https://cmder.net/">https://cmder.net/</a>
+An emulator that extends beyond the basic capabilities of ConEmu.</p>
+<h4 id="3-dot-conemu">3. ConEmu</h4>
+<p><a href="https://conemu.github.io/">https://conemu.github.io/</a></p>
+<h4 id="4-dot-alacritty">4. Alacritty</h4>
+<p><a href="https://github.com/alacritty/alacritty">https://github.com/alacritty/alacritty</a></p>
+<h4 id="4-dot-cygwin">4. Cygwin</h4>
+<p><a href="https://www.cygwin.com/">https://www.cygwin.com/</a></p>
+<h3 id="windows-subsystem-for-linux--wsl">Windows Subsystem for Linux (WSL)</h3>
+<p>The best option for those who want as full of an experience as possible.</p>
 <!-- raw HTML omitted -->
 <ul>
 <li>
@@ -229,7 +247,7 @@
 </li>
 </ul>
 <h2 id="what-can-i-do-with-ssh">What can I do with SSH?</h2>
-<p>You can log into other machines, such as the WEB Building&rsquo;s Linux server.</p>
+<p>You can log into other machines, such as the WEB Building&rsquo;s Linux server. You can manage web servers and websites. You can configure machines remotely. You can kill running threads of frozen applications.</p>
 
 </div>
 
@@ -241,7 +259,7 @@
     <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
 
 </svg>
-<span class='screen-reader-text'>Categories: </span><a class='category' href='/getting-started-guides/categories/ssh/'>ssh</a></div>
+<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/ssh/'>ssh</a></div>
 
   </div>
 </footer>
@@ -251,7 +269,7 @@
 
 <nav class='entry-nav'>
   <div class='container'><div class='prev-entry sep-before'>
-      <a href='/getting-started-guides/guides/githubpages/'>
+      <a href='/guides/githubpages/'>
         <span aria-hidden='true'><svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
     
     
@@ -262,7 +280,7 @@
  Previous</span>
         <span class='screen-reader-text'>Previous post: </span>Getting Started with Github Pages</a>
     </div><div class='next-entry sep-before'>
-      <a href='/getting-started-guides/guides/buildtools/'>
+      <a href='/guides/buildtools/'>
         <span class='screen-reader-text'>Next post: </span>Introduction to build tools<span aria-hidden='true'>Next <svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
     
     
@@ -289,9 +307,9 @@
       </footer>
 
     </div>
-  </div><script>window.__assets_js_src="/getting-started-guides/assets/js/"</script>
+  </div><script>window.__assets_js_src="/assets/js/"</script>
 
-<script src='/getting-started-guides/assets/js/main.c3bcf2df.js'></script><script src='/getting-started-guides/js/custom.js'></script>
+<script src='/assets/js/main.c3bcf2df.js'></script><script src='/js/custom.js'></script>
 
 </body>
 

@@ -3,104 +3,104 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/getting-started-guides/categories/</loc>
+    <loc>/categories/</loc>
     <lastmod>2020-10-01T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/getting-started-guides/</loc>
+    <loc>/</loc>
     <lastmod>2020-10-01T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/getting-started-guides/categories/git/</loc>
+    <loc>/categories/git/</loc>
     <lastmod>2020-10-01T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/getting-started-guides/guides/</loc>
+    <loc>/guides/</loc>
     <lastmod>2020-10-01T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/getting-started-guides/guides/writingreadme/</loc>
+    <loc>/guides/writingreadme/</loc>
     <lastmod>2020-10-01T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/getting-started-guides/categories/reference/</loc>
+    <loc>/categories/reference/</loc>
     <lastmod>2020-10-01T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/getting-started-guides/categories/build_tools/</loc>
+    <loc>/categories/build_tools/</loc>
     <lastmod>2020-09-28T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/getting-started-guides/guides/buildtools/</loc>
+    <loc>/guides/buildtools/</loc>
     <lastmod>2020-09-28T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/getting-started-guides/guides/ssh/</loc>
+    <loc>/guides/ssh/</loc>
     <lastmod>2020-08-01T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/getting-started-guides/categories/ssh/</loc>
+    <loc>/categories/ssh/</loc>
     <lastmod>2020-08-01T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/getting-started-guides/guides/githubpages/</loc>
+    <loc>/guides/githubpages/</loc>
     <lastmod>2020-04-20T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/getting-started-guides/categories/web_dev/</loc>
+    <loc>/categories/web_dev/</loc>
     <lastmod>2020-04-20T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/getting-started-guides/guides/git/</loc>
+    <loc>/guides/git/</loc>
     <lastmod>2020-03-01T00:00:00-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/getting-started-guides/categories/java/</loc>
+    <loc>/categories/java/</loc>
     <lastmod>2020-02-28T00:00:00-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/getting-started-guides/guides/jcf/</loc>
+    <loc>/guides/jcf/</loc>
     <lastmod>2020-02-28T00:00:00-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/getting-started-guides/guides/java/</loc>
+    <loc>/guides/java/</loc>
     <lastmod>2020-02-01T00:00:00-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/getting-started-guides/guides/filenames/</loc>
+    <loc>/guides/filenames/</loc>
     <lastmod>2020-01-28T00:00:00-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/getting-started-guides/authors/</loc>
+    <loc>/authors/</loc>
   </url>
   
   <url>
-    <loc>/getting-started-guides/page/</loc>
+    <loc>/page/</loc>
   </url>
   
   <url>
-    <loc>/getting-started-guides/series/</loc>
+    <loc>/series/</loc>
   </url>
   
   <url>
-    <loc>/getting-started-guides/tags/</loc>
+    <loc>/tags/</loc>
   </url>
   
 </urlset>

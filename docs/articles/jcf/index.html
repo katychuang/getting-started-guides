@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang='en' dir='auto'><head>
+  <meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<meta name='description' content='Introduction The Java platform includes a collections framework. A collection is an object that represents a group of objects (such as the classic Vector class). A collections framework is a unified architecture for representing and manipulating collections, enabling collections to be manipulated independently of implementation details.'>
+<meta name='theme-color' content='#800000'>
+
+<meta property='og:title' content='Java Collections Framework • Getting Started Guides'>
+<meta property='og:description' content='Introduction The Java platform includes a collections framework. A collection is an object that represents a group of objects (such as the classic Vector class). A collections framework is a unified architecture for representing and manipulating collections, enabling collections to be manipulated independently of implementation details.'>
+<meta property='og:url' content='/articles/jcf/'>
+<meta property='og:site_name' content='Getting Started Guides'>
+<meta property='og:type' content='article'><meta property='article:section' content='articles'><meta property='article:published_time' content='2020-09-28T00:00:00-04:00'/><meta property='article:modified_time' content='2020-09-28T00:00:00-04:00'/><meta name='twitter:card' content='summary'>
+
+<meta name="generator" content="Hugo 0.75.1" />
+
+  <title>Java Collections Framework • Getting Started Guides</title>
+  <link rel='canonical' href='/articles/jcf/'>
+  
+  
+  <link rel='icon' href='/favicon.ico'>
+<link rel='stylesheet' href='/assets/css/main.ab98e12b.css'><link rel='stylesheet' href='/css/custom.css'><style>
+:root{--color-accent:#800000;}
+</style>
+
+  
+
+</head>
+<body class='page type-articles has-sidebar'>
+
+  <div class='site'><div id='sidebar' class='sidebar'>
+  <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
+
+  <div class='container'><section class='widget widget-about sep-after'>
+  <header>
+    
+    <h2 class='title site-title '>
+      <a href='/'>
+      Getting Started Guides
+      </a>
+    </h2>
+    <div class='desc'>
+    Short Guides for BC CIS Students
+    </div>
+  </header>
+
+</section>
+</div>
+
+  <div class='sidebar-overlay'></div>
+</div><div class='main'><nav id='main-menu' class='menu main-menu' aria-label='Main Menu'>
+  <div class='container'>
+    <a class='screen-reader-text' href='#content'>Skip to Content</a>
+
+<button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
+  <span class='screen-reader-text'>Toggle Sidebar</span>
+  <span class='open'><svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+
+</svg>
+</span>
+  <span class='close'><svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    
+  <line x1="18" y1="6" x2="6" y2="18" />
+  <line x1="6" y1="6" x2="18" y2="18" />
+
+</svg>
+</span>
+</button>
+    <ul><li class='item'>
+        <a href='https://github.com/katychuang/getting-started-guides'>Repo</a>
+      </li><li class='item'>
+        <a href='/'>Home</a>
+      </li><li class='item'>
+        <a href='/articles/'>Articles</a>
+      </li></ul>
+  </div>
+</nav><div class='header-widgets'>
+        <div class='container'>
+    
+    <style>.widget-breadcrumbs li:after{content:'\2f '}</style>
+  <section class='widget widget-breadcrumbs sep-after'>
+    <nav id='breadcrumbs'>
+      <ol><li><a href='/'>Getting Started Guides</a></li><li><a href='/articles/'>Docs</a></li><li><span>Java Collections Framework</span></li></ol>
+    </nav>
+  </section></div>
+      </div>
+
+      <header id='header' class='header site-header'>
+        <div class='container sep-after'>
+          <div class='header-info'><p class='site-title title'>Getting Started Guides</p><p class='desc site-desc'>Short Guides for BC CIS Students</p>
+          </div>
+        </div>
+      </header>
+
+      <main id='content'>
+
+
+<article lang='en' class='entry'>
+  <header class='header entry-header'>
+  <div class='container sep-after'>
+    <div class='header-info'>
+      <h1 class='title'>Java Collections Framework</h1>
+      
+
+    </div>
+    <div class='entry-meta'>
+  <span class='posted-on'><svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+  <line x1="16" y1="2" x2="16" y2="6"/>
+  <line x1="8" y1="2" x2="8" y2="6"/>
+  <line x1="3" y1="10" x2="21" y2="10"/>
+
+</svg>
+<span class='screen-reader-text'>Posted on </span>
+  <time class='entry-date' datetime='2020-09-28T00:00:00-04:00'>2020, Sep 28</time>
+</span>
+
+  
+  
+<span class='reading-time'><svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    
+  <circle cx="12" cy="12" r="10"/>
+  <polyline points="12 6 12 12 15 15"/>
+
+</svg>
+One min read
+</span>
+
+
+</div>
+
+
+  </div>
+</header>
+
+  
+  
+
+  <div class='container entry-content'>
+  <h2 id="introduction">Introduction</h2>
+<p>The Java platform includes a collections framework. A collection is an object that represents a group of objects (such as the classic Vector class). A collections framework is a unified architecture for representing and manipulating collections, enabling collections to be manipulated independently of implementation details.</p>
+<h2 id="implementations">Implementations</h2>
+<p>The available implementations are described in the <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html">Java Documentation</a></p>
+<table>
+<thead>
+<tr>
+<th>Interface</th>
+<th>HashTable</th>
+<th>Resizable Array</th>
+<th>Balanced Tree</th>
+<th>Linked List</th>
+<th>Hash+LL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Set</code></td>
+<td>HashSet</td>
+<td></td>
+<td>TreeSet</td>
+<td></td>
+<td>LinkedHashSet</td>
+</tr>
+<tr>
+<td><code>List</code></td>
+<td></td>
+<td>ArrayList</td>
+<td></td>
+<td>Linked List</td>
+<td></td>
+</tr>
+<tr>
+<td><code>Deque</code></td>
+<td></td>
+<td>ArrayDeque</td>
+<td></td>
+<td>Linked List</td>
+<td></td>
+</tr>
+<tr>
+<td><code>Map</code></td>
+<td>HashMap</td>
+<td></td>
+<td>TreeMap</td>
+<td></td>
+<td>LinkedHashMap</td>
+</tr>
+</tbody>
+</table>
+<h2 id="slides">Slides</h2>
+<!-- raw HTML omitted -->
+<h2 id="references">References</h2>
+<ul>
+<li>The Java Collections Framework <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/collections/">https://docs.oracle.com/javase/8/docs/technotes/guides/collections/</a></li>
+<li>The Java Tutorials: Collections
+<a href="https://docs.oracle.com/javase/tutorial/collections/index.html">https://docs.oracle.com/javase/tutorial/collections/index.html</a></li>
+</ul>
+
+</div>
+
+  
+<footer class='entry-footer'>
+  <div class='container sep-before'><div class='categories'><svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    
+    <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
+
+</svg>
+<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/java/'>java</a></div>
+
+  </div>
+</footer>
+
+
+</article>
+
+<nav class='entry-nav'>
+  <div class='container'><div class='prev-entry sep-before'>
+      <a href='/articles/ssh/'>
+        <span aria-hidden='true'><svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    
+  <line x1="20" y1="12" x2="4" y2="12"/>
+  <polyline points="10 18 4 12 10 6"/>
+
+</svg>
+ Previous</span>
+        <span class='screen-reader-text'>Previous post: </span>Getting started with SSH</a>
+    </div><div class='next-entry sep-before'>
+      <a href='/articles/buildtools/'>
+        <span class='screen-reader-text'>Next post: </span>Introduction to build tools<span aria-hidden='true'>Next <svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
+    
+    
+  <line x1="4" y1="12" x2="20" y2="12"/>
+  <polyline points="14 6 20 12 14 18"/>
+
+</svg>
+</span>
+      </a>
+    </div></div>
+</nav>
+
+
+
+
+      </main>
+
+      <footer id='footer' class='footer'>
+        <div class='container sep-before'><div class='copyright'>
+  <p> &copy; 2019-2020 Katherine Chuang, Department of Computer &amp; Information Science, Brooklyn College </p>
+</div>
+
+        </div>
+      </footer>
+
+    </div>
+  </div><script>window.__assets_js_src="/assets/js/"</script>
+
+<script src='/assets/js/main.c3bcf2df.js'></script><script src='/js/custom.js'></script>
+
+</body>
+
+</html>
+

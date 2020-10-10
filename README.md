@@ -2,7 +2,7 @@
 
 This repository contains notes on getting started guides to various software tools for the Brooklyn College CIS student.
 
-The webpage page is available at http://katychuang.github.io/getting-started-guides/
+The webpage page is available at [guides.drkat.dev](https://guides.drkat.dev)
 
 ---
 
@@ -37,7 +37,7 @@ At the highest level, files are organized into 3 directories.
 1. When a file is ready to be converted to markdown in emacs, use the keybinding `C-c C-e H h`
 2. In the terminal, start the hugo server to preview the website for changes `hugo server`
 3. Once the site looks good, generate the files with `hugo -D`, this will prepare the subdirectory `hugo/public` with the resulting website.
-4. Copy the files over from `hugo/public` to `docs` to prepare for github pages. Currently the command I use is `rm -r docs && cp -r hugo/public/* docs`
+4. Copy the files over from `hugo/public` to `docs` to prepare for github pages. Currently the command I use is `rm -r docs && mkdir docs && cp -r hugo/public/* docs`
 
 ---
 
