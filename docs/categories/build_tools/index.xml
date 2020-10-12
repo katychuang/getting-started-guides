@@ -13,7 +13,7 @@
       <pubDate>Mon, 28 Sep 2020 00:00:00 -0400</pubDate>
       
       <guid>/guides/buildtools/</guid>
-      <description>What is a build tool? GNU Make  Makefile   Apache Maven  Maven Project  Maven Commands Creating a Maven project from Scratch Explaining the pom.xml configiguration file Project File structure Compile and Run   Collaborating on a Maven project   Choosing a Build tool Links  What is a build tool?</description>
+      <description>Table of Contents  What is a build tool? GNU Make  Makefile   Apache Maven  Maven Project  Maven Commands Creating a Maven project from Scratch Explaining the pom.</description>
     </item>
     
   </channel>
