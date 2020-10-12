@@ -2,11 +2,11 @@
 <html lang='en' dir='auto'><head>
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
-<meta name='description' content='What is a build tool? GNU Make  Makefile   Apache Maven  Maven Project  Maven Commands Creating a Maven project from Scratch Explaining the pom.xml configiguration file Project File structure Compile and Run   Collaborating on a Maven project   Choosing a Build tool Links  What is a build tool?'>
+<meta name='description' content='Table of Contents  What is a build tool? GNU Make  Makefile   Apache Maven  Maven Project  Maven Commands Creating a Maven project from Scratch Explaining the pom.'>
 <meta name='theme-color' content='#800000'>
 
 <meta property='og:title' content='Introduction to build tools • Getting Started Guides'>
-<meta property='og:description' content='What is a build tool? GNU Make  Makefile   Apache Maven  Maven Project  Maven Commands Creating a Maven project from Scratch Explaining the pom.xml configiguration file Project File structure Compile and Run   Collaborating on a Maven project   Choosing a Build tool Links  What is a build tool?'>
+<meta property='og:description' content='Table of Contents  What is a build tool? GNU Make  Makefile   Apache Maven  Maven Project  Maven Commands Creating a Maven project from Scratch Explaining the pom.'>
 <meta property='og:url' content='/guides/buildtools/'>
 <meta property='og:site_name' content='Getting Started Guides'>
 <meta property='og:type' content='article'><meta property='article:section' content='guides'><meta property='article:published_time' content='2020-09-28T00:00:00-04:00'/><meta property='article:modified_time' content='2020-09-28T00:00:00-04:00'/><meta name='twitter:card' content='summary'>
@@ -143,8 +143,9 @@
   
 
   <div class='container entry-content'>
-  <!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+  <div class="ox-hugo-toc toc">
+<div></div>
+<div class="heading">Table of Contents</div>
 <ul>
 <li><a href="#what-is-a-build-tool">What is a build tool?</a></li>
 <li><a href="#gnu-make">GNU Make</a>
@@ -169,7 +170,8 @@
 <li><a href="#choosing-a-build-tool">Choosing a Build tool</a></li>
 <li><a href="#links">Links</a></li>
 </ul>
-<!-- raw HTML omitted -->
+</div>
+<!--endtoc-->
 <h2 id="what-is-a-build-tool">What is a build tool?</h2>
 <p>A build tool is a programming utility that automates a software build task, such as compiling source code, cleaning temporary files, and so on. A popular open source build tool is <a href="https://www.gnu.org/software/make/">Make</a>, another popular build tool is <a href="https://maven.apache.org/">Maven</a></p>
 <h2 id="gnu-make">GNU Make</h2>
@@ -198,7 +200,7 @@
 </code></pre></div><p>This would create a <code>pom.xml</code> file in the folder <code>maven-example</code> with maven&rsquo;s project structure within it. The flag <code>-DgroupId</code> is how you name your project and here the name <code>myApp</code> is given.</p>
 <h4 id="explaining-the-pom-dot-xml-configiguration-file">Explaining the pom.xml configiguration file</h4>
 <p>There are a few things to configure for a maven build project. Keep in mind that this is an XML file so it means you should know generally how an XML file is structured. XML files use tags, arranged in nested order like tree nodes. It can be thought of as a text-based database. It uses the file extension <code>.XML</code></p>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Java Version</p>
@@ -209,7 +211,7 @@
 <span class="nt">&lt;/properties&gt;</span>
 </code></pre></div></li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Project Libraries to include (dependencies)</p>
@@ -224,7 +226,7 @@
 </code></pre></div><p>More dependencies can be found within the <a href="https://mvnrepository.com/">Maven repository</a>.</p>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<!--list-separator-->
 <ul>
 <li>
 <p>Build Plugins</p>
