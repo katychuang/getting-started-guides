@@ -16,12 +16,12 @@
 
 #+HUGO_BASE_DIR: ../hugo/
 #+HUGO_SECTION: guides
-#+HUGO_CATEGORIES: reference
+#+HUGO_CATEGORIES: reference git
 #+EXPORT_HUGO_SECTION: filenames
 
 * Introduction
 
-In the day to day work of programming, one often finds that a large fraction of time is spent looking for certain files. One of the wise adages with managing an assortment of files is to provide an organization scheme. It not only helps you as the maintainer, but also helps your reader(s)** and collaborator(s) as well. This is a good habit to devleop before you find yourself managing hundreds of files.
+In the day to day work of programming, one often finds that a large fraction of time is spent looking for certain files. One of the wise adages with managing an assortment of files is to provide an organization scheme to make it easier to find what you need again. It not only helps you as the maintainer, but also helps your reader(s)** and collaborator(s) as well. This is a good habit to devleop before you find yourself managing hundreds of files.
 
 ** Motivations for naming files well
 
@@ -34,6 +34,8 @@ In the day to day work of programming, one often finds that a large fraction of 
 A developer also considerrs file organization and directory naming schemes as well. There's no industry standard for this, just an organization level (if you join a team with a style guide), however there tends to be some common patterns to follow.
 
 When you have a lot of tiles in your project directory, it is common to start thinking about the organization of contents.
+
+The scheme itself can depend on the type of project. For example, if you're working on a web application you might split into layers such as the back-end from front-end features.
 
 * Common File extensions
 
@@ -99,3 +101,4 @@ If you're using Git you can specify a ~.gitignore~ file that contains a list of 
 [1]: https://libraries.mit.edu/data-management/store/organize/
 [2]: https://docs.python-guide.org/writing/structure/
 [3]: http://opensource.guide/starting-a-project/#launching-your-own-open-source-project
+[4]: https://medium.com/@msandin/strategies-for-organizing-code-2c9d690b6f33

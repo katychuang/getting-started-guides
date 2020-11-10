@@ -23,26 +23,38 @@
 
 * What is Github Pages?
 
-* How to make your home page
+This is a feature provided by GitHub where you can host websites directly from your GitHub repository. These websites are typically static files, meaning there is no database no backend. For example, this website is hosted on GitHub Pages, it was built with a static site generator.
 
-When you use GitHub pages, you can access your website at the url http://username.github.io and the underlying files would be found in your repository, which can be found at url pattern ttp://github.com/username/username.github.io
+To find out more, go to https://pages.github.com
 
-This section walks you through step by step.
+* How to create your home page (easy way)
+
+When you use GitHub pages, you can access your website at the url http://username.github.io and the underlying files would be found in your repository, which is the repository can be found at url pattern http://github.com/username/username.github.io
+
+This section walks you through step by step. These instructions are taken directly from GitHub's docs.
 
 *Short version:*
 1. Create a repo of name: *yourusername*.github.io
 2. Go to that repo's settings and check the box for your pages (note the drop down option selected)
-3. Add .html files to your repo
+3. Add ~.html~ files to your repo
 
 You should be able to access your website from ~http://yourusername.github.io~
 
 *Longer version:*
-1. From your account, create a new repo following the structure username.github.io -- this is the basis for producing a website hosted by github pages (https://pages.github.com/).
+1. From your account, create a new repo with the name following the pattern ~yourusername.github.io~ where you use your username to replace the part that says ~yourusername~ -- this is the basis for producing a website hosted by github pages (https://pages.github.com/).
 2. Confirm that the pages feature is turned on for that repository, under the settings menu.
 3. This allows you to host files under your GitHub account.
-    a. You could use the github.com web interface to upload each file individually, however I recommended you take time at some point in your career to gain familiarity with the workflow of using git commands from your machine terminal.
-    b. Upload the images and html files to that repo.
+   a. You could use the github.com web interface to upload each file individually, however I recommended you take time at some point in your career to gain familiarity with the workflow of using git commands from your machine terminal.
+   b. Upload the images and html files to that repo.
 4. If set up properly you should be able to access your website from http://username.github.io
+
+* Static Site Generator
+
+Static sites do not have a database backend, "data" is stored in text files. Data is used loosely here to mean contents of the site. Text files can often imply that they are [[https://www.markdownguide.org][markdown]] formatted files.
+
+In order to translate text files into a website in a streamlined manner, you need some sort of tool to /generate/ that website for you. This tool is called a static site generator. There are many Open Source static site generators available to choose from that go by different names. Some are produced in certain programming languages. They tend to require using the command line interface (CLI).
+
+Below describes a couple of options.
 
 * Using Jekyll Static Site Generator
 
@@ -55,6 +67,17 @@ The guides and tutorials for using Jekyll are easily found through your nearest 
 - https://jekyllrb.com/docs/github-pages/
 - Building a static website with Jekyll and GitHub Pages https://programminghistorian.org/en/lessons/building-static-sites-with-jekyll-github-pages
 
+* Using Hugo Static Site Generator
+
+The best reference material is the official documentation at https://gohugo.io
+
+Once you have Hugo installed, make sure your files are organized in their proposed [[https://gohugo.io/getting-started/directory-structure/][directory structure.]] Find a theme, configure your Hugo website.
+
+** Org-mode with Hugo
+
+This site is generated from the [[https://www.gnu.org/software/emacs/][GNU Emacs]] program under the [[https://orgmode.org][Org Mode.]] In order to use both pieces, you need to use one more open source plugin called [[https://ox-hugo.scripter.co][ox-hugo]]
+
+The contents are contained in ~*.org~ files instead of ~*.markdown~ or ~*.txt~
 
 * References
 ** Intro to HTML/CSS
