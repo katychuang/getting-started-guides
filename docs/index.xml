@@ -40,7 +40,7 @@
       <pubDate>Mon, 20 Apr 2020 00:00:00 -0400</pubDate>
       
       <guid>/guides/githubpages/</guid>
-      <description>What is Github Pages? How to make your home page When you use GitHub pages, you can access your website at the url http://username.github.io and the underlying files would be found in your repository, which can be found at url pattern ttp://github.</description>
+      <description>What is Github Pages? This is a feature provided by GitHub where you can host websites directly from your GitHub repository. These websites are typically static files, meaning there is no database no backend.</description>
     </item>
     
     <item>
