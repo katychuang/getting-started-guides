@@ -1,4 +1,4 @@
-#+TITLE:     Getting started with SSH
+#+TITLE:    SSH
 #+SUBTITLE:  Department of Computer & Information Science, Brooklyn College
 #+AUTHOR:    Katherine Chuang
 #+EMAIL:     chuang@sci.brooklyn.cuny.edu
@@ -118,3 +118,8 @@ https://www.microsoft.com/en-gb/p/windows-terminal/9n0dx20hk701?rtc=1&activetab=
 * What can I do with SSH?
 
 You can log into other machines, such as the WEB Building's Linux server. You can manage web servers and websites. You can configure machines remotely. You can kill running threads of frozen applications.
+
+* COMMENT Local Variables   :ARCHIVE:
+# Local Variables:
+# eval: (org-hugo-auto-export-mode)
+# End:

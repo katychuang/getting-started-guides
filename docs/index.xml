@@ -1,55 +1,116 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Getting Started Guides</title>
+    <title>Introduction on Getting Started Guides</title>
     <link>/</link>
-    <description>Recent content on Getting Started Guides</description>
+    <description>Recent content in Introduction on Getting Started Guides</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Oct 2020 00:00:00 -0400</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 Nov 2020 00:00:00 -0500</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Technical Interview Prep</title>
+      <link>/practice/interviewprep/</link>
+      <pubDate>Fri, 13 Nov 2020 00:00:00 -0500</pubDate>
+      
+      <guid>/practice/interviewprep/</guid>
+      <description>Table of Contents  General Advice when solving problems  Problems with Stacks   Checking parenthesis  Evaluate Postfix Notation   The algorithm  Example      General Advice when solving problems #   Understand the problem being asked Don&amp;rsquo;t forget to handle edge cases Expressing your answer is just as important as understanding the problem, and solving it!  Problems with Stacks #    Checking parenthesis #  Examples:</description>
+    </item>
+    
+    <item>
+      <title>Concepts of Web Development</title>
+      <link>/guides/concepts-of-web-dev/</link>
+      <pubDate>Thu, 12 Nov 2020 00:00:00 -0500</pubDate>
+      
+      <guid>/guides/concepts-of-web-dev/</guid>
+      <description>A website is rendered in a web browser through the HTTP Protocol. There&amp;rsquo;s a lot more one should learn about Internet Protocols, but it&amp;rsquo;s not required to get an operational understanding of working with websites.
+Web Design Principles
+The page that is rendered by the web browser is formatted in Hypertext Markup Language or HTML for short. HTML is a set of nested tags that describe how the page should be structured.</description>
+    </item>
+    
+    <item>
+      <title>Web Development Intro</title>
+      <link>/guides/concepts-of-web-network/</link>
+      <pubDate>Thu, 12 Nov 2020 00:00:00 -0500</pubDate>
+      
+      <guid>/guides/concepts-of-web-network/</guid>
+      <description>A website is rendered in a web browser through the HTTP Protocol. There&amp;rsquo;s a lot more one should learn about Internet Protocols, but it&amp;rsquo;s not required to get an operational understanding of working with websites. The page that is rendered by the webbrowser is formatted in Hypertext Markup Language or HTML for short. HTML is a set of nested tags that describe how the page should be structured. It&amp;rsquo;s like an outline with hierarchical layers or if you recall from data structures class, a tree.</description>
+    </item>
+    
+    <item>
+      <title>Building on the web</title>
+      <link>/guides/buildawebsite/</link>
+      <pubDate>Wed, 28 Oct 2020 00:00:00 -0400</pubDate>
+      
+      <guid>/guides/buildawebsite/</guid>
+      <description>Table of Contents  Introduction  Process from Idea to Product  Concepts of Web Development  Tools  Introduction #  This page focuses on the process, concepts, and tools for building any type of web site or web application. A website has a lot of overlapping functionality and technology as a web application, except it doesn&amp;rsquo;t focus on high volume of dynamism and user interactivity, which would require a database.</description>
+    </item>
+    
+    <item>
+      <title>Data Flow Diagrams</title>
+      <link>/guides/dataflowdiagrams/</link>
+      <pubDate>Wed, 28 Oct 2020 00:00:00 -0400</pubDate>
+      
+      <guid>/guides/dataflowdiagrams/</guid>
+      <description>Table of Contents  What are Data Flow Diagrams (DFD)?   Notations   Rectangle (Entity)  Circle (Process)  Rounded rectangle (Data Store)  Arrow (Data flow)      Why are Diagrams useful?  How do you draw a diagram?  Software for drawing diagrams  References  What are Data Flow Diagrams (DFD)? #  This is a diagram that maps out the flow of information for any system.</description>
+    </item>
+    
     <item>
       <title>Including a README with your project</title>
       <link>/guides/writingreadme/</link>
       <pubDate>Thu, 01 Oct 2020 00:00:00 -0400</pubDate>
       
       <guid>/guides/writingreadme/</guid>
-      <description>What is a README? This is a file that is named README, that usually resides in the root of your project directory. This name comes from the command Read me. as in the situation of handing a project off to another developer and writing a memo to them that should be read first before the source code.</description>
+      <description>What is a README? #  This is a file that is named README, that usually resides in the root of your project directory. This name comes from the command Read me. as in the situation of handing a project off to another developer and writing a memo to them that should be read first before the source code.
+In a way, it serves as an executive summary of your project.</description>
     </item>
     
     <item>
-      <title>Introduction to build tools</title>
+      <title>Build Tools</title>
       <link>/guides/buildtools/</link>
       <pubDate>Mon, 28 Sep 2020 00:00:00 -0400</pubDate>
       
       <guid>/guides/buildtools/</guid>
-      <description>Table of Contents  What is a build tool? GNU Make  Makefile   Apache Maven  Maven Project  Maven Commands Creating a Maven project from Scratch Explaining the pom.</description>
+      <description>Table of Contents   What is a build tool?  GNU Make   Makefile    Apache Maven   Maven Project   Maven Commands  Creating a Maven project from Scratch  Explaining the pom.xml configiguration file  Project File structure  Compile and Run    Collaborating on a Maven project    Choosing a Build tool  Links    What is a build tool?</description>
     </item>
     
     <item>
-      <title>Getting started with SSH</title>
+      <title>SSH</title>
       <link>/guides/ssh/</link>
       <pubDate>Sat, 01 Aug 2020 00:00:00 -0400</pubDate>
       
       <guid>/guides/ssh/</guid>
-      <description>Table of Contents  Getting started with SSH  What is SSH?  What is an SSH Client? When would you use SSH?     SSH by terminal  How do I ssh in terminal?</description>
+      <description>Table of Contents   Getting started with SSH   What is SSH?   What is an SSH Client?  When would you use SSH?      SSH by terminal   How do I ssh in terminal?  SSH Programs for Mac   1. Terminal App  2. iTerm app    SSH Programs for Windows   1. Putty (a simple GUI app)  2.</description>
     </item>
     
     <item>
-      <title>Getting Started with Github Pages</title>
+      <title>Sharing Coding Projects</title>
+      <link>/guides/codeprojects/</link>
+      <pubDate>Sat, 16 May 2020 00:00:00 -0400</pubDate>
+      
+      <guid>/guides/codeprojects/</guid>
+      <description>Table of Contents  Project based thinking   Programming as an activity  Planning before you begin coding   Software Development Life Cycle (SDLC)      Checklists   Elements to include with your project repository    1. Project description   2. Source code with comments   3. Submit to the form before deadline    Elements of Style and Presentation  Other Enhancements    References  Project based thinking #  Programmers are typically learning to write source code to build programs not just scripts.</description>
+    </item>
+    
+    <item>
+      <title>Github Pages</title>
       <link>/guides/githubpages/</link>
       <pubDate>Mon, 20 Apr 2020 00:00:00 -0400</pubDate>
       
       <guid>/guides/githubpages/</guid>
-      <description>What is Github Pages? This is a feature provided by GitHub where you can host websites directly from your GitHub repository. These websites are typically static files, meaning there is no database no backend.</description>
+      <description>What is Github Pages? #  This is a feature provided by GitHub where you can host websites directly from your GitHub repository. These websites are typically static files, meaning there is no database no backend. For example, this website is hosted on GitHub Pages, it was built with a static site generator.
+To find out more, go to https://pages.github.com
+How to create your home page (easy way) #  When you use GitHub pages, you can access your website at the url http://username.</description>
     </item>
     
     <item>
-      <title>Getting started with Git</title>
+      <title>Git</title>
       <link>/guides/git/</link>
       <pubDate>Sun, 01 Mar 2020 00:00:00 -0500</pubDate>
       
       <guid>/guides/git/</guid>
-      <description>Git Version control systems are used in managing revision control of project artifacts, and maintaining a history of changes to each artifact. Artifacts can include documents, source code, and much more.</description>
+      <description>Git #  Version control systems are used in managing revision control of project artifacts, and maintaining a history of changes to each artifact. Artifacts can include documents, source code, and much more.
+Motivations for Source Version Control
+ Keeping track of code Storing versions of code changes Restoring previous versions Reviewing work history Collaborating in a group Backup There are two main approaches to version control management systems. That is, they can either be centralized, or decentralized repositories.</description>
     </item>
     
     <item>
@@ -58,8 +119,9 @@
       <pubDate>Fri, 28 Feb 2020 00:00:00 -0500</pubDate>
       
       <guid>/guides/jcf/</guid>
-      <description>Introduction This description is taken straight from Oracle&amp;rsquo;s Java Documentation page.
- The Java platform includes a collections framework. A collection is an object that represents a group of objects (such as the classic Vector class).</description>
+      <description>Introduction #  This description is taken straight from Oracle&amp;rsquo;s Java Documentation page.
+ The Java platform includes a collections framework. A collection is an object that represents a group of objects (such as the classic Vector class). A collections framework is a unified architecture for representing and manipulating collections, enabling collections to be manipulated independently of implementation details.
+ Object-Oriented Fundamentals #  It would be helpful to remember that because is using the Java programming language, which is an object oriented programming language, these collections use the data abstraction concepts such as inheritance to make it possible to be used.</description>
     </item>
     
     <item>
@@ -68,7 +130,9 @@
       <pubDate>Sat, 01 Feb 2020 00:00:00 -0500</pubDate>
       
       <guid>/guides/java/</guid>
-      <description>1 Intro The CIS department at Brooklyn College officially supports Java 8. This means that Java courses are taught adhering to this version. Using later versions such as Java 11 is perfectly find for most instances, there may be some minor differences with certain classes and methods or certain version specific-quirks.</description>
+      <description>1 Intro #  The CIS department at Brooklyn College officially supports Java 8. This means that Java courses are taught adhering to this version. Using later versions such as Java 11 is perfectly find for most instances, there may be some minor differences with certain classes and methods or certain version specific-quirks.
+The best thing to do is to keep documentation links handy.
+Helpful links #  These are useful links to reference.</description>
     </item>
     
     <item>
@@ -77,7 +141,7 @@
       <pubDate>Tue, 28 Jan 2020 00:00:00 -0500</pubDate>
       
       <guid>/guides/filenames/</guid>
-      <description>Table of Contents  Introduction  Motivations for naming files well Organizing your directory   Common File extensions Common Directory Names Ignoring files with your VCS repository    Introduction In the day to day work of programming, one often finds that a large fraction of time is spent looking for certain files.</description>
+      <description>Table of Contents   Introduction   Motivations for naming files well  Organizing your directory    Common File extensions  Common Directory Names  Ignoring files with your VCS repository    Introduction #  In the day to day work of programming, one often finds that a large fraction of time is spent looking for certain files. One of the wise adages with managing an assortment of files is to provide an organization scheme to make it easier to find what you need again.</description>
     </item>
     
     <item>

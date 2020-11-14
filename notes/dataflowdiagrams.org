@@ -1,0 +1,62 @@
+#+TITLE: Data Flow Diagrams
+#+SUBTITLE:  Department of Computer & Information Science, Brooklyn College
+#+AUTHOR:    Katherine Chuang
+#+EMAIL:     chuang@sci.brooklyn.cuny.edu
+#+CREATOR:   katychuang
+#+date:      2020-10-28
+#+OPTIONS:   H:3 num:nil toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+ALT_TITLE: Lecture Notes
+
+#+HUGO_BASE_DIR: ../hugo/
+#+HUGO_SECTION: guides
+#+HUGO_CATEGORIES: reference projects
+#+EXPORT_HUGO_SECTION: Diagrams
+
+* What are Data Flow Diagrams (DFD)?
+
+This is a diagram that maps out the flow of information for any system. There are defined symbols like rectangles, circles, arrows, and so on to distinguish different parts of the system.
+
+There are different kinds of data flow diagrams as well, most are separated into either logical DFD or Physical DFD. /Logical data flow diagrams/ focuses on the system process(es). /Physical data flow diagrams/ show how the data flow is implemented in the system.
+
+** Notations
+
+This section to be written soon.
+
+
+
+*** Rectangle (Entity)
+*** Circle (Process)
+*** Rounded rectangle (Data Store)
+*** Arrow (Data flow)
+
+* Why are Diagrams useful?
+
+A diagram serves as a roadmap for a project. It shows all the pieces and how they are connected.
+
+* How do you draw a diagram?
+
+First you have to identify the system components and boundaries.
+
+Next you have to pick the paths between these components.
+
+* Software for drawing diagrams
+
+You can draw a diagram with pen and paper. This may be a good way to start because there is a low learning curve involved to expressing oneself in that medium.
+
+When you're ready for creating a more polished diagram, there are many software availabe.
+
+- Dia Diagram Editor http://dia-installer.de
+- Draw.io http://draw.io/
+- Lucid Chart https://www.lucidchart.com/pages/usecase/education
+
+* References
+- https://www.lucidchart.com/pages/data-flow-diagram/data-flow-diagram-symbols
+- https://www.smartdraw.com/data-flow-diagram/
+- https://www.cs.uct.ac.za/mit_notes/software/htmls/ch06.html
+- https://www.visual-paradigm.com/guide/data-flow-diagram/what-is-data-flow-diagram/
+
+* COMMENT Local Variables   :ARCHIVE:
+# Local Variables:
+# eval: (org-hugo-auto-export-mode)
+# End:

@@ -1,4 +1,4 @@
-#+TITLE:     Getting Started with Github Pages
+#+TITLE:     Github Pages
 #+SUBTITLE:  Getting started with web development
 #+AUTHOR:    Katherine Chuang
 #+EMAIL:     chuang@sci.brooklyn.cuny.edu
@@ -48,7 +48,8 @@ You should be able to access your website from ~http://yourusername.github.io~
    b. Upload the images and html files to that repo.
 4. If set up properly you should be able to access your website from http://username.github.io
 
-* Static Site Generator
+* Static Site Generators
+#+EXPORT_HUGO_SECTION: gp
 
 Static sites do not have a database backend, "data" is stored in text files. Data is used loosely here to mean contents of the site. Text files can often imply that they are [[https://www.markdownguide.org][markdown]] formatted files.
 
@@ -98,3 +99,8 @@ The contents are contained in ~*.org~ files instead of ~*.markdown~ or ~*.txt~
 - Build a Web Portfolio from Scratch https://dannguyen.github.io/github-for-portfolios/
 - Set Up Your Portfolio Website in Less Than 10 Minutes with Github Pages https://blog.usejournal.com/set-up-your-portfolio-website-in-less-than-10-minutes-with-github-pages-d0efa8ff56fd
 - The Beginners Guide to Github Pages https://www.ostraining.com/blog/coding/github-pages/
+
+* COMMENT Local Variables   :ARCHIVE:
+# Local Variables:
+# eval: (org-hugo-auto-export-mode)
+# End:

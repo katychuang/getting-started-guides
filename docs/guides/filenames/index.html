@@ -1,167 +1,281 @@
 <!DOCTYPE html>
-<html lang='en' dir='auto'><head>
-  <meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'>
-<meta name='description' content='Table of Contents  Introduction  Motivations for naming files well Organizing your directory   Common File extensions Common Directory Names Ignoring files with your VCS repository    Introduction In the day to day work of programming, one often finds that a large fraction of time is spent looking for certain files.'>
-<meta name='theme-color' content='#800000'>
+<html lang="en" dir=>
 
-<meta property='og:title' content='File naming conventions • Getting Started Guides'>
-<meta property='og:description' content='Table of Contents  Introduction  Motivations for naming files well Organizing your directory   Common File extensions Common Directory Names Ignoring files with your VCS repository    Introduction In the day to day work of programming, one often finds that a large fraction of time is spent looking for certain files.'>
-<meta property='og:url' content='/guides/filenames/'>
-<meta property='og:site_name' content='Getting Started Guides'>
-<meta property='og:type' content='article'><meta property='article:section' content='guides'><meta property='article:published_time' content='2020-01-28T00:00:00-05:00'/><meta property='article:modified_time' content='2020-01-28T00:00:00-05:00'/><meta name='twitter:card' content='summary'>
+<head>
+  <meta name="generator" content="Hugo 0.75.1" />
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Table of Contents   Introduction   Motivations for naming files well  Organizing your directory    Common File extensions  Common Directory Names  Ignoring files with your VCS repository    Introduction #  In the day to day work of programming, one often finds that a large fraction of time is spent looking for certain files. One of the wise adages with managing an assortment of files is to provide an organization scheme to make it easier to find what you need again.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="File naming conventions" />
+<meta property="og:description" content="Table of Contents   Introduction   Motivations for naming files well  Organizing your directory    Common File extensions  Common Directory Names  Ignoring files with your VCS repository    Introduction #  In the day to day work of programming, one often finds that a large fraction of time is spent looking for certain files. One of the wise adages with managing an assortment of files is to provide an organization scheme to make it easier to find what you need again." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/guides/filenames/" />
+<meta property="article:published_time" content="2020-01-28T00:00:00-05:00" />
+<meta property="article:modified_time" content="2020-01-28T00:00:00-05:00" />
+<title>File naming conventions | Getting Started Guides</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.134b70e5316650a530cb42e4e8630b2a01d532bebfc0337028211175336e4806.css" integrity="sha256-E0tw5TFmUKUwy0Lk6GMLKgHVMr6/wDNwKCERdTNuSAY=">
+<script defer src="/en.search.min.527fc7ed0aaead0a55e9a15100bba13d739025fbd484ef5a11a24dbe90f4e160.js" integrity="sha256-Un/H7QqurQpV6aFRALuhPXOQJfvUhO9aEaJNvpD04WA="></script>
 
-<meta name="generator" content="Hugo 0.75.1" />
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
 
-  <title>File naming conventions • Getting Started Guides</title>
-  <link rel='canonical' href='/guides/filenames/'>
-  
-  
-  <link rel='icon' href='/favicon.ico'>
-<link rel='stylesheet' href='/assets/css/main.ab98e12b.css'><link rel='stylesheet' href='/css/custom.css'><style>
-:root{--color-accent:#800000;}
+  <style>
+h1, h2, h3, h4, h5, h6, .heading {
+			font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+		font-weight: 700;
+		line-height: 1.2;
+		color: #263238;
+		margin: 0 0 .625em;
+}
+
+ .markdown h1, {
+		display: block;
+		font-size: 2em;
+		margin-block-start: 0.67em;
+		margin-block-end: 0.67em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		font-weight: bold;
+}
+.markdown h2,.heading {
+		font-size: 1.5em;
+		display: block;
+		margin-block-start: 0.67em;
+		margin-block-end: 0.67em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		font-weight: bold;
+ }
+ .markdown h4, .markdown h3{
+		 font-size: 1.375em;
+		margin-block-start: 0.67em;
+		margin-block-end: 0.67em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		font-weight: bold;
+ }
+ body {
+		 font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+		 font-size: 1.125em;
+		 line-height: 1.5;
+		 color: #37474f;
+ }
 </style>
 
-  
-
 </head>
-<body class='page type-guides has-sidebar'>
 
-  <div class='site'><div id='sidebar' class='sidebar'>
-  <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
-
-  <div class='container'><section class='widget widget-about sep-after'>
-  <header>
-    
-    <h2 class='title site-title '>
-      <a href='/'>
-      Getting Started Guides
-      </a>
-    </h2>
-    <div class='desc'>
-    Short Guides for BC CIS Students
-    </div>
-  </header>
-
-</section>
-<section class='widget widget-sidebar_menu sep-after'><nav id='sidebar-menu' class='menu sidebar-menu' aria-label='Sidebar Menu'>
-    <div class='container'>
-      <ul><li class='item'>
-  <a href='/'>Guides</a></li><li class='item'>
-  <a href='/categories/'>Categories</a></li><li class='item'>
-  <a href='https://github.com/katychuang/getting-started-guides'>Source</a></li></ul>
-    </div>
-  </nav>
-
-</section></div>
-
-  <div class='sidebar-overlay'></div>
-</div><div class='main'><a class='screen-reader-text' href='#content'>Skip to Content</a>
-
-<button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
-  <span class='screen-reader-text'>Toggle Sidebar</span>
-  <span class='open'><svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    
-  <line x1="3" y1="12" x2="21" y2="12" />
-  <line x1="3" y1="6" x2="21" y2="6" />
-  <line x1="3" y1="18" x2="21" y2="18" />
-
-</svg>
-</span>
-  <span class='close'><svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    
-  <line x1="18" y1="6" x2="6" y2="18" />
-  <line x1="6" y1="6" x2="18" y2="18" />
-
-</svg>
-</span>
-</button><div class='header-widgets'>
-        <div class='container'>
-    
-    <style>.widget-breadcrumbs li:after{content:'\2f '}</style>
-  <section class='widget widget-breadcrumbs sep-after'>
-    <nav id='breadcrumbs'>
-      <ol><li><a href='/'>Getting Started Guides</a></li><li><a href='/guides/'>Guides</a></li><li><span>File naming conventions</span></li></ol>
-    </nav>
-  </section></div>
-      </div>
-
-      <header id='header' class='header site-header'>
-        <div class='container sep-after'>
-          <div class='header-info'><p class='site-title title'>Getting Started Guides</p><p class='desc site-desc'>Short Guides for BC CIS Students</p>
-          </div>
-        </div>
-      </header>
-
-      <main id='content'>
-
-
-<article lang='en' class='entry'>
-  <header class='header entry-header'>
-  <div class='container sep-after'>
-    <div class='header-info'>
-      <h1 class='title'>File naming conventions</h1>
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
       
-
-    </div>
-    <div class='entry-meta'>
-  <span class='posted-on'><svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    
-  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
-  <line x1="16" y1="2" x2="16" y2="6"/>
-  <line x1="8" y1="2" x2="8" y2="6"/>
-  <line x1="3" y1="10" x2="21" y2="10"/>
-
-</svg>
-<span class='screen-reader-text'>Posted on </span>
-  <time class='entry-date' datetime='2020-01-28T00:00:00-05:00'>2020, Jan 28</time>
-</span>
-
-  
-  
-<span class='reading-time'><svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    
-  <circle cx="12" cy="12" r="10"/>
-  <polyline points="12 6 12 12 15 15"/>
-
-</svg>
-3 mins read
-</span>
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Getting Started Guides</span>
+  </a>
+</h2>
 
 
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
 </div>
 
 
-  </div>
-</header>
+
+
+
+
+
+
+
+
+
+  <ul>
+<li>
+<p>Programming in Java</p>
+<ul>
+<li>
+  <a href="/guides/java/">Java 8</a></li>
+<li>
+  <a href="/guides/jcf/">Java Collections Framework</a></li>
+</ul>
+</li>
+<li>
+<p>Maintaining Coding Projects</p>
+<ul>
+<li>
+  <a href="/guides/git/">Git</a></li>
+<li>
+  <a href="/guides/filenames/"class=active>Filename Conventions</a></li>
+<li>
+  <a href="/guides/writingreadme/">README Files</a></li>
+<li>
+  <a href="/guides/codeprojects/">Sharing Coding Projects</a></li>
+<li>
+  <a href="/guides/"></a></li>
+</ul>
+</li>
+<li>
+<p>Software Development</p>
+<ul>
+<li>
+  <a href="/guides/dataflowdiagrams/">Data Flow Diagrams</a></li>
+<li>
+  <a href="/guides/buildtools/">Build Tools</a></li>
+</ul>
+</li>
+<li>
+<p>Web Development</p>
+<ul>
+<li>
+  <a href="/guides/buildawebsite/">Building on the web</a></li>
+<li>
+  <a href="/guides/githubpages/">Github Pages</a></li>
+<li>
+  <a href="/guides/ssh/">SSH</a></li>
+</ul>
+</li>
+<li>
+<p>Interviewing</p>
+<ul>
+<li>Resume guide <em>(coming soon)</em></li>
+<li>
+  <a href="/practice/interviewprep/">Interview Prep</a>
+<br /></li>
+</ul>
+</li>
+<li>
+<p><strong>Featured</strong></p>
+</li>
+<li>
+<p>
+  <a href="/guides/git/">Git</a></p>
+</li>
+<li>
+<p>
+  <a href="/guides/githubpages/">Github Pages</a>
+<br /></p>
+</li>
+</ul>
+
+
+
+
+
 
   
+<ul>
   
+  <li>
+    <a href="https://github.com/katychuang/getting-started-guides" target="_blank" rel="noopener">
+        Source
+      </a>
+  </li>
+  
+</ul>
 
-  <div class='container entry-content'>
-  <div class="ox-hugo-toc toc">
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>File naming conventions</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#introduction">Introduction</a>
+          <ul>
+            <li><a href="#motivations-for-naming-files-well">Motivations for naming files well</a></li>
+            <li><a href="#organizing-your-directory">Organizing your directory</a></li>
+          </ul>
+        </li>
+        <li><a href="#common-file-extensions">Common File extensions</a></li>
+        <li><a href="#common-directory-names">Common Directory Names</a></li>
+        <li><a href="#ignoring-files-with-your-vcs-repository">Ignoring files with your VCS repository</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><div class="ox-hugo-toc toc">
 <div></div>
 <div class="heading">Table of Contents</div>
 <ul>
-<li><a href="#introduction">Introduction</a>
+<li>
+  <a href="/#introduction">Introduction</a>
 <ul>
-<li><a href="#motivations-for-naming-files-well">Motivations for naming files well</a></li>
-<li><a href="#organizing-your-directory">Organizing your directory</a></li>
+<li>
+  <a href="/#motivations-for-naming-files-well">Motivations for naming files well</a></li>
+<li>
+  <a href="/#organizing-your-directory">Organizing your directory</a></li>
 </ul>
 </li>
-<li><a href="#common-file-extensions">Common File extensions</a></li>
-<li><a href="#common-directory-names">Common Directory Names</a></li>
-<li><a href="#ignoring-files-with-your-vcs-repository">Ignoring files with your VCS repository</a></li>
+<li>
+  <a href="/#common-file-extensions">Common File extensions</a></li>
+<li>
+  <a href="/#common-directory-names">Common Directory Names</a></li>
+<li>
+  <a href="/#ignoring-files-with-your-vcs-repository">Ignoring files with your VCS repository</a></li>
 </ul>
 </div>
 <!--endtoc-->
-<h2 id="introduction">Introduction</h2>
-<p>In the day to day work of programming, one often finds that a large fraction of time is spent looking for certain files. One of the wise adages with managing an assortment of files is to provide an organization scheme. It not only helps you as the maintainer, but also helps your reader(s)** and collaborator(s) as well. This is a good habit to devleop before you find yourself managing hundreds of files.</p>
-<h3 id="motivations-for-naming-files-well">Motivations for naming files well</h3>
+<h2 id="introduction">
+  Introduction
+  <a class="anchor" href="#introduction">#</a>
+</h2>
+<p>In the day to day work of programming, one often finds that a large fraction of time is spent looking for certain files. One of the wise adages with managing an assortment of files is to provide an organization scheme to make it easier to find what you need again. It not only helps you as the maintainer, but also helps your reader(s)** and collaborator(s) as well. This is a good habit to devleop before you find yourself managing hundreds of files.</p>
+<h3 id="motivations-for-naming-files-well">
+  Motivations for naming files well
+  <a class="anchor" href="#motivations-for-naming-files-well">#</a>
+</h3>
 <ul>
 <li>
 <p>It is more efficient to name your files correct such that it&rsquo;s easier to find.</p>
@@ -170,10 +284,17 @@
 <p>With the correct file extentions it is easier to collaborate with another programmer.</p>
 </li>
 </ul>
-<h3 id="organizing-your-directory">Organizing your directory</h3>
+<h3 id="organizing-your-directory">
+  Organizing your directory
+  <a class="anchor" href="#organizing-your-directory">#</a>
+</h3>
 <p>A developer also considerrs file organization and directory naming schemes as well. There&rsquo;s no industry standard for this, just an organization level (if you join a team with a style guide), however there tends to be some common patterns to follow.</p>
 <p>When you have a lot of tiles in your project directory, it is common to start thinking about the organization of contents.</p>
-<h2 id="common-file-extensions">Common File extensions</h2>
+<p>The scheme itself can depend on the type of project. For example, if you&rsquo;re working on a web application you might split into layers such as the back-end from front-end features.</p>
+<h2 id="common-file-extensions">
+  Common File extensions
+  <a class="anchor" href="#common-file-extensions">#</a>
+</h2>
 <table>
 <thead>
 <tr>
@@ -252,7 +373,10 @@
 </tr>
 </tbody>
 </table>
-<h2 id="common-directory-names">Common Directory Names</h2>
+<h2 id="common-directory-names">
+  Common Directory Names
+  <a class="anchor" href="#common-directory-names">#</a>
+</h2>
 <ul>
 <li><code>/src</code> - for your packages &amp; classes</li>
 <li><code>/test</code> - for unit tests</li>
@@ -263,7 +387,10 @@
 <li><code>/dist</code> - for distribution packages, hopefully auto generated by a build system</li>
 </ul>
 <p>from <a href="https://stackoverflow.com/a/8594">https://stackoverflow.com/a/8594</a></p>
-<h2 id="ignoring-files-with-your-vcs-repository">Ignoring files with your VCS repository</h2>
+<h2 id="ignoring-files-with-your-vcs-repository">
+  Ignoring files with your VCS repository
+  <a class="anchor" href="#ignoring-files-with-your-vcs-repository">#</a>
+</h2>
 <p>If you&rsquo;re using Git you can specify a <code>.gitignore</code> file that contains a list of filenames to ignore</p>
 <ul>
 <li><a href="https://www.atlassian.com/git/tutorials/saving-changes/gitignore">https://www.atlassian.com/git/tutorials/saving-changes/gitignore</a></li>
@@ -283,63 +410,85 @@
 <p>Guile Reference Manual <a href="https://www.gnu.org/software/guile/manual/guile.pdf#page=406&amp;zoom=100,0,96">https://www.gnu.org/software/guile/manual/guile.pdf#page=406&amp;zoom=100,0,96</a> <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4" role="doc-endnote">
-<p>Markdown: Syntax <a href="https://daringfireball.net/projects/markdown/syntax">https://daringfireball.net/projects/markdown/syntax</a> [1]: <a href="https://libraries.mit.edu/data-management/store/organize/">https://libraries.mit.edu/data-management/store/organize/</a> [2]: <a href="https://docs.python-guide.org/writing/structure/">https://docs.python-guide.org/writing/structure/</a> [3]: <a href="http://opensource.guide/starting-a-project/#launching-your-own-open-source-project">http://opensource.guide/starting-a-project/#launching-your-own-open-source-project</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>Markdown: Syntax <a href="https://daringfireball.net/projects/markdown/syntax">https://daringfireball.net/projects/markdown/syntax</a> [1]: <a href="https://libraries.mit.edu/data-management/store/organize/">https://libraries.mit.edu/data-management/store/organize/</a> [2]: <a href="https://docs.python-guide.org/writing/structure/">https://docs.python-guide.org/writing/structure/</a> [3]: <a href="http://opensource.guide/starting-a-project/#launching-your-own-open-source-project">http://opensource.guide/starting-a-project/#launching-your-own-open-source-project</a> [4]: <a href="https://medium.com/@msandin/strategies-for-organizing-code-2c9d690b6f33">https://medium.com/@msandin/strategies-for-organizing-code-2c9d690b6f33</a> <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
-
-</div>
-
-  
-<footer class='entry-footer'>
-  <div class='container sep-before'><div class='categories'><svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    
-    <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
-
-</svg>
-<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/reference/'>reference</a></div>
-
-  </div>
-</footer>
-
-
 </article>
+ 
+      
 
-<nav class='entry-nav'>
-  <div class='container'><div class='next-entry sep-before'>
-      <a href='/guides/java/'>
-        <span class='screen-reader-text'>Next post: </span>Java 8<span aria-hidden='true'>Next <svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    
-  <line x1="4" y1="12" x2="20" y2="12"/>
-  <polyline points="14 6 20 12 14 18"/>
-
-</svg>
-</span>
-      </a>
-    </div></div>
-</nav>
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
 
 
 
 
-      </main>
 
-      <footer id='footer' class='footer'>
-        <div class='container sep-before'><div class='copyright'>
-  <p> &copy; 2019-2020 Katherine Chuang, Department of Computer &amp; Information Science, Brooklyn College </p>
+  <div>
+    <a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/edit/master/exampleSite//guides/filenames.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
 </div>
 
-        </div>
+ 
+        
       </footer>
 
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
-  </div><script>window.__assets_js_src="/assets/js/"</script>
 
-<script src='/assets/js/main.c3bcf2df.js'></script><script src='/js/custom.js'></script>
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#introduction">Introduction</a>
+          <ul>
+            <li><a href="#motivations-for-naming-files-well">Motivations for naming files well</a></li>
+            <li><a href="#organizing-your-directory">Organizing your directory</a></li>
+          </ul>
+        </li>
+        <li><a href="#common-file-extensions">Common File extensions</a></li>
+        <li><a href="#common-directory-names">Common Directory Names</a></li>
+        <li><a href="#ignoring-files-with-your-vcs-repository">Ignoring files with your VCS repository</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 
+ 
+    </aside>
+    
+  </main>
+
+  
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
 

@@ -4,21 +4,71 @@
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2020-10-01T00:00:00-04:00</lastmod>
+    <lastmod>2020-11-13T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/interview/</loc>
+    <lastmod>2020-11-13T00:00:00-05:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-10-01T00:00:00-04:00</lastmod>
+    <lastmod>2020-11-13T00:00:00-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/git/</loc>
-    <lastmod>2020-10-01T00:00:00-04:00</lastmod>
+    <loc>/practice/</loc>
+    <lastmod>2020-11-13T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/practice/interviewprep/</loc>
+    <lastmod>2020-11-13T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/guides/concepts-of-web-dev/</loc>
+    <lastmod>2020-11-12T00:00:00-05:00</lastmod>
   </url>
   
   <url>
     <loc>/guides/</loc>
+    <lastmod>2020-11-12T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/projects/</loc>
+    <lastmod>2020-11-12T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/guides/concepts-of-web-network/</loc>
+    <lastmod>2020-11-12T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/web_dev/</loc>
+    <lastmod>2020-11-12T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/guides/buildawebsite/</loc>
+    <lastmod>2020-10-28T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/guides/dataflowdiagrams/</loc>
+    <lastmod>2020-10-28T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/reference/</loc>
+    <lastmod>2020-10-28T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/git/</loc>
     <lastmod>2020-10-01T00:00:00-04:00</lastmod>
   </url>
   
@@ -28,17 +78,12 @@
   </url>
   
   <url>
-    <loc>/categories/reference/</loc>
-    <lastmod>2020-10-01T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/build_tools/</loc>
+    <loc>/guides/buildtools/</loc>
     <lastmod>2020-09-28T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/guides/buildtools/</loc>
+    <loc>/categories/build_tools/</loc>
     <lastmod>2020-09-28T00:00:00-04:00</lastmod>
   </url>
   
@@ -53,12 +98,12 @@
   </url>
   
   <url>
-    <loc>/guides/githubpages/</loc>
-    <lastmod>2020-04-20T00:00:00-04:00</lastmod>
+    <loc>/guides/codeprojects/</loc>
+    <lastmod>2020-05-16T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/web_dev/</loc>
+    <loc>/guides/githubpages/</loc>
     <lastmod>2020-04-20T00:00:00-04:00</lastmod>
   </url>
   

@@ -6,14 +6,36 @@
     <description>Recent content in web_dev on Getting Started Guides</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Apr 2020 00:00:00 -0400</lastBuildDate><atom:link href="/categories/web_dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 12 Nov 2020 00:00:00 -0500</lastBuildDate><atom:link href="/categories/web_dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Getting Started with Github Pages</title>
+      <title>Concepts of Web Development</title>
+      <link>/guides/concepts-of-web-dev/</link>
+      <pubDate>Thu, 12 Nov 2020 00:00:00 -0500</pubDate>
+      
+      <guid>/guides/concepts-of-web-dev/</guid>
+      <description>A website is rendered in a web browser through the HTTP Protocol. There&amp;rsquo;s a lot more one should learn about Internet Protocols, but it&amp;rsquo;s not required to get an operational understanding of working with websites.
+Web Design Principles
+The page that is rendered by the web browser is formatted in Hypertext Markup Language or HTML for short. HTML is a set of nested tags that describe how the page should be structured.</description>
+    </item>
+    
+    <item>
+      <title>Building on the web</title>
+      <link>/guides/buildawebsite/</link>
+      <pubDate>Wed, 28 Oct 2020 00:00:00 -0400</pubDate>
+      
+      <guid>/guides/buildawebsite/</guid>
+      <description>Table of Contents  Introduction  Process from Idea to Product  Concepts of Web Development  Tools  Introduction #  This page focuses on the process, concepts, and tools for building any type of web site or web application. A website has a lot of overlapping functionality and technology as a web application, except it doesn&amp;rsquo;t focus on high volume of dynamism and user interactivity, which would require a database.</description>
+    </item>
+    
+    <item>
+      <title>Github Pages</title>
       <link>/guides/githubpages/</link>
       <pubDate>Mon, 20 Apr 2020 00:00:00 -0400</pubDate>
       
       <guid>/guides/githubpages/</guid>
-      <description>What is Github Pages? This is a feature provided by GitHub where you can host websites directly from your GitHub repository. These websites are typically static files, meaning there is no database no backend.</description>
+      <description>What is Github Pages? #  This is a feature provided by GitHub where you can host websites directly from your GitHub repository. These websites are typically static files, meaning there is no database no backend. For example, this website is hosted on GitHub Pages, it was built with a static site generator.
+To find out more, go to https://pages.github.com
+How to create your home page (easy way) #  When you use GitHub pages, you can access your website at the url http://username.</description>
     </item>
     
   </channel>

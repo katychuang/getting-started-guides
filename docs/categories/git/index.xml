@@ -13,25 +13,39 @@
       <pubDate>Thu, 01 Oct 2020 00:00:00 -0400</pubDate>
       
       <guid>/guides/writingreadme/</guid>
-      <description>What is a README? This is a file that is named README, that usually resides in the root of your project directory. This name comes from the command Read me. as in the situation of handing a project off to another developer and writing a memo to them that should be read first before the source code.</description>
+      <description>What is a README? #  This is a file that is named README, that usually resides in the root of your project directory. This name comes from the command Read me. as in the situation of handing a project off to another developer and writing a memo to them that should be read first before the source code.
+In a way, it serves as an executive summary of your project.</description>
     </item>
     
     <item>
-      <title>Getting Started with Github Pages</title>
+      <title>Github Pages</title>
       <link>/guides/githubpages/</link>
       <pubDate>Mon, 20 Apr 2020 00:00:00 -0400</pubDate>
       
       <guid>/guides/githubpages/</guid>
-      <description>What is Github Pages? This is a feature provided by GitHub where you can host websites directly from your GitHub repository. These websites are typically static files, meaning there is no database no backend.</description>
+      <description>What is Github Pages? #  This is a feature provided by GitHub where you can host websites directly from your GitHub repository. These websites are typically static files, meaning there is no database no backend. For example, this website is hosted on GitHub Pages, it was built with a static site generator.
+To find out more, go to https://pages.github.com
+How to create your home page (easy way) #  When you use GitHub pages, you can access your website at the url http://username.</description>
     </item>
     
     <item>
-      <title>Getting started with Git</title>
+      <title>Git</title>
       <link>/guides/git/</link>
       <pubDate>Sun, 01 Mar 2020 00:00:00 -0500</pubDate>
       
       <guid>/guides/git/</guid>
-      <description>Git Version control systems are used in managing revision control of project artifacts, and maintaining a history of changes to each artifact. Artifacts can include documents, source code, and much more.</description>
+      <description>Git #  Version control systems are used in managing revision control of project artifacts, and maintaining a history of changes to each artifact. Artifacts can include documents, source code, and much more.
+Motivations for Source Version Control
+ Keeping track of code Storing versions of code changes Restoring previous versions Reviewing work history Collaborating in a group Backup There are two main approaches to version control management systems. That is, they can either be centralized, or decentralized repositories.</description>
+    </item>
+    
+    <item>
+      <title>File naming conventions</title>
+      <link>/guides/filenames/</link>
+      <pubDate>Tue, 28 Jan 2020 00:00:00 -0500</pubDate>
+      
+      <guid>/guides/filenames/</guid>
+      <description>Table of Contents   Introduction   Motivations for naming files well  Organizing your directory    Common File extensions  Common Directory Names  Ignoring files with your VCS repository    Introduction #  In the day to day work of programming, one often finds that a large fraction of time is spent looking for certain files. One of the wise adages with managing an assortment of files is to provide an organization scheme to make it easier to find what you need again.</description>
     </item>
     
   </channel>

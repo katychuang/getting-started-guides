@@ -6,22 +6,49 @@
     <description>Recent content in Categories on Getting Started Guides</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Oct 2020 00:00:00 -0400</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 Nov 2020 00:00:00 -0500</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>git</title>
-      <link>/categories/git/</link>
-      <pubDate>Thu, 01 Oct 2020 00:00:00 -0400</pubDate>
+      <title>interview</title>
+      <link>/categories/interview/</link>
+      <pubDate>Fri, 13 Nov 2020 00:00:00 -0500</pubDate>
       
-      <guid>/categories/git/</guid>
+      <guid>/categories/interview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>projects</title>
+      <link>/categories/projects/</link>
+      <pubDate>Thu, 12 Nov 2020 00:00:00 -0500</pubDate>
+      
+      <guid>/categories/projects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>web_dev</title>
+      <link>/categories/web_dev/</link>
+      <pubDate>Thu, 12 Nov 2020 00:00:00 -0500</pubDate>
+      
+      <guid>/categories/web_dev/</guid>
       <description></description>
     </item>
     
     <item>
       <title>reference</title>
       <link>/categories/reference/</link>
-      <pubDate>Thu, 01 Oct 2020 00:00:00 -0400</pubDate>
+      <pubDate>Wed, 28 Oct 2020 00:00:00 -0400</pubDate>
       
       <guid>/categories/reference/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>/categories/git/</link>
+      <pubDate>Thu, 01 Oct 2020 00:00:00 -0400</pubDate>
+      
+      <guid>/categories/git/</guid>
       <description></description>
     </item>
     
@@ -40,15 +67,6 @@
       <pubDate>Sat, 01 Aug 2020 00:00:00 -0400</pubDate>
       
       <guid>/categories/ssh/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>web_dev</title>
-      <link>/categories/web_dev/</link>
-      <pubDate>Mon, 20 Apr 2020 00:00:00 -0400</pubDate>
-      
-      <guid>/categories/web_dev/</guid>
       <description></description>
     </item>
     
