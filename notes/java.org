@@ -3,7 +3,7 @@
 #+AUTHOR: Katherine Chuang
 #+EMAIL:  chuang@sci.brooklyn.cuny.edu
 #+DATE:   2020-02-01
-#+OPTIONS:   H:3 num:n  \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   H:3 num:n  \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t ^:nil
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
 #+ALT_TITLE: Lecture Notes
 
@@ -21,6 +21,7 @@
 The CIS department at Brooklyn College /officially supports/ Java 8. This means that /Java courses/ are taught adhering to this version. Using later versions such as /Java 11/ is perfectly find for most instances, there may be some minor differences with certain classes and methods or certain version specific-quirks.
 
 The best thing to do is to keep documentation links handy.
+
 ** Helpful links
 :PROPERTIES:
 :UNNUMBERED: toc
@@ -36,17 +37,18 @@ https://docs.oracle.com/javase/8/
 https://docs.oracle.com/javase/8/docs/api/index.html
 *** Java Code Visualizer
 http://www.pythontutor.com/java.html#mode=edit
-* Concepts
+** Concepts
 :PROPERTIES:
 :UNNUMBERED: toc
 :END:
-** Variables
-** Primitive Data Types
-** Operators
-** Expressions, Statements, and Blocks
-** Control Flow Statements
-** Objects & Classes
-** Arrays
+
+**** Variables
+**** Primitive Data Types
+**** Operators
+**** Expressions, Statements, and Blocks
+**** Control Flow Statements
+**** Objects & Classes
+**** Arrays
 * Compiling Java on Command Line
 
 To compile Java source code on the command line, it is with this command where ~Main.java~ is your filename.
@@ -79,17 +81,20 @@ First floor, West End Building
 P: 718.951.5787
 
 * Java Books and other resources
-:PROPERTIES:
-:UNNUMBERED: toc
-:END:
-** Teach Yourself Java in 21 Minutes
+*** Teach Yourself Java in 21 Minutes
 https://fileadmin.cs.lth.se/cs/Education/EDA040/common/java21.pdf
-**
+*** Java4Kids
+https://yfain.github.io/Java4Kids/
 * Lecture Slides
 - Java Review
-  {{< gslides src="docs.google.com/presentation/d/e/2PACX-1vRtXxeatgBGq7xebtDWbsPFZfe6hmx_EllwyN7SH58xpeZhLp0pP3nhGza2tG2KeBXTwNJOrniM-99Q/pub?start=false&loop=false&delayms=3000" >}}
+  {{< gslides src="docs.google.com/presentation/d/e/2PACX-1vRtXxeatgBGq7xebtDWbsPFZfe6hmx\under{}EllwyN7SH58xpeZhLp0pP3nhGza2tG2KeBXTwNJOrniM-99Q/embed?start=false&amp;loop=false&amp;delayms=3000" >}}
 
 - Two Dimensional Arrays
-  {{< gslides src="docs.google.com/presentation/d/e/2PACX-1vQ1ToT9Ovyob0CbcORIXdaraIewpmfPhgwBxKTPbcB4y4wo_NEODQ3Jsw-wprFh9_V-wM1NjzuN_pkO/embed?start=false&amp;loop=false&amp;delayms=3000" >}}
+  {{< gslides src="docs.google.com/presentation/d/e/2PACX-1vQ1ToT9Ovyob0CbcORIXdaraIewpmfPhgwBxKTPbcB4y4wo\under{}NEODQ3Jsw-wprFh9\under{}V-wM1NjzuN\under{}pkO/embed?start=false&amp;loop=false&amp;delayms=3000" >}}
 
 
+
+* COMMENT Local Variables   :ARCHIVE:
+# Local Variables:
+# eval: (org-hugo-auto-export-mode)
+# End:

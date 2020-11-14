@@ -6,14 +6,24 @@
     <description>Recent content in reference on Getting Started Guides</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Oct 2020 00:00:00 -0400</lastBuildDate><atom:link href="/categories/reference/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Oct 2020 00:00:00 -0400</lastBuildDate><atom:link href="/categories/reference/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data Flow Diagrams</title>
+      <link>/guides/dataflowdiagrams/</link>
+      <pubDate>Wed, 28 Oct 2020 00:00:00 -0400</pubDate>
+      
+      <guid>/guides/dataflowdiagrams/</guid>
+      <description>Table of Contents  What are Data Flow Diagrams (DFD)?   Notations   Rectangle (Entity)  Circle (Process)  Rounded rectangle (Data Store)  Arrow (Data flow)      Why are Diagrams useful?  How do you draw a diagram?  Software for drawing diagrams  References  What are Data Flow Diagrams (DFD)? #  This is a diagram that maps out the flow of information for any system.</description>
+    </item>
+    
     <item>
       <title>Including a README with your project</title>
       <link>/guides/writingreadme/</link>
       <pubDate>Thu, 01 Oct 2020 00:00:00 -0400</pubDate>
       
       <guid>/guides/writingreadme/</guid>
-      <description>What is a README? This is a file that is named README, that usually resides in the root of your project directory. This name comes from the command Read me. as in the situation of handing a project off to another developer and writing a memo to them that should be read first before the source code.</description>
+      <description>What is a README? #  This is a file that is named README, that usually resides in the root of your project directory. This name comes from the command Read me. as in the situation of handing a project off to another developer and writing a memo to them that should be read first before the source code.
+In a way, it serves as an executive summary of your project.</description>
     </item>
     
     <item>
@@ -22,7 +32,7 @@
       <pubDate>Tue, 28 Jan 2020 00:00:00 -0500</pubDate>
       
       <guid>/guides/filenames/</guid>
-      <description>Table of Contents  Introduction  Motivations for naming files well Organizing your directory   Common File extensions Common Directory Names Ignoring files with your VCS repository    Introduction In the day to day work of programming, one often finds that a large fraction of time is spent looking for certain files.</description>
+      <description>Table of Contents   Introduction   Motivations for naming files well  Organizing your directory    Common File extensions  Common Directory Names  Ignoring files with your VCS repository    Introduction #  In the day to day work of programming, one often finds that a large fraction of time is spent looking for certain files. One of the wise adages with managing an assortment of files is to provide an organization scheme to make it easier to find what you need again.</description>
     </item>
     
   </channel>

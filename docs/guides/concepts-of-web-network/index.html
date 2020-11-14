@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta name="generator" content="Hugo 0.75.1" />
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A website is rendered in a web browser through the HTTP Protocol. There&rsquo;s a lot more one should learn about Internet Protocols, but it&rsquo;s not required to get an operational understanding of working with websites. The page that is rendered by the webbrowser is formatted in Hypertext Markup Language or HTML for short. HTML is a set of nested tags that describe how the page should be structured. It&rsquo;s like an outline with hierarchical layers or if you recall from data structures class, a tree.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Web Development Intro" />
+<meta property="og:description" content="A website is rendered in a web browser through the HTTP Protocol. There&rsquo;s a lot more one should learn about Internet Protocols, but it&rsquo;s not required to get an operational understanding of working with websites. The page that is rendered by the webbrowser is formatted in Hypertext Markup Language or HTML for short. HTML is a set of nested tags that describe how the page should be structured. It&rsquo;s like an outline with hierarchical layers or if you recall from data structures class, a tree." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/guides/concepts-of-web-network/" />
+<meta property="article:published_time" content="2020-11-12T00:00:00-05:00" />
+<meta property="article:modified_time" content="2020-11-12T00:00:00-05:00" />
+<title>Web Development Intro | Getting Started Guides</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.134b70e5316650a530cb42e4e8630b2a01d532bebfc0337028211175336e4806.css" integrity="sha256-E0tw5TFmUKUwy0Lk6GMLKgHVMr6/wDNwKCERdTNuSAY=">
+<script defer src="/en.search.min.527fc7ed0aaead0a55e9a15100bba13d739025fbd484ef5a11a24dbe90f4e160.js" integrity="sha256-Un/H7QqurQpV6aFRALuhPXOQJfvUhO9aEaJNvpD04WA="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  <style>
+h1, h2, h3, h4, h5, h6, .heading {
+			font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+		font-weight: 700;
+		line-height: 1.2;
+		color: #263238;
+		margin: 0 0 .625em;
+}
+
+ .markdown h1, {
+		display: block;
+		font-size: 2em;
+		margin-block-start: 0.67em;
+		margin-block-end: 0.67em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		font-weight: bold;
+}
+.markdown h2,.heading {
+		font-size: 1.5em;
+		display: block;
+		margin-block-start: 0.67em;
+		margin-block-end: 0.67em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		font-weight: bold;
+ }
+ .markdown h4, .markdown h3{
+		 font-size: 1.375em;
+		margin-block-start: 0.67em;
+		margin-block-end: 0.67em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		font-weight: bold;
+ }
+ body {
+		 font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+		 font-size: 1.125em;
+		 line-height: 1.5;
+		 color: #37474f;
+ }
+</style>
+
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Getting Started Guides</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  <ul>
+<li>
+<p>Programming in Java</p>
+<ul>
+<li>
+  <a href="/guides/java/">Java 8</a></li>
+<li>
+  <a href="/guides/jcf/">Java Collections Framework</a></li>
+</ul>
+</li>
+<li>
+<p>Maintaining Coding Projects</p>
+<ul>
+<li>
+  <a href="/guides/git/">Git</a></li>
+<li>
+  <a href="/guides/filenames/">Filename Conventions</a></li>
+<li>
+  <a href="/guides/writingreadme/">README Files</a></li>
+<li>
+  <a href="/guides/codeprojects/">Sharing Coding Projects</a></li>
+<li>
+  <a href="/guides/"></a></li>
+</ul>
+</li>
+<li>
+<p>Software Development</p>
+<ul>
+<li>
+  <a href="/guides/dataflowdiagrams/">Data Flow Diagrams</a></li>
+<li>
+  <a href="/guides/buildtools/">Build Tools</a></li>
+</ul>
+</li>
+<li>
+<p>Web Development</p>
+<ul>
+<li>
+  <a href="/guides/buildawebsite/">Building on the web</a></li>
+<li>
+  <a href="/guides/githubpages/">Github Pages</a></li>
+<li>
+  <a href="/guides/ssh/">SSH</a></li>
+</ul>
+</li>
+<li>
+<p>Interviewing</p>
+<ul>
+<li>Resume guide <em>(coming soon)</em></li>
+<li>
+  <a href="/practice/interviewprep/">Interview Prep</a>
+<br /></li>
+</ul>
+</li>
+<li>
+<p><strong>Featured</strong></p>
+</li>
+<li>
+<p>
+  <a href="/guides/git/">Git</a></p>
+</li>
+<li>
+<p>
+  <a href="/guides/githubpages/">Github Pages</a>
+<br /></p>
+</li>
+</ul>
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/katychuang/getting-started-guides" target="_blank" rel="noopener">
+        Source
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Web Development Intro</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  <nav id="TableOfContents"></nav>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><p>A website is rendered in a web browser through the HTTP Protocol. There&rsquo;s a lot more one should learn about Internet Protocols, but it&rsquo;s not required to get an operational understanding of working with websites. The page that is rendered by the webbrowser is formatted in <em>Hypertext Markup Language</em> or HTML for short. HTML is a set of nested tags that describe how the page should be structured. It&rsquo;s like an outline with hierarchical layers or if you recall from data structures class, a tree. This tree is officially called the <em>Document Object Model (DOM)</em>.</p>
+<p>If we use cake decorating as an analogy, HTML is the structure (i.e. the layers of cake), and <em>Cascading Style Sheets (CSS)</em> is the styling on top of the layers. You can be barebones or go all out with CSS to obscure the underlying layers.</p>
+<div id="Container"
+ style="padding-bottom:56.25%; position:relative; display:block; width: 100%">
+ <iframe id="googleSlideIframe"
+  width="100%" height="100%"
+  src="http://docs.google.com/presentation/d/e/2PACX-1vTIl6aclBHsjdDvkfFuDgIQ9esEmw5ue8WsS4m9TyiBO2rTt0DJdhFyZxDrFq9bmuCLN1OVgiSMvXbO/pub?start=false&amp;loop=false&amp;delayms=5000"
+  frameborder="0" allowfullscreen=""
+  style="position:absolute; top:0; left: 0"></iframe>
+</div>
+
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+  <div>
+    <a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/edit/master/exampleSite//guides/concepts-of-web-network.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents"></nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

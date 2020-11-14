@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>projects on Getting Started Guides</title>
+    <link>/categories/projects/</link>
+    <description>Recent content in projects on Getting Started Guides</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 12 Nov 2020 00:00:00 -0500</lastBuildDate><atom:link href="/categories/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Concepts of Web Development</title>
+      <link>/guides/concepts-of-web-dev/</link>
+      <pubDate>Thu, 12 Nov 2020 00:00:00 -0500</pubDate>
+      
+      <guid>/guides/concepts-of-web-dev/</guid>
+      <description>A website is rendered in a web browser through the HTTP Protocol. There&amp;rsquo;s a lot more one should learn about Internet Protocols, but it&amp;rsquo;s not required to get an operational understanding of working with websites.
+Web Design Principles
+The page that is rendered by the web browser is formatted in Hypertext Markup Language or HTML for short. HTML is a set of nested tags that describe how the page should be structured.</description>
+    </item>
+    
+    <item>
+      <title>Web Development Intro</title>
+      <link>/guides/concepts-of-web-network/</link>
+      <pubDate>Thu, 12 Nov 2020 00:00:00 -0500</pubDate>
+      
+      <guid>/guides/concepts-of-web-network/</guid>
+      <description>A website is rendered in a web browser through the HTTP Protocol. There&amp;rsquo;s a lot more one should learn about Internet Protocols, but it&amp;rsquo;s not required to get an operational understanding of working with websites. The page that is rendered by the webbrowser is formatted in Hypertext Markup Language or HTML for short. HTML is a set of nested tags that describe how the page should be structured. It&amp;rsquo;s like an outline with hierarchical layers or if you recall from data structures class, a tree.</description>
+    </item>
+    
+    <item>
+      <title>Building on the web</title>
+      <link>/guides/buildawebsite/</link>
+      <pubDate>Wed, 28 Oct 2020 00:00:00 -0400</pubDate>
+      
+      <guid>/guides/buildawebsite/</guid>
+      <description>Table of Contents  Introduction  Process from Idea to Product  Concepts of Web Development  Tools  Introduction #  This page focuses on the process, concepts, and tools for building any type of web site or web application. A website has a lot of overlapping functionality and technology as a web application, except it doesn&amp;rsquo;t focus on high volume of dynamism and user interactivity, which would require a database.</description>
+    </item>
+    
+    <item>
+      <title>Data Flow Diagrams</title>
+      <link>/guides/dataflowdiagrams/</link>
+      <pubDate>Wed, 28 Oct 2020 00:00:00 -0400</pubDate>
+      
+      <guid>/guides/dataflowdiagrams/</guid>
+      <description>Table of Contents  What are Data Flow Diagrams (DFD)?   Notations   Rectangle (Entity)  Circle (Process)  Rounded rectangle (Data Store)  Arrow (Data flow)      Why are Diagrams useful?  How do you draw a diagram?  Software for drawing diagrams  References  What are Data Flow Diagrams (DFD)? #  This is a diagram that maps out the flow of information for any system.</description>
+    </item>
+    
+    <item>
+      <title>Including a README with your project</title>
+      <link>/guides/writingreadme/</link>
+      <pubDate>Thu, 01 Oct 2020 00:00:00 -0400</pubDate>
+      
+      <guid>/guides/writingreadme/</guid>
+      <description>What is a README? #  This is a file that is named README, that usually resides in the root of your project directory. This name comes from the command Read me. as in the situation of handing a project off to another developer and writing a memo to them that should be read first before the source code.
+In a way, it serves as an executive summary of your project.</description>
+    </item>
+    
+    <item>
+      <title>Build Tools</title>
+      <link>/guides/buildtools/</link>
+      <pubDate>Mon, 28 Sep 2020 00:00:00 -0400</pubDate>
+      
+      <guid>/guides/buildtools/</guid>
+      <description>Table of Contents   What is a build tool?  GNU Make   Makefile    Apache Maven   Maven Project   Maven Commands  Creating a Maven project from Scratch  Explaining the pom.xml configiguration file  Project File structure  Compile and Run    Collaborating on a Maven project    Choosing a Build tool  Links    What is a build tool?</description>
+    </item>
+    
+    <item>
+      <title>Sharing Coding Projects</title>
+      <link>/guides/codeprojects/</link>
+      <pubDate>Sat, 16 May 2020 00:00:00 -0400</pubDate>
+      
+      <guid>/guides/codeprojects/</guid>
+      <description>Table of Contents  Project based thinking   Programming as an activity  Planning before you begin coding   Software Development Life Cycle (SDLC)      Checklists   Elements to include with your project repository    1. Project description   2. Source code with comments   3. Submit to the form before deadline    Elements of Style and Presentation  Other Enhancements    References  Project based thinking #  Programmers are typically learning to write source code to build programs not just scripts.</description>
+    </item>
+    
+    <item>
+      <title>File naming conventions</title>
+      <link>/guides/filenames/</link>
+      <pubDate>Tue, 28 Jan 2020 00:00:00 -0500</pubDate>
+      
+      <guid>/guides/filenames/</guid>
+      <description>Table of Contents   Introduction   Motivations for naming files well  Organizing your directory    Common File extensions  Common Directory Names  Ignoring files with your VCS repository    Introduction #  In the day to day work of programming, one often finds that a large fraction of time is spent looking for certain files. One of the wise adages with managing an assortment of files is to provide an organization scheme to make it easier to find what you need again.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -13,8 +13,9 @@
       <pubDate>Fri, 28 Feb 2020 00:00:00 -0500</pubDate>
       
       <guid>/guides/jcf/</guid>
-      <description>Introduction This description is taken straight from Oracle&amp;rsquo;s Java Documentation page.
- The Java platform includes a collections framework. A collection is an object that represents a group of objects (such as the classic Vector class).</description>
+      <description>Introduction #  This description is taken straight from Oracle&amp;rsquo;s Java Documentation page.
+ The Java platform includes a collections framework. A collection is an object that represents a group of objects (such as the classic Vector class). A collections framework is a unified architecture for representing and manipulating collections, enabling collections to be manipulated independently of implementation details.
+ Object-Oriented Fundamentals #  It would be helpful to remember that because is using the Java programming language, which is an object oriented programming language, these collections use the data abstraction concepts such as inheritance to make it possible to be used.</description>
     </item>
     
     <item>
@@ -23,7 +24,9 @@
       <pubDate>Sat, 01 Feb 2020 00:00:00 -0500</pubDate>
       
       <guid>/guides/java/</guid>
-      <description>1 Intro The CIS department at Brooklyn College officially supports Java 8. This means that Java courses are taught adhering to this version. Using later versions such as Java 11 is perfectly find for most instances, there may be some minor differences with certain classes and methods or certain version specific-quirks.</description>
+      <description>1 Intro #  The CIS department at Brooklyn College officially supports Java 8. This means that Java courses are taught adhering to this version. Using later versions such as Java 11 is perfectly find for most instances, there may be some minor differences with certain classes and methods or certain version specific-quirks.
+The best thing to do is to keep documentation links handy.
+Helpful links #  These are useful links to reference.</description>
     </item>
     
   </channel>

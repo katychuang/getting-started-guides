@@ -8,12 +8,12 @@
     <language>en-us</language>
     <lastBuildDate>Mon, 28 Sep 2020 00:00:00 -0400</lastBuildDate><atom:link href="/categories/build_tools/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Introduction to build tools</title>
+      <title>Build Tools</title>
       <link>/guides/buildtools/</link>
       <pubDate>Mon, 28 Sep 2020 00:00:00 -0400</pubDate>
       
       <guid>/guides/buildtools/</guid>
-      <description>Table of Contents  What is a build tool? GNU Make  Makefile   Apache Maven  Maven Project  Maven Commands Creating a Maven project from Scratch Explaining the pom.</description>
+      <description>Table of Contents   What is a build tool?  GNU Make   Makefile    Apache Maven   Maven Project   Maven Commands  Creating a Maven project from Scratch  Explaining the pom.xml configiguration file  Project File structure  Compile and Run    Collaborating on a Maven project    Choosing a Build tool  Links    What is a build tool?</description>
     </item>
     
   </channel>

@@ -1,187 +1,365 @@
 <!DOCTYPE html>
-<html lang='en' dir='auto'><head>
-  <meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'>
-<meta name='description' content='1 Intro The CIS department at Brooklyn College officially supports Java 8. This means that Java courses are taught adhering to this version. Using later versions such as Java 11 is perfectly find for most instances, there may be some minor differences with certain classes and methods or certain version specific-quirks.'>
-<meta name='theme-color' content='#800000'>
+<html lang="en" dir=>
 
-<meta property='og:title' content='Java 8 • Getting Started Guides'>
-<meta property='og:description' content='1 Intro The CIS department at Brooklyn College officially supports Java 8. This means that Java courses are taught adhering to this version. Using later versions such as Java 11 is perfectly find for most instances, there may be some minor differences with certain classes and methods or certain version specific-quirks.'>
-<meta property='og:url' content='/guides/java/'>
-<meta property='og:site_name' content='Getting Started Guides'>
-<meta property='og:type' content='article'><meta property='article:section' content='guides'><meta property='article:published_time' content='2020-02-01T00:00:00-05:00'/><meta property='article:modified_time' content='2020-02-01T00:00:00-05:00'/><meta name='twitter:card' content='summary'>
+<head>
+  <meta name="generator" content="Hugo 0.75.1" />
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="1 Intro #  The CIS department at Brooklyn College officially supports Java 8. This means that Java courses are taught adhering to this version. Using later versions such as Java 11 is perfectly find for most instances, there may be some minor differences with certain classes and methods or certain version specific-quirks.
+The best thing to do is to keep documentation links handy.
+Helpful links #  These are useful links to reference.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Java 8" />
+<meta property="og:description" content="1 Intro #  The CIS department at Brooklyn College officially supports Java 8. This means that Java courses are taught adhering to this version. Using later versions such as Java 11 is perfectly find for most instances, there may be some minor differences with certain classes and methods or certain version specific-quirks.
+The best thing to do is to keep documentation links handy.
+Helpful links #  These are useful links to reference." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/guides/java/" />
+<meta property="article:published_time" content="2020-02-01T00:00:00-05:00" />
+<meta property="article:modified_time" content="2020-02-01T00:00:00-05:00" />
+<title>Java 8 | Getting Started Guides</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.134b70e5316650a530cb42e4e8630b2a01d532bebfc0337028211175336e4806.css" integrity="sha256-E0tw5TFmUKUwy0Lk6GMLKgHVMr6/wDNwKCERdTNuSAY=">
+<script defer src="/en.search.min.527fc7ed0aaead0a55e9a15100bba13d739025fbd484ef5a11a24dbe90f4e160.js" integrity="sha256-Un/H7QqurQpV6aFRALuhPXOQJfvUhO9aEaJNvpD04WA="></script>
 
-<meta name="generator" content="Hugo 0.75.1" />
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
 
-  <title>Java 8 • Getting Started Guides</title>
-  <link rel='canonical' href='/guides/java/'>
-  
-  
-  <link rel='icon' href='/favicon.ico'>
-<link rel='stylesheet' href='/assets/css/main.ab98e12b.css'><link rel='stylesheet' href='/css/custom.css'><style>
-:root{--color-accent:#800000;}
+  <style>
+h1, h2, h3, h4, h5, h6, .heading {
+			font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+		font-weight: 700;
+		line-height: 1.2;
+		color: #263238;
+		margin: 0 0 .625em;
+}
+
+ .markdown h1, {
+		display: block;
+		font-size: 2em;
+		margin-block-start: 0.67em;
+		margin-block-end: 0.67em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		font-weight: bold;
+}
+.markdown h2,.heading {
+		font-size: 1.5em;
+		display: block;
+		margin-block-start: 0.67em;
+		margin-block-end: 0.67em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		font-weight: bold;
+ }
+ .markdown h4, .markdown h3{
+		 font-size: 1.375em;
+		margin-block-start: 0.67em;
+		margin-block-end: 0.67em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		font-weight: bold;
+ }
+ body {
+		 font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+		 font-size: 1.125em;
+		 line-height: 1.5;
+		 color: #37474f;
+ }
 </style>
 
-  
-
 </head>
-<body class='page type-guides has-sidebar'>
 
-  <div class='site'><div id='sidebar' class='sidebar'>
-  <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
-
-  <div class='container'><section class='widget widget-about sep-after'>
-  <header>
-    
-    <h2 class='title site-title '>
-      <a href='/'>
-      Getting Started Guides
-      </a>
-    </h2>
-    <div class='desc'>
-    Short Guides for BC CIS Students
-    </div>
-  </header>
-
-</section>
-<section class='widget widget-sidebar_menu sep-after'><nav id='sidebar-menu' class='menu sidebar-menu' aria-label='Sidebar Menu'>
-    <div class='container'>
-      <ul><li class='item'>
-  <a href='/'>Guides</a></li><li class='item'>
-  <a href='/categories/'>Categories</a></li><li class='item'>
-  <a href='https://github.com/katychuang/getting-started-guides'>Source</a></li></ul>
-    </div>
-  </nav>
-
-</section></div>
-
-  <div class='sidebar-overlay'></div>
-</div><div class='main'><a class='screen-reader-text' href='#content'>Skip to Content</a>
-
-<button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
-  <span class='screen-reader-text'>Toggle Sidebar</span>
-  <span class='open'><svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    
-  <line x1="3" y1="12" x2="21" y2="12" />
-  <line x1="3" y1="6" x2="21" y2="6" />
-  <line x1="3" y1="18" x2="21" y2="18" />
-
-</svg>
-</span>
-  <span class='close'><svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    
-  <line x1="18" y1="6" x2="6" y2="18" />
-  <line x1="6" y1="6" x2="18" y2="18" />
-
-</svg>
-</span>
-</button><div class='header-widgets'>
-        <div class='container'>
-    
-    <style>.widget-breadcrumbs li:after{content:'\2f '}</style>
-  <section class='widget widget-breadcrumbs sep-after'>
-    <nav id='breadcrumbs'>
-      <ol><li><a href='/'>Getting Started Guides</a></li><li><a href='/guides/'>Guides</a></li><li><span>Java 8</span></li></ol>
-    </nav>
-  </section></div>
-      </div>
-
-      <header id='header' class='header site-header'>
-        <div class='container sep-after'>
-          <div class='header-info'><p class='site-title title'>Getting Started Guides</p><p class='desc site-desc'>Short Guides for BC CIS Students</p>
-          </div>
-        </div>
-      </header>
-
-      <main id='content'>
-
-
-<article lang='en' class='entry'>
-  <header class='header entry-header'>
-  <div class='container sep-after'>
-    <div class='header-info'>
-      <h1 class='title'>Java 8</h1>
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
       
-
-    </div>
-    <div class='entry-meta'>
-  <span class='posted-on'><svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    
-  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
-  <line x1="16" y1="2" x2="16" y2="6"/>
-  <line x1="8" y1="2" x2="8" y2="6"/>
-  <line x1="3" y1="10" x2="21" y2="10"/>
-
-</svg>
-<span class='screen-reader-text'>Posted on </span>
-  <time class='entry-date' datetime='2020-02-01T00:00:00-05:00'>2020, Feb 01</time>
-</span>
-
-  
-  
-<span class='reading-time'><svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    
-  <circle cx="12" cy="12" r="10"/>
-  <polyline points="12 6 12 12 15 15"/>
-
-</svg>
-2 mins read
-</span>
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Getting Started Guides</span>
+  </a>
+</h2>
 
 
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
 </div>
 
 
-  </div>
-</header>
+
+
+
+
+
+
+
+
+
+  <ul>
+<li>
+<p>Programming in Java</p>
+<ul>
+<li>
+  <a href="/guides/java/"class=active>Java 8</a></li>
+<li>
+  <a href="/guides/jcf/">Java Collections Framework</a></li>
+</ul>
+</li>
+<li>
+<p>Maintaining Coding Projects</p>
+<ul>
+<li>
+  <a href="/guides/git/">Git</a></li>
+<li>
+  <a href="/guides/filenames/">Filename Conventions</a></li>
+<li>
+  <a href="/guides/writingreadme/">README Files</a></li>
+<li>
+  <a href="/guides/codeprojects/">Sharing Coding Projects</a></li>
+<li>
+  <a href="/guides/"></a></li>
+</ul>
+</li>
+<li>
+<p>Software Development</p>
+<ul>
+<li>
+  <a href="/guides/dataflowdiagrams/">Data Flow Diagrams</a></li>
+<li>
+  <a href="/guides/buildtools/">Build Tools</a></li>
+</ul>
+</li>
+<li>
+<p>Web Development</p>
+<ul>
+<li>
+  <a href="/guides/buildawebsite/">Building on the web</a></li>
+<li>
+  <a href="/guides/githubpages/">Github Pages</a></li>
+<li>
+  <a href="/guides/ssh/">SSH</a></li>
+</ul>
+</li>
+<li>
+<p>Interviewing</p>
+<ul>
+<li>Resume guide <em>(coming soon)</em></li>
+<li>
+  <a href="/practice/interviewprep/">Interview Prep</a>
+<br /></li>
+</ul>
+</li>
+<li>
+<p><strong>Featured</strong></p>
+</li>
+<li>
+<p>
+  <a href="/guides/git/">Git</a></p>
+</li>
+<li>
+<p>
+  <a href="/guides/githubpages/">Github Pages</a>
+<br /></p>
+</li>
+</ul>
+
+
+
+
+
 
   
+<ul>
   
+  <li>
+    <a href="https://github.com/katychuang/getting-started-guides" target="_blank" rel="noopener">
+        Source
+      </a>
+  </li>
+  
+</ul>
 
-  <div class='container entry-content'>
-  <h2 id="intro"><span class="section-num">1</span> Intro</h2>
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Java 8</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#intro"><span class="section-num">1</span> Intro</a>
+          <ul>
+            <li><a href="#helpful-links">Helpful links</a></li>
+            <li><a href="#concepts">Concepts</a></li>
+          </ul>
+        </li>
+        <li><a href="#compiling-java-on-command-line"><span class="section-num">2</span> Compiling Java on Command Line</a>
+          <ul>
+            <li><a href="#bc-students-can-use-the-web-lab-server-to-compile-and-run-java-code"><span class="section-num">2.1</span> BC Students can use the WEB Lab Server to compile and run Java code</a></li>
+          </ul>
+        </li>
+        <li><a href="#java-books-and-other-resources"><span class="section-num">3</span> Java Books and other resources</a>
+          <ul>
+            <li></li>
+          </ul>
+        </li>
+        <li><a href="#lecture-slides"><span class="section-num">4</span> Lecture Slides</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h2 id="intro">
+  <span class="section-num">1</span> Intro
+  <a class="anchor" href="#intro">#</a>
+</h2>
 <p>The CIS department at Brooklyn College <em>officially supports</em> Java 8. This means that <em>Java courses</em> are taught adhering to this version. Using later versions such as <em>Java 11</em> is perfectly find for most instances, there may be some minor differences with certain classes and methods or certain version specific-quirks.</p>
 <p>The best thing to do is to keep documentation links handy.</p>
-<h3 id="helpful-links">Helpful links</h3>
+<h3 id="helpful-links">
+  Helpful links
+  <a class="anchor" href="#helpful-links">#</a>
+</h3>
 <p>These are useful links to reference.</p>
-<h4 id="the-java-tutorials-for-jdk-8">The Java Tutorials for JDK 8</h4>
+<h4 id="the-java-tutorials-for-jdk-8">
+  The Java Tutorials for JDK 8
+  <a class="anchor" href="#the-java-tutorials-for-jdk-8">#</a>
+</h4>
 <p><a href="https://docs.oracle.com/javase/tutorial/index.html">https://docs.oracle.com/javase/tutorial/index.html</a></p>
-<h4 id="java-se-8-documenatation">Java SE 8 Documenatation</h4>
+<h4 id="java-se-8-documenatation">
+  Java SE 8 Documenatation
+  <a class="anchor" href="#java-se-8-documenatation">#</a>
+</h4>
 <p><a href="https://docs.oracle.com/javase/8/">https://docs.oracle.com/javase/8/</a></p>
-<h4 id="java-se-8-api">Java SE 8 API</h4>
+<h4 id="java-se-8-api">
+  Java SE 8 API
+  <a class="anchor" href="#java-se-8-api">#</a>
+</h4>
 <p><a href="https://docs.oracle.com/javase/8/docs/api/index.html">https://docs.oracle.com/javase/8/docs/api/index.html</a></p>
-<h4 id="java-code-visualizer">Java Code Visualizer</h4>
+<h4 id="java-code-visualizer">
+  Java Code Visualizer
+  <a class="anchor" href="#java-code-visualizer">#</a>
+</h4>
 <p><a href="http://www.pythontutor.com/java.html#mode=edit">http://www.pythontutor.com/java.html#mode=edit</a></p>
-<h2 id="concepts">Concepts</h2>
-<h3 id="variables">Variables</h3>
-<h3 id="primitive-data-types">Primitive Data Types</h3>
-<h3 id="operators">Operators</h3>
-<h3 id="expressions-statements-and-blocks">Expressions, Statements, and Blocks</h3>
-<h3 id="control-flow-statements">Control Flow Statements</h3>
-<h3 id="objects-and-classes">Objects &amp; Classes</h3>
-<h3 id="arrays">Arrays</h3>
-<h2 id="compiling-java-on-command-line"><span class="section-num">2</span> Compiling Java on Command Line</h2>
+<h3 id="concepts">
+  Concepts
+  <a class="anchor" href="#concepts">#</a>
+</h3>
+<!--list-separator-->
+<ul>
+<li>Variables</li>
+</ul>
+<!--list-separator-->
+<ul>
+<li>Primitive Data Types</li>
+</ul>
+<!--list-separator-->
+<ul>
+<li>Operators</li>
+</ul>
+<!--list-separator-->
+<ul>
+<li>Expressions, Statements, and Blocks</li>
+</ul>
+<!--list-separator-->
+<ul>
+<li>Control Flow Statements</li>
+</ul>
+<!--list-separator-->
+<ul>
+<li>Objects &amp; Classes</li>
+</ul>
+<!--list-separator-->
+<ul>
+<li>Arrays</li>
+</ul>
+<h2 id="compiling-java-on-command-line">
+  <span class="section-num">2</span> Compiling Java on Command Line
+  <a class="anchor" href="#compiling-java-on-command-line">#</a>
+</h2>
 <p>To compile Java source code on the command line, it is with this command where <code>Main.java</code> is your filename.</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">javac Main.java
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">javac Main.java
 </code></pre></div><p>followed by running the executable generated with</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">java Main
-</code></pre></div><h3 id="bc-students-can-use-the-web-lab-server-to-compile-and-run-java-code"><span class="section-num">2.1</span> BC Students can use the WEB Lab Server to compile and run Java code</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">java Main
+</code></pre></div><h3 id="bc-students-can-use-the-web-lab-server-to-compile-and-run-java-code">
+  <span class="section-num">2.1</span> BC Students can use the WEB Lab Server to compile and run Java code
+  <a class="anchor" href="#bc-students-can-use-the-web-lab-server-to-compile-and-run-java-code">#</a>
+</h3>
 <p>Use a terminal friendly app to connect to the server via ssh. A sample command is as follows:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">ssh username@hostname
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">ssh username@hostname
 </code></pre></div><p>After entering your password, create a directory for your assignment, such as <code>mkdir folder1</code> and then you can use a command line such as vim, emacs, or nano to edit the file.</p>
-<h4 id="you-can-get-your-linux-server-account-information-from-the-w-dot-e-dot-b-dot-computing-lab"><span class="section-num">2.1.1</span> You can get your linux server account information from the W.E.B. Computing lab</h4>
+<h4 id="you-can-get-your-linux-server-account-information-from-the-w-dot-e-dot-b-dot-computing-lab">
+  <span class="section-num">2.1.1</span> You can get your linux server account information from the W.E.B. Computing lab
+  <a class="anchor" href="#you-can-get-your-linux-server-account-information-from-the-w-dot-e-dot-b-dot-computing-lab">#</a>
+</h4>
 <p>You can email the Linux Administrator, Raymond Patitucci or visit their locatio nat</p>
 <p>First floor, West End Building
 P: 718.951.5787</p>
-<h2 id="java-books-and-other-resources">Java Books and other resources</h2>
-<h3 id="teach-yourself-java-in-21-minutes">Teach Yourself Java in 21 Minutes</h3>
-<p><a href="https://fileadmin.cs.lth.se/cs/Education/EDA040/common/java21.pdf">https://fileadmin.cs.lth.se/cs/Education/EDA040/common/java21.pdf</a>
-**</p>
-<h2 id="lecture-slides"><span class="section-num">3</span> Lecture Slides</h2>
+<h2 id="java-books-and-other-resources">
+  <span class="section-num">3</span> Java Books and other resources
+  <a class="anchor" href="#java-books-and-other-resources">#</a>
+</h2>
+<h4 id="teach-yourself-java-in-21-minutes">
+  <span class="section-num">3.0.1</span> Teach Yourself Java in 21 Minutes
+  <a class="anchor" href="#teach-yourself-java-in-21-minutes">#</a>
+</h4>
+<p><a href="https://fileadmin.cs.lth.se/cs/Education/EDA040/common/java21.pdf">https://fileadmin.cs.lth.se/cs/Education/EDA040/common/java21.pdf</a></p>
+<h4 id="java4kids">
+  <span class="section-num">3.0.2</span> Java4Kids
+  <a class="anchor" href="#java4kids">#</a>
+</h4>
+<p><a href="https://yfain.github.io/Java4Kids/">https://yfain.github.io/Java4Kids/</a></p>
+<h2 id="lecture-slides">
+  <span class="section-num">4</span> Lecture Slides
+  <a class="anchor" href="#lecture-slides">#</a>
+</h2>
 <ul>
 <li>
 <p>Java Review
@@ -189,7 +367,7 @@ P: 718.951.5787</p>
  style="padding-bottom:56.25%; position:relative; display:block; width: 100%">
  <iframe id="googleSlideIframe"
   width="100%" height="100%"
-  src="http://docs.google.com/presentation/d/e/2PACX-1vRtXxeatgBGq7xebtDWbsPFZfe6hmx%3csub%3eEllwyN7SH58xpeZhLp0pP3nhGza2tG2KeBXTwNJOrniM%3c/sub%3e-99Q/pub?start=false&amp;loop=false&amp;delayms=3000"
+  src="http://docs.google.com/presentation/d/e/2PACX-1vRtXxeatgBGq7xebtDWbsPFZfe6hmx_EllwyN7SH58xpeZhLp0pP3nhGza2tG2KeBXTwNJOrniM-99Q/embed?start=false&amp;amp;loop=false&amp;amp;delayms=3000"
   frameborder="0" allowfullscreen=""
   style="position:absolute; top:0; left: 0"></iframe>
 </div>
@@ -201,77 +379,96 @@ P: 718.951.5787</p>
  style="padding-bottom:56.25%; position:relative; display:block; width: 100%">
  <iframe id="googleSlideIframe"
   width="100%" height="100%"
-  src="http://docs.google.com/presentation/d/e/2PACX-1vQ1ToT9Ovyob0CbcORIXdaraIewpmfPhgwBxKTPbcB4y4wo%3csub%3eNEODQ3Jsw%3c/sub%3e-wprFh9%3csub%3eV%3c/sub%3e-wM1NjzuN%3csub%3epkO%3c/sub%3e/embed?start=false&amp;amp;loop=false&amp;amp;delayms=3000"
+  src="http://docs.google.com/presentation/d/e/2PACX-1vQ1ToT9Ovyob0CbcORIXdaraIewpmfPhgwBxKTPbcB4y4wo_NEODQ3Jsw-wprFh9_V-wM1NjzuN_pkO/embed?start=false&amp;amp;loop=false&amp;amp;delayms=3000"
   frameborder="0" allowfullscreen=""
   style="position:absolute; top:0; left: 0"></iframe>
 </div>
 </p>
 </li>
 </ul>
-
-</div>
-
-  
-<footer class='entry-footer'>
-  <div class='container sep-before'><div class='categories'><svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    
-    <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
-
-</svg>
-<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/java/'>java</a></div>
-
-  </div>
-</footer>
-
-
 </article>
+ 
+      
 
-<nav class='entry-nav'>
-  <div class='container'><div class='prev-entry sep-before'>
-      <a href='/guides/filenames/'>
-        <span aria-hidden='true'><svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    
-  <line x1="20" y1="12" x2="4" y2="12"/>
-  <polyline points="10 18 4 12 10 6"/>
-
-</svg>
- Previous</span>
-        <span class='screen-reader-text'>Previous post: </span>File naming conventions</a>
-    </div><div class='next-entry sep-before'>
-      <a href='/guides/jcf/'>
-        <span class='screen-reader-text'>Next post: </span>Java Collections Framework<span aria-hidden='true'>Next <svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    
-  <line x1="4" y1="12" x2="20" y2="12"/>
-  <polyline points="14 6 20 12 14 18"/>
-
-</svg>
-</span>
-      </a>
-    </div></div>
-</nav>
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
 
 
 
 
-      </main>
 
-      <footer id='footer' class='footer'>
-        <div class='container sep-before'><div class='copyright'>
-  <p> &copy; 2019-2020 Katherine Chuang, Department of Computer &amp; Information Science, Brooklyn College </p>
+  <div>
+    <a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/edit/master/exampleSite//guides/java.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
 </div>
 
-        </div>
+ 
+        
       </footer>
 
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
-  </div><script>window.__assets_js_src="/assets/js/"</script>
 
-<script src='/assets/js/main.c3bcf2df.js'></script><script src='/js/custom.js'></script>
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#intro"><span class="section-num">1</span> Intro</a>
+          <ul>
+            <li><a href="#helpful-links">Helpful links</a></li>
+            <li><a href="#concepts">Concepts</a></li>
+          </ul>
+        </li>
+        <li><a href="#compiling-java-on-command-line"><span class="section-num">2</span> Compiling Java on Command Line</a>
+          <ul>
+            <li><a href="#bc-students-can-use-the-web-lab-server-to-compile-and-run-java-code"><span class="section-num">2.1</span> BC Students can use the WEB Lab Server to compile and run Java code</a></li>
+          </ul>
+        </li>
+        <li><a href="#java-books-and-other-resources"><span class="section-num">3</span> Java Books and other resources</a>
+          <ul>
+            <li></li>
+          </ul>
+        </li>
+        <li><a href="#lecture-slides"><span class="section-num">4</span> Lecture Slides</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 
+ 
+    </aside>
+    
+  </main>
+
+  
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
 

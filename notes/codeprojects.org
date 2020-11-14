@@ -1,0 +1,119 @@
+#+TITLE: Sharing Coding Projects
+#+SUBTITLE:  Department of Computer & Information Science, Brooklyn College
+#+AUTHOR:    Katherine Chuang
+#+EMAIL:     chuang@sci.brooklyn.cuny.edu
+#+CREATOR:   katychuang
+#+date:      2020-05-16
+#+OPTIONS:   H:3 num:nil toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+ALT_TITLE: Lecture Notes
+
+#+HUGO_BASE_DIR: ../hugo/
+#+HUGO_SECTION: guides
+#+HUGO_CATEGORIES: projects
+
+
+* Project based thinking
+
+Programmers are typically learning to write source code to build programs not just scripts. A programming project requires far more than just fluency with a particular programming language syntax to cohesively put together.
+
+Creating a program requires certain executive functioning skills to coordinate and manage. This guide provides some advice and items to consider include when sharing your codebase. It is not meant to be followed religiously, but instead to provide a framework to guide your approach.
+
+#+BEGIN_QUOTE
+/Programming is an activity that starts with a specification and leads to its solution as a program/ - Peter Van Roy
+#+END_QUOTE
+
+** Programming as an activity
+
+- Programming can be done in micro (small tasks) or macro (very large projects)
+- Programming can be language independent architectural issues, and language-depended coding issues
+- Programming should be unbiased by limitations of any particular language, tool or design methodology
+
+** Planning before you begin coding
+You need to first figure out what needs to be built, by gathering the /requirements/.
+
+-  What do you want to make? - can you describe the problem? how are you solving it?
+- Sketch out your ideas  - how many classes are needed? how many functions?
+- What technologies will you use? You need to consider which languages, libraries, or environments you're familiar with or willing to learn.
+
+*** Software Development Life Cycle (SDLC)
+:PROPERTIES:
+:UNNUMBERED: TOC
+:END:
+
+A common model for presenting the phases of building software goes by the name of /Software Development Life Cycle/ or /SDLC/ for short. This models covers the principles of building a software application, which includes various phases of activities such as planning (such as gathering spec requirements), scheduling the work, development, and test.  The name for this set of phases is called /Software development lifecycle (SDLC)/. Some of these phases are described below.
+
+**** Requirements Gathering
+It helps to know what you're building before you begin building. Deciding what to build should come from discussions with
+**** Scheduling
+**** Design / Specifications
+**** Building
+**** Testing
+**** Deployment
+
+
+* Checklists
+
+** Elements to include with your project repository
+:PROPERTIES:
+:NUMBERED: toc
+:END:
+
+Note that these items do not include anything about /documentation/, which should also be included with coding projects.
+
+*** [ ]  1. Project description
+    - Description of the program such as a [README file](https://www.makeareadme.com/)
+    - Project requirement(s) and tracking. Sample approaches listed below:
+        - [TODO file to track their task list](https://github.blog/2014-04-28-task-lists-in-all-markdown-documents/)
+        - [CHANGELOG file](https://keepachangelog.com/en/1.0.0/) to track revisions,
+        - Use issue tracker that comes with a github repo, respond to issues in your commit messages
+        - Whatever else you think of that is relevant
+    - [ ]  Instructions on how to run your program or code
+    - [ ]  Description of technologies used
+
+*** [ ]  2. Source code with comments
+    - [ ]  Comments describe why each class and function exist
+    - [ ]  Comments describe any conditional or control flow logic
+
+*** [ ]  3. Submit to the form before deadline
+    - [ ]  Link to your code (you can use any platform. GitHub is common)
+    - [ ]  Repository is either public, or you've added me as a collaborator
+
+#+BEGIN_QUOTE
+*"Writing documentation is like saving for retirement. It's hard to tell if you have enough at the time you're doing it. Only later can you tell if you have enough, and usually you wish you had more." -J.Wirth*
+#+END_QUOTE
+
+** Elements of Style and Presentation
+- [ ]  Clean Code
+- [ ]  Indentation throughout code is uniform
+- [ ]  Sensible comments
+    - [ ]  Comments are included with each method, to describe why it exists
+    - [ ]  Input parameters and output parameters described
+    - [ ]  Comments describe classes
+- [ ]  Variable names make sense
+
+** Other Enhancements
+  **Nice to have**
+
+- [ ]  Sensible commits
+    - [ ]  Each commit to version control makes sense
+- [ ]  Testing
+    - [ ]  Prepare a brief description of test cases to run on your code
+    - [ ]  Prepare scripts/code for running the tests
+    - [ ]  Report on the test cases
+
+Elements included with your submission:
+
+- [ ]  Project description
+- [ ]  Instructions on how to run your program or code
+- [ ]  Description of technologies used
+
+*  References
+- [Advice] Leslie Lamport. 2015. Who builds a house without drawing blueprints? *Communications of the ACM* 58, 4 (April 2015), 38–41. DOI:[https://doi-org.ez-proxy.brooklyn.cuny.edu/10.1145/2736348](https://doi-org.ez-proxy.brooklyn.cuny.edu/10.1145/2736348)
+- [Advice] Clean Code [https://cs.lmu.edu/~ray/notes/cleancode/](https://cs.lmu.edu/~ray/notes/cleancode/)
+- [Advice] Planning a programming project [https://www.khanacademy.org/computing/computer-programming/programming/good-practices/a/planning-a-programming-project](https://www.khanacademy.org/computing/computer-programming/programming/good-practices/a/planning-a-programming-project)
+
+* COMMENT Local Variables   :ARCHIVE:
+# Local Variables:
+# eval: (org-hugo-auto-export-mode)
+# End:

@@ -1,152 +1,274 @@
 <!DOCTYPE html>
-<html lang='en' dir='auto'><head>
-  <meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'>
-<meta name='description' content='What is Github Pages? This is a feature provided by GitHub where you can host websites directly from your GitHub repository. These websites are typically static files, meaning there is no database no backend.'>
-<meta name='theme-color' content='#800000'>
+<html lang="en" dir=>
 
-<meta property='og:title' content='Getting Started with Github Pages • Getting Started Guides'>
-<meta property='og:description' content='What is Github Pages? This is a feature provided by GitHub where you can host websites directly from your GitHub repository. These websites are typically static files, meaning there is no database no backend.'>
-<meta property='og:url' content='/guides/githubpages/'>
-<meta property='og:site_name' content='Getting Started Guides'>
-<meta property='og:type' content='article'><meta property='article:section' content='guides'><meta property='article:published_time' content='2020-04-20T00:00:00-04:00'/><meta property='article:modified_time' content='2020-04-20T00:00:00-04:00'/><meta name='twitter:card' content='summary'>
+<head>
+  <meta name="generator" content="Hugo 0.75.1" />
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="What is Github Pages? #  This is a feature provided by GitHub where you can host websites directly from your GitHub repository. These websites are typically static files, meaning there is no database no backend. For example, this website is hosted on GitHub Pages, it was built with a static site generator.
+To find out more, go to https://pages.github.com
+How to create your home page (easy way) #  When you use GitHub pages, you can access your website at the url http://username.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Github Pages" />
+<meta property="og:description" content="What is Github Pages? #  This is a feature provided by GitHub where you can host websites directly from your GitHub repository. These websites are typically static files, meaning there is no database no backend. For example, this website is hosted on GitHub Pages, it was built with a static site generator.
+To find out more, go to https://pages.github.com
+How to create your home page (easy way) #  When you use GitHub pages, you can access your website at the url http://username." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/guides/githubpages/" />
+<meta property="article:published_time" content="2020-04-20T00:00:00-04:00" />
+<meta property="article:modified_time" content="2020-04-20T00:00:00-04:00" />
+<title>Github Pages | Getting Started Guides</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.134b70e5316650a530cb42e4e8630b2a01d532bebfc0337028211175336e4806.css" integrity="sha256-E0tw5TFmUKUwy0Lk6GMLKgHVMr6/wDNwKCERdTNuSAY=">
+<script defer src="/en.search.min.527fc7ed0aaead0a55e9a15100bba13d739025fbd484ef5a11a24dbe90f4e160.js" integrity="sha256-Un/H7QqurQpV6aFRALuhPXOQJfvUhO9aEaJNvpD04WA="></script>
 
-<meta name="generator" content="Hugo 0.75.1" />
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
 
-  <title>Getting Started with Github Pages • Getting Started Guides</title>
-  <link rel='canonical' href='/guides/githubpages/'>
-  
-  
-  <link rel='icon' href='/favicon.ico'>
-<link rel='stylesheet' href='/assets/css/main.ab98e12b.css'><link rel='stylesheet' href='/css/custom.css'><style>
-:root{--color-accent:#800000;}
+  <style>
+h1, h2, h3, h4, h5, h6, .heading {
+			font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+		font-weight: 700;
+		line-height: 1.2;
+		color: #263238;
+		margin: 0 0 .625em;
+}
+
+ .markdown h1, {
+		display: block;
+		font-size: 2em;
+		margin-block-start: 0.67em;
+		margin-block-end: 0.67em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		font-weight: bold;
+}
+.markdown h2,.heading {
+		font-size: 1.5em;
+		display: block;
+		margin-block-start: 0.67em;
+		margin-block-end: 0.67em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		font-weight: bold;
+ }
+ .markdown h4, .markdown h3{
+		 font-size: 1.375em;
+		margin-block-start: 0.67em;
+		margin-block-end: 0.67em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		font-weight: bold;
+ }
+ body {
+		 font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+		 font-size: 1.125em;
+		 line-height: 1.5;
+		 color: #37474f;
+ }
 </style>
 
-  
-
 </head>
-<body class='page type-guides has-sidebar'>
 
-  <div class='site'><div id='sidebar' class='sidebar'>
-  <a class='screen-reader-text' href='#main-menu'>Skip to Main Menu</a>
-
-  <div class='container'><section class='widget widget-about sep-after'>
-  <header>
-    
-    <h2 class='title site-title '>
-      <a href='/'>
-      Getting Started Guides
-      </a>
-    </h2>
-    <div class='desc'>
-    Short Guides for BC CIS Students
-    </div>
-  </header>
-
-</section>
-<section class='widget widget-sidebar_menu sep-after'><nav id='sidebar-menu' class='menu sidebar-menu' aria-label='Sidebar Menu'>
-    <div class='container'>
-      <ul><li class='item'>
-  <a href='/'>Guides</a></li><li class='item'>
-  <a href='/categories/'>Categories</a></li><li class='item'>
-  <a href='https://github.com/katychuang/getting-started-guides'>Source</a></li></ul>
-    </div>
-  </nav>
-
-</section></div>
-
-  <div class='sidebar-overlay'></div>
-</div><div class='main'><a class='screen-reader-text' href='#content'>Skip to Content</a>
-
-<button id='sidebar-toggler' class='sidebar-toggler' aria-controls='sidebar'>
-  <span class='screen-reader-text'>Toggle Sidebar</span>
-  <span class='open'><svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    
-  <line x1="3" y1="12" x2="21" y2="12" />
-  <line x1="3" y1="6" x2="21" y2="6" />
-  <line x1="3" y1="18" x2="21" y2="18" />
-
-</svg>
-</span>
-  <span class='close'><svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    
-  <line x1="18" y1="6" x2="6" y2="18" />
-  <line x1="6" y1="6" x2="18" y2="18" />
-
-</svg>
-</span>
-</button><div class='header-widgets'>
-        <div class='container'>
-    
-    <style>.widget-breadcrumbs li:after{content:'\2f '}</style>
-  <section class='widget widget-breadcrumbs sep-after'>
-    <nav id='breadcrumbs'>
-      <ol><li><a href='/'>Getting Started Guides</a></li><li><a href='/guides/'>Guides</a></li><li><span>Getting Started with Github Pages</span></li></ol>
-    </nav>
-  </section></div>
-      </div>
-
-      <header id='header' class='header site-header'>
-        <div class='container sep-after'>
-          <div class='header-info'><p class='site-title title'>Getting Started Guides</p><p class='desc site-desc'>Short Guides for BC CIS Students</p>
-          </div>
-        </div>
-      </header>
-
-      <main id='content'>
-
-
-<article lang='en' class='entry'>
-  <header class='header entry-header'>
-  <div class='container sep-after'>
-    <div class='header-info'>
-      <h1 class='title'>Getting Started with Github Pages</h1>
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
       
-
-    </div>
-    <div class='entry-meta'>
-  <span class='posted-on'><svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    
-  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
-  <line x1="16" y1="2" x2="16" y2="6"/>
-  <line x1="8" y1="2" x2="8" y2="6"/>
-  <line x1="3" y1="10" x2="21" y2="10"/>
-
-</svg>
-<span class='screen-reader-text'>Posted on </span>
-  <time class='entry-date' datetime='2020-04-20T00:00:00-04:00'>2020, Apr 20</time>
-</span>
-
-  
-  
-<span class='reading-time'><svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    
-  <circle cx="12" cy="12" r="10"/>
-  <polyline points="12 6 12 12 15 15"/>
-
-</svg>
-4 mins read
-</span>
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Getting Started Guides</span>
+  </a>
+</h2>
 
 
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
 </div>
 
 
-  </div>
-</header>
+
+
+
+
+
+
+
+
+
+  <ul>
+<li>
+<p>Programming in Java</p>
+<ul>
+<li>
+  <a href="/guides/java/">Java 8</a></li>
+<li>
+  <a href="/guides/jcf/">Java Collections Framework</a></li>
+</ul>
+</li>
+<li>
+<p>Maintaining Coding Projects</p>
+<ul>
+<li>
+  <a href="/guides/git/">Git</a></li>
+<li>
+  <a href="/guides/filenames/">Filename Conventions</a></li>
+<li>
+  <a href="/guides/writingreadme/">README Files</a></li>
+<li>
+  <a href="/guides/codeprojects/">Sharing Coding Projects</a></li>
+<li>
+  <a href="/guides/"></a></li>
+</ul>
+</li>
+<li>
+<p>Software Development</p>
+<ul>
+<li>
+  <a href="/guides/dataflowdiagrams/">Data Flow Diagrams</a></li>
+<li>
+  <a href="/guides/buildtools/">Build Tools</a></li>
+</ul>
+</li>
+<li>
+<p>Web Development</p>
+<ul>
+<li>
+  <a href="/guides/buildawebsite/">Building on the web</a></li>
+<li>
+  <a href="/guides/githubpages/"class=active>Github Pages</a></li>
+<li>
+  <a href="/guides/ssh/">SSH</a></li>
+</ul>
+</li>
+<li>
+<p>Interviewing</p>
+<ul>
+<li>Resume guide <em>(coming soon)</em></li>
+<li>
+  <a href="/practice/interviewprep/">Interview Prep</a>
+<br /></li>
+</ul>
+</li>
+<li>
+<p><strong>Featured</strong></p>
+</li>
+<li>
+<p>
+  <a href="/guides/git/">Git</a></p>
+</li>
+<li>
+<p>
+  <a href="/guides/githubpages/"class=active>Github Pages</a>
+<br /></p>
+</li>
+</ul>
+
+
+
+
+
 
   
+<ul>
   
+  <li>
+    <a href="https://github.com/katychuang/getting-started-guides" target="_blank" rel="noopener">
+        Source
+      </a>
+  </li>
+  
+</ul>
 
-  <div class='container entry-content'>
-  <h2 id="what-is-github-pages">What is Github Pages?</h2>
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Github Pages</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#what-is-github-pages">What is Github Pages?</a></li>
+        <li><a href="#how-to-create-your-home-page--easy-way">How to create your home page (easy way)</a></li>
+        <li><a href="#static-site-generators">Static Site Generators</a></li>
+        <li><a href="#using-jekyll-static-site-generator">Using Jekyll Static Site Generator</a>
+          <ul>
+            <li><a href="#guides-to-using-jekyll">Guides to using Jekyll</a></li>
+          </ul>
+        </li>
+        <li><a href="#using-hugo-static-site-generator">Using Hugo Static Site Generator</a>
+          <ul>
+            <li><a href="#org-mode-with-hugo">Org-mode with Hugo</a></li>
+          </ul>
+        </li>
+        <li><a href="#references">References</a>
+          <ul>
+            <li><a href="#intro-to-html-css">Intro to HTML/CSS</a></li>
+            <li><a href="#tutorials-and-guides-on-deploying-to-github-pages">Tutorials and Guides on deploying to GitHub Pages</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h2 id="what-is-github-pages">
+  What is Github Pages?
+  <a class="anchor" href="#what-is-github-pages">#</a>
+</h2>
 <p>This is a feature provided by GitHub where you can host websites directly from your GitHub repository. These websites are typically static files, meaning there is no database no backend. For example, this website is hosted on GitHub Pages, it was built with a static site generator.</p>
 <p>To find out more, go to <a href="https://pages.github.com">https://pages.github.com</a></p>
-<h2 id="how-to-create-your-home-page--easy-way">How to create your home page (easy way)</h2>
+<h2 id="how-to-create-your-home-page--easy-way">
+  How to create your home page (easy way)
+  <a class="anchor" href="#how-to-create-your-home-page--easy-way">#</a>
+</h2>
 <p>When you use GitHub pages, you can access your website at the url <a href="http://username.github.io">http://username.github.io</a> and the underlying files would be found in your repository, which is the repository can be found at url pattern <a href="http://github.com/username/username.github.io">http://github.com/username/username.github.io</a></p>
 <p>This section walks you through step by step. These instructions are taken directly from GitHub&rsquo;s docs.</p>
 <p><strong>Short version:</strong></p>
@@ -168,27 +290,53 @@
 </li>
 <li>If set up properly you should be able to access your website from <a href="http://username.github.io">http://username.github.io</a></li>
 </ol>
-<h2 id="static-site-generator">Static Site Generator</h2>
-<p>Static sites do not have a database backend, &ldquo;data&rdquo; is stored in text files. Data is used loosely here to mean contents of the site. Text files can often imply that they are <a href="https://www.markdownguide.org">markdown</a> formatted files.</p>
+<h2 id="static-site-generators">
+  Static Site Generators
+  <a class="anchor" href="#static-site-generators">#</a>
+</h2>
+<p>Static sites do not have a database backend, &ldquo;data&rdquo; is stored in text files. Data is used loosely here to mean contents of the site. Text files can often imply that they are 
+  <a href="https://www.markdownguide.org">markdown</a> formatted files.</p>
 <p>In order to translate text files into a website in a streamlined manner, you need some sort of tool to <em>generate</em> that website for you. This tool is called a static site generator. There are many Open Source static site generators available to choose from that go by different names. Some are produced in certain programming languages. They tend to require using the command line interface (CLI).</p>
 <p>Below describes a couple of options.</p>
-<h2 id="using-jekyll-static-site-generator">Using Jekyll Static Site Generator</h2>
+<h2 id="using-jekyll-static-site-generator">
+  Using Jekyll Static Site Generator
+  <a class="anchor" href="#using-jekyll-static-site-generator">#</a>
+</h2>
 <p>Github Pages recognizes files that are formatted to the Jekyll Static Site Generated fraemwork. Jekyll (<a href="https://jekyllrb.com/">https://jekyllrb.com/</a>) is written in the Ruby programming language, it convers text files in markdown format into HTML pages.</p>
 <p>Static HTML pages means that it&rsquo;s an HTML page that doesn&rsquo;t change when you view it across different timestaps. As in, static is <em>not</em> a script generated page. The contents do not change because you pull data from a database. A page like that would be considered <em>dynamic</em> because the contents can change.</p>
-<h3 id="guides-to-using-jekyll">Guides to using Jekyll</h3>
+<h3 id="guides-to-using-jekyll">
+  Guides to using Jekyll
+  <a class="anchor" href="#guides-to-using-jekyll">#</a>
+</h3>
 <p>The guides and tutorials for using Jekyll are easily found through your nearest search engine. These are some liks:</p>
 <ul>
 <li><a href="https://jekyllrb.com/docs/github-pages/">https://jekyllrb.com/docs/github-pages/</a></li>
 <li>Building a static website with Jekyll and GitHub Pages <a href="https://programminghistorian.org/en/lessons/building-static-sites-with-jekyll-github-pages">https://programminghistorian.org/en/lessons/building-static-sites-with-jekyll-github-pages</a></li>
 </ul>
-<h2 id="using-hugo-static-site-generator">Using Hugo Static Site Generator</h2>
+<h2 id="using-hugo-static-site-generator">
+  Using Hugo Static Site Generator
+  <a class="anchor" href="#using-hugo-static-site-generator">#</a>
+</h2>
 <p>The best reference material is the official documentation at <a href="https://gohugo.io">https://gohugo.io</a></p>
-<p>Once you have Hugo installed, make sure your files are organized in their proposed <a href="https://gohugo.io/getting-started/directory-structure/">directory structure.</a> Find a theme, configure your Hugo website.</p>
-<h3 id="org-mode-with-hugo">Org-mode with Hugo</h3>
-<p>This site is generated from the <a href="https://www.gnu.org/software/emacs/">GNU Emacs</a> program under the <a href="https://orgmode.org">Org Mode.</a> In order to use both pieces, you need to use one more open source plugin called <a href="https://ox-hugo.scripter.co">ox-hugo</a></p>
+<p>Once you have Hugo installed, make sure your files are organized in their proposed 
+  <a href="https://gohugo.io/getting-started/directory-structure/">directory structure.</a> Find a theme, configure your Hugo website.</p>
+<h3 id="org-mode-with-hugo">
+  Org-mode with Hugo
+  <a class="anchor" href="#org-mode-with-hugo">#</a>
+</h3>
+<p>This site is generated from the 
+  <a href="https://www.gnu.org/software/emacs/">GNU Emacs</a> program under the 
+  <a href="https://orgmode.org">Org Mode.</a> In order to use both pieces, you need to use one more open source plugin called 
+  <a href="https://ox-hugo.scripter.co">ox-hugo</a></p>
 <p>The contents are contained in <code>*.org</code> files instead of <code>*.markdown</code> or <code>*.txt</code></p>
-<h2 id="references">References</h2>
-<h3 id="intro-to-html-css">Intro to HTML/CSS</h3>
+<h2 id="references">
+  References
+  <a class="anchor" href="#references">#</a>
+</h2>
+<h3 id="intro-to-html-css">
+  Intro to HTML/CSS
+  <a class="anchor" href="#intro-to-html-css">#</a>
+</h3>
 <ul>
 <li>HTML Specifications <a href="https://html.spec.whatwg.org/">https://html.spec.whatwg.org/</a></li>
 <li>CSS Specifications <a href="https://www.w3.org/Style/CSS/specs.en.html">https://www.w3.org/Style/CSS/specs.en.html</a></li>
@@ -198,7 +346,10 @@
 <li>Codecademy: Introduction to HTML <a href="https://www.codecademy.com/learn/learn-html">https://www.codecademy.com/learn/learn-html</a></li>
 <li>Interactive HTML tutorial <a href="https://www.learn-html.org/">https://www.learn-html.org/</a></li>
 </ul>
-<h3 id="tutorials-and-guides-on-deploying-to-github-pages">Tutorials and Guides on deploying to GitHub Pages</h3>
+<h3 id="tutorials-and-guides-on-deploying-to-github-pages">
+  Tutorials and Guides on deploying to GitHub Pages
+  <a class="anchor" href="#tutorials-and-guides-on-deploying-to-github-pages">#</a>
+</h3>
 <ul>
 <li>GitHub’s 10 minute read guide <a href="https://guides.github.com/features/pages/">https://guides.github.com/features/pages/</a></li>
 <li>GitHub Pages Basics <a href="https://help.github.com/categories/github-pages-basics/">https://help.github.com/categories/github-pages-basics/</a></li>
@@ -208,70 +359,91 @@
 <li>Set Up Your Portfolio Website in Less Than 10 Minutes with Github Pages <a href="https://blog.usejournal.com/set-up-your-portfolio-website-in-less-than-10-minutes-with-github-pages-d0efa8ff56fd">https://blog.usejournal.com/set-up-your-portfolio-website-in-less-than-10-minutes-with-github-pages-d0efa8ff56fd</a></li>
 <li>The Beginners Guide to Github Pages <a href="https://www.ostraining.com/blog/coding/github-pages/">https://www.ostraining.com/blog/coding/github-pages/</a></li>
 </ul>
-
-</div>
-
-  
-<footer class='entry-footer'>
-  <div class='container sep-before'><div class='categories'><svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    
-    <path d="M22,19a2,2,0,0,1-2,2H4a2,2,0,0,1-2-2V5A2,2,0,0,1,4,3H9l2,3h9a2,2,0,0,1,2,2Z"/>
-
-</svg>
-<span class='screen-reader-text'>Categories: </span><a class='category' href='/categories/git/'>git</a>, <a class='category' href='/categories/web_dev/'>web_dev</a></div>
-
-  </div>
-</footer>
-
-
 </article>
+ 
+      
 
-<nav class='entry-nav'>
-  <div class='container'><div class='prev-entry sep-before'>
-      <a href='/guides/git/'>
-        <span aria-hidden='true'><svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    
-  <line x1="20" y1="12" x2="4" y2="12"/>
-  <polyline points="10 18 4 12 10 6"/>
-
-</svg>
- Previous</span>
-        <span class='screen-reader-text'>Previous post: </span>Getting started with Git</a>
-    </div><div class='next-entry sep-before'>
-      <a href='/guides/ssh/'>
-        <span class='screen-reader-text'>Next post: </span>Getting started with SSH<span aria-hidden='true'>Next <svg class='icon' xmlns='http://www.w3.org/2000/svg' viewbox='0 0 24 24' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' aria-hidden='true'>
-    
-    
-  <line x1="4" y1="12" x2="20" y2="12"/>
-  <polyline points="14 6 20 12 14 18"/>
-
-</svg>
-</span>
-      </a>
-    </div></div>
-</nav>
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
 
 
 
 
-      </main>
 
-      <footer id='footer' class='footer'>
-        <div class='container sep-before'><div class='copyright'>
-  <p> &copy; 2019-2020 Katherine Chuang, Department of Computer &amp; Information Science, Brooklyn College </p>
+  <div>
+    <a class="flex align-center" href="https://github.com/alex-shpak/hugo-book/edit/master/exampleSite//guides/githubpages.md" target="_blank" rel="noopener">
+      <img src="/svg/edit.svg" class="book-icon" alt="Edit" />
+      <span>Edit this page</span>
+    </a>
+  </div>
+
 </div>
 
-        </div>
+ 
+        
       </footer>
 
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
-  </div><script>window.__assets_js_src="/assets/js/"</script>
 
-<script src='/assets/js/main.c3bcf2df.js'></script><script src='/js/custom.js'></script>
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#what-is-github-pages">What is Github Pages?</a></li>
+        <li><a href="#how-to-create-your-home-page--easy-way">How to create your home page (easy way)</a></li>
+        <li><a href="#static-site-generators">Static Site Generators</a></li>
+        <li><a href="#using-jekyll-static-site-generator">Using Jekyll Static Site Generator</a>
+          <ul>
+            <li><a href="#guides-to-using-jekyll">Guides to using Jekyll</a></li>
+          </ul>
+        </li>
+        <li><a href="#using-hugo-static-site-generator">Using Hugo Static Site Generator</a>
+          <ul>
+            <li><a href="#org-mode-with-hugo">Org-mode with Hugo</a></li>
+          </ul>
+        </li>
+        <li><a href="#references">References</a>
+          <ul>
+            <li><a href="#intro-to-html-css">Intro to HTML/CSS</a></li>
+            <li><a href="#tutorials-and-guides-on-deploying-to-github-pages">Tutorials and Guides on deploying to GitHub Pages</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 
+ 
+    </aside>
+    
+  </main>
+
+  
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
 

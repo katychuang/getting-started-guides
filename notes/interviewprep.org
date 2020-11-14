@@ -1,0 +1,137 @@
+#+TITLE: Technical Interview Prep
+
+#+SUBTITLE:  Department of Computer & Information Science, Brooklyn College
+#+AUTHOR:    Katherine Chuang
+#+EMAIL:     chuang@sci.brooklyn.cuny.edu
+#+CREATOR:   katychuang
+#+date:      2020-11-13
+#+OPTIONS:   H:3 num:nil toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+ALT_TITLE: Lecture Notes
+#+HTML_MATHJAX: align: left indent: 5em tagside: left font: Neo-Euler
+#+HTML_MATHJAX: cancel.js noErrors.js
+#+HUGO_BASE_DIR: ../hugo/
+#+HUGO_SECTION: practice
+
+#+HUGO_CATEGORIES: interview
+
+* General Advice when solving problems
+- Understand the problem being asked
+- Don't forget to handle edge cases
+- Expressing your answer is just as important as understanding the problem, and solving it!
+
+* Problems with Stacks
+:PROPERTIES:
+:NUMBERED:
+:END:
+
+[[file:../../stacks.png]]
+
+** Checking parenthesis
+
+Examples:
+#+BEGIN_SRC
+Input: ()
+Output: true
+
+Input: ()[]{}
+Output: true
+
+Input: ([)]
+Output: false
+
+Input: {[]}
+Output: true
+
+Input : {[]{()}}
+Output : true
+
+Input : [{}{}(]
+Output :false
+#+END_SRC
+
+
+
+The logic here is to push a new item on to a stack when we notice an input with an /opener/, and pop when there is a /closer/.
+
+#+BEGIN_SRC python
+# Python3 code to Check for balanced parentheses in an expression
+open_list = ["[","{","("]
+close_list = ["]","}",")"]
+
+# Function to check parentheses
+def check(myStr):
+    stack = []
+    for i in myStr:
+        if i in open_list:
+            stack.append(i)
+        elif i in close_list:
+            pos = close_list.index(i)
+            if ((len(stack) > 0) and
+                (open_list[pos] == stack[len(stack)-1])):
+                stack.pop()
+            else:
+                return "Unbalanced"
+    if len(stack) == 0:
+        return "Balanced"
+    else:
+        return "Unbalanced"
+#+END_SRC
+
+Sample code
+#+BEGIN_SRC python
+string = "{[]{()}}"
+print(string,"-", check(string))
+
+string = "[{}{})(]"
+print(string,"-", check(string))
+
+string = "((()"
+print(string,"-",check(string))
+#+END_SRC
+
+
+** Evaluate Postfix Notation
+Given a valid expression in reverse polish notation, evaluate it and return the result.
+
+#+BEGIN_src
+Input: ["2", "1", "+", "3", "*"]
+Output: 9, because ((2 + 1) * 3) = 9
+
+Input: ["4", "10", "5", "/", "+"]
+Output: 6, because (4 + (10 / 5)) = 6
+#+END_src
+
+*** The algorithm
+- Create an empty stack and scan postfix expression from left to right
+- If element is an operand, push it into the stack
+- If the element is an operator 📦:
+    - pop twice to get A and B (calculate B 📦 A)
+    - push result back to the stack
+- When expression is ended, the value in stack is the final answer
+
+*** Example
+\[
+ $3 1 + 9 *$ \vspace{1in}
+  36
+  \begin{tikzpicture}
+  \matrix[matrix of nodes, %draw,
+      nodes in empty cells,
+      nodes={minimum size=10mm}]{
+  %      column sep=-\pgflinewidth
+      Postfix char read in & Operands (stack) & Actions \\
+      3 & 3 & \\
+      1 & 3 1 & \\
+      $+$ & 4  & Pop the top 2 operands and push the result \\
+      9 & 4 9 & \\
+      $*$ & 36  & Pop the top 2 operands and push the result \\
+      };
+  The expression evalutes to 36.
+  \end{tikzpicture}
+  \fi
+]
+
+* COMMENT Local Variables   :ARCHIVE:
+# Local Variables:
+# eval: (org-hugo-auto-export-mode)
+# End:

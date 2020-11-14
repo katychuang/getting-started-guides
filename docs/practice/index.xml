@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Practices on Getting Started Guides</title>
+    <link>/practice/</link>
+    <description>Recent content in Practices on Getting Started Guides</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 13 Nov 2020 00:00:00 -0500</lastBuildDate><atom:link href="/practice/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Technical Interview Prep</title>
+      <link>/practice/interviewprep/</link>
+      <pubDate>Fri, 13 Nov 2020 00:00:00 -0500</pubDate>
+      
+      <guid>/practice/interviewprep/</guid>
+      <description>Table of Contents  General Advice when solving problems  Problems with Stacks   Checking parenthesis  Evaluate Postfix Notation   The algorithm  Example      General Advice when solving problems #   Understand the problem being asked Don&amp;rsquo;t forget to handle edge cases Expressing your answer is just as important as understanding the problem, and solving it!  Problems with Stacks #    Checking parenthesis #  Examples:</description>
+    </item>
+    
+  </channel>
+</rss>

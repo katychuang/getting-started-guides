@@ -11,7 +11,7 @@
 
 #+HUGO_BASE_DIR: ../hugo/
 #+HUGO_SECTION: guides
-#+HUGO_CATEGORIES: git reference
+#+HUGO_CATEGORIES: git reference projects
 #+EXPORT_HUGO_SECTION: readme
 
 * What is a README?
@@ -41,3 +41,8 @@ This file is usually a text file. It can be written in plain text, however you c
 * Reference
 
 - Make a README because no one can read your mind https://www.makeareadme.com/
+
+* COMMENT Local Variables   :ARCHIVE:
+# Local Variables:
+# eval: (org-hugo-auto-export-mode)
+# End:
