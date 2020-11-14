@@ -16,7 +16,7 @@ At the time of this writing, the following are used to build this site:
   * Org mode
   * Ox-hugo mode
 * Hugo v0.75.1
-  * minimo theme
+  * book theme
 
 ## File Directory
 
