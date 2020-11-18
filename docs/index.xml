@@ -13,7 +13,8 @@
       <pubDate>Fri, 13 Nov 2020 00:00:00 -0500</pubDate>
       
       <guid>/practice/interviewprep/</guid>
-      <description>Table of Contents  General Advice when solving problems  Problems with Stacks   Checking parenthesis  Evaluate Postfix Notation   The algorithm  Example      General Advice when solving problems #   Understand the problem being asked Don&amp;rsquo;t forget to handle edge cases Expressing your answer is just as important as understanding the problem, and solving it!  Problems with Stacks #    Checking parenthesis #  Examples:</description>
+      <description>General Advice when solving problems #   Understand the problem being asked Don&amp;rsquo;t forget to handle edge cases Expressing your answer is just as important as understanding the problem, and solving it!  Problems with Stacks #    Checking parenthesis #  Examples:
+Input: ()Output: trueInput: ()[]{}Output: trueInput: ([)]Output: falseInput: {[]}Output: trueInput : {[]{()}}Output : trueInput : [{}{}(]Output :falseThe logic here is to push a new item on to a stack when we notice an input with an opener, and pop when there is a closer.</description>
     </item>
     
     <item>
@@ -37,21 +38,23 @@ The page that is rendered by the web browser is formatted in Hypertext Markup La
     </item>
     
     <item>
-      <title>Building on the web</title>
-      <link>/guides/buildawebsite/</link>
-      <pubDate>Wed, 28 Oct 2020 00:00:00 -0400</pubDate>
-      
-      <guid>/guides/buildawebsite/</guid>
-      <description>Table of Contents  Introduction  Process from Idea to Product  Concepts of Web Development  Tools  Introduction #  This page focuses on the process, concepts, and tools for building any type of web site or web application. A website has a lot of overlapping functionality and technology as a web application, except it doesn&amp;rsquo;t focus on high volume of dynamism and user interactivity, which would require a database.</description>
-    </item>
-    
-    <item>
       <title>Data Flow Diagrams</title>
       <link>/guides/dataflowdiagrams/</link>
       <pubDate>Wed, 28 Oct 2020 00:00:00 -0400</pubDate>
       
       <guid>/guides/dataflowdiagrams/</guid>
-      <description>Table of Contents  What are Data Flow Diagrams (DFD)?   Notations   Rectangle (Entity)  Circle (Process)  Rounded rectangle (Data Store)  Arrow (Data flow)      Why are Diagrams useful?  How do you draw a diagram?  Software for drawing diagrams  References  What are Data Flow Diagrams (DFD)? #  This is a diagram that maps out the flow of information for any system.</description>
+      <description>What are Data Flow Diagrams (DFD)? #  This is a diagram that maps out the flow of information for any system. There are defined symbols like rectangles, circles, arrows, and so on to distinguish different parts of the system.
+There are different kinds of data flow diagrams as well, most are separated into either logical DFD or Physical DFD. Logical data flow diagrams focuses on the system process(es). Physical data flow diagrams show how the data flow is implemented in the system.</description>
+    </item>
+    
+    <item>
+      <title>Starting a Website</title>
+      <link>/guides/buildawebsite/</link>
+      <pubDate>Wed, 28 Oct 2020 00:00:00 -0400</pubDate>
+      
+      <guid>/guides/buildawebsite/</guid>
+      <description>Introduction #  This page focuses on the process, concepts, and tools for building any type of web site or web application. A website has a lot of overlapping functionality and technology as a web application, except it doesn&amp;rsquo;t focus on high volume of dynamism and user interactivity, which would require a database. This article mentions the two interchangeable. However, if one were precise, this article focuses on websites.
+Process from Idea to Product #  Building a website follows many of the principles of building a software application, which includes figuring out what to build ,managing the building, and validating the quality of the final product.</description>
     </item>
     
     <item>
@@ -70,7 +73,8 @@ In a way, it serves as an executive summary of your project.</description>
       <pubDate>Mon, 28 Sep 2020 00:00:00 -0400</pubDate>
       
       <guid>/guides/buildtools/</guid>
-      <description>Table of Contents   What is a build tool?  GNU Make   Makefile    Apache Maven   Maven Project   Maven Commands  Creating a Maven project from Scratch  Explaining the pom.xml configiguration file  Project File structure  Compile and Run    Collaborating on a Maven project    Choosing a Build tool  Links    What is a build tool?</description>
+      <description>What is a build tool? #  A build tool is a programming utility that automates a software build task, such as compiling source code, cleaning temporary files, and so on. A popular open source build tool is Make, another popular build tool is Maven
+GNU Make #  Make is a build tool released by GNU. Make was original designed to work with C source code. Make configurations are specified by a text file named Makefile.</description>
     </item>
     
     <item>
@@ -88,7 +92,8 @@ In a way, it serves as an executive summary of your project.</description>
       <pubDate>Sat, 16 May 2020 00:00:00 -0400</pubDate>
       
       <guid>/guides/codeprojects/</guid>
-      <description>Table of Contents  Project based thinking   Programming as an activity  Planning before you begin coding   Software Development Life Cycle (SDLC)      Checklists   Elements to include with your project repository    1. Project description   2. Source code with comments   3. Submit to the form before deadline    Elements of Style and Presentation  Other Enhancements    References  Project based thinking #  Programmers are typically learning to write source code to build programs not just scripts.</description>
+      <description>Project based thinking #  Programmers are typically learning to write source code to build programs not just scripts. A programming project requires far more than just fluency with a particular programming language syntax to cohesively put together.
+Creating a program requires certain executive functioning skills to coordinate and manage. This guide provides some advice and items to consider include when sharing your codebase. It is not meant to be followed religiously, but instead to provide a framework to guide your approach.</description>
     </item>
     
     <item>
@@ -141,7 +146,7 @@ Helpful links #  These are useful links to reference.</description>
       <pubDate>Tue, 28 Jan 2020 00:00:00 -0500</pubDate>
       
       <guid>/guides/filenames/</guid>
-      <description>Table of Contents   Introduction   Motivations for naming files well  Organizing your directory    Common File extensions  Common Directory Names  Ignoring files with your VCS repository    Introduction #  In the day to day work of programming, one often finds that a large fraction of time is spent looking for certain files. One of the wise adages with managing an assortment of files is to provide an organization scheme to make it easier to find what you need again.</description>
+      <description>Introduction #  In the day to day work of programming, one often finds that a large fraction of time is spent looking for certain files. One of the wise adages with managing an assortment of files is to provide an organization scheme to make it easier to find what you need again. It not only helps you as the maintainer, but also helps your reader(s)** and collaborator(s) as well. This is a good habit to devleop before you find yourself managing hundreds of files.</description>
     </item>
     
     <item>

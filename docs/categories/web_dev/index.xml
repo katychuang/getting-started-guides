@@ -19,12 +19,13 @@ The page that is rendered by the web browser is formatted in Hypertext Markup La
     </item>
     
     <item>
-      <title>Building on the web</title>
+      <title>Starting a Website</title>
       <link>/guides/buildawebsite/</link>
       <pubDate>Wed, 28 Oct 2020 00:00:00 -0400</pubDate>
       
       <guid>/guides/buildawebsite/</guid>
-      <description>Table of Contents  Introduction  Process from Idea to Product  Concepts of Web Development  Tools  Introduction #  This page focuses on the process, concepts, and tools for building any type of web site or web application. A website has a lot of overlapping functionality and technology as a web application, except it doesn&amp;rsquo;t focus on high volume of dynamism and user interactivity, which would require a database.</description>
+      <description>Introduction #  This page focuses on the process, concepts, and tools for building any type of web site or web application. A website has a lot of overlapping functionality and technology as a web application, except it doesn&amp;rsquo;t focus on high volume of dynamism and user interactivity, which would require a database. This article mentions the two interchangeable. However, if one were precise, this article focuses on websites.
+Process from Idea to Product #  Building a website follows many of the principles of building a software application, which includes figuring out what to build ,managing the building, and validating the quality of the final product.</description>
     </item>
     
     <item>
