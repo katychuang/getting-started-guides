@@ -13,7 +13,8 @@
       <pubDate>Fri, 13 Nov 2020 00:00:00 -0500</pubDate>
       
       <guid>/practice/interviewprep/</guid>
-      <description>Table of Contents  General Advice when solving problems  Problems with Stacks   Checking parenthesis  Evaluate Postfix Notation   The algorithm  Example      General Advice when solving problems #   Understand the problem being asked Don&amp;rsquo;t forget to handle edge cases Expressing your answer is just as important as understanding the problem, and solving it!  Problems with Stacks #    Checking parenthesis #  Examples:</description>
+      <description>General Advice when solving problems #   Understand the problem being asked Don&amp;rsquo;t forget to handle edge cases Expressing your answer is just as important as understanding the problem, and solving it!  Problems with Stacks #    Checking parenthesis #  Examples:
+Input: ()Output: trueInput: ()[]{}Output: trueInput: ([)]Output: falseInput: {[]}Output: trueInput : {[]{()}}Output : trueInput : [{}{}(]Output :falseThe logic here is to push a new item on to a stack when we notice an input with an opener, and pop when there is a closer.</description>
     </item>
     
   </channel>

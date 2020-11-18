@@ -15,7 +15,7 @@
 <link rel="manifest" href="/manifest.json">
 <link rel="icon" href="/favicon.png" type="image/x-icon">
 <link rel="stylesheet" href="/book.min.134b70e5316650a530cb42e4e8630b2a01d532bebfc0337028211175336e4806.css" integrity="sha256-E0tw5TFmUKUwy0Lk6GMLKgHVMr6/wDNwKCERdTNuSAY=">
-<script defer src="/en.search.min.527fc7ed0aaead0a55e9a15100bba13d739025fbd484ef5a11a24dbe90f4e160.js" integrity="sha256-Un/H7QqurQpV6aFRALuhPXOQJfvUhO9aEaJNvpD04WA="></script>
+<script defer src="/en.search.min.a97419309d9df098e33e58bb12f5d7b63130dc99e498b184fbb12e7f2edebf4a.js" integrity="sha256-qXQZMJ2d8JjjPli7EvXXtjEw3JnkmLGE&#43;7Eufy7ev0o="></script>
 
 <script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
 <link rel="alternate" type="application/rss+xml" href="/categories/projects/index.xml" title="Getting Started Guides" />
@@ -136,7 +136,7 @@ h1, h2, h3, h4, h5, h6, .heading {
 <p>Web Development</p>
 <ul>
 <li>
-  <a href="/guides/buildawebsite/">Building on the web</a></li>
+  <a href="/guides/buildawebsite/">Starting a website</a></li>
 <li>
   <a href="/guides/githubpages/">Github Pages</a></li>
 <li>
@@ -373,36 +373,6 @@ The page that is rendered by the web browser is formatted in Hypertext Markup La
   
   <article class="markdown book-post">
     <h2>
-      <a href="/guides/buildawebsite/">Building on the web</a>
-    </h2>
-    
-  <h5>October 28, 2020</h5>
-
-
-
-  
-
-  
-  <div>
-    
-      <a href="/categories/projects/">projects</a>, 
-      <a href="/categories/web_dev/">web_dev</a>
-  </div>
-  
-
-  
-
-  
-
-
-    <p>Table of Contents  Introduction  Process from Idea to Product  Concepts of Web Development  Tools  Introduction #  This page focuses on the process, concepts, and tools for building any type of web site or web application. A website has a lot of overlapping functionality and technology as a web application, except it doesn&rsquo;t focus on high volume of dynamism and user interactivity, which would require a database.
-        <a href="/guides/buildawebsite/">...</a>
-      
-    </p>
-  </article>
-  
-  <article class="markdown book-post">
-    <h2>
       <a href="/guides/dataflowdiagrams/">Data Flow Diagrams</a>
     </h2>
     
@@ -425,8 +395,40 @@ The page that is rendered by the web browser is formatted in Hypertext Markup La
   
 
 
-    <p>Table of Contents  What are Data Flow Diagrams (DFD)?   Notations   Rectangle (Entity)  Circle (Process)  Rounded rectangle (Data Store)  Arrow (Data flow)      Why are Diagrams useful?  How do you draw a diagram?  Software for drawing diagrams  References  What are Data Flow Diagrams (DFD)? #  This is a diagram that maps out the flow of information for any system.
+    <p>What are Data Flow Diagrams (DFD)? #  This is a diagram that maps out the flow of information for any system. There are defined symbols like rectangles, circles, arrows, and so on to distinguish different parts of the system.
+There are different kinds of data flow diagrams as well, most are separated into either logical DFD or Physical DFD. Logical data flow diagrams focuses on the system process(es). Physical data flow diagrams show how the data flow is implemented in the system.
         <a href="/guides/dataflowdiagrams/">...</a>
+      
+    </p>
+  </article>
+  
+  <article class="markdown book-post">
+    <h2>
+      <a href="/guides/buildawebsite/">Starting a Website</a>
+    </h2>
+    
+  <h5>October 28, 2020</h5>
+
+
+
+  
+
+  
+  <div>
+    
+      <a href="/categories/projects/">projects</a>, 
+      <a href="/categories/web_dev/">web_dev</a>
+  </div>
+  
+
+  
+
+  
+
+
+    <p>Introduction #  This page focuses on the process, concepts, and tools for building any type of web site or web application. A website has a lot of overlapping functionality and technology as a web application, except it doesn&rsquo;t focus on high volume of dynamism and user interactivity, which would require a database. This article mentions the two interchangeable. However, if one were precise, this article focuses on websites.
+Process from Idea to Product #  Building a website follows many of the principles of building a software application, which includes figuring out what to build ,managing the building, and validating the quality of the final product.
+        <a href="/guides/buildawebsite/">...</a>
       
     </p>
   </article>
@@ -487,7 +489,8 @@ In a way, it serves as an executive summary of your project.
   
 
 
-    <p>Table of Contents   What is a build tool?  GNU Make   Makefile    Apache Maven   Maven Project   Maven Commands  Creating a Maven project from Scratch  Explaining the pom.xml configiguration file  Project File structure  Compile and Run    Collaborating on a Maven project    Choosing a Build tool  Links    What is a build tool?
+    <p>What is a build tool? #  A build tool is a programming utility that automates a software build task, such as compiling source code, cleaning temporary files, and so on. A popular open source build tool is Make, another popular build tool is Maven
+GNU Make #  Make is a build tool released by GNU. Make was original designed to work with C source code. Make configurations are specified by a text file named Makefile.
         <a href="/guides/buildtools/">...</a>
       
     </p>
@@ -516,7 +519,8 @@ In a way, it serves as an executive summary of your project.
   
 
 
-    <p>Table of Contents  Project based thinking   Programming as an activity  Planning before you begin coding   Software Development Life Cycle (SDLC)      Checklists   Elements to include with your project repository    1. Project description   2. Source code with comments   3. Submit to the form before deadline    Elements of Style and Presentation  Other Enhancements    References  Project based thinking #  Programmers are typically learning to write source code to build programs not just scripts.
+    <p>Project based thinking #  Programmers are typically learning to write source code to build programs not just scripts. A programming project requires far more than just fluency with a particular programming language syntax to cohesively put together.
+Creating a program requires certain executive functioning skills to coordinate and manage. This guide provides some advice and items to consider include when sharing your codebase. It is not meant to be followed religiously, but instead to provide a framework to guide your approach.
         <a href="/guides/codeprojects/">...</a>
       
     </p>
@@ -547,7 +551,7 @@ In a way, it serves as an executive summary of your project.
   
 
 
-    <p>Table of Contents   Introduction   Motivations for naming files well  Organizing your directory    Common File extensions  Common Directory Names  Ignoring files with your VCS repository    Introduction #  In the day to day work of programming, one often finds that a large fraction of time is spent looking for certain files. One of the wise adages with managing an assortment of files is to provide an organization scheme to make it easier to find what you need again.
+    <p>Introduction #  In the day to day work of programming, one often finds that a large fraction of time is spent looking for certain files. One of the wise adages with managing an assortment of files is to provide an organization scheme to make it easier to find what you need again. It not only helps you as the maintainer, but also helps your reader(s)** and collaborator(s) as well. This is a good habit to devleop before you find yourself managing hundreds of files.
         <a href="/guides/filenames/">...</a>
       
     </p>

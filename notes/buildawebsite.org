@@ -1,10 +1,10 @@
-#+TITLE: Building on the web
+#+TITLE: Starting a Website
 #+SUBTITLE:  Department of Computer & Information Science, Brooklyn College
 #+AUTHOR:    Katherine Chuang
 #+EMAIL:     chuang@sci.brooklyn.cuny.edu
 #+CREATOR:   katychuang
 #+date:      2020-10-28
-#+OPTIONS:   H:1 num:nil toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t ^:nil
+#+OPTIONS:   H:1 num:nil toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t ^:nil
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
 #+ALT_TITLE: Lecture Notes
 
@@ -15,8 +15,6 @@
 * Introduction
 
 This page focuses on the process, concepts, and tools for building any type of web site or web application. A website has a lot of overlapping functionality and technology as a web application, except it doesn't focus on high volume of dynamism and user interactivity, which would require  a database. This article mentions the two  interchangeable. However, if one were precise, this article focuses on /websites/.
-
-
 
 * Process from Idea to Product
 :PROPERTIES:

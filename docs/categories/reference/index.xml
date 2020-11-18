@@ -13,7 +13,8 @@
       <pubDate>Wed, 28 Oct 2020 00:00:00 -0400</pubDate>
       
       <guid>/guides/dataflowdiagrams/</guid>
-      <description>Table of Contents  What are Data Flow Diagrams (DFD)?   Notations   Rectangle (Entity)  Circle (Process)  Rounded rectangle (Data Store)  Arrow (Data flow)      Why are Diagrams useful?  How do you draw a diagram?  Software for drawing diagrams  References  What are Data Flow Diagrams (DFD)? #  This is a diagram that maps out the flow of information for any system.</description>
+      <description>What are Data Flow Diagrams (DFD)? #  This is a diagram that maps out the flow of information for any system. There are defined symbols like rectangles, circles, arrows, and so on to distinguish different parts of the system.
+There are different kinds of data flow diagrams as well, most are separated into either logical DFD or Physical DFD. Logical data flow diagrams focuses on the system process(es). Physical data flow diagrams show how the data flow is implemented in the system.</description>
     </item>
     
     <item>
@@ -32,7 +33,7 @@ In a way, it serves as an executive summary of your project.</description>
       <pubDate>Tue, 28 Jan 2020 00:00:00 -0500</pubDate>
       
       <guid>/guides/filenames/</guid>
-      <description>Table of Contents   Introduction   Motivations for naming files well  Organizing your directory    Common File extensions  Common Directory Names  Ignoring files with your VCS repository    Introduction #  In the day to day work of programming, one often finds that a large fraction of time is spent looking for certain files. One of the wise adages with managing an assortment of files is to provide an organization scheme to make it easier to find what you need again.</description>
+      <description>Introduction #  In the day to day work of programming, one often finds that a large fraction of time is spent looking for certain files. One of the wise adages with managing an assortment of files is to provide an organization scheme to make it easier to find what you need again. It not only helps you as the maintainer, but also helps your reader(s)** and collaborator(s) as well. This is a good habit to devleop before you find yourself managing hundreds of files.</description>
     </item>
     
   </channel>

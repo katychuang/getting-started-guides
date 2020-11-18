@@ -53,17 +53,17 @@
   </url>
   
   <url>
-    <loc>/guides/buildawebsite/</loc>
-    <lastmod>2020-10-28T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/guides/dataflowdiagrams/</loc>
     <lastmod>2020-10-28T00:00:00-04:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/reference/</loc>
+    <lastmod>2020-10-28T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/guides/buildawebsite/</loc>
     <lastmod>2020-10-28T00:00:00-04:00</lastmod>
   </url>
   
