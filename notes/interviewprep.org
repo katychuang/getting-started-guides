@@ -1,33 +1,44 @@
-#+TITLE: Technical Interview Prep
+#+TITLE: Job Searching
 
 #+SUBTITLE:  Department of Computer & Information Science, Brooklyn College
 #+AUTHOR:    Katherine Chuang
 #+EMAIL:     chuang@sci.brooklyn.cuny.edu
 #+CREATOR:   katychuang
-#+date:      2020-11-13
+#+date:      2010-11-13
 #+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
-#+ALT_TITLE: Lecture Notes
 #+HTML_MATHJAX: align: left indent: 5em tagside: left font: Neo-Euler
-#+HTML_MATHJAX: cancel.js noErrors.js
 #+HUGO_BASE_DIR: ../hugo/
-#+HUGO_SECTION: practice
-
+#+HUGO_SECTION: Job Searching
 #+HUGO_CATEGORIES: interview
 
-* General Advice when solving problems
+* Resume Guide /(coming soon)/
+:PROPERTIES:
+:EXPORT_FILE_NAME:  0_resume
+:EXPORT_DATE: 2020-11-20
+:END:
+
+Nothing here at the moment
+
+* Technical Interviews
+:PROPERTIES:
+:EXPORT_FILE_NAME:  1_interview
+:EXPORT_DATE: 2020-11-13
+:END:
+
+_General Advice when solving problems_
 - Understand the problem being asked
 - Don't forget to handle edge cases
 - Expressing your answer is just as important as understanding the problem, and solving it!
 
-* Problems with Stacks
+** Problems with Stacks
 :PROPERTIES:
 :NUMBERED:
 :END:
 
 [[file:../../stacks.png]]
 
-** Checking parenthesis
+*** Checking parenthesis
 
 Examples:
 #+BEGIN_SRC
@@ -91,7 +102,7 @@ print(string,"-",check(string))
 #+END_SRC
 
 
-** Evaluate Postfix Notation
+*** Evaluate Postfix Notation
 Given a valid expression in reverse polish notation, evaluate it and return the result.
 
 #+BEGIN_src
@@ -102,7 +113,7 @@ Input: ["4", "10", "5", "/", "+"]
 Output: 6, because (4 + (10 / 5)) = 6
 #+END_src
 
-*** The algorithm
+**** The algorithm
 - Create an empty stack and scan postfix expression from left to right
 - If element is an operand, push it into the stack
 - If the element is an operator 📦:
@@ -110,7 +121,7 @@ Output: 6, because (4 + (10 / 5)) = 6
     - push result back to the stack
 - When expression is ended, the value in stack is the final answer
 
-*** Example
+**** Example
 \[
  $3 1 + 9 *$ \vspace{1in}
   36
@@ -131,7 +142,3 @@ Output: 6, because (4 + (10 / 5)) = 6
   \fi
 ]
 
-* COMMENT Local Variables   :ARCHIVE:
-# Local Variables:
-# eval: (org-hugo-auto-export-mode)
-# End:

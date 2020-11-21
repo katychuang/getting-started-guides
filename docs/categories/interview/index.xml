@@ -6,14 +6,24 @@
     <description>Recent content in interview on Getting Started Guides</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Nov 2020 00:00:00 -0500</lastBuildDate><atom:link href="/categories/interview/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Nov 2020 00:00:00 -0500</lastBuildDate><atom:link href="/categories/interview/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Technical Interview Prep</title>
-      <link>/practice/interviewprep/</link>
+      <title>Resume Guide (coming soon)</title>
+      <link>/Job-Searching/0_resume/</link>
+      <pubDate>Fri, 20 Nov 2020 00:00:00 -0500</pubDate>
+      
+      <guid>/Job-Searching/0_resume/</guid>
+      <description>Nothing here at the moment</description>
+    </item>
+    
+    <item>
+      <title>Technical Interviews</title>
+      <link>/Job-Searching/1_interview/</link>
       <pubDate>Fri, 13 Nov 2020 00:00:00 -0500</pubDate>
       
-      <guid>/practice/interviewprep/</guid>
-      <description>General Advice when solving problems #   Understand the problem being asked Don&amp;rsquo;t forget to handle edge cases Expressing your answer is just as important as understanding the problem, and solving it!  Problems with Stacks #    Checking parenthesis #  Examples:
+      <guid>/Job-Searching/1_interview/</guid>
+      <description>General Advice when solving problems
+ Understand the problem being asked Don&amp;rsquo;t forget to handle edge cases Expressing your answer is just as important as understanding the problem, and solving it!  Problems with Stacks #    Checking parenthesis #  Examples:
 Input: ()Output: trueInput: ()[]{}Output: trueInput: ([)]Output: falseInput: {[]}Output: trueInput : {[]{()}}Output : trueInput : [{}{}(]Output :falseThe logic here is to push a new item on to a stack when we notice an input with an opener, and pop when there is a closer.</description>
     </item>
     

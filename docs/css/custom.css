@@ -1,0 +1,41 @@
+
+h1, h2, h3, h4, h5, h6, .heading {
+            font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+        font-weight: 700;
+        line-height: 1.2;
+        color: #263238;
+        margin: 0 0 .625em;
+}
+
+ .markdown h1, {
+        display: block;
+        font-size: 2em;
+        margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+}
+.markdown h2,.heading {
+        font-size: 1.5em;
+        display: block;
+        margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+ }
+ .markdown h4, .markdown h3{
+         font-size: 1.375em;
+        margin-block-start: 0.67em;
+        margin-block-end: 0.67em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+ }
+ body {
+         font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+         font-size: 1.125em;
+         line-height: 1.5;
+         color: #37474f;
+ }

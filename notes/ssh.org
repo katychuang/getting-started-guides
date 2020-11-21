@@ -15,9 +15,9 @@
 # #+EXPORT_FILE_NAME: ../docs/ssh.html
 
 #+HUGO_BASE_DIR: ../hugo/
-#+HUGO_SECTION: guides
+#+HUGO_SECTION: Command Line
 #+EXPORT_HUGO_SECTION: ssh
-#+HUGO_CATEGORIES: ssh
+#+HUGO_CATEGORIES: ssh cli
 
 
 

@@ -9,7 +9,7 @@
 #+ALT_TITLE: Lecture Notes
 
 #+HUGO_BASE_DIR: ../hugo/
-#+HUGO_SECTION: guides
+#+HUGO_SECTION: Version Control
 #+HUGO_CATEGORIES: projects
 
 
@@ -51,8 +51,119 @@ It helps to know what you're building before you begin building. Deciding what t
 **** Testing
 **** Deployment
 
+* File naming conventions
+:PROPERTIES:
+:EXPORT_DATE: 2020-01-28
+:EXPORT_FILE_NAME:  1_filename
+:END:
 
+
+** Introduction
+
+In the day to day work of programming, one often finds that a large fraction of time is spent looking for certain files. One of the wise adages with managing an assortment of files is to provide an organization scheme to make it easier to find what you need again. It not only helps you as the maintainer, but also helps your reader(s)** and collaborator(s) as well. This is a good habit to devleop before you find yourself managing hundreds of files.
+
+** Motivations for naming files well
+
+- It is more efficient to name your files correct such that it's easier to find.
+
+- With the correct file extentions it is easier to collaborate with another programmer.
+
+** Organizing your directory
+
+A developer also considerrs file organization and directory naming schemes as well. There's no industry standard for this, just an organization level (if you join a team with a style guide), however there tends to be some common patterns to follow.
+
+When you have a lot of tiles in your project directory, it is common to start thinking about the organization of contents.
+
+The scheme itself can depend on the type of project. For example, if you're working on a web application you might split into layers such as the back-end from front-end features.
+
+** Common File extensions
+
+#+CAPTION: This is a table of some common file naming conventions.
+#+attr_html: :class zebra-striping sane-table
+
+
+| Language     | File Extension | Example      | Rules & Conventions                                                                  |
+|--------------+----------------+--------------+--------------------------------------------------------------------------------------|
+| <l>          | <l12>          | <l12>        | <l>                                                                                  |
+| Java         | .java          | ~Main.java~  | - File name _must_ match the public class defined in the file<br>- Usually CamelCase |
+|--------------+----------------+--------------+--------------------------------------------------------------------------------------|
+| C++          | .cpp           | ~main.cpp~   | - C++ Programming File Organization[fn:1]                                            |
+|--------------+----------------+--------------+--------------------------------------------------------------------------------------|
+| Python       | .py            | ~main.py~    | - Often lowercased<br>- Pep8 Style Guidelines[fn:2]                                  |
+|--------------+----------------+--------------+--------------------------------------------------------------------------------------|
+| Scheme       | .scm           | ~main.scm~   | - Guile Scheme Manual<br>  - §6.18.5 Compiling Scheme Code[fn:3]                     |
+|--------------+----------------+--------------+--------------------------------------------------------------------------------------|
+| Markdown     | .md, .markdown | ~foo.md~     | - Markdown Syntax[fn:4]                                                              |
+|--------------+----------------+--------------+--------------------------------------------------------------------------------------|
+| HTML         | .htm, .html    | ~index.html~ | - Hypertext Markup Language<br>- Include doctype                                     |
+|--------------+----------------+--------------+--------------------------------------------------------------------------------------|
+| CSS          | .css           | ~style.css~  | - Cascading Style Sheets                                                             |
+|--------------+----------------+--------------+--------------------------------------------------------------------------------------|
+| XML          | .xml           | ~pom.xml~    | - Extensible Markup Language                                                         |
+|--------------+----------------+--------------+--------------------------------------------------------------------------------------|
+| JavaScript   | .js            | ~script.js~  |                                                                                      |
+|--------------+----------------+--------------+--------------------------------------------------------------------------------------|
+| Haskell      | .hs            | ~Main.hs~    |                                                                                      |
+|--------------+----------------+--------------+--------------------------------------------------------------------------------------|
+| Shell Script | .sh            | ~build.sh~   | - add a shebang at the the top, ~#!/bin/sh~                                          |
+|--------------+----------------+--------------+--------------------------------------------------------------------------------------|
+
+** Common Directory Names
+
+- ~/src~ - for your packages & classes
+- ~/test~ - for unit tests
+- ~/docs~ - for documentation, generated and manually edited
+- ~/lib~ - 3rd party libraries
+- ~/etc~ - unrelated stuff
+- ~/bin~ (or /classes) - compiled classes, output of your compile
+- ~/dist~ - for distribution packages, hopefully auto generated by a build system
+
+from https://stackoverflow.com/a/8594
+
+** Ignoring files with your VCS repository
+
+If you're using Git you can specify a ~.gitignore~ file that contains a list of filenames to ignore
+
+- https://www.atlassian.com/git/tutorials/saving-changes/gitignore
+- https://git-scm.com/docs/gitignore
+
+
+* Include a README with your project
+:PROPERTIES:
+:EXPORT_FILE_NAME: 2_readme
+:EXPORT_DATE:   2020-10-01
+:END:
+
+** What is a README?
+This is a file that is named ~README~, that usually resides in the root of your project directory. This name comes from the command *Read me.* as in the situation of handing a project off to another developer and writing a memo to them that should be read first before the source code.
+
+In a way, it serves as an executive summary of your project. It gives your reader a chance to understand what's going on since source code doesn't describe the intent and purpose of projects very well.
+
+** What should go into a README?
+
+The readme should contain description about what the project is about, and also information to build and/or run your program.
+
+An example of a barebones README can be found at https://github.com/cisc3130-s20/assignment-template
+
+Within this file it starts with the title of the project, followed by instructions for setting up a development environment and then some info on where code can be saved.
+
+There's generally no industry standard on the order sections should go or how to name the sections. It's generally based on what makes sense to you, and/or what you think would help your reader.
+
+** Formatting a README
+
+This file is usually a text file. It can be written in plain text, however you can also choose to use some sort of formatting if you're publishing your project on GitHub and the like. That formatting is called ~markdown~ - it is a way to help your text be more readable on the web page.
+
+ For example, if you want to add a title to your markdown you can use a single ~#~ symbol to mark it as a heading level 1 (top level). You can add inline code snippets using the ` character or a code block with three ticks as fences around the section.
+
+ The other formatting possibilities like bold and italics is a lot like formatting chat messages in discord and slack, with a mixture of _, *, ~ symbols to mean varoius things. Take a look at the markdown page for more guidance.
+
+** Read more about READMEs
+
+- Make a README because no one can read your mind https://www.makeareadme.com/
 * Checklists
+:PROPERTIES:
+:EXPORT_FILE_NAME: 4_checklist
+:END:
 
 ** Elements to include with your project repository
 :PROPERTIES:
@@ -112,8 +223,3 @@ Elements included with your submission:
 - [Advice] Leslie Lamport. 2015. Who builds a house without drawing blueprints? *Communications of the ACM* 58, 4 (April 2015), 38–41. DOI:[https://doi-org.ez-proxy.brooklyn.cuny.edu/10.1145/2736348](https://doi-org.ez-proxy.brooklyn.cuny.edu/10.1145/2736348)
 - [Advice] Clean Code [https://cs.lmu.edu/~ray/notes/cleancode/](https://cs.lmu.edu/~ray/notes/cleancode/)
 - [Advice] Planning a programming project [https://www.khanacademy.org/computing/computer-programming/programming/good-practices/a/planning-a-programming-project](https://www.khanacademy.org/computing/computer-programming/programming/good-practices/a/planning-a-programming-project)
-
-* COMMENT Local Variables   :ARCHIVE:
-# Local Variables:
-# eval: (org-hugo-auto-export-mode)
-# End:

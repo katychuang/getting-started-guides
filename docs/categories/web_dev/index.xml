@@ -9,23 +9,31 @@
     <lastBuildDate>Thu, 12 Nov 2020 00:00:00 -0500</lastBuildDate><atom:link href="/categories/web_dev/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Concepts of Web Development</title>
-      <link>/guides/concepts-of-web-dev/</link>
+      <link>/Web-Development/2_concepts-of-web-dev/</link>
       <pubDate>Thu, 12 Nov 2020 00:00:00 -0500</pubDate>
       
-      <guid>/guides/concepts-of-web-dev/</guid>
+      <guid>/Web-Development/2_concepts-of-web-dev/</guid>
       <description>A website is rendered in a web browser through the HTTP Protocol. There&amp;rsquo;s a lot more one should learn about Internet Protocols, but it&amp;rsquo;s not required to get an operational understanding of working with websites.
 Web Design Principles
 The page that is rendered by the web browser is formatted in Hypertext Markup Language or HTML for short. HTML is a set of nested tags that describe how the page should be structured.</description>
     </item>
     
     <item>
-      <title>Starting a Website</title>
-      <link>/guides/buildawebsite/</link>
+      <title>Process from idea to Product</title>
+      <link>/Web-Development/process/1_process/</link>
       <pubDate>Wed, 28 Oct 2020 00:00:00 -0400</pubDate>
       
-      <guid>/guides/buildawebsite/</guid>
-      <description>Introduction #  This page focuses on the process, concepts, and tools for building any type of web site or web application. A website has a lot of overlapping functionality and technology as a web application, except it doesn&amp;rsquo;t focus on high volume of dynamism and user interactivity, which would require a database. This article mentions the two interchangeable. However, if one were precise, this article focuses on websites.
-Process from Idea to Product #  Building a website follows many of the principles of building a software application, which includes figuring out what to build ,managing the building, and validating the quality of the final product.</description>
+      <guid>/Web-Development/process/1_process/</guid>
+      <description>Building a website follows many of the principles of building a software application, which includes figuring out what to build ,managing the building, and validating the quality of the final product. In software development this specifica refers to various phases of structured activities such as planning (such as gathering spec requirements), scheduling the work, development, and test. The name for this set of phases is called Software development lifecycle (SDLC). Some of these phases are described below.</description>
+    </item>
+    
+    <item>
+      <title>Starting a Website</title>
+      <link>/Web-Development/0_starting/</link>
+      <pubDate>Wed, 28 Oct 2020 00:00:00 -0400</pubDate>
+      
+      <guid>/Web-Development/0_starting/</guid>
+      <description>This section focuses on the process, concepts, and tools for building any type of web site or web application. A website has a lot of overlapping functionality and technology as a web application, except it doesn&amp;rsquo;t focus on high volume of dynamism and user interactivity, which would require a database. This article mentions the two interchangeable. However, if one were precise, this article focuses on websites.</description>
     </item>
     
     <item>

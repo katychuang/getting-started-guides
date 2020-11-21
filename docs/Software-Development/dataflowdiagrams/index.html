@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta name="generator" content="Hugo 0.75.1" />
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="What are Data Flow Diagrams (DFD)? #  This is a diagram that maps out the flow of information for any system. There are defined symbols like rectangles, circles, arrows, and so on to distinguish different parts of the system.
+There are different kinds of data flow diagrams as well, most are separated into either logical DFD or Physical DFD. Logical data flow diagrams focuses on the system process(es). Physical data flow diagrams show how the data flow is implemented in the system.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Data Flow Diagrams" />
+<meta property="og:description" content="What are Data Flow Diagrams (DFD)? #  This is a diagram that maps out the flow of information for any system. There are defined symbols like rectangles, circles, arrows, and so on to distinguish different parts of the system.
+There are different kinds of data flow diagrams as well, most are separated into either logical DFD or Physical DFD. Logical data flow diagrams focuses on the system process(es). Physical data flow diagrams show how the data flow is implemented in the system." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/Software-Development/dataflowdiagrams/" />
+<meta property="article:published_time" content="2020-10-28T00:00:00-04:00" />
+<meta property="article:modified_time" content="2020-10-28T00:00:00-04:00" />
+<title>Data Flow Diagrams | Getting Started Guides</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.134b70e5316650a530cb42e4e8630b2a01d532bebfc0337028211175336e4806.css" integrity="sha256-E0tw5TFmUKUwy0Lk6GMLKgHVMr6/wDNwKCERdTNuSAY=">
+<script defer src="/en.search.min.96efde798425b627478ababff053a4cb2a94c55ac499cdac73c74b4aecfe7a46.js" integrity="sha256-lu/eeYQltidHirq/8FOkyyqUxVrEmc2sc8dLSuz&#43;ekY="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Getting Started Guides</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Guides</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/guides/githubpages/" class="">Github Pages</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/guides/jcf/" class="">Java Collections Framework</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/guides/java/" class="">Java 8</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-b757b08f068d05513bb82465c40d8bcb" class="toggle"  />
+    <label for="section-b757b08f068d05513bb82465c40d8bcb" class="flex justify-between">
+      <a  class="">Version Control</a>
+      <span>▾</span>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/Version-Control/2_readme/" class="">Include a README with your project</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/Version-Control/4_checklist/" class="">Checklists</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/Version-Control/codeprojects/" class="">Sharing Coding Projects</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/Version-Control/versioncontrol/" class="">Version Control Systems</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/Version-Control/filenames/" class="">File naming conventions</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Software Development</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/Software-Development/dataflowdiagrams/" class=" active">Data Flow Diagrams</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/Software-Development/buildtools/" class="">Build Tools</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5f1a7e1da4be89e28cb82b74018abc53" class="toggle"  />
+    <label for="section-5f1a7e1da4be89e28cb82b74018abc53" class="flex justify-between">
+      <a  class="">Job Searching</a>
+      <span>▾</span>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/Job-Searching/0_resume/" class="">Resume Guide (coming soon)</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/Job-Searching/1_interview/" class="">Technical Interviews</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Web Developments</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/Web-Development/2_concepts-of-web-dev/" class="">Concepts of Web Development</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/Web-Development/process/1_process/" class="">Process from idea to Product</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/Web-Development/0_starting/" class="">Starting a Website</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Command Line</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/Command-Line/ssh/" class="">SSH</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/page/" class="">Index</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/katychuang/getting-started-guides" target="_blank" rel="noopener">
+        Source
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Data Flow Diagrams</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#what-are-data-flow-diagrams--dfd">What are Data Flow Diagrams (DFD)?</a>
+          <ul>
+            <li><a href="#notations">Notations</a></li>
+          </ul>
+        </li>
+        <li><a href="#why-are-diagrams-useful">Why are Diagrams useful?</a></li>
+        <li><a href="#how-do-you-draw-a-diagram">How do you draw a diagram?</a></li>
+        <li><a href="#software-for-drawing-diagrams">Software for drawing diagrams</a></li>
+        <li><a href="#references">References</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h2 id="what-are-data-flow-diagrams--dfd">
+  What are Data Flow Diagrams (DFD)?
+  <a class="anchor" href="#what-are-data-flow-diagrams--dfd">#</a>
+</h2>
+<p>This is a diagram that maps out the flow of information for any system. There are defined symbols like rectangles, circles, arrows, and so on to distinguish different parts of the system.</p>
+<p>There are different kinds of data flow diagrams as well, most are separated into either logical DFD or Physical DFD. <em>Logical data flow diagrams</em> focuses on the system process(es). <em>Physical data flow diagrams</em> show how the data flow is implemented in the system.</p>
+<h3 id="notations">
+  Notations
+  <a class="anchor" href="#notations">#</a>
+</h3>
+<p>This section to be written soon.</p>
+<h4 id="rectangle--entity">
+  Rectangle (Entity)
+  <a class="anchor" href="#rectangle--entity">#</a>
+</h4>
+<h4 id="circle--process">
+  Circle (Process)
+  <a class="anchor" href="#circle--process">#</a>
+</h4>
+<h4 id="rounded-rectangle--data-store">
+  Rounded rectangle (Data Store)
+  <a class="anchor" href="#rounded-rectangle--data-store">#</a>
+</h4>
+<h4 id="arrow--data-flow">
+  Arrow (Data flow)
+  <a class="anchor" href="#arrow--data-flow">#</a>
+</h4>
+<h2 id="why-are-diagrams-useful">
+  Why are Diagrams useful?
+  <a class="anchor" href="#why-are-diagrams-useful">#</a>
+</h2>
+<p>A diagram serves as a roadmap for a project. It shows all the pieces and how they are connected.</p>
+<h2 id="how-do-you-draw-a-diagram">
+  How do you draw a diagram?
+  <a class="anchor" href="#how-do-you-draw-a-diagram">#</a>
+</h2>
+<p>First you have to identify the system components and boundaries.</p>
+<p>Next you have to pick the paths between these components.</p>
+<h2 id="software-for-drawing-diagrams">
+  Software for drawing diagrams
+  <a class="anchor" href="#software-for-drawing-diagrams">#</a>
+</h2>
+<p>You can draw a diagram with pen and paper. This may be a good way to start because there is a low learning curve involved to expressing oneself in that medium.</p>
+<p>When you&rsquo;re ready for creating a more polished diagram, there are many software availabe.</p>
+<ul>
+<li>Dia Diagram Editor <a href="http://dia-installer.de">http://dia-installer.de</a></li>
+<li>Draw.io <a href="http://draw.io/">http://draw.io/</a></li>
+<li>Lucid Chart <a href="https://www.lucidchart.com/pages/usecase/education">https://www.lucidchart.com/pages/usecase/education</a></li>
+</ul>
+<h2 id="references">
+  References
+  <a class="anchor" href="#references">#</a>
+</h2>
+<ul>
+<li><a href="https://www.lucidchart.com/pages/data-flow-diagram/data-flow-diagram-symbols">https://www.lucidchart.com/pages/data-flow-diagram/data-flow-diagram-symbols</a></li>
+<li><a href="https://www.smartdraw.com/data-flow-diagram/">https://www.smartdraw.com/data-flow-diagram/</a></li>
+<li><a href="https://www.cs.uct.ac.za/mit%5Fnotes/software/htmls/ch06.html">https://www.cs.uct.ac.za/mit%5Fnotes/software/htmls/ch06.html</a></li>
+<li><a href="https://www.visual-paradigm.com/guide/data-flow-diagram/what-is-data-flow-diagram/">https://www.visual-paradigm.com/guide/data-flow-diagram/what-is-data-flow-diagram/</a></li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#what-are-data-flow-diagrams--dfd">What are Data Flow Diagrams (DFD)?</a>
+          <ul>
+            <li><a href="#notations">Notations</a></li>
+          </ul>
+        </li>
+        <li><a href="#why-are-diagrams-useful">Why are Diagrams useful?</a></li>
+        <li><a href="#how-do-you-draw-a-diagram">How do you draw a diagram?</a></li>
+        <li><a href="#software-for-drawing-diagrams">Software for drawing diagrams</a></li>
+        <li><a href="#references">References</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
