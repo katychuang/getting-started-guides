@@ -9,10 +9,10 @@
     <lastBuildDate>Sat, 01 Aug 2020 00:00:00 -0400</lastBuildDate><atom:link href="/categories/ssh/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SSH</title>
-      <link>/guides/ssh/</link>
+      <link>/Command-Line/ssh/</link>
       <pubDate>Sat, 01 Aug 2020 00:00:00 -0400</pubDate>
       
-      <guid>/guides/ssh/</guid>
+      <guid>/Command-Line/ssh/</guid>
       <description>Table of Contents   Getting started with SSH   What is SSH?   What is an SSH Client?  When would you use SSH?      SSH by terminal   How do I ssh in terminal?  SSH Programs for Mac   1. Terminal App  2. iTerm app    SSH Programs for Windows   1. Putty (a simple GUI app)  2.</description>
     </item>
     

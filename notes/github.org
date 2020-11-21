@@ -110,3 +110,30 @@ Other common commands
    (~git fetch~ checks for changes but doesn’t download it)
 + ~git clone <git address>~ copies a server version to locally
 + ~git remote -v~ shows the server address
+
+* What is Github Pages?
+
+This is a feature provided by GitHub where you can host websites directly from your GitHub repository. These websites are typically static files, meaning there is no database no backend. For example, this website is hosted on GitHub Pages, it was built with a static site generator.
+
+To find out more, go to https://pages.github.com
+
+* How to create your home page (easy way)
+
+When you use GitHub pages, you can access your website at the url http://username.github.io and the underlying files would be found in your repository, which is the repository can be found at url pattern http://github.com/username/username.github.io
+
+This section walks you through step by step. These instructions are taken directly from GitHub's docs.
+
+*Short version:*
+1. Create a repo of name: *yourusername*.github.io
+2. Go to that repo's settings and check the box for your pages (note the drop down option selected)
+3. Add ~.html~ files to your repo
+
+You should be able to access your website from ~http://yourusername.github.io~
+
+*Longer version:*
+1. From your account, create a new repo with the name following the pattern ~yourusername.github.io~ where you use your username to replace the part that says ~yourusername~ -- this is the basis for producing a website hosted by github pages (https://pages.github.com/).
+2. Confirm that the pages feature is turned on for that repository, under the settings menu.
+3. This allows you to host files under your GitHub account.
+   a. You could use the github.com web interface to upload each file individually, however I recommended you take time at some point in your career to gain familiarity with the workflow of using git commands from your machine terminal.
+   b. Upload the images and html files to that repo.
+4. If set up properly you should be able to access your website from http://username.github.io

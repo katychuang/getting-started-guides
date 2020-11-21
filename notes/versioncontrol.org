@@ -1,4 +1,4 @@
-#+TITLE: Git
+#+TITLE: Version Control Systems
 #+SUBTITLE:  A version control system
 #+AUTHOR:    Katherine Chuang
 #+EMAIL:     chuang@sci.brooklyn.cuny.edu
@@ -10,13 +10,14 @@
 
 
 #+HUGO_BASE_DIR: ../hugo/
-#+HUGO_SECTION: guides
+#+HUGO_SECTION: Version Control
 #+HUGO_CATEGORIES: git
 
 
 * Git
 :PROPERTIES:
 :UNNUMBERED: TOC
+:EXPORT_FILENAME: 1_git
 :END:
 Version control systems are used in managing revision control of project artifacts, and maintaining a history of changes to each artifact. Artifacts can include documents, source code, and much more.
 

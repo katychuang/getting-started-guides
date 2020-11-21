@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Getting Started Guides</title>
+    <link>/Job-Searching/</link>
+    <description>Recent content on Getting Started Guides</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 20 Nov 2020 00:00:00 -0500</lastBuildDate><atom:link href="/Job-Searching/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Resume Guide (coming soon)</title>
+      <link>/Job-Searching/0_resume/</link>
+      <pubDate>Fri, 20 Nov 2020 00:00:00 -0500</pubDate>
+      
+      <guid>/Job-Searching/0_resume/</guid>
+      <description>Nothing here at the moment</description>
+    </item>
+    
+    <item>
+      <title>Technical Interviews</title>
+      <link>/Job-Searching/1_interview/</link>
+      <pubDate>Fri, 13 Nov 2020 00:00:00 -0500</pubDate>
+      
+      <guid>/Job-Searching/1_interview/</guid>
+      <description>General Advice when solving problems
+ Understand the problem being asked Don&amp;rsquo;t forget to handle edge cases Expressing your answer is just as important as understanding the problem, and solving it!  Problems with Stacks #    Checking parenthesis #  Examples:
+Input: ()Output: trueInput: ()[]{}Output: trueInput: ([)]Output: falseInput: {[]}Output: trueInput : {[]{()}}Output : trueInput : [{}{}(]Output :falseThe logic here is to push a new item on to a stack when we notice an input with an opener, and pop when there is a closer.</description>
+    </item>
+    
+  </channel>
+</rss>

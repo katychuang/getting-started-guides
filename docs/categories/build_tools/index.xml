@@ -9,10 +9,10 @@
     <lastBuildDate>Mon, 28 Sep 2020 00:00:00 -0400</lastBuildDate><atom:link href="/categories/build_tools/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Build Tools</title>
-      <link>/guides/buildtools/</link>
+      <link>/Software-Development/buildtools/</link>
       <pubDate>Mon, 28 Sep 2020 00:00:00 -0400</pubDate>
       
-      <guid>/guides/buildtools/</guid>
+      <guid>/Software-Development/buildtools/</guid>
       <description>What is a build tool? #  A build tool is a programming utility that automates a software build task, such as compiling source code, cleaning temporary files, and so on. A popular open source build tool is Make, another popular build tool is Maven
 GNU Make #  Make is a build tool released by GNU. Make was original designed to work with C source code. Make configurations are specified by a text file named Makefile.</description>
     </item>

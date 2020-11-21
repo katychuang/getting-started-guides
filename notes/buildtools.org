@@ -13,7 +13,7 @@
 # #+HTML_HEAD: </style>
 # #+EXPORT_FILE_NAME: ../docs/build/index.html
 #+HUGO_BASE_DIR: ../hugo/
-#+HUGO_SECTION: guides
+#+HUGO_SECTION: Software Development
 #+HUGO_CATEGORIES: build_tools projects
 #+EXPORT_HUGO_SECTION: buildtools
 
@@ -163,7 +163,3 @@ If you're solely working on Java programming projects (for desktop GUI, other pr
 - Gradle https://gradle.org/
 - Ant https://ant.apache.org/
 
-* COMMENT Local Variables   :ARCHIVE:
-# Local Variables:
-# eval: (org-hugo-auto-export-mode)
-# End:

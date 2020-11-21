@@ -3,37 +3,52 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/categories/</loc>
-    <lastmod>2020-11-13T00:00:00-05:00</lastmod>
+    <loc>/guides/</loc>
+    <lastmod>2020-04-20T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/interview/</loc>
-    <lastmod>2020-11-13T00:00:00-05:00</lastmod>
+    <loc>/Version-Control/</loc>
+    <lastmod>2020-10-01T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/Software-Development/</loc>
+    <lastmod>2020-10-28T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/Job-Searching/</loc>
+    <lastmod>2020-11-20T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2020-11-20T00:00:00-05:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
+    <lastmod>2020-11-20T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/interview/</loc>
+    <lastmod>2020-11-20T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/Job-Searching/0_resume/</loc>
+    <lastmod>2020-11-20T00:00:00-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/Job-Searching/1_interview/</loc>
     <lastmod>2020-11-13T00:00:00-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/practice/</loc>
-    <lastmod>2020-11-13T00:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/practice/interviewprep/</loc>
-    <lastmod>2020-11-13T00:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/guides/concepts-of-web-dev/</loc>
-    <lastmod>2020-11-12T00:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/guides/</loc>
+    <loc>/Web-Development/2_concepts-of-web-dev/</loc>
     <lastmod>2020-11-12T00:00:00-05:00</lastmod>
   </url>
   
@@ -43,7 +58,7 @@
   </url>
   
   <url>
-    <loc>/guides/concepts-of-web-network/</loc>
+    <loc>/web-development/</loc>
     <lastmod>2020-11-12T00:00:00-05:00</lastmod>
   </url>
   
@@ -53,7 +68,12 @@
   </url>
   
   <url>
-    <loc>/guides/dataflowdiagrams/</loc>
+    <loc>/Software-Development/dataflowdiagrams/</loc>
+    <lastmod>2020-10-28T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/Web-Development/process/1_process/</loc>
     <lastmod>2020-10-28T00:00:00-04:00</lastmod>
   </url>
   
@@ -63,22 +83,17 @@
   </url>
   
   <url>
-    <loc>/guides/buildawebsite/</loc>
+    <loc>/Web-Development/0_starting/</loc>
     <lastmod>2020-10-28T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/git/</loc>
+    <loc>/Version-Control/2_readme/</loc>
     <lastmod>2020-10-01T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>/guides/writingreadme/</loc>
-    <lastmod>2020-10-01T00:00:00-04:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/guides/buildtools/</loc>
+    <loc>/Software-Development/buildtools/</loc>
     <lastmod>2020-09-28T00:00:00-04:00</lastmod>
   </url>
   
@@ -88,7 +103,18 @@
   </url>
   
   <url>
-    <loc>/guides/ssh/</loc>
+    <loc>/Command-Line/</loc>
+    <lastmod>2020-08-01T00:00:00-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/cli/</loc>
+    <lastmod>2020-08-01T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/Command-Line/ssh/</loc>
     <lastmod>2020-08-01T00:00:00-04:00</lastmod>
   </url>
   
@@ -98,8 +124,18 @@
   </url>
   
   <url>
-    <loc>/guides/codeprojects/</loc>
+    <loc>/Version-Control/4_checklist/</loc>
     <lastmod>2020-05-16T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/Version-Control/codeprojects/</loc>
+    <lastmod>2020-05-16T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/git/</loc>
+    <lastmod>2020-04-20T00:00:00-04:00</lastmod>
   </url>
   
   <url>
@@ -108,7 +144,7 @@
   </url>
   
   <url>
-    <loc>/guides/git/</loc>
+    <loc>/Version-Control/versioncontrol/</loc>
     <lastmod>2020-03-01T00:00:00-05:00</lastmod>
   </url>
   
@@ -128,7 +164,7 @@
   </url>
   
   <url>
-    <loc>/guides/filenames/</loc>
+    <loc>/Version-Control/filenames/</loc>
     <lastmod>2020-01-28T00:00:00-05:00</lastmod>
   </url>
   

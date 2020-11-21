@@ -9,7 +9,7 @@
 #+ALT_TITLE: Lecture Notes
 
 #+HUGO_BASE_DIR: ../hugo/
-#+HUGO_SECTION: guides
+#+HUGO_SECTION: Software Development
 #+HUGO_CATEGORIES: reference projects
 #+EXPORT_HUGO_SECTION: Diagrams
 

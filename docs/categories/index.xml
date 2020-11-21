@@ -6,11 +6,11 @@
     <description>Recent content in Categories on Getting Started Guides</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 13 Nov 2020 00:00:00 -0500</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Nov 2020 00:00:00 -0500</lastBuildDate><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>interview</title>
       <link>/categories/interview/</link>
-      <pubDate>Fri, 13 Nov 2020 00:00:00 -0500</pubDate>
+      <pubDate>Fri, 20 Nov 2020 00:00:00 -0500</pubDate>
       
       <guid>/categories/interview/</guid>
       <description></description>
@@ -44,15 +44,6 @@
     </item>
     
     <item>
-      <title>git</title>
-      <link>/categories/git/</link>
-      <pubDate>Thu, 01 Oct 2020 00:00:00 -0400</pubDate>
-      
-      <guid>/categories/git/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>build_tools</title>
       <link>/categories/build_tools/</link>
       <pubDate>Mon, 28 Sep 2020 00:00:00 -0400</pubDate>
@@ -62,11 +53,29 @@
     </item>
     
     <item>
+      <title>cli</title>
+      <link>/categories/cli/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 -0400</pubDate>
+      
+      <guid>/categories/cli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>ssh</title>
       <link>/categories/ssh/</link>
       <pubDate>Sat, 01 Aug 2020 00:00:00 -0400</pubDate>
       
       <guid>/categories/ssh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>git</title>
+      <link>/categories/git/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 -0400</pubDate>
+      
+      <guid>/categories/git/</guid>
       <description></description>
     </item>
     
