@@ -12,7 +12,6 @@
 #+HUGO_SECTION: Version Control
 #+HUGO_CATEGORIES: projects
 
-
 * Project based thinking
 
 Programmers are typically learning to write source code to build programs not just scripts. A programming project requires far more than just fluency with a particular programming language syntax to cohesively put together.

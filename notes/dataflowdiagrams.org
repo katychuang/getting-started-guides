@@ -9,11 +9,17 @@
 #+ALT_TITLE: Lecture Notes
 
 #+HUGO_BASE_DIR: ../hugo/
-#+HUGO_SECTION: Software Development
+#+HUGO_SECTION: sdlc
 #+HUGO_CATEGORIES: reference projects
-#+EXPORT_HUGO_SECTION: Diagrams
 
-* What are Data Flow Diagrams (DFD)?
+* Data Flow Diagrams (DFD)
+:PROPERTIES:
+:EXPORT_FILE_NAME: dataflowdiagrams
+:EXPORT_HUGO_SECTION*: sdlc
+:EXPORT_TITLE:  Dataflow Diagrams (DFD)
+:NUMBERED: TOC
+:END:
+** What are Data Flow Diagrams (DFD)?
 
 This is a diagram that maps out the flow of information for any system. There are defined symbols like rectangles, circles, arrows, and so on to distinguish different parts of the system.
 
@@ -23,24 +29,38 @@ There are different kinds of data flow diagrams as well, most are separated into
 
 This section to be written soon.
 
-
-
 *** Rectangle (Entity)
+{{< mermaid >}}
+graph LR
+    entity
+{{</mermaid >}}
 *** Circle (Process)
+{{< mermaid >}}
+graph LR
+    id1((process))
+{{</mermaid >}}
 *** Rounded rectangle (Data Store)
+{{< mermaid >}}
+graph LR
+    id2([process])
+{{</mermaid >}}
 *** Arrow (Data flow)
+#+BEGIN_SRC verbatim
+{{< mermaid >}}graph LR
+    Start --> Stop{{</mermaid >}}
+#+END_SRC
 
-* Why are Diagrams useful?
+** Why are Diagrams useful?
 
 A diagram serves as a roadmap for a project. It shows all the pieces and how they are connected.
 
-* How do you draw a diagram?
+** How do you draw a diagram?
 
 First you have to identify the system components and boundaries.
 
 Next you have to pick the paths between these components.
 
-* Software for drawing diagrams
+** Software for drawing diagrams
 
 You can draw a diagram with pen and paper. This may be a good way to start because there is a low learning curve involved to expressing oneself in that medium.
 
@@ -50,13 +70,8 @@ When you're ready for creating a more polished diagram, there are many software 
 - Draw.io http://draw.io/
 - Lucid Chart https://www.lucidchart.com/pages/usecase/education
 
-* References
+** References
 - https://www.lucidchart.com/pages/data-flow-diagram/data-flow-diagram-symbols
 - https://www.smartdraw.com/data-flow-diagram/
 - https://www.cs.uct.ac.za/mit_notes/software/htmls/ch06.html
 - https://www.visual-paradigm.com/guide/data-flow-diagram/what-is-data-flow-diagram/
-
-* COMMENT Local Variables   :ARCHIVE:
-# Local Variables:
-# eval: (org-hugo-auto-export-mode)
-# End:
