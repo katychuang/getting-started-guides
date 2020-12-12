@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta name="generator" content="Hugo 0.75.1" />
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Git #  Version control systems are used in managing revision control of project artifacts, and maintaining a history of changes to each artifact. Artifacts can include documents, source code, and much more.
+Motivations for Source Version Control
+ Keeping track of code Storing versions of code changes Restoring previous versions Reviewing work history Collaborating in a group Backup There are two main approaches to version control management systems. That is, they can either be centralized, or decentralized repositories.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="Version Control Systems" />
+<meta property="og:description" content="Git #  Version control systems are used in managing revision control of project artifacts, and maintaining a history of changes to each artifact. Artifacts can include documents, source code, and much more.
+Motivations for Source Version Control
+ Keeping track of code Storing versions of code changes Restoring previous versions Reviewing work history Collaborating in a group Backup There are two main approaches to version control management systems. That is, they can either be centralized, or decentralized repositories." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/vcs/versioncontrol/" />
+<meta property="article:published_time" content="2020-03-01T00:00:00-05:00" />
+<meta property="article:modified_time" content="2020-03-01T00:00:00-05:00" />
+<title>Version Control Systems | Getting Started Guides</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.134b70e5316650a530cb42e4e8630b2a01d532bebfc0337028211175336e4806.css" integrity="sha256-E0tw5TFmUKUwy0Lk6GMLKgHVMr6/wDNwKCERdTNuSAY=">
+<script defer src="/en.search.min.e45cd93cab2c561f530d859a0a82e783d1053b2b11479f9cf69ce7c45f24f599.js" integrity="sha256-5FzZPKssVh9TDYWaCoLng9EFOysRR5&#43;c9pznxF8k9Zk="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Getting Started Guides</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Guides</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/guides/githubpages/" class="">Github Pages</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/guides/jcf/" class="">Java Collections Framework</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/guides/java/" class="">Java 8</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d6446895d30daa714fc9bdc94cee0e6d" class="toggle" checked />
+    <label for="section-d6446895d30daa714fc9bdc94cee0e6d" class="flex justify-between">
+      <a href="/vcs/" class="">Version Control</a>
+      <span>▾</span>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/vcs/2_readme/" class="">Include a README with your project</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/vcs/4_checklist/" class="">Checklists</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/vcs/codeprojects/" class="">Sharing Coding Projects</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/vcs/versioncontrol/" class=" active">Version Control Systems</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/vcs/filenames/" class="">File naming conventions</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Software Development Life Cycle</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/sdlc/dataflowdiagrams/" class="">Data Flow Diagrams</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/sdlc/buildtools/" class="">Build Tools</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Web Development</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/web/process/1_sdlc/" class="">Process from idea to Product</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/web/process/buildawebsite/" class="">Starting a Website</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5f1a7e1da4be89e28cb82b74018abc53" class="toggle"  />
+    <label for="section-5f1a7e1da4be89e28cb82b74018abc53" class="flex justify-between">
+      <a  class="">Job Searching</a>
+      <span>▾</span>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/Job-Searching/0_resume/" class="">Resume Guide (coming soon)</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/Job-Searching/1_interview/" class="">Technical Interviews</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Command Line</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/terminal/ssh/" class="">SSH</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/page/" class="">Index</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/katychuang/getting-started-guides" target="_blank" rel="noopener">
+        Source
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Version Control Systems</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#git">Git</a></li>
+        <li><a href="#terminology">Terminology</a>
+          <ul>
+            <li><a href="#git-vs-github">Git vs GitHub</a></li>
+            <li><a href="#common-git-commands">Common Git Commands</a></li>
+            <li><a href="#workspace-and-commits">Workspace and Commits</a></li>
+          </ul>
+        </li>
+        <li><a href="#slides">Slides</a></li>
+        <li><a href="#workflow-for-syncing-your-local-and-remote-repos">Workflow for &ldquo;syncing&rdquo; your local and remote repos</a></li>
+        <li><a href="#suggested-reading">Suggested reading</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><h2 id="git">
+  Git
+  <a class="anchor" href="#git">#</a>
+</h2>
+<p>Version control systems are used in managing revision control of project artifacts, and maintaining a history of changes to each artifact. Artifacts can include documents, source code, and much more.</p>
+<p>Motivations for Source Version Control</p>
+<ul>
+<li>Keeping track of code</li>
+<li>Storing versions of code changes</li>
+<li>Restoring previous versions</li>
+<li>Reviewing work history</li>
+<li>Collaborating in a group</li>
+<li>Backup</li>
+<li>There are two main approaches to version control management systems. That is, they can either be centralized, or decentralized repositories. This page covers Git is a decentralized system.</li>
+</ul>
+<h2 id="terminology">
+  Terminology
+  <a class="anchor" href="#terminology">#</a>
+</h2>
+<h3 id="git-vs-github">
+  Git vs GitHub
+  <a class="anchor" href="#git-vs-github">#</a>
+</h3>
+<p><strong>Git</strong> — The version control tool that GitHub is built on top of. You do not need GitHub to use Git. You can install git to your machine to use locally.</p>
+<p><strong>GitHub</strong> is a hosting service using git the open source revision control system. Github’s service allows you to share your code with the world, and also has several other collaboration features.</p>
+<h3 id="common-git-commands">
+  Common Git Commands
+  <a class="anchor" href="#common-git-commands">#</a>
+</h3>
+<p>Some common workflow steps</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git add</code></td>
+<td>puts changes to the stage</td>
+</tr>
+<tr>
+<td><code>git commit</code></td>
+<td>logs the staged</td>
+</tr>
+<tr>
+<td><code>git push origin master</code></td>
+<td>uploads the local master branch to server</td>
+</tr>
+</tbody>
+</table>
+<p>Other common commands</p>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git pull</code></td>
+<td>downloads latest version from server</td>
+</tr>
+<tr>
+<td><code>git fetch</code></td>
+<td>checks for changes but doesn&rsquo;t download it</td>
+</tr>
+<tr>
+<td><code>git clone &lt;address&gt;</code></td>
+<td>copies a server verion to local machine</td>
+</tr>
+<tr>
+<td><code>git remote -v</code></td>
+<td>shows the server address</td>
+</tr>
+</tbody>
+</table>
+<h3 id="workspace-and-commits">
+  Workspace and Commits
+  <a class="anchor" href="#workspace-and-commits">#</a>
+</h3>
+<ul>
+<li><strong>Workspace</strong> - this is where you have files you’re editing in a folder</li>
+<li><strong>Stage</strong> - this is where you put files or selected lines into an area to be given a commit message</li>
+<li><strong>Commit Log</strong> - a history of committed changes.</li>
+</ul>
+<h2 id="slides">
+  Slides
+  <a class="anchor" href="#slides">#</a>
+</h2>
+<div id="Container"
+ style="padding-bottom:56.25%; position:relative; display:block; width: 100%">
+ <iframe id="googleSlideIframe"
+  width="100%" height="100%"
+  src="http://docs.google.com/presentation/d/e/2PACX-1vT2kM37LbJ-fWzQ8abHChTC-uPAqkwr0XXy1hOiZYF26KpQIyaDiQnJcBHyMFfd8rc4wjyXaYiU1Y0t/embed?start=false&amp;amp;loop=false&amp;amp;delayms=3000"
+  frameborder="0" allowfullscreen=""
+  style="position:absolute; top:0; left: 0"></iframe>
+</div>
+
+<h2 id="workflow-for-syncing-your-local-and-remote-repos">
+  Workflow for &ldquo;syncing&rdquo; your local and remote repos
+  <a class="anchor" href="#workflow-for-syncing-your-local-and-remote-repos">#</a>
+</h2>
+<p>The first time you copy from the server, you are <em>cloning</em> the repository. Once you have a local copy, getting more updates is considered a <em>pull</em>.</p>
+<p>When you make edits on your local machine, you save snapshots or <em>revisions</em> to your <em>commit log</em>. When you&rsquo;re done for the day, you can <em>push</em> or upload changes back to ther remote.</p>
+<figure>
+    <img src="https://i.imgur.com/CJB4iMS.png"/> 
+</figure>
+
+<h2 id="suggested-reading">
+  Suggested reading
+  <a class="anchor" href="#suggested-reading">#</a>
+</h2>
+<ul>
+<li>
+<p>Read Chapters 1-2 of the git book: <a href="https://git-scm.com/book/en/v2">https://git-scm.com/book/en/v2</a></p>
+</li>
+<li>
+<p>Creating a new repository on GitHub <a href="https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-new-repository">https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-new-repository</a></p>
+</li>
+<li>
+<p><a href="https://learngitbranching.js.org/">https://learngitbranching.js.org/</a></p>
+</li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+  
+
+
+  
+
+  
+
+  
+
+
+
+<div class="book-languages" tabindex="0" aria-haspopup="true">
+  <ul>
+    <li class="flex align-center">
+      <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+      English
+    </li> 
+  </ul>
+
+  <ul class="book-languages-list">
+    
+    <li class="active">
+      <a href="/" class="flex align-center">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+        English
+      </a>
+    </li>
+    
+    <li class="">
+      <a href="/ru/" class="flex align-center">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+        Russian
+      </a>
+    </li>
+    
+    <li class="">
+      <a href="/zh/" class="flex align-center">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+        Chinese
+      </a>
+    </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#git">Git</a></li>
+        <li><a href="#terminology">Terminology</a>
+          <ul>
+            <li><a href="#git-vs-github">Git vs GitHub</a></li>
+            <li><a href="#common-git-commands">Common Git Commands</a></li>
+            <li><a href="#workspace-and-commits">Workspace and Commits</a></li>
+          </ul>
+        </li>
+        <li><a href="#slides">Slides</a></li>
+        <li><a href="#workflow-for-syncing-your-local-and-remote-repos">Workflow for &ldquo;syncing&rdquo; your local and remote repos</a></li>
+        <li><a href="#suggested-reading">Suggested reading</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

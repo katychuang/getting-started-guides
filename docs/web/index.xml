@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web Development on Getting Started Guides</title>
+    <link>/web/</link>
+    <description>Recent content in Web Development on Getting Started Guides</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 28 Oct 2020 00:00:00 -0400</lastBuildDate><atom:link href="/web/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Process from idea to Product</title>
+      <link>/web/process/1_sdlc/</link>
+      <pubDate>Wed, 28 Oct 2020 00:00:00 -0400</pubDate>
+      
+      <guid>/web/process/1_sdlc/</guid>
+      <description>Building a website follows many of the principles of building a software application, which includes figuring out what to build ,managing the building, and validating the quality of the final product. In software development this specifica refers to various phases of structured activities such as planning (such as gathering spec requirements), scheduling the work, development, and test.
+The name for this set of phases is called Software development lifecycle (SDLC). Some of these phases are described below.</description>
+    </item>
+    
+    <item>
+      <title>Starting a Website</title>
+      <link>/web/buildawebsite/</link>
+      <pubDate>Wed, 28 Oct 2020 00:00:00 -0400</pubDate>
+      
+      <guid>/web/buildawebsite/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Starting a Website</title>
+      <link>/web/process/buildawebsite/</link>
+      <pubDate>Wed, 28 Oct 2020 00:00:00 -0400</pubDate>
+      
+      <guid>/web/process/buildawebsite/</guid>
+      <description>Starting a Website #  This section focuses on the process, concepts, and tools for building any type of web site or web application. A website has a lot of overlapping functionality and technology as a web application, except it doesn&amp;rsquo;t focus on high volume of dynamism and user interactivity, which would require a database. This article mentions the two interchangeable. However, if one were precise, this article focuses on websites.</description>
+    </item>
+    
+  </channel>
+</rss>
