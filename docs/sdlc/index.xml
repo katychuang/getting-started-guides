@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Software Development Life Cycle on Getting Started Guides</title>
+    <link>/sdlc/</link>
+    <description>Recent content in Software Development Life Cycle on Getting Started Guides</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 28 Oct 2020 00:00:00 -0400</lastBuildDate><atom:link href="/sdlc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data Flow Diagrams</title>
+      <link>/sdlc/dataflowdiagrams/</link>
+      <pubDate>Wed, 28 Oct 2020 00:00:00 -0400</pubDate>
+      
+      <guid>/sdlc/dataflowdiagrams/</guid>
+      <description>Data Flow Diagrams (DFD) #  What are Data Flow Diagrams (DFD)? #  This is a diagram that maps out the flow of information for any system. There are defined symbols like rectangles, circles, arrows, and so on to distinguish different parts of the system.
+There are different kinds of data flow diagrams as well, most are separated into either logical DFD or Physical DFD. Logical data flow diagrams focuses on the system process(es).</description>
+    </item>
+    
+    <item>
+      <title>Build Tools</title>
+      <link>/sdlc/buildtools/</link>
+      <pubDate>Mon, 28 Sep 2020 00:00:00 -0400</pubDate>
+      
+      <guid>/sdlc/buildtools/</guid>
+      <description>What is a build tool? #  A build tool is a programming utility that automates a software build task, such as compiling source code, cleaning temporary files, and so on. A popular open source build tool is Make, another popular build tool is Maven
+GNU Make #  Make is a build tool released by GNU. Make was original designed to work with C source code. Make configurations are specified by a text file named Makefile.</description>
+    </item>
+    
+  </channel>
+</rss>

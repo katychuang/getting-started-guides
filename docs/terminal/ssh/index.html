@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en" dir=>
+
+<head>
+  <meta name="generator" content="Hugo 0.75.1" />
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Table of Contents   Getting started with SSH   What is SSH?   What is an SSH Client?  When would you use SSH?      SSH by terminal   How do I ssh in terminal?  SSH Programs for Mac   1. Terminal App  2. iTerm app    SSH Programs for Windows   1. Putty (a simple GUI app)  2.">
+<meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="SSH" />
+<meta property="og:description" content="Table of Contents   Getting started with SSH   What is SSH?   What is an SSH Client?  When would you use SSH?      SSH by terminal   How do I ssh in terminal?  SSH Programs for Mac   1. Terminal App  2. iTerm app    SSH Programs for Windows   1. Putty (a simple GUI app)  2." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/terminal/ssh/" />
+<meta property="article:published_time" content="2020-08-01T00:00:00-04:00" />
+<meta property="article:modified_time" content="2020-08-01T00:00:00-04:00" />
+<title>SSH | Getting Started Guides</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/book.min.134b70e5316650a530cb42e4e8630b2a01d532bebfc0337028211175336e4806.css" integrity="sha256-E0tw5TFmUKUwy0Lk6GMLKgHVMr6/wDNwKCERdTNuSAY=">
+<script defer src="/en.search.min.e45cd93cab2c561f530d859a0a82e783d1053b2b11479f9cf69ce7c45f24f599.js" integrity="sha256-5FzZPKssVh9TDYWaCoLng9EFOysRR5&#43;c9pznxF8k9Zk="></script>
+
+<script defer src="/sw.min.74a8bb07f0bee86d6bb9a2750f073f14d93c7e4512f28860370cfd879e9719b4.js" integrity="sha256-dKi7B/C&#43;6G1ruaJ1Dwc/FNk8fkUS8ohgNwz9h56XGbQ="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body dir=>
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/"><span>Getting Started Guides</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Guides</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/guides/githubpages/" class="">Github Pages</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/guides/jcf/" class="">Java Collections Framework</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/guides/java/" class="">Java 8</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-d6446895d30daa714fc9bdc94cee0e6d" class="toggle"  />
+    <label for="section-d6446895d30daa714fc9bdc94cee0e6d" class="flex justify-between">
+      <a href="/vcs/" class="">Version Control</a>
+      <span>▾</span>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/vcs/2_readme/" class="">Include a README with your project</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/vcs/4_checklist/" class="">Checklists</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/vcs/codeprojects/" class="">Sharing Coding Projects</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/vcs/versioncontrol/" class="">Version Control Systems</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/vcs/filenames/" class="">File naming conventions</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Software Development Life Cycle</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/sdlc/dataflowdiagrams/" class="">Data Flow Diagrams</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/sdlc/buildtools/" class="">Build Tools</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Web Development</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/web/process/1_sdlc/" class="">Process from idea to Product</a>
+  
+
+        </li>
+      
+    
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/web/process/buildawebsite/" class="">Starting a Website</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-5f1a7e1da4be89e28cb82b74018abc53" class="toggle"  />
+    <label for="section-5f1a7e1da4be89e28cb82b74018abc53" class="flex justify-between">
+      <a  class="">Job Searching</a>
+      <span>▾</span>
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/Job-Searching/0_resume/" class="">Resume Guide (coming soon)</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/Job-Searching/1_interview/" class="">Technical Interviews</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <span>Command Line</span>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/terminal/ssh/" class=" active">SSH</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/page/" class="">Index</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+  
+<ul>
+  
+  <li>
+    <a href="https://github.com/katychuang/getting-started-guides" target="_blank" rel="noopener">
+        Source
+      </a>
+  </li>
+  
+</ul>
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>SSH</strong>
+
+  <label for="toc-control">
+    
+    <img src="/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden clearfix">
+    
+  <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#getting-started-with-ssh">Getting started with SSH</a>
+          <ul>
+            <li><a href="#what-is-ssh">What is SSH?</a></li>
+          </ul>
+        </li>
+        <li><a href="#ssh-by-terminal">SSH by terminal</a>
+          <ul>
+            <li><a href="#how-do-i-ssh-in-terminal">How do I ssh in terminal?</a></li>
+            <li><a href="#ssh-programs-for-mac">SSH Programs for Mac</a></li>
+            <li><a href="#ssh-programs-for-windows">SSH Programs for Windows</a></li>
+            <li><a href="#linux-emulators">Linux Emulators</a></li>
+            <li><a href="#windows-subsystem-for-linux--wsl">Windows Subsystem for Linux (WSL)</a></li>
+          </ul>
+        </li>
+        <li><a href="#what-can-i-do-with-ssh">What can I do with SSH?</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><div class="ox-hugo-toc toc">
+<div></div>
+<div class="heading">Table of Contents</div>
+<ul>
+<li>
+  <a href="/#getting-started-with-ssh">Getting started with SSH</a>
+<ul>
+<li>
+  <a href="/#what-is-ssh">What is SSH?</a>
+<ul>
+<li>
+  <a href="/#what-is-an-ssh-client">What is an SSH Client?</a></li>
+<li>
+  <a href="/#when-would-you-use-ssh">When would you use SSH?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+  <a href="/#ssh-by-terminal">SSH by terminal</a>
+<ul>
+<li>
+  <a href="/#how-do-i-ssh-in-terminal">How do I ssh in terminal?</a></li>
+<li>
+  <a href="/#ssh-programs-for-mac">SSH Programs for Mac</a>
+<ul>
+<li>
+  <a href="/#1-dot-terminal-app">1. Terminal App</a></li>
+<li>
+  <a href="/#2-dot-iterm-app">2. iTerm app</a></li>
+</ul>
+</li>
+<li>
+  <a href="/#ssh-programs-for-windows">SSH Programs for Windows</a>
+<ul>
+<li>
+  <a href="/#1-dot-putty--a-simple-gui-app">1. Putty (a simple GUI app)</a></li>
+<li>
+  <a href="/#2-dot-solar-putty">2. Solar Putty</a></li>
+<li>
+  <a href="/#3-dot-ssh-client">3. SSH Client</a></li>
+</ul>
+</li>
+<li>
+  <a href="/#linux-emulators">Linux Emulators</a>
+<ul>
+<li>
+  <a href="/#1-dot-git-bash">1. Git Bash</a></li>
+<li>
+  <a href="/#2-dot-cmder">2. Cmder</a></li>
+<li>
+  <a href="/#3-dot-conemu">3. ConEmu</a></li>
+<li>
+  <a href="/#4-dot-alacritty">4. Alacritty</a></li>
+<li>
+  <a href="/#4-dot-cygwin">4. Cygwin</a></li>
+</ul>
+</li>
+<li>
+  <a href="/#windows-subsystem-for-linux--wsl">Windows Subsystem for Linux (WSL)</a></li>
+</ul>
+</li>
+<li>
+  <a href="/#what-can-i-do-with-ssh">What can I do with SSH?</a></li>
+</ul>
+</div>
+<!--endtoc-->
+<h2 id="getting-started-with-ssh">
+  Getting started with SSH
+  <a class="anchor" href="#getting-started-with-ssh">#</a>
+</h2>
+<h3 id="what-is-ssh">
+  What is SSH?
+  <a class="anchor" href="#what-is-ssh">#</a>
+</h3>
+<p>SSH is an encrypted connection protocol that allows passing information between two machines. Generally you have a <em>client</em> that requests access and a <em>server</em> that responds to the requests.</p>
+<p>Each SSH server has an identifying code (a host key).  If you connect to a server for the first time or if the server presets a different key then previously, you will have to go through the verification process again.</p>
+<h4 id="what-is-an-ssh-client">
+  What is an SSH Client?
+  <a class="anchor" href="#what-is-an-ssh-client">#</a>
+</h4>
+<p>An SSH client is a software which uses the SSH protocol to connect to a remote computer.</p>
+<p>In general SSH protocol can be used for two purposes, file transfers and terminal access.</p>
+<h4 id="when-would-you-use-ssh">
+  When would you use SSH?
+  <a class="anchor" href="#when-would-you-use-ssh">#</a>
+</h4>
+<p>You would use SSH when you want to connect to another machine, and with more a more secure protocol than telnet or rlogin protocols.</p>
+<h2 id="ssh-by-terminal">
+  SSH by terminal
+  <a class="anchor" href="#ssh-by-terminal">#</a>
+</h2>
+<h3 id="how-do-i-ssh-in-terminal">
+  How do I ssh in terminal?
+  <a class="anchor" href="#how-do-i-ssh-in-terminal">#</a>
+</h3>
+<p>There is a command line program called 
+  <a href="https://dashdash.io/1/ssh">ssh</a></p>
+<h3 id="ssh-programs-for-mac">
+  SSH Programs for Mac
+  <a class="anchor" href="#ssh-programs-for-mac">#</a>
+</h3>
+<p>This guide aims to provide possible options objectively, that is, without bias.</p>
+<h4 id="1-dot-terminal-app">
+  1. Terminal App
+  <a class="anchor" href="#1-dot-terminal-app">#</a>
+</h4>
+<p>You can use the terminal app that comes with Mac OS. To use it, open the <strong>terminal</strong> app</p>
+<p>Within the terminal app, you can type `ssh yourusername@ipaddress`</p>
+<p>Video Demonstration Link: 
+  <a href="https://www.youtube.com/playlist?list=PL8HPPNCXDcvxOnrFpfkRvv2Oi3%5F0OqUZi"><a href="https://www.youtube.com/playlist?list=PL8HPPNCXDcvxOnrFpfkRvv2Oi3%5F0OqUZi">https://www.youtube.com/playlist?list=PL8HPPNCXDcvxOnrFpfkRvv2Oi3%5F0OqUZi</a></a></p>
+<h4 id="2-dot-iterm-app">
+  2. iTerm app
+  <a class="anchor" href="#2-dot-iterm-app">#</a>
+</h4>
+<p>The iTerm2 app (
+  <a href="https://iterm2.com/"><a href="https://iterm2.com/">https://iterm2.com/</a></a>) is another option, you would have to go to the website and download it to install it.</p>
+<p>The advantage of using this app is that it offers more customizations.</p>
+<h3 id="ssh-programs-for-windows">
+  SSH Programs for Windows
+  <a class="anchor" href="#ssh-programs-for-windows">#</a>
+</h3>
+<p>This guide aims to provide possible options objectively, that is, without bias.</p>
+<h4 id="1-dot-putty--a-simple-gui-app">
+  1. Putty (a simple GUI app)
+  <a class="anchor" href="#1-dot-putty--a-simple-gui-app">#</a>
+</h4>
+<p>PuTTY is an SSH and telnet client, developed originally by Simon Tatham for the Windows platform. PuTTY is open source software that is available with source code and is developed and supported by a group of volunteers.
+<a href="https://www.putty.org/">https://www.putty.org/</a></p>
+<h4 id="2-dot-solar-putty">
+  2. Solar Putty
+  <a class="anchor" href="#2-dot-solar-putty">#</a>
+</h4>
+<p>Solar Putty is a new SSH client that has a multi tab interface to support multiple sessions from one console. It has additional features beyond putty such as saved credentials, support for multiple sessions, quick access to the most recent sessions and integration of Windows search.</p>
+<p><a href="https://www.solarwinds.com/free-tools/solar-putty">https://www.solarwinds.com/free-tools/solar-putty</a></p>
+<h4 id="3-dot-ssh-client">
+  3. SSH Client
+  <a class="anchor" href="#3-dot-ssh-client">#</a>
+</h4>
+<h3 id="linux-emulators">
+  Linux Emulators
+  <a class="anchor" href="#linux-emulators">#</a>
+</h3>
+<h4 id="1-dot-git-bash">
+  1. Git Bash
+  <a class="anchor" href="#1-dot-git-bash">#</a>
+</h4>
+<p><a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>
+A bash emulation used to run git from the commandline. It contains Bash, SSH&lt; SCP and a few other Unix utilities compiled for windows.</p>
+<h4 id="2-dot-cmder">
+  2. Cmder
+  <a class="anchor" href="#2-dot-cmder">#</a>
+</h4>
+<p><a href="https://cmder.net/">https://cmder.net/</a>
+An emulator that extends beyond the basic capabilities of ConEmu.</p>
+<h4 id="3-dot-conemu">
+  3. ConEmu
+  <a class="anchor" href="#3-dot-conemu">#</a>
+</h4>
+<p><a href="https://conemu.github.io/">https://conemu.github.io/</a></p>
+<h4 id="4-dot-alacritty">
+  4. Alacritty
+  <a class="anchor" href="#4-dot-alacritty">#</a>
+</h4>
+<p><a href="https://github.com/alacritty/alacritty">https://github.com/alacritty/alacritty</a></p>
+<h4 id="4-dot-cygwin">
+  4. Cygwin
+  <a class="anchor" href="#4-dot-cygwin">#</a>
+</h4>
+<p><a href="https://www.cygwin.com/">https://www.cygwin.com/</a></p>
+<h3 id="windows-subsystem-for-linux--wsl">
+  Windows Subsystem for Linux (WSL)
+  <a class="anchor" href="#windows-subsystem-for-linux--wsl">#</a>
+</h3>
+<p>The best option for those who want as full of an experience as possible.</p>
+<!--list-separator-->
+<ul>
+<li>
+<p>Windows Subsystem for Linux</p>
+<p><a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">https://docs.microsoft.com/en-us/windows/wsl/install-win10</a></p>
+</li>
+</ul>
+<!--list-separator-->
+<ul>
+<li>
+<p>Windows Terminal</p>
+<p><a href="https://www.microsoft.com/en-gb/p/windows-terminal/9n0dx20hk701?rtc=1&amp;activetab=pivot:overviewtab">https://www.microsoft.com/en-gb/p/windows-terminal/9n0dx20hk701?rtc=1&amp;activetab=pivot:overviewtab</a></p>
+</li>
+</ul>
+<h2 id="what-can-i-do-with-ssh">
+  What can I do with SSH?
+  <a class="anchor" href="#what-can-i-do-with-ssh">#</a>
+</h2>
+<p>You can log into other machines, such as the WEB Building&rsquo;s Linux server. You can manage web servers and websites. You can configure machines remotely. You can kill running threads of frozen applications.</p>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+  
+
+
+  
+
+  
+
+  
+
+
+
+<div class="book-languages" tabindex="0" aria-haspopup="true">
+  <ul>
+    <li class="flex align-center">
+      <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+      English
+    </li> 
+  </ul>
+
+  <ul class="book-languages-list">
+    
+    <li class="active">
+      <a href="/" class="flex align-center">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+        English
+      </a>
+    </li>
+    
+    <li class="">
+      <a href="/ru/" class="flex align-center">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+        Russian
+      </a>
+    </li>
+    
+    <li class="">
+      <a href="/zh/" class="flex align-center">
+        <img src="/svg/translate.svg" class="book-icon" alt="Languages" />
+        Chinese
+      </a>
+    </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#getting-started-with-ssh">Getting started with SSH</a>
+          <ul>
+            <li><a href="#what-is-ssh">What is SSH?</a></li>
+          </ul>
+        </li>
+        <li><a href="#ssh-by-terminal">SSH by terminal</a>
+          <ul>
+            <li><a href="#how-do-i-ssh-in-terminal">How do I ssh in terminal?</a></li>
+            <li><a href="#ssh-programs-for-mac">SSH Programs for Mac</a></li>
+            <li><a href="#ssh-programs-for-windows">SSH Programs for Windows</a></li>
+            <li><a href="#linux-emulators">Linux Emulators</a></li>
+            <li><a href="#windows-subsystem-for-linux--wsl">Windows Subsystem for Linux (WSL)</a></li>
+          </ul>
+        </li>
+        <li><a href="#what-can-i-do-with-ssh">What can I do with SSH?</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

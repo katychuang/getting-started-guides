@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Version Control on Getting Started Guides</title>
+    <link>/vcs/</link>
+    <description>Recent content in Version Control on Getting Started Guides</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 01 Oct 2020 00:00:00 -0400</lastBuildDate><atom:link href="/vcs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Include a README with your project</title>
+      <link>/vcs/2_readme/</link>
+      <pubDate>Thu, 01 Oct 2020 00:00:00 -0400</pubDate>
+      
+      <guid>/vcs/2_readme/</guid>
+      <description>What is a README? #  This is a file that is named README, that usually resides in the root of your project directory. This name comes from the command Read me. as in the situation of handing a project off to another developer and writing a memo to them that should be read first before the source code.
+In a way, it serves as an executive summary of your project.</description>
+    </item>
+    
+    <item>
+      <title>Checklists</title>
+      <link>/vcs/4_checklist/</link>
+      <pubDate>Sat, 16 May 2020 00:00:00 -0400</pubDate>
+      
+      <guid>/vcs/4_checklist/</guid>
+      <description>Elements to include with your project repository #  Note that these items do not include anything about documentation, which should also be included with coding projects.
+[ ] 1. Project description #   Description of the program such as a README file Project requirement(s) and tracking. Sample approaches listed below:   TODO file to track their task list  CHANGELOG file to track revisions, Use issue tracker that comes with a github repo, respond to issues in your commit messages Whatever else you think of that is relevant   Instructions on how to run your program or code Description of technologies used  [ ] 2.</description>
+    </item>
+    
+    <item>
+      <title>Sharing Coding Projects</title>
+      <link>/vcs/codeprojects/</link>
+      <pubDate>Sat, 16 May 2020 00:00:00 -0400</pubDate>
+      
+      <guid>/vcs/codeprojects/</guid>
+      <description>Project based thinking #  Programmers are typically learning to write source code to build programs not just scripts. A programming project requires far more than just fluency with a particular programming language syntax to cohesively put together.
+Creating a program requires certain executive functioning skills to coordinate and manage. This guide provides some advice and items to consider include when sharing your codebase. It is not meant to be followed religiously, but instead to provide a framework to guide your approach.</description>
+    </item>
+    
+    <item>
+      <title>Version Control Systems</title>
+      <link>/vcs/versioncontrol/</link>
+      <pubDate>Sun, 01 Mar 2020 00:00:00 -0500</pubDate>
+      
+      <guid>/vcs/versioncontrol/</guid>
+      <description>Git #  Version control systems are used in managing revision control of project artifacts, and maintaining a history of changes to each artifact. Artifacts can include documents, source code, and much more.
+Motivations for Source Version Control
+ Keeping track of code Storing versions of code changes Restoring previous versions Reviewing work history Collaborating in a group Backup There are two main approaches to version control management systems. That is, they can either be centralized, or decentralized repositories.</description>
+    </item>
+    
+    <item>
+      <title>File naming conventions</title>
+      <link>/vcs/filenames/</link>
+      <pubDate>Tue, 28 Jan 2020 00:00:00 -0500</pubDate>
+      
+      <guid>/vcs/filenames/</guid>
+      <description>Introduction #  In the day to day work of programming, one often finds that a large fraction of time is spent looking for certain files. One of the wise adages with managing an assortment of files is to provide an organization scheme to make it easier to find what you need again. It not only helps you as the maintainer, but also helps your reader(s)** and collaborator(s) as well. This is a good habit to devleop before you find yourself managing hundreds of files.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Command Line on Getting Started Guides</title>
+    <link>/terminal/</link>
+    <description>Recent content in Command Line on Getting Started Guides</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 01 Aug 2020 00:00:00 -0400</lastBuildDate><atom:link href="/terminal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SSH</title>
+      <link>/terminal/ssh/</link>
+      <pubDate>Sat, 01 Aug 2020 00:00:00 -0400</pubDate>
+      
+      <guid>/terminal/ssh/</guid>
+      <description>Table of Contents   Getting started with SSH   What is SSH?   What is an SSH Client?  When would you use SSH?      SSH by terminal   How do I ssh in terminal?  SSH Programs for Mac   1. Terminal App  2. iTerm app    SSH Programs for Windows   1. Putty (a simple GUI app)  2.</description>
+    </item>
+    
+  </channel>
+</rss>
