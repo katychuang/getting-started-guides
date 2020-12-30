@@ -1,22 +1,23 @@
 #+TITLE: Java 8
-#+SUBTITLE: Review of Java
+#+SUBTITLE: Review of Java Programming Language Features
 #+AUTHOR: Katherine Chuang
 #+EMAIL:  chuang@sci.brooklyn.cuny.edu
 #+DATE:   2020-02-01
 #+OPTIONS:   H:3 num:n  \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t ^:nil
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
-#+ALT_TITLE: Lecture Notes
 
-# #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="assets/style.min.css"/>
-# #+EXPORT_FILE_NAME: ../docs/java/index.html
 
 #+HUGO_BASE_DIR: ../hugo/
-#+HUGO_SECTION: guides
 #+EXPORT_OPTIONS: toc:3
-#+HUGO_CATEGORIES: java
-#+EXPORT_HUGO_SECTION: java
+#+HUGO_CATEGORIES: java programming_languages
+#+EXPORT_HUGO_SECTION: pl
 
-* Intro
+* Introduction to the Java Programming language.
+:PROPERTIES:
+:EXPORT_HUGO_SECTION*: java
+:EXPORT_FILE_NAME: Java_8
+:EXPORT_TITLE: Review of Java 8
+:END:
 
 The CIS department at Brooklyn College /officially supports/ Java 8. This means that /Java courses/ are taught adhering to this version. Using later versions such as /Java 11/ is perfectly find for most instances, there may be some minor differences with certain classes and methods or certain version specific-quirks.
 
@@ -49,7 +50,7 @@ http://www.pythontutor.com/java.html#mode=edit
 **** Control Flow Statements
 **** Objects & Classes
 **** Arrays
-* Compiling Java on Command Line
+** Compiling Java on Command Line
 
 To compile Java source code on the command line, it is with this command where ~Main.java~ is your filename.
 
@@ -80,12 +81,12 @@ You can email the Linux Administrator, Raymond Patitucci or visit their locatio 
 First floor, West End Building
 P: 718.951.5787
 
-* Java Books and other resources
+** Java Books and other resources
 *** Teach Yourself Java in 21 Minutes
 https://fileadmin.cs.lth.se/cs/Education/EDA040/common/java21.pdf
 *** Java4Kids
 https://yfain.github.io/Java4Kids/
-* Lecture Slides
+** Lecture Slides
 - Java Review
   {{< gslides src="docs.google.com/presentation/d/e/2PACX-1vRtXxeatgBGq7xebtDWbsPFZfe6hmx\under{}EllwyN7SH58xpeZhLp0pP3nhGza2tG2KeBXTwNJOrniM-99Q/embed?start=false&amp;loop=false&amp;delayms=3000" >}}
 
@@ -93,8 +94,73 @@ https://yfain.github.io/Java4Kids/
   {{< gslides src="docs.google.com/presentation/d/e/2PACX-1vQ1ToT9Ovyob0CbcORIXdaraIewpmfPhgwBxKTPbcB4y4wo\under{}NEODQ3Jsw-wprFh9\under{}V-wM1NjzuN\under{}pkO/embed?start=false&amp;loop=false&amp;delayms=3000" >}}
 
 
+* Introduction to the Java Collections Framework
+:PROPERTIES:
+:EXPORT_HUGO_SECTION*: collections_framework
+:EXPORT_FILENAME: jcf
+:EXPORT_TITLE: Java Collections Framework
+:NUMBERED: TOC
+:END:
 
-* COMMENT Local Variables   :ARCHIVE:
-# Local Variables:
-# eval: (org-hugo-auto-export-mode)
-# End:
+The Java Collections Framework is a library of data structures implemented by the Java Core team, so that developers don't have to create data structures from scratch. While it is useful to borrow code, it's important to know how to use it properly.
+
+This description for the Java Collections Framework is taken straight from Oracle's Java Documentation page.
+
+> The Java platform includes a /collections framework/. A /collection/ is an object that represents a group of objects (such as the classic Vector class). A collections framework is a unified architecture for representing and manipulating collections, enabling collections to be manipulated independently of implementation details.
+
+** Object-Oriented Fundamentals
+
+It would be helpful to remember that because is using the Java programming language, which is an object oriented programming language, these collections use the data abstraction concepts such as inheritance to make it possible to be used.
+
+These collections are /interfaces/. In the Java language, /interfaces/ come with certain rules of how it can be used. In order to inherit (or use an interface), you would use the keyword /implement/ and you can do this as many times as your program needs. You can inherit if you'd like to define a certain object to have the properties of any interface.
+
+You can also use one of the collections directly by invoking it, such as
+~ArrayList a = new ArryList();~
+
+
+
+** Collections Available
+
+The available implementations are described in the [[https://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html][Java Documentation]]
+
+The way to read the table below... note that this table comes directly from the Java documentation page.
+
+The first column describes the type of Java interface. The first row describes the possible data structures available. The cells with both row and column indicate the collection that has traits of both the column and row.
+
+
+#+CAPTION: This shows Java Collection Framework Implementations of common data structure patterns
+#+ATTR_HTML: :border 2 :rules all :frame border
+
+| Interface | HashTable | Resizable Array | Balanced Tree | Linked List | Hash+LL       |
+|-----------+-----------+-----------------+---------------+-------------+---------------|
+| ~Set~     | HashSet   |                 | TreeSet       |             | LinkedHashSet |
+| ~List~    |           | ArrayList       |               | Linked List |               |
+| ~Deque~   |           | ArrayDeque      |               | Linked List |               |
+| ~Map~     | HashMap   |                 | TreeMap       |             | LinkedHashMap |
+
+** Set, List, Map, etc
+
+There are some extra keywords that Java uses that are important to know when using the Java Collections Framework.
+
+[[../../colls-coreInterfaces.gif]]
+
+| Interface | Duplicates Allowed? | Null Values Allowed?             | Insertion Order preserved? | Iterator                            | Data Structure                 |
+|-----------+---------------------+----------------------------------+----------------------------+-------------------------------------+--------------------------------|
+| List      | Yes                 | Yes, Multiple null values allwed | Yes                        | Iterator, ListIterator              | Array                          |
+| Set       | No                  | Yes but only once                | No                         | Iterator                            | Underlying Map Implementations |
+| Map       | Not for keys        | Yes, but only once for keys      | No                         | Through keyset, value and entry set | Hashing Techniques             |
+
+
+** Using Collections framework
+
+Section to be filled with examples
+
+
+** Slides
+
+{{< gslides src="docs.google.com/presentation/d/e/2PACX-1vQsIhSI1GokuxUKAuOIFCngTOXWEdr4b-ByWJxI-z0xR7iV2kiGOmAMJNLFdSOUcFV0sHTkBuqhyOFN/embed?start=false&loop=false&delayms=3000" >}}
+
+** References
+- The Java Collections Framework https://docs.oracle.com/javase/8/docs/technotes/guides/collections/
+- The Java Tutorials: Collections
+  https://docs.oracle.com/javase/tutorial/collections/index.html

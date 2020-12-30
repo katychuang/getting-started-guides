@@ -1,5 +1,5 @@
-#+TITLE:     Build Tools
-#+SUBTITLE:  Automating your workflow
+#+TITLE: Software Development
+#+SUBTITLE:  Department of Computer & Information Science, Brooklyn College
 #+AUTHOR:    Katherine Chuang
 #+EMAIL:     chuang@sci.brooklyn.cuny.edu
 #+CREATOR:   katychuang
@@ -7,25 +7,43 @@
 #+OPTIONS:   H:3 num:nil toc:nil \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
 #+ALT_TITLE: Lecture Notes
-# #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="assets/style.min.css"/>
-# #+HTML_HEAD: <style type="text/css">
-# #+HTML_HEAD:  dl dd {text-align: left; margin-left: 10px}
-# #+HTML_HEAD: </style>
-# #+EXPORT_FILE_NAME: ../docs/build/index.html
+
 #+HUGO_BASE_DIR: ../hugo/
-#+HUGO_SECTION: Software Development
-#+HUGO_CATEGORIES: build_tools projects
-#+EXPORT_HUGO_SECTION: buildtools
+#+HUGO_SECTION: sdlc
+#+HUGO_WEIGHT: auto
+#+HUGO_AUTO_SET_LASTMOD: t
+
+* Software Development Life Cycle, Techniques, and Tools :@  sdlc:@projects:
+:PROPERTIES:
+:EXPORT_FILE_NAME: _index
+:EXPORT_TITLE:  Software Development
+:EXPORT_HUGO_FRONT_MATTER_FORMAT: yaml
+:EXPORT_HUGO_WEIGHT: 50
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :bookCollapseSection false
+:EXPORT_OPTIONS: toc:nil
+:END:
+
+This section covers advice on planning for and executing software development projects.
+
+Planning is important to the success. It is the phase were you define important and specific goals, and where you set a schedule.
+
+Execution is when you implement the plans, and incorporate tools to help with maintaining the processes to ensure consistency and reliability.
+
+
 
 * What is a build tool?
+:PROPERTIES:
+:EXPORT_FILE_NAME: buildtools
+:EXPORT_TITLE:  Build Tools
+:END:
 
 A build tool is a programming utility that automates a software build task, such as compiling source code, cleaning temporary files, and so on. A popular open source build tool is [[https://www.gnu.org/software/make/][Make]], another popular build tool is [[https://maven.apache.org/][Maven]]
 
-* GNU Make
+** GNU Make
 
 Make is a build tool released by GNU. Make was original designed to work with C source code. Make configurations are specified by a text file named ~Makefile~.
 
-** Makefile
+*** Makefile
 
 A programmer specifies how to build program from a file called a /makefile/, which lists a bunch of /rules/, each of which specifies the target, dependencies and commands.
 
@@ -45,15 +63,15 @@ Alternatively you can name your /makefile/ with any name an run it with the -f f
 
 
 
-* Apache Maven
+** Apache Maven
 
 Maven is a build tool released by The Apache Software Foundation, which is a non-profit organization that maintains many open source software. Maven is a build tool and also a project management tool.
 
-** Maven Project
+*** Maven Project
 
 The /workspace/ concept with Maven is at the unit of a /project/. A Maven project must have a ~pom.xml~ file at the root directory as a way to configure the project specific information. It works like a recipe in specifying the dependencies required for the project (i.e. any open source libraries used) and also specifying the way the project should be built.
 
-*** Maven Commands
+*** Maven Workflows and Commands
 
 The syntax for running Maven in a terminal is a pattern as follows:
 
@@ -65,7 +83,7 @@ mvn [options] [<goal(s)>] [<phase(s)>]
 
 Available options for each of the parameters can be found by checking the manual page using ~man mvn~
 
-*** Creating a Maven project from Scratch
+**** Creating a Maven project from Scratch
 
 The instructions for getting started are on Maven's website https://maven.apache.org/, under the page Maven in 5 minutes. This would be a good starting point to see the whole process however take your time to read through the docs to figure out specific configuration settings.
 
@@ -77,7 +95,7 @@ mvn -B archetype:generate -DgroupId=myApp -DartifactId=maven-example
 
 This would create a ~pom.xml~ file in the folder ~maven-example~ with maven's project structure within it. The flag ~-DgroupId~ is how you name your project and here the name ~myApp~ is given.
 
-*** Explaining the pom.xml configiguration file
+**** Explaining the pom.xml configiguration file
 
 There are a few things to configure for a maven build project. Keep in mind that this is an XML file so it means you should know generally how an XML file is structured. XML files use tags, arranged in nested order like tree nodes. It can be thought of as a text-based database. It uses the file extension ~.XML~
 
@@ -122,7 +140,7 @@ Plugins can be helpful. If there is any that you would like to add, it would be 
 </build>
 #+END_SRC
 
-*** Project File structure
+**** Project File structure
 
 The code you're working with can be found under the root directory under the path ~src/main/java/package/~
 
@@ -131,7 +149,7 @@ In your file under this path, such as ~Main.java~, that's where you can import l
 Maven figures out for you how to install and connect everything so you don't have to worry about manually maintaining where files should go.
 
 
-*** Compile and Run
+**** Compile and Run
 
 Once the configuration file is set up, all you have to worry about during and after development is to compile your project with ease.
 
@@ -139,7 +157,7 @@ When successfully built, Maven will produce an executable file under a ~target~ 
 
 
 
-** Collaborating on a Maven project
+*** Collaborating on a Maven project
 
 A software team can collaborate on a Maven project. In order to answer how a software team can collaborate we assume for specific description here that the version control system (VCS) used by the team is Git (there are many other VCS).
 
@@ -149,7 +167,7 @@ Next, let's say the team is working on a Java project and uses Maven to configur
 
 Another example.. if a team member adds a new dependency and says so in the pom.xml - Maven checks against its own repository (it's like an app store for maven https://mvnrepository.com/) and if a new team member doesn't have dependencies maven will know to download and link it. This is an example of why developers often write a short list of dependencies in their README files... because if they work on a team, and they onboard someone new it's easier to say, /here's all the stuff you need before you begin/. Developers also often include brief instructions on how to build and run the program they produced also.
 
-* Choosing a Build tool
+** Choosing a Build tool
 
 Picking a build tool boils down to what you like, which supports your needs.
 
@@ -157,9 +175,73 @@ If you're on linux, GNU Make is a great choice.
 
 If you're solely working on Java programming projects (for desktop GUI, other programs, android apps, etc) Apache Maven is a good choice. There are other similar build tools available for Java development such as gradle, ant, etc.
 
-* Links
+** Links
 - GNU Make [https://www.gnu.org/software/make/](https://www.gnu.org/software/make/)
 - Apache Maven [https://maven.apache.org/](https://maven.apache.org/)
 - Gradle https://gradle.org/
 - Ant https://ant.apache.org/
 
+* Data Flow Diagrams (DFD)
+:PROPERTIES:
+:EXPORT_FILE_NAME: dataflowdiagrams
+:EXPORT_TITLE:  Dataflow Diagrams (DFD)
+:NUMBERED: TOC
+:EXPORT_OPTIONS: toc:nil
+:END:
+
+** What are Data Flow Diagrams (DFD)?
+
+This is a diagram that maps out the flow of information for any system. There are defined symbols like rectangles, circles, arrows, and so on to distinguish different parts of the system.
+
+There are different kinds of data flow diagrams as well, most are separated into either logical DFD or Physical DFD. /Logical data flow diagrams/ focuses on the system process(es). /Physical data flow diagrams/ show how the data flow is implemented in the system.
+
+** Notations
+
+This section to be written soon.
+
+*** Rectangle (Entity)
+{{< mermaid >}}
+graph LR
+    entity
+{{</mermaid >}}
+*** Circle (Process)
+{{< mermaid >}}
+graph LR
+    id1((process))
+{{</mermaid >}}
+*** Rounded rectangle (Data Store)
+{{< mermaid >}}
+graph LR
+    id2([process])
+{{</mermaid >}}
+*** Arrow (Data flow)
+#+BEGIN_SRC verbatim
+{{< mermaid >}}graph LR
+    Start --> Stop{{</mermaid >}}
+#+END_SRC
+
+** Why are Diagrams useful?
+
+A diagram serves as a roadmap for a project. It shows all the pieces and how they are connected.
+
+** How do you draw a diagram?
+
+First you have to identify the system components and boundaries.
+
+Next you have to pick the paths between these components.
+
+** Software for drawing diagrams
+
+You can draw a diagram with pen and paper. This may be a good way to start because there is a low learning curve involved to expressing oneself in that medium.
+
+When you're ready for creating a more polished diagram, there are many software availabe.
+
+- Dia Diagram Editor http://dia-installer.de
+- Draw.io http://draw.io/
+- Lucid Chart https://www.lucidchart.com/pages/usecase/education
+
+** References
+- https://www.lucidchart.com/pages/data-flow-diagram/data-flow-diagram-symbols
+- https://www.smartdraw.com/data-flow-diagram/
+- https://www.cs.uct.ac.za/mit_notes/software/htmls/ch06.html
+- https://www.visual-paradigm.com/guide/data-flow-diagram/what-is-data-flow-diagram/

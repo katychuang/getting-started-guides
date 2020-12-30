@@ -10,7 +10,7 @@
 
 
 #+HUGO_BASE_DIR: ../hugo/
-#+HUGO_SECTION: Version Control
+#+HUGO_SECTION: vcs
 #+HUGO_CATEGORIES: git
 
 

@@ -12,7 +12,7 @@
 #+EXPORT_HUGO_SECTOIN: jcf
 #+FILEtags: java
 
-* Introduction      
+* Introduction
 
 This description is taken straight from Oracle's Java Documentation page.
 
@@ -29,7 +29,7 @@ You can also use one of the collections directly by invoking it, such as
 
 
 
-* Collections Available
+** Collections Available
 
 The available implementations are described in the [[https://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html][Java Documentation]]
 
@@ -61,16 +61,16 @@ There are some extra keywords that Java uses that are important to know when usi
 | Map       | Not for keys        | Yes, but only once for keys      | No                         | Through keyset, value and entry set | Hashing Techniques             |
 
 
-* Using Collections framework
+** Using Collections framework
 
 Section to be filled with examples
 
 
-* Slides
+** Slides
 
 {{< gslides src="docs.google.com/presentation/d/e/2PACX-1vQsIhSI1GokuxUKAuOIFCngTOXWEdr4b-ByWJxI-z0xR7iV2kiGOmAMJNLFdSOUcFV0sHTkBuqhyOFN/embed?start=false&loop=false&delayms=3000" >}}
 
-* References
+** References
 - The Java Collections Framework https://docs.oracle.com/javase/8/docs/technotes/guides/collections/
 - The Java Tutorials: Collections
   https://docs.oracle.com/javase/tutorial/collections/index.html

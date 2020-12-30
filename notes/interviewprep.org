@@ -9,7 +9,7 @@
 #+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
 #+HTML_MATHJAX: align: left indent: 5em tagside: left font: Neo-Euler
 #+HUGO_BASE_DIR: ../hugo/
-#+HUGO_SECTION: Job Searching
+#+HUGO_SECTION: interviews
 #+HUGO_CATEGORIES: interview
 
 * Resume Guide /(coming soon)/
@@ -33,6 +33,7 @@ _General Advice when solving problems_
 
 ** Problems with Stacks
 :PROPERTIES:
+:EXPORT_FILE_NAME: stacks
 :NUMBERED:
 :END:
 

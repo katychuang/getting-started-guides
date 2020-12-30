@@ -1,4 +1,4 @@
-#+TITLE: Starting a Website
+#+TITLE: Web Development
 #+SUBTITLE:  Department of Computer & Information Science, Brooklyn College
 #+AUTHOR:    Katherine Chuang
 #+EMAIL:     chuang@sci.brooklyn.cuny.edu
@@ -90,6 +90,9 @@ If we use cake decorating as an analogy, HTML is the structure (i.e. the layers 
 
 {{< gslides src="docs.google.com/presentation/d/e/2PACX-1vTIl6aclBHsjdDvkfFuDgIQ9esEmw5ue8WsS4m9TyiBO2rTt0DJdhFyZxDrFq9bmuCLN1OVgiSMvXbO/embed?start=false&amp;loop=false&amp;delayms=5000" >}}
 
+Link
+Web design is about building blocks
+https://www.smashingmagazine.com/web-design-essentials-examples-and-best-practices/
 
 * Tools
 

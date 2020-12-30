@@ -1,125 +1,144 @@
-#+TITLE:    SSH
-#+SUBTITLE:  Department of Computer & Information Science, Brooklyn College
-#+AUTHOR:    Katherine Chuang
-#+EMAIL:     chuang@sci.brooklyn.cuny.edu
-#+CREATOR:   katychuang
-#+DATE:      2020-08-01
-#+OPTIONS:   H:3 num:nil toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
-#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+title: SSH
+#+subtitle: Department of Computer & Information Science, Brooklyn College
+#+author: Katherine Chuang
+#+email: chuang@sci.brooklyn.cuny.edu
+#+creator: katychuang
+#+date: 2020-08-01
+#+options: H:3 num:nil toc:t \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t
+#+options: TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
 #+ALT_TITLE: Lecture Notes
 
-# #+HTML_HEAD: <style type="text/css">
-# #+HTML_HEAD:  dl dd {text-align: left; margin-left: 10px}
-# #+HTML_HEAD: </style>
-# #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="assets/style.min.css"/>
-# #+EXPORT_FILE_NAME: ../docs/ssh.html
-
 #+HUGO_BASE_DIR: ../hugo/
-#+HUGO_SECTION: Command Line
-#+EXPORT_HUGO_SECTION: ssh
-#+HUGO_CATEGORIES: ssh cli
+#+HUGO_SECTION: terminal
+#+HUGO_WEIGHT: auto
+#+HUGO_AUTO_SET_LASTMOD: t
 
 
+* Terminal       :@ssh:@cli:
+:PROPERTIES:
+:EXPORT_FILE_NAME: _index
+:EXPORT_TITLE: Command Line (CLI)
+:EXPORT_HUGO_FRONT_MATTER_FORMAT: yaml
+:EXPORT_HUGO_WEIGHT: 50
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :bookCollapseSection false
+:EXPORT_OPTIONS: toc:2
+:END:
+
+Command line interface
+
+~#+toc: headlines 3~
+
+Some more text here
+
+Some text
 
 * Getting started with SSH
 :PROPERTIES:
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :bookCollapseSection false
+:EXPORT_HUGO_FRONT_MATTER_FORMAT: yaml
+:EXPORT_FILE_NAME: ssh
 :UNNUMBERED: toc
 :END:
 
 
-** What is SSH?
-
+*** What is SSH?
 
 SSH is an encrypted connection protocol that allows passing information between two machines. Generally you have a /client/ that requests access and a /server/ that responds to the requests.
 
 Each SSH server has an identifying code (a host key).  If you connect to a server for the first time or if the server presets a different key then previously, you will have to go through the verification process again.
 
-*** What is an SSH Client?
+**** What is an SSH Client?
 An SSH client is a software which uses the SSH protocol to connect to a remote computer.
 
 In general SSH protocol can be used for two purposes, file transfers and terminal access.
 
-*** When would you use SSH?
+**** When would you use SSH?
 
 You would use SSH when you want to connect to another machine, and with more a more secure protocol than telnet or rlogin protocols.
 
-* SSH by terminal
-** How do I ssh in terminal?
+*** SSH by terminal
+**** How do I ssh in terminal?
 
 There is a command line program called [[https://dashdash.io/1/ssh][ssh]]
 
-** SSH Programs for Mac
+**** SSH Programs for Mac
 
 This guide aims to provide possible options objectively, that is, without bias.
 
-*** 1. Terminal App
+***** 1. Terminal App
 You can use the terminal app that comes with Mac OS. To use it, open the *terminal* app
 
-Within the terminal app, you can type `ssh yourusername@ipaddress`
+Within the terminal app, you can type `sAsh yourusername@ipaddress`
 
 Video Demonstration Link: [https://www.youtube.com/playlist?list=PL8HPPNCXDcvxOnrFpfkRvv2Oi3_0OqUZi](https://www.youtube.com/playlist?list=PL8HPPNCXDcvxOnrFpfkRvv2Oi3_0OqUZi)
 
-*** 2. iTerm app
+***** 2. iTerm app
 The iTerm2 app ([https://iterm2.com/](https://iterm2.com/)) is another option, you would have to go to the website and download it to install it.
 
 The advantage of using this app is that it offers more customizations.
 
 
-** SSH Programs for Windows
+**** SSH Programs for Windows
 
 This guide aims to provide possible options objectively, that is, without bias.
 
-*** 1. Putty (a simple GUI app)
+***** 1. Putty (a simple GUI app)
 
 PuTTY is an SSH and telnet client, developed originally by Simon Tatham for the Windows platform. PuTTY is open source software that is available with source code and is developed and supported by a group of volunteers.
 https://www.putty.org/
 
-*** 2. Solar Putty
+***** 2. Solar Putty
 Solar Putty is a new SSH client that has a multi tab interface to support multiple sessions from one console. It has additional features beyond putty such as saved credentials, support for multiple sessions, quick access to the most recent sessions and integration of Windows search.
 
 https://www.solarwinds.com/free-tools/solar-putty
 
-*** 3. SSH Client
-** Linux Emulators
+***** 3. SSH Client
+**** Linux Emulators
 :PROPERTIES:
 :NUMBERED: TOC
 :END:
 
-*** 1. Git Bash
+***** 1. Git Bash
 :PROPERTIES:
 :NUMBERED: toc
 :END:
 https://git-scm.com/downloads
 A bash emulation used to run git from the commandline. It contains Bash, SSH< SCP and a few other Unix utilities compiled for windows.
 
-*** 2. Cmder
+***** 2. Cmder
 https://cmder.net/
 An emulator that extends beyond the basic capabilities of ConEmu.
 
-*** 3. ConEmu
+***** 3. ConEmu
 https://conemu.github.io/
 
-*** 4. Alacritty
+***** 4. Alacritty
 https://github.com/alacritty/alacritty
 
-*** 4. Cygwin
+***** 4. Cygwin
 https://www.cygwin.com/
 
 
-** Windows Subsystem for Linux (WSL)
+**** Windows Subsystem for Linux (WSL)
 The best option for those who want as full of an experience as possible.
 
-**** Windows Subsystem for Linux
+****** Windows Subsystem for Linux
 https://docs.microsoft.com/en-us/windows/wsl/install-win10
 
-**** Windows Terminal
+****** Windows Terminal
 https://www.microsoft.com/en-gb/p/windows-terminal/9n0dx20hk701?rtc=1&activetab=pivot:overviewtab
 
-* What can I do with SSH?
+*** What can I do with SSH?
 
 You can log into other machines, such as the WEB Building's Linux server. You can manage web servers and websites. You can configure machines remotely. You can kill running threads of frozen applications.
 
-* COMMENT Local Variables   :ARCHIVE:
-# Local Variables:
-# eval: (org-hugo-auto-export-mode)
-# End:
+
+* Sample section
+:PROPERTIES:
+:EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :bookCollapseSection false
+:EXPORT_HUGO_FRONT_MATTER_FORMAT: yaml
+:EXPORT_FILE_NAME:  sample_section
+:UNNUMBERED: toc
+:END:
+
+This is a sample section
