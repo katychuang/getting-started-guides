@@ -11,11 +11,10 @@
 # #+HTML_HEAD: <style type="text/css">
 # #+HTML_HEAD:  dl dd {text-align: left; margin-left: 10px}
 # #+HTML_HEAD: </style>
-# #+EXPORT_FILE_NAME: ../docs/build/index.html
+
 #+HUGO_BASE_DIR: ../hugo/
-#+HUGO_SECTION: Software Development
+#+HUGO_SECTION: guides
 #+HUGO_CATEGORIES: build_tools projects
-#+EXPORT_HUGO_SECTION: buildtools
 
 * What is a build tool?
 

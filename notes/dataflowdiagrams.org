@@ -9,14 +9,14 @@
 #+ALT_TITLE: Lecture Notes
 
 #+HUGO_BASE_DIR: ../hugo/
-#+HUGO_SECTION: sdlc
+#+HUGO_SECTION: guides
 #+HUGO_CATEGORIES: reference projects
 
 * Data Flow Diagrams (DFD)
 :PROPERTIES:
-:EXPORT_FILE_NAME: dataflowdiagrams
-:EXPORT_HUGO_SECTION*: sdlc
+:EXPORT_HUGO_BUNDLE: sdlc
 :EXPORT_TITLE:  Dataflow Diagrams (DFD)
+:EXPORT_FILE_NAME: dfd
 :NUMBERED: TOC
 :END:
 ** What are Data Flow Diagrams (DFD)?

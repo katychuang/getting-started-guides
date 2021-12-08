@@ -1,24 +1,132 @@
-#+TITLE:    Java Collections Framework
-#+SUBTITLE: Java Collections Framework
-#+AUTHOR:   Katherine Chuang
-#+EMAIL:    chuang@sci.brooklyn.cuny.edu
-#+DATE:     2020-02-28
-# #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="assets/style.min.css"/>
-# #+EXPORT_FILE_NAME: ../docs/java/jcf.html
+#+TITLE: Introduction to Programming
+#+SUBTITLE: Review of Java
+#+AUTHOR: Katherine Chuang
+#+EMAIL:  chuang@sci.brooklyn.cuny.edu
+#+DATE:   2020-02-01
+#+OPTIONS:   H:3 num:n  \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t ^:nil
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+#+ALT_TITLE: Lecture Notes
 
+# #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="assets/style.min.css"/>
+
+#+EXPORT_OPTIONS: toc:3
 #+HUGO_BASE_DIR: ../hugo/
 #+HUGO_SECTION: guides
 #+HUGO_CATEGORIES: java
-#+EXPORT_HUGO_SECTOIN: jcf
-#+FILEtags: java
 
-* Introduction      
+* Introduction to Programming
+:PROPERTIES:
+:EXPORT_HUGO_BUNDLE: programming
+:EXPORT_FILE_NAME: _index
+:END:
+* Java 8
+:PROPERTIES:
+:EXPORT_HUGO_BUNDLE: programming/java
+:EXPORT_FILE_NAME: _index
+:END:
+The CIS department at Brooklyn College /officially supports/ Java 8. This means that /Java courses/ are taught adhering to this version. Using later versions such as /Java 11/ is perfectly find for most instances, there may be some minor differences with certain classes and methods or certain version specific-quirks.
+
+The best thing to do is to keep documentation links handy.
+
+** Helpful Link
+:PROPERTIES:
+:EXPORT_FILE_NAME: manuals
+:UNNUMBERED: toc
+:END:
+
+These are useful links to reference.
+
+*** The Java Tutorials for JDK 8
+https://docs.oracle.com/javase/tutorial/index.html
+*** Java SE 8 Documentation
+https://docs.oracle.com/javase/8/
+*** Java SE 8 API
+https://docs.oracle.com/javase/8/docs/api/index.html
+** Java Books and other learning resources
+:PROPERTIES:
+:EXPORT_FILE_NAME: resources
+:UNNUMBERED: toc
+:END:
+
+*** Java Books and other resources
+**** Teach Yourself Java in 21 Minutes
+https://fileadmin.cs.lth.se/cs/Education/EDA040/common/java21.pdf
+**** Java4Kids
+https://yfain.github.io/Java4Kids/
+*** Lecture Slides
+- Java Review
+  {{< gslides src="docs.google.com/presentation/d/e/2PACX-1vRtXxeatgBGq7xebtDWbsPFZfe6hmx\under{}EllwyN7SH58xpeZhLp0pP3nhGza2tG2KeBXTwNJOrniM-99Q/embed?start=false&amp;loop=false&amp;delayms=3000" >}}
+
+- Two Dimensional Arrays
+  {{< gslides src="docs.google.com/presentation/d/e/2PACX-1vQ1ToT9Ovyob0CbcORIXdaraIewpmfPhgwBxKTPbcB4y4wo\under{}NEODQ3Jsw-wprFh9\under{}V-wM1NjzuN\under{}pkO/embed?start=false&amp;loop=false&amp;delayms=3000" >}}
+
+
+*** Java Code Visualizer
+http://www.pythontutor.com/java.html#mode=edit
+*** Concepts
+:PROPERTIES:
+:UNNUMBERED: toc
+:END:
+
+**** Variables
+**** Primitive Data Types
+**** Operators
+**** Expressions, Statements, and Blocks
+**** Control Flow Statements
+**** Objects & Classes
+**** Arrays
+** Compiling Java by Command Line
+:PROPERTIES:
+:EXPORT_FILE_NAME: compiling
+:UNNUMBERED: toc
+:END:
+
+To compile Java source code on the command line, it is with this command where ~Main.java~ is your filename.
+
+#+BEGIN_SRC shell
+javac Main.java
+#+END_SRC
+
+followed by running the executable generated with
+
+#+BEGIN_SRC shell
+java Main
+#+END_SRC
+
+*** BC Linux Machines
+
+Students can use the WEB Lab Server to compile and run Java code.
+
+You will need to use a terminal client application to connect to the server via the SSH protocol. There are many programs available.
+
+A sample command on the terminal:
+
+#+BEGIN_SRC shell
+ssh username@hostname
+#+END_SRC
+
+After entering your password, create a directory for your assignment, such as ~mkdir folder1~ and then you can use a command line such as vim, emacs, or nano to edit the file.
+
+**** You can get your linux server account information from the W.E.B. Computing lab
+
+You can email the Linux Administrator, Raymond Patitucci or visit their locatio nat
+
+First floor, West End Building
+P: 718.951.5787
+
+
+* Java Collections Framework
+:PROPERTIES:
+:EXPORT_HUGO_BUNDLE: programming/java
+:EXPORT_FILE_NAME: collections
+:unnumbered: toc
+:END:
 
 This description is taken straight from Oracle's Java Documentation page.
 
 > The Java platform includes a /collections framework/. A /collection/ is an object that represents a group of objects (such as the classic Vector class). A collections framework is a unified architecture for representing and manipulating collections, enabling collections to be manipulated independently of implementation details.
 
-** Object-Oriented Fundamentals
+*** Object-Oriented Fundamentals
 
 It would be helpful to remember that because is using the Java programming language, which is an object oriented programming language, these collections use the data abstraction concepts such as inheritance to make it possible to be used.
 
@@ -29,7 +137,7 @@ You can also use one of the collections directly by invoking it, such as
 
 
 
-* Collections Available
+*** Collections Available
 
 The available implementations are described in the [[https://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html][Java Documentation]]
 
@@ -48,7 +156,7 @@ The first column describes the type of Java interface. The first row describes t
 | ~Deque~   |           | ArrayDeque      |               | Linked List |               |
 | ~Map~     | HashMap   |                 | TreeMap       |             | LinkedHashMap |
 
-** Set, List, Map, etc
+*** Set, List, Map, etc
 
 There are some extra keywords that Java uses that are important to know when using the Java Collections Framework.
 
@@ -61,16 +169,20 @@ There are some extra keywords that Java uses that are important to know when usi
 | Map       | Not for keys        | Yes, but only once for keys      | No                         | Through keyset, value and entry set | Hashing Techniques             |
 
 
-* Using Collections framework
+*** Using Collections framework
 
 Section to be filled with examples
 
 
-* Slides
+*** Slides
 
 {{< gslides src="docs.google.com/presentation/d/e/2PACX-1vQsIhSI1GokuxUKAuOIFCngTOXWEdr4b-ByWJxI-z0xR7iV2kiGOmAMJNLFdSOUcFV0sHTkBuqhyOFN/embed?start=false&loop=false&delayms=3000" >}}
 
-* References
+*** References
 - The Java Collections Framework https://docs.oracle.com/javase/8/docs/technotes/guides/collections/
 - The Java Tutorials: Collections
   https://docs.oracle.com/javase/tutorial/collections/index.html
+* COMMENT Local Variables :ARCHIVE:
+# Local Variables:
+# eval: (org-hugo-auto-export-mode)
+# End:

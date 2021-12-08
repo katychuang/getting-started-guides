@@ -10,14 +10,237 @@
 
 
 #+HUGO_BASE_DIR: ../hugo/
-#+HUGO_SECTION: Version Control
+#+HUGO_SECTION: guides
 #+HUGO_CATEGORIES: git
 
 
+* Version Control
+:PROPERTIES:
+:EXPORT_HUGO_SECTION: guides
+:EXPORT_HUGO_BUNDLE: VCS
+:EXPORT_FILE_NAME: _index
+:UNNUMBERED: toc
+:END:
+* Sharing Code Projects
+:PROPERTIES:
+:EXPORT_HUGO_BUNDLE: vcs
+:Export_FILE_NAME: index
+:EXPORT_HUGO_CATEGORIES: projects
+:END:
+** Project based thinking
+
+Programmers are typically learning to write source code to build programs not just scripts. A programming project requires far more than just fluency with a particular programming language syntax to cohesively put together.
+
+Creating a program requires certain executive functioning skills to coordinate and manage. This guide provides some advice and items to consider include when sharing your codebase. It is not meant to be followed religiously, but instead to provide a framework to guide your approach.
+
+#+BEGIN_QUOTE
+/Programming is an activity that starts with a specification and leads to its solution as a program/ - Peter Van Roy
+#+END_QUOTE
+
+*** Programming as an activity
+
+- Programming can be done in micro (small tasks) or macro (very large projects)
+- Programming can be language independent architectural issues, and language-depended coding issues
+- Programming should be unbiased by limitations of any particular language, tool or design methodology
+
+*** Planning before you begin coding
+You need to first figure out what needs to be built, by gathering the /requirements/.
+
+-  What do you want to make? - can you describe the problem? how are you solving it?
+- Sketch out your ideas  - how many classes are needed? how many functions?
+- What technologies will you use? You need to consider which languages, libraries, or environments you're familiar with or willing to learn.
+
+**** Software Development Life Cycle (SDLC)
+:PROPERTIES:
+:UNNUMBERED: TOC
+:END:
+
+A common model for presenting the phases of building software goes by the name of /Software Development Life Cycle/ or /SDLC/ for short. This models covers the principles of building a software application, which includes various phases of activities such as planning (such as gathering spec requirements), scheduling the work, development, and test.  The name for this set of phases is called /Software development lifecycle (SDLC)/. Some of these phases are described below.
+
+***** Requirements Gathering
+It helps to know what you're building before you begin building. Deciding what to build should come from discussions with
+***** Scheduling
+***** Design / Specifications
+***** Building
+***** Testing
+***** Deployment
+
+** File naming conventions
+:PROPERTIES:
+:EXPORT_DATE: 2020-01-28
+:EXPORT_FILE_NAME:  filename
+:END:
+
+*** Introduction
+
+In the day to day work of programming, one often finds that a large fraction of time is spent looking for certain files. One of the wise adages with managing an assortment of files is to provide an organization scheme to make it easier to find what you need again. It not only helps you as the maintainer, but also helps your reader(s)** and collaborator(s) as well. This is a good habit to devleop before you find yourself managing hundreds of files.
+
+*** Motivations for naming files well
+
+- It is more efficient to name your files correct such that it's easier to find.
+
+- With the correct file extentions it is easier to collaborate with another programmer.
+
+*** Organizing your directory
+
+A developer also considerrs file organization and directory naming schemes as well. There's no industry standard for this, just an organization level (if you join a team with a style guide), however there tends to be some common patterns to follow.
+
+When you have a lot of tiles in your project directory, it is common to start thinking about the organization of contents.
+
+The scheme itself can depend on the type of project. For example, if you're working on a web application you might split into layers such as the back-end from front-end features.
+
+*** Common File extensions
+
+#+CAPTION: This is a table of some common file naming conventions.
+#+attr_html: :class zebra-striping sane-table
+
+
+| Language     | File Extension | Example      | Rules & Conventions                                                                  |
+|--------------+----------------+--------------+--------------------------------------------------------------------------------------|
+| <l>          | <l12>          | <l12>        | <l>                                                                                  |
+| Java         | .java          | ~Main.java~  | - File name _must_ match the public class defined in the file<br>- Usually CamelCase |
+|--------------+----------------+--------------+--------------------------------------------------------------------------------------|
+| C++          | .cpp           | ~main.cpp~   | - C++ Programming File Organization[fn:1]                                            |
+|--------------+----------------+--------------+--------------------------------------------------------------------------------------|
+| Python       | .py            | ~main.py~    | - Often lowercased<br>- Pep8 Style Guidelines[fn:2]                                  |
+|--------------+----------------+--------------+--------------------------------------------------------------------------------------|
+| Scheme       | .scm           | ~main.scm~   | - Guile Scheme Manual<br>  - §6.18.5 Compiling Scheme Code[fn:3]                     |
+|--------------+----------------+--------------+--------------------------------------------------------------------------------------|
+| Markdown     | .md, .markdown | ~foo.md~     | - Markdown Syntax[fn:4]                                                              |
+|--------------+----------------+--------------+--------------------------------------------------------------------------------------|
+| HTML         | .htm, .html    | ~index.html~ | - Hypertext Markup Language<br>- Include doctype                                     |
+|--------------+----------------+--------------+--------------------------------------------------------------------------------------|
+| CSS          | .css           | ~style.css~  | - Cascading Style Sheets                                                             |
+|--------------+----------------+--------------+--------------------------------------------------------------------------------------|
+| XML          | .xml           | ~pom.xml~    | - Extensible Markup Language                                                         |
+|--------------+----------------+--------------+--------------------------------------------------------------------------------------|
+| JavaScript   | .js            | ~script.js~  |                                                                                      |
+|--------------+----------------+--------------+--------------------------------------------------------------------------------------|
+| Haskell      | .hs            | ~Main.hs~    |                                                                                      |
+|--------------+----------------+--------------+--------------------------------------------------------------------------------------|
+| Shell Script | .sh            | ~build.sh~   | - add a shebang at the the top, ~#!/bin/sh~                                          |
+|--------------+----------------+--------------+--------------------------------------------------------------------------------------|
+
+*** Common Directory Names
+
+- ~/src~ - for your packages & classes
+- ~/test~ - for unit tests
+- ~/docs~ - for documentation, generated and manually edited
+- ~/lib~ - 3rd party libraries
+- ~/etc~ - unrelated stuff
+- ~/bin~ (or /classes) - compiled classes, output of your compile
+- ~/dist~ - for distribution packages, hopefully auto generated by a build system
+
+from https://stackoverflow.com/a/8594
+
+*** Ignoring files with your VCS repository
+
+If you're using Git you can specify a ~.gitignore~ file that contains a list of filenames to ignore
+
+- https://www.atlassian.com/git/tutorials/saving-changes/gitignore
+- https://git-scm.com/docs/gitignore
+
+
+** Include a README with your project
+:PROPERTIES:
+:EXPORT_FILE_NAME: 2_readme
+:EXPORT_DATE:   2020-10-01
+:END:
+
+*** What is a README?
+This is a file that is named ~README~, that usually resides in the root of your project directory. This name comes from the command *Read me.* as in the situation of handing a project off to another developer and writing a memo to them that should be read first before the source code.
+
+In a way, it serves as an executive summary of your project. It gives your reader a chance to understand what's going on since source code doesn't describe the intent and purpose of projects very well.
+
+*** What should go into a README?
+
+The readme should contain description about what the project is about, and also information to build and/or run your program.
+
+An example of a barebones README can be found at https://github.com/cisc3130-s20/assignment-template
+
+Within this file it starts with the title of the project, followed by instructions for setting up a development environment and then some info on where code can be saved.
+
+There's generally no industry standard on the order sections should go or how to name the sections. It's generally based on what makes sense to you, and/or what you think would help your reader.
+
+*** Formatting a README
+
+This file is usually a text file. It can be written in plain text, however you can also choose to use some sort of formatting if you're publishing your project on GitHub and the like. That formatting is called ~markdown~ - it is a way to help your text be more readable on the web page.
+
+ For example, if you want to add a title to your markdown you can use a single ~#~ symbol to mark it as a heading level 1 (top level). You can add inline code snippets using the ` character or a code block with three ticks as fences around the section.
+
+ The other formatting possibilities like bold and italics is a lot like formatting chat messages in discord and slack, with a mixture of _, *, ~ symbols to mean varoius things. Take a look at the markdown page for more guidance.
+
+*** Read more about READMEs
+
+- Make a README because no one can read your mind https://www.makeareadme.com/
+** Checklists
+:PROPERTIES:
+:EXPORT_FILE_NAME: 4_checklist
+:END:
+
+*** Elements to include with your project repository
+:PROPERTIES:
+:NUMBERED: toc
+:END:
+
+Note that these items do not include anything about /documentation/, which should also be included with coding projects.
+
+**** [ ]  1. Project description
+    - Description of the program such as a [README file](https://www.makeareadme.com/)
+    - Project requirement(s) and tracking. Sample approaches listed below:
+        - [TODO file to track their task list](https://github.blog/2014-04-28-task-lists-in-all-markdown-documents/)
+        - [CHANGELOG file](https://keepachangelog.com/en/1.0.0/) to track revisions,
+        - Use issue tracker that comes with a github repo, respond to issues in your commit messages
+        - Whatever else you think of that is relevant
+    - [ ]  Instructions on how to run your program or code
+    - [ ]  Description of technologies used
+
+**** [ ]  2. Source code with comments
+    - [ ]  Comments describe why each class and function exist
+    - [ ]  Comments describe any conditional or control flow logic
+
+**** [ ]  3. Submit to the form before deadline
+    - [ ]  Link to your code (you can use any platform. GitHub is common)
+    - [ ]  Repository is either public, or you've added me as a collaborator
+
+#+BEGIN_QUOTE
+*"Writing documentation is like saving for retirement. It's hard to tell if you have enough at the time you're doing it. Only later can you tell if you have enough, and usually you wish you had more." -J.Wirth*
+#+END_QUOTE
+
+*** Elements of Style and Presentation
+- [ ]  Clean Code
+- [ ]  Indentation throughout code is uniform
+- [ ]  Sensible comments
+    - [ ]  Comments are included with each method, to describe why it exists
+    - [ ]  Input parameters and output parameters described
+    - [ ]  Comments describe classes
+- [ ]  Variable names make sense
+
+*** Other Enhancements
+  **Nice to have**
+
+- [ ]  Sensible commits
+    - [ ]  Each commit to version control makes sense
+- [ ]  Testing
+    - [ ]  Prepare a brief description of test cases to run on your code
+    - [ ]  Prepare scripts/code for running the tests
+    - [ ]  Report on the test cases
+
+Elements included with your submission:
+
+- [ ]  Project description
+- [ ]  Instructions on how to run your program or code
+- [ ]  Description of technologies used
+
+** References
+- [Advice] Leslie Lamport. 2015. Who builds a house without drawing blueprints? *Communications of the ACM* 58, 4 (April 2015), 38–41. DOI:[https://doi-org.ez-proxy.brooklyn.cuny.edu/10.1145/2736348](https://doi-org.ez-proxy.brooklyn.cuny.edu/10.1145/2736348)
+- [Advice] Clean Code [https://cs.lmu.edu/~ray/notes/cleancode/](https://cs.lmu.edu/~ray/notes/cleancode/)
+- [Advice] Planning a programming project [https://www.khanacademy.org/computing/computer-programming/programming/good-practices/a/planning-a-programming-project](https://www.khanacademy.org/computing/computer-programming/programming/good-practices/a/planning-a-programming-project)
 * Git
 :PROPERTIES:
 :UNNUMBERED: TOC
-:EXPORT_FILENAME: 1_git
+:EXPORT_HUGO_BUNDLE: git
+:EXPORT_FILENAME: index
 :END:
 Version control systems are used in managing revision control of project artifacts, and maintaining a history of changes to each artifact. Artifacts can include documents, source code, and much more.
 
@@ -35,6 +258,10 @@ Motivations for Source Version Control
 
 *GitHub* is a hosting service using git the open source revision control system. Github’s service allows you to share your code with the world, and also has several other collaboration features.
 ** Common Git Commands
+:PROPERTIES:
+:UNNUMBERED: toc
+:CUSTOM_ID: commands
+:END:
 
 Some common workflow steps
 
@@ -50,13 +277,13 @@ Other common commands
 |-----------------------+--------------------------------------------|
 | ~git pull~            | downloads latest version from server       |
 | ~git fetch~           | checks for changes but doesn't download it |
-| ~git clone <address>~ | copies a server verion to local machine    |
+| ~git clone <address>~ | copies a server version to local machine   |
 | ~git remote -v~       | shows the server address                   |
 
 ** Workspace and Commits
-- *Workspace* - this is where you have files you’re editing in a folder
-- *Stage* - this is where you put files or selected lines into an area to be given a commit message
-- *Commit Log* - a history of committed changes.
+- *Workspace* :: this is where you have files you’re editing in a folder
+- *Stage* :: this is where you put files or selected lines into an area to be given a commit message
+- *Commit Log* :: a history of committed changes.
 * Slides
 
 {{< gslides  src="docs.google.com/presentation/d/e/2PACX-1vT2kM37LbJ-fWzQ8abHChTC-uPAqkwr0XXy1hOiZYF26KpQIyaDiQnJcBHyMFfd8rc4wjyXaYiU1Y0t/embed?start=false&amp;loop=false&amp;delayms=3000" >}}
@@ -76,6 +303,119 @@ When you make edits on your local machine, you save snapshots or /revisions/ to 
 
 - Creating a new repository on GitHub https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-new-repository
 - https://learngitbranching.js.org/
+
+
+[fn:1]C++ Programming/Programming Languages/C++/Code/File Organization. (2020, April 16). Wikibooks, The Free Textbook Project. from https://en.wikibooks.org/w/index.php?title=C%2B%2B%5FProgramming/Programming%5FLanguages/C%2B%2B/Code/File%5FOrganization&oldid=3676078.
+
+[fn:2]PEP 8 – Style Guide for Python Code https://www.python.org/dev/peps/pep-0008/
+
+[fn:3]Guile Reference Manual https://www.gnu.org/software/guile/manual/guile.pdf#page=406&zoom=100,0,96
+
+[fn:4]Markdown: Syntax https://daringfireball.net/projects/markdown/syntax
+
+References
+- [1]: https://libraries.mit.edu/data-management/store/organize/
+- [2]: https://docs.python-guide.org/writing/structure/
+- [3]: http://opensource.guide/starting-a-project/#launching-your-own-open-source-project
+- [4]: https://medium.com/@msandin/strategies-for-organizing-code-2c9d690b6f33
+
+
+* GitHub :@git:@vcs:
+:PROPERTIES:
+:EXPORT_HUGO_SECTION: guides
+:EXPORT_HUGO_BUNDLE: VCS
+:EXPORT_TITLE: GitHub
+:EXPORT_FILE_NAME: github
+:UNNUMBERED: toc
+:END:
+
+#+TOC: headlines 2 local
+
+*** What is GitHub?
+
+GitHub (https://github.com/) is a hosting platform for version control with collaborative features. It uses the Git version control technology.
+
+**** What is version control?
+
+Version control systems (VCS) are used in managing revision control of project artifacts such as source code and documentation. VCS are used for maintaining a history of changes to each artifact. Artifacts can include documents, source code, and much more.
+
+
+There are two main approaches to version control management systems. That is, they can either be centralized, or decentralized repositories. This page covers Git is a decentralized system.
+
+**** Motivations for Source Version Control
+Some of the motivations for version control include the following:
+
+- Keeping track of code
+- Storing versions of code changes
+- Restoring previous versions
+- Reviewing work history
+- Collaborating in a group
+- Backup
+
+*** What is GitHub used for?
+
+GitHub is used for version control, which enables the ability for team collaboration on a single codebase. Often you'll see that open source software is published here, as there are other features such as star/fork/issues for others to collaborate on the project progress.
+
+
+*** How do you create a GitHub account?
+
+Go to https://github.com/join in a web browser and fill in the form.
+
+*** How do I start using GitHub?
+
+The first time you use GitHub (and the first time using GitHub with any new machine), you need to set up the SSH connection between your local machine and the GitHub server so that they know it's you publishing code to your account.
+
+Follow the sections linked from this GitHub Documentation page [[https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh][Connecting to GitHub with SSH]]. Don't blindly follow all the sections, start from the top and consider whether you need to move onto the next section.
+
+Often times it's enough to use a single public key for most projects as you're starting out. This public key is often saved in the location `~/.ssh` The `~` symbol is called a tilde and it often signifies the home directory.
+
+*** How do I start a project with GitHub?
+
+/work in progress/
+
+
+*** How do I work on an existing repository?
+
+/work in progress/
+
+
+*** What is the workflow for using GitHub?
+
+/work in progress/
+
+*** Where can I get more help?
+
+GitHub publishes some guides on using GitHub effectively at https://guides.github.com/
+
+GitHub also maintains a GitHub.com Help Documentation at https://docs.github.com/en/github
+
+*** Hosting Project Page on Github Pages
+
+This is a feature provided by GitHub where you can host websites directly from your GitHub repository. These websites are typically static files, meaning there is no database no backend. For example, this website is hosted on GitHub Pages, it was built with a static site generator.
+
+To find out more, go to https://pages.github.com
+
+**** How to create your home page (easy way)
+
+When you use GitHub pages, you can access your website at the url http://username.github.io and the underlying files would be found in your repository, which is the repository can be found at url pattern http://github.com/username/username.github.io
+
+This section walks you through step by step. These instructions are taken directly from GitHub's docs.
+
+*Short version:*
+1. Create a repo of name: *yourusername*.github.io
+2. Go to that repo's settings and check the box for your pages (note the drop down option selected)
+3. Add ~.html~ files to your repo
+
+You should be able to access your website from ~http://yourusername.github.io~
+
+*Longer version:*
+1. From your account, create a new repo with the name following the pattern ~yourusername.github.io~ where you use your username to replace the part that says ~yourusername~ -- this is the basis for producing a website hosted by github pages (https://pages.github.com/).
+2. Confirm that the pages feature is turned on for that repository, under the settings menu.
+3. This allows you to host files under your GitHub account.
+   a. You could use the github.com web interface to upload each file individually, however I recommended you take time at some point in your career to gain familiarity with the workflow of using git commands from your machine terminal.
+   b. Upload the images and html files to that repo.
+4. If set up properly you should be able to access your website from http://username.github.io
+
 
 * COMMENT Local Variables   :ARCHIVE:
 # Local Variables:
