@@ -100,13 +100,10 @@ If we use cake decorating as an analogy, HTML is the structure (i.e. the layers 
 
 {{< gslides src="docs.google.com/presentation/d/e/2PACX-1vTIl6aclBHsjdDvkfFuDgIQ9esEmw5ue8WsS4m9TyiBO2rTt0DJdhFyZxDrFq9bmuCLN1OVgiSMvXbO/embed?start=false&amp;loop=false&amp;delayms=5000" >}}
 
-<<<<<<< HEAD:notes/webdev.org
 Link
 Web design is about building blocks
 https://www.smashingmagazine.com/web-design-essentials-examples-and-best-practices/
 
-=======
->>>>>>> 539c69442192381ac14c136343ac7b5bd8e882dd:notes/web.org
 * Tools
 :PROPERTIES:
 :EXPORT_HUGO_BUNDLE: web/tools

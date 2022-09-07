@@ -10,6 +10,7 @@
 
 #+HUGO_BASE_DIR: ../hugo/
 #+HUGO_SECTION: sdlc
+#+HUGO_CATEGORIES: build_tools projects
 #+HUGO_WEIGHT: auto
 #+HUGO_AUTO_SET_LASTMOD: t
 
@@ -29,7 +30,10 @@ Planning is important to the success. It is the phase were you define important 
 
 Execution is when you implement the plans, and incorporate tools to help with maintaining the processes to ensure consistency and reliability.
 
-
+# #+HTML_HEAD: <link rel="stylesheet" type="text/css" href="assets/style.min.css"/>
+# #+HTML_HEAD: <style type="text/css">
+# #+HTML_HEAD:  dl dd {text-align: left; margin-left: 10px}
+# #+HTML_HEAD: </style>
 
 * What is a build tool?
 :PROPERTIES:
@@ -171,11 +175,50 @@ Another example.. if a team member adds a new dependency and says so in the pom.
 
 Picking a build tool boils down to what you like, which supports your needs.
 
+** Choosing based on Operating System
 If you're on linux, GNU Make is a great choice.
 
 If you're solely working on Java programming projects (for desktop GUI, other programs, android apps, etc) Apache Maven is a good choice. There are other similar build tools available for Java development such as gradle, ant, etc.
 
+<<<<<<< HEAD:notes/sdlc.org
 ** Links
+=======
+** Choosing by Use Case
+
+| Use Cases                                   | /Shell or Make?/                                                                                                                                                            |
+|---------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| When working alone                          | Either. Up to the individual's preference and their project needs.                                                                                                          |
+| Working in a group, or maintaining software | Make. Dissemination of Makefiles is much smoother, assuming all team members know what Make is and how to use it                                                            |
+| Starting a project (any project)            | Shell. allows far more customization and flexibility to bending towards many use cases outside of the typical software development build/run/clean workflow.                |
+| Maintaining a software project              | Make has a structure that is conducive to common operations such as building, rebuilding, cleaning that has specific production output(s), such as building C/C++ programs. |
+
+
+
+
+*** Comparison of Makefile vs Shell Script
+There is much overlap between these two, but ultimately it comes down to a comparison of what it's intended for and whether you're working by yourself or collaborating.
+
+*** Shell
+- Turing complete language
+- You can write program with this programming language.
+- Can be the go to tool when dabbling on a new project.
+  + More options to create your own name and arguments.
+  + You might start with a script to design a workflow for trial runs.
+- Used commonly for DevOps
+  + Can be spawned to run on multiple terminals
+- There is no standard set of instructions for custom made script program. Users will need instructions.
+
+*** Make
+- Domain specific language (DSL)
+- Used for managing dependency graphs
+- Designed for use in software development. Great for well-defined workflow.
+  + 'clean' or 'rebuild' steps are involved with the project
+  + Automates with sensible defaults. Knows to avoid rebuild files that are already built.
+- Designed for dissemination. Users will know what a Makefile is and how to use it (build/install/clean), so there is less to teach.
+- Great for running more than 1 CPU core, because Make can take advantage of multiple CPU cores
+
+* Links
+>>>>>>> 539c69442192381ac14c136343ac7b5bd8e882dd:notes/buildtools.org
 - GNU Make [https://www.gnu.org/software/make/](https://www.gnu.org/software/make/)
 - Apache Maven [https://maven.apache.org/](https://maven.apache.org/)
 - Gradle https://gradle.org/

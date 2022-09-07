@@ -1,0 +1,92 @@
+#+TITLE: C++
+#+SUBTITLE: Review of C++ Programming Language Features
+#+AUTHOR: Katherine Chuang
+#+EMAIL:  chuang@sci.brooklyn.cuny.edu
+#+DATE:   2022-03-24
+#+OPTIONS:   H:3 num:n  \n:nil @:t ::t |:t ^:t -:t f:t *:t <:t ^:nil
+#+OPTIONS:   TeX:t LaTeX:t skip:nil d:nil todo:t pri:nil tags:not-in-toc
+
+
+#+HUGO_BASE_DIR: ../hugo/
+#+EXPORT_OPTIONS: toc:3
+#+HUGO_CATEGORIES: c++ programming_languages
+#+EXPORT_HUGO_SECTION: pl
+
+* Introduction to the C++ Programming language.
+:PROPERTIES:
+:EXPORT_HUGO_SECTION*: CPP
+:EXPORT_FILE_NAME: cpp
+:EXPORT_TITLE: Review of C++
+:END:
+
+Prior to Fall 2017 the CIS department at Brooklyn College introductory programming courses were taught in C++. Since Fall 2017 the department is based on Java 8. 
+
+With any programming language, the best thing one can do for productivity is to keep documentation links handy.
+
+** Helpful links
+:PROPERTIES:
+:UNNUMBERED: toc
+:END:
+
+These are useful links to reference.
+
+*** ISOcpp.org
+https://isocpp.org
+
+
+** Concepts
+:PROPERTIES:
+:UNNUMBERED: toc
+:END:
+
+**** Variables
+Variables can be declared, initialized, or assigned.
+
+- Declared means specifying a data type and variable name.
+- Initialize means giving a value to the variable name.
+- Assignment is a combination of both declaration and initialized in one sentence.
+
+**** Primitive Data Types
+
+**** Operators
+**** Expressions, Statements, and Blocks
+**** Control Flow Statements
+**** Objects & Classes
+**** Arrays
+** Compiling C++ on Command Line
+
+To compile C++ source code on the command line, it is with this command where ~main.cpp~ is your filename. The ~g++~ command refers to the GNU C++ Compiler program. There are other implmentations of the C++ compiler beyond theones released by GNU, however this guide only references g++.
+
+#+BEGIN_SRC shell
+g++ main.cpp
+#+END_SRC
+
+followed by running the executable generated with
+
+#+BEGIN_SRC shell
+./main
+#+END_SRC
+
+** BC Students can use the WEB Lab Server to compile and run C++ code that is compatible with C++98. 
+
+Use a terminal friendly app to connect to the server via ssh. A sample command is as follows:
+
+#+BEGIN_SRC shell
+ssh username@hostname
+#+END_SRC
+
+After entering your password, create a directory for your assignment, such as ~mkdir folder1~ and then you can use a command line such as vim, emacs, or nano to edit the file.
+
+*** You can get your linux server account information from the W.E.B. Computing lab
+
+You can email the Linux Administrator, Raymond Patitucci or visit their location at
+
+First floor, West End Building
+P: 718.951.5787
+
+** Books and other resources
+*** A Tour of C++
+https://isocpp.org/tour
+
+*** The C++ Programming Language, 4th Ed.
+*** Crash Course in C++

@@ -9,39 +9,46 @@
 #+ALT_TITLE: Lecture Notes
 
 #+HUGO_BASE_DIR: ../hugo/
-#+HUGO_SECTION: terminal
 #+HUGO_WEIGHT: auto
 #+HUGO_AUTO_SET_LASTMOD: t
 
+Command line interface
+
+~#+toc: headlines 3~
+=======
+#+HUGO_SECTION: guides
+#+HUGO_CATEGORIES: ssh cli
+
 
 * Terminal       :@ssh:@cli:
+
+The terminal environment is a text-only interface with a single line prompt to enter text commands. 
+
+* Getting started with SSH
+
 :PROPERTIES:
+:EXPORT_HUGO_SECTION: guides
+:EXPORT_HUGO_BUNDLE: terminal
 :EXPORT_FILE_NAME: _index
 :EXPORT_TITLE: Command Line (CLI)
 :EXPORT_HUGO_FRONT_MATTER_FORMAT: yaml
 :EXPORT_HUGO_WEIGHT: 50
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :bookCollapseSection false
 :EXPORT_OPTIONS: toc:2
-:END:
 
-Command line interface
-
-~#+toc: headlines 3~
-
-Some more text here
-
-Some text
-
-* Getting started with SSH
-:PROPERTIES:
 :EXPORT_HUGO_CUSTOM_FRONT_MATTER+: :bookCollapseSection false
 :EXPORT_HUGO_FRONT_MATTER_FORMAT: yaml
-:EXPORT_FILE_NAME: ssh
+
+# :EXPORT_TITLE: SSH
+# :EXPORT_FILE_NAME: ssh
 :UNNUMBERED: toc
 :END:
 
 
 *** What is SSH?
+=======
+** What is SSH?
+>>>>>>> 539c69442192381ac14c136343ac7b5bd8e882dd:notes/ssh.org
 
 SSH is an encrypted connection protocol that allows passing information between two machines. Generally you have a /client/ that requests access and a /server/ that responds to the requests.
 
@@ -66,6 +73,7 @@ There is a command line program called [[https://dashdash.io/1/ssh][ssh]]
 This guide aims to provide possible options objectively, that is, without bias.
 
 ***** 1. Terminal App
+
 You can use the terminal app that comes with Mac OS. To use it, open the *terminal* app
 
 Within the terminal app, you can type `sAsh yourusername@ipaddress`
@@ -73,6 +81,7 @@ Within the terminal app, you can type `sAsh yourusername@ipaddress`
 Video Demonstration Link: [https://www.youtube.com/playlist?list=PL8HPPNCXDcvxOnrFpfkRvv2Oi3_0OqUZi](https://www.youtube.com/playlist?list=PL8HPPNCXDcvxOnrFpfkRvv2Oi3_0OqUZi)
 
 ***** 2. iTerm app
+
 The iTerm2 app ([https://iterm2.com/](https://iterm2.com/)) is another option, you would have to go to the website and download it to install it.
 
 The advantage of using this app is that it offers more customizations.
@@ -88,12 +97,14 @@ PuTTY is an SSH and telnet client, developed originally by Simon Tatham for the 
 https://www.putty.org/
 
 ***** 2. Solar Putty
+
 Solar Putty is a new SSH client that has a multi tab interface to support multiple sessions from one console. It has additional features beyond putty such as saved credentials, support for multiple sessions, quick access to the most recent sessions and integration of Windows search.
 
 https://www.solarwinds.com/free-tools/solar-putty
 
 ***** 3. SSH Client
 **** Linux Emulators
+
 :PROPERTIES:
 :NUMBERED: TOC
 :END:

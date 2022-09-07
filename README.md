@@ -14,9 +14,17 @@ At the time of this writing, the following are used to build this site:
 
 * Emacs 27.1
   * Org mode
-  * Ox-hugo mode
+  * [Ox-hugo](https://ox-hugo.scripter.co/) mode
 * Hugo v0.75.1
   * book theme
+
+## Installation and setup
+
+Instructions for installing Hugo can be found at https://gohugo.io/getting-started/installing/
+
+* mac `brew install hugo`
+
+Install the book theme using `git submodule update --init --recursive`
 
 ## File Directory
 
@@ -34,15 +42,14 @@ At the highest level, files are organized into 3 directories.
 
 ## Common commands
 
-1. When a file is ready to be converted to markdown in emacs, use the keybinding `C-c C-e H h`
-2. In the terminal, start the hugo server to preview the website for changes `hugo server`
+1. Publish the org file to markdown in emacs, using keybinding `C-c C-e H h` as this will save the file into the correct format in the `content` directory. 
+2. In the terminal, start the hugo server from the hugo folder to preview the website for changes `hugo server` while in development. Using the `-D` flag will include drafts to in the preview.
 3. Once the site looks good, generate the files with `hugo -D`, this will prepare the subdirectory `hugo/public` with the resulting website.
-4. Copy the files over from `hugo/public` to `docs` to prepare for github pages. Currently the command I use is `rm -r docs && mkdir docs && cp -r hugo/public/* docs`
+4. Copy the files over from `hugo/public` to `docs` to prepare for github pages. Sample command used: `rm -r docs && mkdir docs && cp -r hugo/public/* docs`
 
 ---
 
 # Hugo Configurations
 
-Currently the configurations are in `hugo/config.toml` and `hugo/data/config/widgets.toml` - not yet added to this repository.
+Currently the configurations are in `hugo/config.toml` and `hugo/data/config/widgets.toml` are required for building the website and not added to this repository.
 
-This website uses the minimo theme, so the configurations for that theme can be found at their documentation https://github.com/MunifTanjim/minimo

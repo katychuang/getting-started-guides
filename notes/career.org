@@ -10,11 +10,19 @@
 #+HTML_MATHJAX: align: left indent: 5em tagside: left font: Neo-Euler
 #+HUGO_BASE_DIR: ../hugo/
 #+HUGO_SECTION: interviews
-#+HUGO_CATEGORIES: interview
+#+HUGO_CATEGORIES: interview career
+
+* Career
+:PROPERTIES:
+:EXPORT_HUGO_BUNDLE: career
+:EXPORT_FILE_NAME:  _index
+:EXPORT_DATE: 2020-11-20
+:END:
 
 * Resume Guide /(coming soon)/
 :PROPERTIES:
-:EXPORT_FILE_NAME:  0_resume
+:EXPORT_HUGO_BUNDLE: career
+:EXPORT_FILE_NAME:  resume
 :EXPORT_DATE: 2020-11-20
 :END:
 
@@ -22,12 +30,13 @@ Nothing here at the moment
 
 * Technical Interviews
 :PROPERTIES:
-:EXPORT_FILE_NAME:  1_interview
+:EXPORT_HUGO_BUNDLE: career
+:EXPORT_FILE_NAME:  interview
 :EXPORT_DATE: 2020-11-13
 :END:
 
 _General Advice when solving problems_
-- Understand the problem being asked
+- Understand the problem asked
 - Don't forget to handle edge cases
 - Expressing your answer is just as important as understanding the problem, and solving it!
 
