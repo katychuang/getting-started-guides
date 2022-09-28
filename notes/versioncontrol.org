@@ -14,8 +14,9 @@
 #+HUGO_CATEGORIES: git
 
 
-* Version Control
+* Version Control Setup
 :PROPERTIES:
+:+title: First time Setup
 :EXPORT_HUGO_SECTION: guides
 :EXPORT_HUGO_BUNDLE: VCS
 :EXPORT_FILE_NAME: _index
@@ -23,13 +24,14 @@
 :END:
 
 ** Using Git for the First time (Windows)
-*** (Basic)
-Install Git for Windows. Go to https://gitforwindows.org/ and click download or go to https://git-scm.com/download/win and choose the correct one for your system.
-Open Git Bash.
+*** (Basic - the quickest approach, but also limited options)
+**** 1. Install Git for Windows.
+   Go to https://gitforwindows.org/ and click download, or
+   go to https://git-scm.com/download/win and choose the correct one for your system.
+**** 2. Open Git Bash.
 
 *** (Advanced, and better for long term option)
 1. Install WSL2 for a Linux subsystem.
-
 Follow instructions provided here https://docs.microsoft.com/en-us/windows/wsl/install (ubuntu is a common choice)
 	The instructions provided work for Windows version
 	Right click Powershell and open as administrator
@@ -44,17 +46,25 @@ Create a new profile in your windows terminal settings with your Linux distribut
 ** Using Git for the First time (Mac)
 
 1. Install XCode. Copy and paste the following text into your terminal (and press "return"):
+#+BEGIN_SRC shell
 xcode-select --install
+#+END_SRC
 
 2. Install Homebrew. Copy and paste the following text into your terminal (and press "return"):
+#+BEGIN_SRC shell
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+#+END_SRC
 
 To verify the installation, copy and paste the following text into your terminal (and press "return"):
+#+BEGIN_SRC shell
 brew doctor
+#+END_SRC
 You should see, Your system is ready to brew printed in the terminal.
 
 3. Install Git. Copy and paste the following text into your terminal (and press "return", after each step):
+#+BEGIN_SRC shell
 brew install git
+#+END_SRC
 
 *** Set up SSH Keys
 
@@ -64,9 +74,9 @@ Then you can copy the contents of your public key file into your github account.
 
 To copy to clipboard directly you can use the pipe character with the clipboard program of your OS.
 
-#+BEGIN_SRC sh
-cat ~/.ssh/id_rsa.pub | pbcopy  (mac)
-cat ~/.ssh/id_rsa.pub | clip.exe (wsl)
+#+BEGIN_SRC shell
+cat ~/.ssh/id_rsa.pub | pbcopy      # (mac)
+cat ~/.ssh/id_rsa.pub | clip.exe    # (wsl)
 #+END_SRC
 
 

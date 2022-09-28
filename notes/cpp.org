@@ -8,20 +8,22 @@
 
 
 #+HUGO_BASE_DIR: ../hugo/
+#+HUGO_SECTION: guides
 #+EXPORT_OPTIONS: toc:3
 #+HUGO_CATEGORIES: c++ programming_languages
-#+EXPORT_HUGO_SECTION: pl
 
 * Introduction to the C++ Programming language.
 :PROPERTIES:
-:EXPORT_HUGO_SECTION*: CPP
-:EXPORT_FILE_NAME: cpp
-:EXPORT_TITLE: Review of C++
+:EXPORT_HUGO_BUNDLE: programming/cpp
+:EXPORT_FILE_NAME: index
+:EXPORT_TITLE: C++
 :END:
 
 Prior to Fall 2017 the CIS department at Brooklyn College introductory programming courses were taught in C++. Since Fall 2017 the department is based on Java 8. 
 
 With any programming language, the best thing one can do for productivity is to keep documentation links handy.
+
+/Much of this page is under construction./
 
 ** Helpful links
 :PROPERTIES:
@@ -30,13 +32,23 @@ With any programming language, the best thing one can do for productivity is to 
 
 These are useful links to reference.
 
-*** ISOcpp.org
-https://isocpp.org
+- ISOcpp.org https://isocpp.org
+- LearnCpp.com https://www.learncpp.com
+- Cpp Reference https://en.cppreference.com/w/
+** Hello World example
 
+#+BEGIN_SRC C++
+#include <iostream>
+
+		int main(){
+				std::cout << "Hello World" << std::endl;
+				return 0;
+		}
+#+END_SRC
 
 ** Concepts
 :PROPERTIES:
-:UNNUMBERED: toc
+:UNNUMBERED: toc:2
 :END:
 
 **** Variables
@@ -46,14 +58,33 @@ Variables can be declared, initialized, or assigned.
 - Initialize means giving a value to the variable name.
 - Assignment is a combination of both declaration and initialized in one sentence.
 
-**** Primitive Data Types
+**** Built-in (Primitive) Data Types
+*Integer Data Types*
+
+#+CAPTION: Integer Data Types
+#+attr_html: :class zebra-striping sane-table
+
+| Data Type          | Typical Size | Typical Range |
+|--------------------+---------------+---------------|
+| short int          | 2 bytes       |               |
+| unsigned short int | 2 bytes       |               |
+| int                | 4 bytes       |               |
+| unsigned int       | 4 bytes       |               |
+
+
+*Floating-Point Data Type*
+| Data Type             | Key word     | Typical Range                                  |
+|-----------------------+--------------+------------------------------------------------|
+| single precision      | float        | 4 bytes. Numbers between -3.4E-38 and +3.4E-38 |
+| double precision      | double       | 8 bytes.                                       |
+| long double precision | long double* | 8 bytes.                                       |
 
 **** Operators
 **** Expressions, Statements, and Blocks
 **** Control Flow Statements
 **** Objects & Classes
 **** Arrays
-** Compiling C++ on Command Line
+** Compiling C++ by Command Line
 
 To compile C++ source code on the command line, it is with this command where ~main.cpp~ is your filename. The ~g++~ command refers to the GNU C++ Compiler program. There are other implmentations of the C++ compiler beyond theones released by GNU, however this guide only references g++.
 
@@ -67,7 +98,34 @@ followed by running the executable generated with
 ./main
 #+END_SRC
 
-** BC Students can use the WEB Lab Server to compile and run C++ code that is compatible with C++98. 
+** Installing GNU G++
+:PROPERTIES:
+:EXPORT_FILE_NAME: install-gcc
+:EXPORT_TITLE:  Installing GNU C Compiler (GCC)
+:END:
+On linux (i.e. Ubuntu)
+#+BEGIN_SRC shell
+# update package index
+sudo apt update
+
+# install the Development Tools packages
+sudo apt install build-essential
+
+# to install manual pages
+sudo apt-get install manpages-dev
+
+# verify g++ isntalled with the following command
+g++ --version
+#+END_SRC
+Reference: https://linuxize.com/post/how-to-install-gcc-on-ubuntu-20-04/
+
+#+RESULTS:
+| Apple         | clang                                       | version | 13.1.6 | (clang-1316.0.21.2.5) |
+| Target:       | x86_64-apple-darwin21.6.0                   |         |        |                       |
+| Thread        | model:                                      | posix   |        |                       |
+| InstalledDir: | /Library/Developer/CommandLineTools/usr/bin |         |        |                       |
+
+** BC Students can use the WEB Lab Server to compile and run C++98 code.
 
 Use a terminal friendly app to connect to the server via ssh. A sample command is as follows:
 
